@@ -8,7 +8,7 @@ This paste contains brief descriptions of 10 Sburb Glitch FAQ Aspects and a few 
 
 Note: Absolutely Fucking Nothing here means "Ultimate Riddle stuff". Or whatever does not advance the player's Land Quest.
 
-Dreams: The Aspect of Dreams tends to focus on creativity and systemization.
+Dreams: The Aspect of Dreams tends to focus on creativity and systemization. [Done by JR already]
 Suggested effect: Players are supposed to get echeladder experience for doing random shit, right? 
 Heroes of Dream get more experience for completing any random task, like "saving consorts" or "robbing tombs", but whenever that task's repeated, the experience for it falls by a few percent so eventually repetitions'll give zero experience. Gotta be original.
 Tasks: "Solving an enormous puzzle blocking the entry to a dungeon via an unorthodox method", "Drastically change consorts' lives with a gimmicky invention", "Creating a one-of-a-kind thing via witnessing its creation in Skaia's prophetic clouds".
@@ -63,4 +63,4 @@ Tasks: "Figuring out how the random bullshit quests connect to give a more usefu
 
 With due respect, 
 
-AW [MLH]
+AW [and MLH]

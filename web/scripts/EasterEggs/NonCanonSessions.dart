@@ -7,6 +7,7 @@ typedef void SessionSource(Session session, Player player, int index);
     20082015 -RL
     404 - cynicalTeuthida
     4037 - ???
+    225 - MLH :)
  */
 abstract class NonCanonSessions {
 
@@ -37,16 +38,17 @@ abstract class NonCanonSessions {
         session.players[0].setStat(Stats.EXPERIENCE, 1300);
     }
 
-    //from MLH
+    //from MLH, thanks for my support!!!!!!!!!!!!!!!!!!!!!
     static void session225(Session session) {
         int numPlayers = 5;
         makeASessionFromSource(session,session225IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less.
         Player fi  = session.players[0]; //forgetfulIdealist in case you were wondering
-        Player da = session.players[1];
-        Player ej = session.players[2];
-        Player lb = session.players[3];
-        Player hb  = session.players[4]; //F1X TH1S!
+        Player ej = session.players[1];
+        Player nb = session.players[2];
+        Player da = session.players[3];
+        Player hb  = session.players[4];
+        Player lb  = session.players[5]; //F1X TH1S!
     }
 
 
@@ -57,7 +59,6 @@ abstract class NonCanonSessions {
         if(index == 0){
             player.copyFromOCDataString("b=%C3%96%C3%88%09%3B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
 
-            player.class_name = SBURBClassManager.SCRIBE;
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.lettersToReplace = [];
@@ -68,25 +69,15 @@ abstract class NonCanonSessions {
             player.object_to_prototype = new PotentialSprite("Cherry", s);
             player.sprite.addPrototyping(player.object_to_prototype);
             player.land = player.spawnLand();
-            player.land.name = "Land of AIs and Fruit";
+            player.land.name = "Land of Automation and Fruit";
             player.land.denizenFeature = new DenizenFeature('Demeter');
 
         }else if(index == 1){
-            player.isTroll = false;
-            player.bloodColor = "#ff0000";
-            player.hairColor = "#e0be78";
-            player.class_name = SBURBClassManager.WITCH;
-            player.godDestiny = true;
-            player.aspect = Aspects.SPACE;
-            player.hair  =34;
-            player.leftHorn = 57;
-            player.rightHorn = 57;
-            player.chatHandle = "ViolinKid";
+            player.copyFromOCDataString("b=%C2%AEv%16%60%C3%BE%1A%04Y%19%19%04&s=,,Playing Guitar,Programming,electricJuggernaut&x=AQ==");
+
             player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Violin", s);
+            player.object_to_prototype = new PotentialSprite("Guitar", s);
             player.sprite.addPrototyping(player.object_to_prototype);
-            player.interest1 = new Interest("Coding", InterestManager.TECHNOLOGY);
-            player.interest2 = new Interest("Music", InterestManager.MUSIC);
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.lettersToReplace = [];
@@ -94,21 +85,11 @@ abstract class NonCanonSessions {
             player.quirk.prefix = "";
             player.quirk.suffix = "";
             player.land = player.spawnLand();
-            player.land.name = "Land of  Harmony and Paranoia";
+            player.land.name = "Land of Typoes and Space";
             player.land.denizenFeature = new DenizenFeature('Echidna');
 
-            player.moon = session.prospit;
         }else if(index == 2){
-            player.isTroll = false;
-            player.bloodColor = "#ff0000";
-            player.hairColor = "#ffffff";
-            player.class_name = SBURBClassManager.THIEF;
-            player.godDestiny = true;
-            player.aspect = Aspects.HOPE;
-            player.hair  =73;
-            player.leftHorn = 64;
-            player.rightHorn = 64;
-            player.chatHandle = "nuclearChronosphere";
+            player.copyFromOCDataString("b=%01%01%00Q%C3%BE%22%04R!!!&s=,,Gaming,Literature,niceBoi&x=AQ==");
             player.deriveSprite = false;
             player.object_to_prototype = new PotentialSprite("Zebra", s);
             player.sprite.addPrototyping(player.object_to_prototype);
@@ -126,34 +107,53 @@ abstract class NonCanonSessions {
 
             player.moon = session.prospit;
         }else if(index == 3){
-            player.isTroll = false;
-            player.bloodColor = "#ff0000";
-            player.hairColor = "#b55c0d";
-            player.class_name = SBURBClassManager.WITCH;
-            player.godDestiny = true;
-            player.aspect = Aspects.BLOOD;
-            player.hair  =23;
-            player.leftHorn = 4;
-            player.rightHorn = 6;
-            player.chatHandle = "collectiveAspirant";
+            player.copyFromOCDataString("b=%05%C2%BA%C3%96C%C3%BES%04%1C((%06&s=,,Intimidation,Dungeon Mastering,demonicActivist&x=phgA");
+
             player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Nemetona", s);
+            player.object_to_prototype = new PotentialSprite("Hair Dye", s);
             player.sprite.addPrototyping(player.object_to_prototype);
-            player.interest1 = new Interest("Swimming", InterestManager.ATHLETIC);
-            player.interest2 = new Interest("History", InterestManager.ACADEMIC);
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.lettersToReplace = [];
-            player.quirk.lettersToReplaceIgnoreCase = [["good","fantastic"],["lol","hee"],["nope","no thank you"],["asshole","jerk"]];
+            player.quirk.lettersToReplaceIgnoreCase = [];
             player.quirk.prefix = "";
-            player.quirk.suffix = "~™";
+            player.quirk.suffix = "";
             player.land = player.spawnLand();
-            player.land.name = "Land of Rainbows and Oil";
-            player.land.denizenFeature = new HardDenizenFeature('Yaldabaoth');
+            player.land.name = "Land of Rainbows and Intensity";
+            player.land.denizenFeature = new HardDenizenFeature('Loki');
+        }else if(index == 4) {
+            player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Software", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.land = player.spawnLand();
+            player.land.name = "Land of Grapes and Sarcasm";
+            player.land.denizenFeature = new HardDenizenFeature('Persephone');
+        } /*else if(index == 5){
+            player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%BE%C2%9A%04%C3%97((%01&s=,,Irony,Artificial Intelligence,humanBot&x=AQ==");
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Hair Dye", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.land = player.spawnLand();
+            player.land.name = "Land of Rainbows and Intensity";
+            player.land.denizenFeature = new HardDenizenFeature('Loki');
 
             player.moon = session.derse;
-        }
-
+         */
     }
 
     //from patron cynicalTeuthida: thanks for your support!!!
