@@ -91,10 +91,7 @@ abstract class NonCanonSessions {
         }else if(index == 2){
             player.copyFromOCDataString("b=%01%01%00Q%C3%BE%22%04R!!!&s=,,Gaming,Literature,niceBoi&x=AQ==");
             player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Zebra", s);
-            player.sprite.addPrototyping(player.object_to_prototype);
-            player.interest1 = new Interest("Knowledge", InterestManager.ACADEMIC);
-            player.interest2 = new Interest("Tabletop Roleplaying", InterestManager.SOCIAL);
+            player.object_to_prototype = new PotentialSprite("Sprite", s);
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.lettersToReplace = [];
@@ -102,8 +99,8 @@ abstract class NonCanonSessions {
             player.quirk.prefix = "";
             player.quirk.suffix = "";
             player.land = player.spawnLand();
-            player.land.name = "Land of Stars and Castles";
-            player.land.denizenFeature = new EasyDenizenFeature('Abraxas');
+            player.land.name = "Land of Patience and Culture";
+            player.land.denizenFeature = new EasyDenizenFeature('Chronos');
 
             player.moon = session.prospit;
         }else if(index == 3){
