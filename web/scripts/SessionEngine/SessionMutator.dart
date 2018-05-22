@@ -20,6 +20,7 @@ class SessionMutator {
     bool timeField = false; //means time player will be replacing their past self. basically 100% of time's effect.
     bool spaceField = false; //exclusively controls combo endings .
     bool dreamField = false; //alchemy doesn't consume items, alchemy can happen as many times as you want.
+    bool lawField = false; //cumulusCanine recommended that after gnosis 4 activates everything reads like a bad fanfiction (because their word is law)
 
     @override
     String toString() {
@@ -37,6 +38,7 @@ class SessionMutator {
         if(timeField) ret = "$ret time";
         if(spaceField) ret = "$ret space";
         if(dreamField) ret = "$ret dream";
+        if(lawField) ret = "$ret law";
 
         return ret;
     }

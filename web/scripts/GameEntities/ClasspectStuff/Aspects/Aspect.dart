@@ -16,6 +16,7 @@ import "Space.dart";
 import "Time.dart";
 import "Void.dart";
 import "Dream.dart";
+import "Law.dart";
 import "Sauce.dart";
 
 abstract class Aspects {
@@ -32,7 +33,8 @@ abstract class Aspects {
     static Aspect HOPE;
     static Aspect LIFE;
     static Aspect DREAM;
-    static Aspect SAUCE; //just shogun
+    static Aspect LAW;
+    static Aspect SAUCE; //just shogun [that doesn't mean it has to be a reskin, srsly JR]
 
     static Aspect NULL;
 
@@ -50,7 +52,8 @@ abstract class Aspects {
         HOPE = new Hope(10);
         LIFE = new Life(11);
         DREAM = new Dream(12);
-        SAUCE = new Sauce(13);
+        LAW = new Law(13);
+        SAUCE = new Sauce(14);
 
         NULL = new Aspect(255, "Null", isInternal:true);
     }
