@@ -857,7 +857,7 @@ class MetaPlayerHandler {
     Player jadedResearcher;
     Player authorBot;
     Player authorBotJunior;
-    Plauer forgetfulIdealist
+    Player forgetfulIdealist;
 
 
     List<Player> get metaPlayers {
@@ -979,6 +979,8 @@ class MetaPlayerHandler {
     }
 
     Player makeFI(Session s) {
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
+
         s.logger.info("Making MLH");
         player.copyFromOCDataString("b=%C3%96%C3%88%09%3B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
 
@@ -994,6 +996,7 @@ class MetaPlayerHandler {
         player.land = player.spawnLand();
         player.land.name = "Land of Automation and Fruit";
         player.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
+        return player;
 
     }
 
