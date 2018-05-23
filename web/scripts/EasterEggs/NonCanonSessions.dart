@@ -70,7 +70,7 @@ abstract class NonCanonSessions {
             player.sprite.addPrototyping(player.object_to_prototype);
             player.land = player.spawnLand();
             player.land.name = "Land of Automation and Fruit";
-            player.land.denizenFeature = new DenizenFeature('Demeter');
+            player.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
 
         }else if(index == 1){
             player.copyFromOCDataString("b=%C2%AEv%16%60%C3%BE%1A%04Y%19%19%04&s=,,Playing Guitar,Programming,electricJuggernaut&x=AQ==");
