@@ -992,12 +992,17 @@ class MetaPlayerHandler {
         player.quirk.prefix = "";
         player.quirk.suffix = "";
         player.deriveSprite = false;
-        player.initialize();
+        player.makeGuardian();
+        player.guardian.copyFromPlayer(feudalUltimatum);
+        player.guardian.initialize();
+        player.guardian.guardian = player;
         player.object_to_prototype = new PotentialSprite("Cherry", s);
         player.sprite.addPrototyping(player.object_to_prototype);
         player.land = player.spawnLand();
         player.land.name = "Land of Automation and Fruit";
-        player.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
+        player.deriveSpecibus = false;
+        player.specibus = new Specibus("Sword", ItemTraitFactory.SWORD, [ ItemTraitFactory.METAL, ItemTraitFactory.POINTY]);
+        player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
         return player;
 
     }
