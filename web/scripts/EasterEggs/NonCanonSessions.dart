@@ -48,7 +48,7 @@ abstract class NonCanonSessions {
         Player nb = session.players[2];
         Player da = session.players[3];
         Player hb  = session.players[4];
-        Player lb  = session.players[5]; //F1X TH1S!
+        //Player lb  = session.players[5]; //F1X TH1S!
     }
 
 

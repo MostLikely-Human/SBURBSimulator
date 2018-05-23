@@ -114,6 +114,7 @@ List<Map<int, String>> eggComments = <Map<int,String>>[
         0 : "Hang on a second, are they all robot versions of the same player?", // 0u0
         13 : "Is that... here?<br><br>How is that even possible? Ugh, the geometry out here SUCKS.", // yooo it's us
         4037 : "Wow, that guy looks like he's having a terrible time. I wonder what'd happen if he won? <span class='void'><br><br>Become a really good friend, probably ;)</span>", // Shoges
+        225 : "What is going on?"
     },
 
     <int,String> { // Shogun
@@ -128,6 +129,7 @@ List<Map<int, String>> eggComments = <Map<int,String>>[
         0 : "The sheer density of 0u0 in this fucking session is making me ill.",
         13 : "Finally. Here we are. The Ultimate Goal. This lot have had this coming for so long. And now I'll show them all. <span class='void'><br><br>All I wanted was out of this fucking game.</span>",
         4037 : "My home. My coffin. My beginning and end. A cursed number, a cursed player. No better fit for a villain.",
+        225 : "I like that Smith of Rain player, they could mess up sessions pretty well."
     }
 ];
 

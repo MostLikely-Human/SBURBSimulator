@@ -84,10 +84,10 @@ class Law extends Aspect {
 
   Law(int id) :super(id, "Law", isCanon: false);
 
-  @override
+  /*@override
   String activateCataclysm(Session s, Player p) {
     return s.mutator.law(s, p);
-  }
+  }*/
 
   @override
   void initializeThemes() {
