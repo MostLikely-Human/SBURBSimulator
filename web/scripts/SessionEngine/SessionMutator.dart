@@ -857,12 +857,13 @@ class MetaPlayerHandler {
     Player jadedResearcher;
     Player authorBot;
     Player authorBotJunior;
+    Plauer forgetfulIdealist
 
 
     List<Player> get metaPlayers {
         //everything else is 'canon' entry order
-        return <Player>[jadedResearcher, karmicRetribution, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior];
-       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior];
+        return <Player>[jadedResearcher, karmicRetribution, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior, forgetfulIdealist];
+       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior, forgetfulIdealist];
     }
 
     void initalizePlayers(Session s, bool reinitNoMatterWhat) {
@@ -882,6 +883,7 @@ class MetaPlayerHandler {
         paradoxLands = makePL(s);
         karmicRetribution = makeKR(s);
         authorBot = makeAB(s);
+        forgetfulIdealist = makeFI(s);
     }
 
     Player makeAW(Session s) {
@@ -976,6 +978,26 @@ class MetaPlayerHandler {
 
     }
 
+    Player makeFI(Session s) {
+        s.logger.info("Making MLH");
+        player.copyFromOCDataString("b=%C3%96%C3%88%09%3B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
+
+        player.quirk.capitalization = Quirk.NORMALCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+        player.deriveSprite = false;
+        player.object_to_prototype = new PotentialSprite("Cherry", s);
+        player.sprite.addPrototyping(player.object_to_prototype);
+        player.land = player.spawnLand();
+        player.land.name = "Land of Automation and Fruit";
+        player.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
+
+    }
+
+    
     Player makeFU(Session s) {
         s.logger.info("Making fu");
         Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
