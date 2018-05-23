@@ -980,6 +980,7 @@ class MetaPlayerHandler {
 
     Player makeFI(Session s) {
         Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
+        player.quirk = randomHumanQuirk(s.rand);
 
         s.logger.info("Making MLH");
         player.copyFromOCDataString("b=%C3%96%C3%88%09%3B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
@@ -991,6 +992,7 @@ class MetaPlayerHandler {
         player.quirk.prefix = "";
         player.quirk.suffix = "";
         player.deriveSprite = false;
+        player.initialize();
         player.object_to_prototype = new PotentialSprite("Cherry", s);
         player.sprite.addPrototyping(player.object_to_prototype);
         player.land = player.spawnLand();

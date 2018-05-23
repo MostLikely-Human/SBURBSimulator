@@ -4,12 +4,12 @@ import 'dart:async';
 import 'dart:html';
 import 'dart:typed_data';
 import 'dart:collection';
-Future<Null> main() async;
+
 
 class DeadSimController extends SimController {
   DeadSimController() : super();
 
-  await globalInit();
+
 
 
 
