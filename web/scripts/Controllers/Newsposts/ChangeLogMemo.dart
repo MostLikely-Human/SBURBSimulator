@@ -25,6 +25,7 @@ class ChangeLogMemo {
     static Wrangler tableGuardian;
     static Wrangler shogun;
     static Wrangler insufferableOracle;
+    static Wrangler forgetfulIdealist;
 
 
 
@@ -48,6 +49,8 @@ class ChangeLogMemo {
         paradoxLands = new Wrangler("paradoxLands", "images/Credits/pl_icon$end", new Colour.fromStyleString("#000066"));
         authorBot = new Wrangler("authorBot", "images/Credits/AB_icon$end", new Colour.fromStyleString("#ff0000"));
         authorBotJunior = new Wrangler("authorBotJunior", "images/Credits/abj_icon$end", new Colour.fromStyleString("#ffa500"));
+
+        forgetfulIdealist = new Wrangler("forgetfulIdealist", "images/Credits/mlh_icon.png", new Colour.fromStyleString("#ffff00"));
 
         recursiveSlacker = new Wrangler("recursiveSlacker", "images/Credits/rs_icon$end", new Colour.fromStyleString("#000066"));
         aspiringWatcher = new Wrangler("aspiringWatcher", "images/Credits/aw_icon$end", new Colour.fromStyleString("#494132"));
