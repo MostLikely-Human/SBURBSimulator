@@ -998,6 +998,7 @@ class MetaPlayerHandler {
         player.guardian.guardian = player;
         player.object_to_prototype = new PotentialSprite("Cherry", s);
         player.sprite.addPrototyping(player.object_to_prototype);
+        player.deriveLand = false;
         player.land = player.spawnLand();
         player.land.name = "Land of Automation and Fruit";
         player.deriveSpecibus = false;
