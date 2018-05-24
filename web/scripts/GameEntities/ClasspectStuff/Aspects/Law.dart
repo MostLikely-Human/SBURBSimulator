@@ -16,7 +16,7 @@ class Law extends Aspect {
 
   @override
   AspectPalette palette = new AspectPalette()
-    ..accent = "#ff9933"
+    ..accent = "#9900ff"
     ..aspect_light = '#FEFD49'
     ..aspect_dark = '#FEC910'
     ..shoe_light = '#10E0FF'
