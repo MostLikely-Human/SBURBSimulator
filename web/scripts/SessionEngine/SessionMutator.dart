@@ -858,12 +858,13 @@ class MetaPlayerHandler {
     Player authorBot;
     Player authorBotJunior;
     Player forgetfulIdealist;
+    Player humanBot
 
 
     List<Player> get metaPlayers {
         //everything else is 'canon' entry order
-        return <Player>[jadedResearcher, karmicRetribution, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior, forgetfulIdealist];
-       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior, forgetfulIdealist];
+        return <Player>[jadedResearcher, karmicRetribution, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior, forgetfulIdealist, humanBot];
+       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior, forgetfulIdealist, humanBot];
     }
 
     void initalizePlayers(Session s, bool reinitNoMatterWhat) {
@@ -884,6 +885,7 @@ class MetaPlayerHandler {
         karmicRetribution = makeKR(s);
         authorBot = makeAB(s);
         forgetfulIdealist = makeFI(s);
+        humanBot = makeHB(s);
     }
 
     Player makeAW(Session s) {
@@ -1008,6 +1010,29 @@ class MetaPlayerHandler {
 
     }
 
+    Player makeHB(Session s) {
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
+        player.quirk = randomHumanQuirk(s.rand);
+
+        s.logger.info("Making HB");
+        player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
+
+        player.deriveSprite = false;
+        player.object_to_prototype = new PotentialSprite("Software", s);
+        player.sprite.addPrototyping(player.object_to_prototype);
+        player.quirk.capitalization = Quirk.NORMALCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+        player.land = player.spawnLand();
+        player.land.name = "Land of Grapes and Sarcasm";
+        player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
+        return player;
+
+    }
+    
     
     Player makeFU(Session s) {
         s.logger.info("Making fu");
