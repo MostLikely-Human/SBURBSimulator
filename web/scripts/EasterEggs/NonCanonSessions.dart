@@ -132,7 +132,7 @@ abstract class NonCanonSessions {
             player.quirk.suffix = "";
             player.land = player.spawnLand();
             player.land.name = "Land of Grapes and Sarcasm";
-            player.land.denizenFeature = new HardDenizenFeature('Persephone');
+            player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
         } /*else if(index == 5){
             player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%BE%C2%9A%04%C3%97((%01&s=,,Irony,Artificial Intelligence,humanBot&x=AQ==");
 
