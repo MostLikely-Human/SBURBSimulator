@@ -59,7 +59,7 @@ Snow: The Aspect of Snow tends to focus on consequences and patterns.
 Suggested effect: Repeating random quests takes less time.
 Tasks: "Figuring out how the random bullshit quests connect to give a more useful hint about the Ultimate Riddle", "Creating a complex system to maximize the efficiency of the interactions between villages", "Succeeding in saving a plan from a last-minute disruption".
 
-[Juice: The Aspect of Juice is the opposite of Juice, Sauce being a reskin of rage (law), will have the opposite effects of rage (law).]
+[Juice: The Aspect of Juice is the opposite of Sauce, Sauce being a reskin of rage (law), will have the opposite effects of rage (law).]
 
 With due respect, 
 
