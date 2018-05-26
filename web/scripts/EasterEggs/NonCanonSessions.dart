@@ -48,6 +48,8 @@ abstract class NonCanonSessions {
         Player nb = session.players[2];
         Player da = session.players[3];
         Player hb  = session.players[4];
+
+        Relationship.makeClubs(da, fi, hb); //I'll ask them later if they can be auspitice if not, I'll just make it spades
         //Player lb  = session.players[5]; //F1X TH1S!
     }
 
