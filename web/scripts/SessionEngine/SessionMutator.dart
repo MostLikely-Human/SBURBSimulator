@@ -985,7 +985,7 @@ class MetaPlayerHandler {
         player.quirk = randomHumanQuirk(s.rand);
 
         s.logger.info("Making MLH");
-        player.copyFromOCDataString("b=%C3%96%C3%88%09%3B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
+        player.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
 
         player.quirk.capitalization = Quirk.NORMALCAPS;
         player.quirk.punctuation = Quirk.PERFPUNC;
