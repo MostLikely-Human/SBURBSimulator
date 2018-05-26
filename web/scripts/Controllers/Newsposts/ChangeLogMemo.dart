@@ -48,7 +48,7 @@ class ChangeLogMemo {
         jadedResearcher = new Wrangler("jadedResearcher", "images/Credits/jadedResearcher_icon$end", new Colour.fromStyleString("#3da35a"));
         karmicRetribution = new Wrangler("karmicRetribution", "images/Credits/Smith_of_Dreams_icon$end", new Colour.fromStyleString("#9630BF"));
         paradoxLands = new Wrangler("paradoxLands", "images/Credits/pl_icon$end", new Colour.fromStyleString("#000066"));
-        authorBot = new Wrangler("authorBot", "images/Credits/AB_icon$end", new Colour.fromStyleString("#ff0000"));
+        authorBot = new Wrangler("authorBot", "images/Credits/ab_icon$end", new Colour.fromStyleString("#ff0000"));
         authorBotJunior = new Wrangler("authorBotJunior", "images/Credits/abj_icon$end", new Colour.fromStyleString("#ffa500"));
 
         forgetfulIdealist = new Wrangler("forgetfulIdealist", "images/Credits/mlh_icon$end", new Colour.fromStyleString("#fcf000"));
