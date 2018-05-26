@@ -863,7 +863,7 @@ class MetaPlayerHandler {
 
     List<Player> get metaPlayers {
         //everything else is 'canon' entry order
-        return <Player>[jadedResearcher, karmicRetribution, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior, forgetfulIdealist, humanBot];
+        return <Player>[jadedResearcher, karmicRetribution, forgetfulIdealist, humanBot, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior];
        // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior, forgetfulIdealist, humanBot];
     }
 
@@ -1025,7 +1025,7 @@ class MetaPlayerHandler {
         player.deriveSprite = false;
         player.object_to_prototype = new PotentialSprite("Software", s);
         player.sprite.addPrototyping(player.object_to_prototype);
-        player.quirk.capitalization = Quirk.NORMALCAPS;
+        player.quirk.capitalization = Quirk.NOCAPS;
         player.quirk.punctuation = Quirk.PERFPUNC;
         player.quirk.lettersToReplace = [];
         player.quirk.lettersToReplaceIgnoreCase = [];

@@ -62,6 +62,7 @@
       <a href="index_pw.html">[???]</a>
       <a target = "_blank" href="land_of_rods_and_screens.html">The Land of Rods and Screens</a>
       <a href="index_shogun.html">Who is Shogun???</a>
+      <a href="index_hb.html">just a random puzzle</a>
 
 
     </div>
