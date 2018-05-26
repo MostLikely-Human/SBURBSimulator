@@ -858,7 +858,7 @@ class MetaPlayerHandler {
     Player authorBot;
     Player authorBotJunior;
     Player forgetfulIdealist;
-    Player humanBot
+    Player humanBot;
 
 
     List<Player> get metaPlayers {
@@ -1017,6 +1017,11 @@ class MetaPlayerHandler {
         s.logger.info("Making HB");
         player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
 
+        player.makeGuardian();
+        player.guardian.copyFromPlayer(feudalUltimatum);
+        player.guardian.initialize();
+        player.guardian.guardian = player;
+        player.deriveLand = false;
         player.deriveSprite = false;
         player.object_to_prototype = new PotentialSprite("Software", s);
         player.sprite.addPrototyping(player.object_to_prototype);
