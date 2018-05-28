@@ -127,10 +127,10 @@ abstract class NonCanonSessions {
             player.deriveSprite = false;
             player.object_to_prototype = new PotentialSprite("Software", s);
             player.sprite.addPrototyping(player.object_to_prototype);
-            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.capitalization = Quirk.NOCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.lettersToReplace = [];
-            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.lettersToReplaceIgnoreCase = [[",", ""]];
             player.quirk.prefix = "";
             player.quirk.suffix = "";
             player.land = player.spawnLand();

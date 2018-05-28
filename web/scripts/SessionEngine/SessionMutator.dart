@@ -989,7 +989,7 @@ class MetaPlayerHandler {
 
         player.quirk.capitalization = Quirk.NORMALCAPS;
         player.quirk.punctuation = Quirk.PERFPUNC;
-        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplace = [[",", ""]];
         player.quirk.lettersToReplaceIgnoreCase = [];
         player.quirk.prefix = "";
         player.quirk.suffix = "";
@@ -1041,10 +1041,12 @@ class MetaPlayerHandler {
     
     Player makeFU(Session s) {
         s.logger.info("Making fu");
-        Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.LORD, Aspects.LAW);
+
         player.quirk = randomHumanQuirk(s.rand);
 
         player.copyFromOCDataString("b=%C2%80%40%009%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nkgA");
+        player.aspect = Aspects.LAW;
         print("Fu's moon is ${player.moon}");
         player.land = player.spawnLand();
         player.land.name = "Land of Dynasties and Taint";
