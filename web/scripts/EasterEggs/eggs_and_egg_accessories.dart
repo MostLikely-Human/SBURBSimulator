@@ -91,6 +91,10 @@ void sbahjMode(Session session){
 		godTierify(session);
 	}
 
+	if (getParameterByName("NotGod", null) == "Tier") {
+		ungodTierify(session);
+	}
+
 	if (getParameterByName("COOLK1D", null) == "true") {
 		cool_kid = true;
 		coolK1DMode(session);
@@ -379,9 +383,17 @@ void tricksterMode(Session session){
 
 void godTierify(Session session){
 	if(!doNotRender) window.alert("Everyone's god tier now, for some reason");
-	for(num j = 0; j<session.players.length; j++){
+	for(num j = 0; j < session.players.length; j++){
 		var p = session.players[j];
 		p.godTier = true;
+	}
+}
+
+void ungodTierify(Session session){
+	if(!doNotRender) window.alert("This should be pretty normal for most sessions.");
+	for(num j = 0; j < session.players.length; j++){
+		var p = session.players[j];
+		p.godTier = false;
 	}
 }
 
