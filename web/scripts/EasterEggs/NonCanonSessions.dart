@@ -1,5 +1,5 @@
 import "../SBURBSim.dart";
-import 'dart:math';
+import 'dart:math' as Math;
 //all static
 typedef void SessionSource(Session session, Player player, int index);
 /*
@@ -51,11 +51,14 @@ abstract class NonCanonSessions {
         Player hb  = session.players[4];
         //Player lb  = session.players[5]; //F1X TH1S!
 
-        var rng = new Random();
-        var quadrant = new List.generate(1, (_) => rng.nextInt(1));
+        var rng = new Math.Random();
+        var quadrant = rng.nextInt(2);
 
-        Relationship.makeClubs(da, fi, hb); //I'll ask them (demonicActivist) later if they can be auspitice, if not I'll just make it spades
-
+        if (quadrant == 1) {
+            Relationship.makeDiamonds(fi, hb);
+        } else {
+            Relationship.makeClubs(da, fi, hb); //I'll ask them (demonicActivist) later if they can be auspitice, if not I'll just make it spades
+        }
     }
 
 
