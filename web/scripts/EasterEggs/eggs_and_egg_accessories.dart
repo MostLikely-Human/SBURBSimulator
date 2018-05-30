@@ -87,6 +87,10 @@ void sbahjMode(Session session){
 		debugRoyalRumble(session);
 	}
 
+	if (getParameterByName("God", null) == "Tier") {
+		godTierify(session);
+	}
+
 	if (getParameterByName("COOLK1D", null) == "true") {
 		cool_kid = true;
 		coolK1DMode(session);
@@ -368,6 +372,16 @@ void tricksterMode(Session session){
 		}
 
 
+	}
+}
+
+
+
+void godTierify(Session session){
+	if(!doNotRender) window.alert("Everyone's god tier now, for some reason");
+	for(num j = 0; j<session.players.length; j++){
+		var p = session.players[j];
+		p.godTier = true;
 	}
 }
 

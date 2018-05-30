@@ -1032,7 +1032,7 @@ class MetaPlayerHandler {
         player.quirk.prefix = "";
         player.quirk.suffix = "";
         player.land = player.spawnLand();
-        player.land.name = "Land of Grapes and Sarcasm";
+        player.land.name = "Land of Plums and Sarcasm";
         player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
         return player;
 

@@ -1,4 +1,5 @@
 import "../SBURBSim.dart";
+import 'dart:math';
 //all static
 typedef void SessionSource(Session session, Player player, int index);
 /*
@@ -50,7 +51,10 @@ abstract class NonCanonSessions {
         Player hb  = session.players[4];
         //Player lb  = session.players[5]; //F1X TH1S!
 
-        Relationship.makeClubs(da, fi, hb); //I'll ask them (demonicActivist) later if they can be auspitice if not, I'll just make it spades
+        var rng = new Random();
+        var quadrant = new List.generate(1, (_) => rng.nextInt(1));
+
+        Relationship.makeClubs(da, fi, hb); //I'll ask them (demonicActivist) later if they can be auspitice, if not I'll just make it spades
 
     }
 
@@ -134,7 +138,7 @@ abstract class NonCanonSessions {
             player.quirk.prefix = "";
             player.quirk.suffix = "";
             player.land = player.spawnLand();
-            player.land.name = "Land of Grapes and Sarcasm";
+            player.land.name = "Land of Plums and Sarcasm";
             player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
         } /*else if(index == 5){
             player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%BE%C2%9A%04%C3%97((%01&s=,,Irony,Artificial Intelligence,humanBot&x=AQ==");
