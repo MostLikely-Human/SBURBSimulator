@@ -384,16 +384,16 @@ void tricksterMode(Session session){
 void godTierify(Session session){
 	if(!doNotRender) window.alert("Everyone's god tier now, for some reason");
 	for(num j = 0; j < session.players.length; j++){
-		var p = session.players[j];
-		p.godTier = true;
+		session.players[j].godTier = true;
+		session.players[j].guardian.godTier = true;
 	}
 }
 
 void ungodTierify(Session session){
 	if(!doNotRender) window.alert("This should be pretty normal for most sessions.");
 	for(num j = 0; j < session.players.length; j++){
-		var p = session.players[j];
-		p.godTier = false;
+		session.players[j].godTier = false;
+		session.players[j].guardian.godTier = false;
 	}
 }
 

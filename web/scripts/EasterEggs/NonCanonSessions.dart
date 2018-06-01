@@ -42,7 +42,7 @@ abstract class NonCanonSessions {
     //from MLH, thanks for my support!!!!!!!!!!!!!!!!!!!!!
     static void session225(Session session) {
         int numPlayers = 5;
-        makeASessionFromSource(session,session225IndexToPlayer, numPlayers);
+        makeASessionFromSource(session, session225IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less.
         Player fi  = session.players[0]; //forgetfulIdealist in case you were wondering
         Player ej = session.players[1];
@@ -69,6 +69,7 @@ abstract class NonCanonSessions {
         player.deriveChatHandle = false;
         player.deriveLand = false;
         if(index == 0){
+            player.godTier = false;
             player.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
@@ -83,6 +84,22 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Automation and Fruit";
             player.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
+
+            /*player.guardian.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
+
+            player.guardian.quirk.capitalization = Quirk.NORMALCAPS;
+            player.guardian.quirk.punctuation = Quirk.PERFPUNC;
+            player.guardian.quirk.lettersToReplace = [];
+            player.guardian.quirk.lettersToReplaceIgnoreCase = [];
+            player.guardian.quirk.prefix = "";
+            player.guardian.quirk.suffix = "";
+            player.guardian.deriveSprite = false;
+            player.guardian.object_to_prototype = new PotentialSprite("Cherry", s);
+            player.guardian.sprite.addPrototyping(player.object_to_prototype);
+            player.guardian.land = player.spawnLand();
+            player.guardian.land.name = "Land of Automation and Fruit";
+            player.guardian.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");*/
+
 
         }else if(index == 1){
             player.copyFromOCDataString("b=%C2%AEv%16%60%C3%BE%1A%04Y%19%19%04&s=,,Playing Guitar,Programming,electricJuggernaut&x=AQ==");
@@ -145,6 +162,8 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Plums and Sarcasm";
             player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
+
+
         } /*else if(index == 5){
             player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%BE%C2%9A%04%C3%97((%01&s=,,Irony,Artificial Intelligence,humanBot&x=AQ==");
 
