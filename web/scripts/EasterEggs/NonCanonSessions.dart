@@ -53,14 +53,14 @@ abstract class NonCanonSessions {
 
         session.players[0].leader = true;
 
-        var rng = new Math.Random();
+        /*var rng = new Math.Random();
         var quadrant = rng.nextInt(2);
 
         if (quadrant == 1) {
             Relationship.makeDiamonds(fi, hb);
         } else {
             Relationship.makeClubs(da, fi, hb); //I'll ask them (demonicActivist) later if they can be auspitice, if not I'll just make it spades
-        }
+        }*/
     }
 
 
