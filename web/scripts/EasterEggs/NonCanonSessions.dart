@@ -51,7 +51,6 @@ abstract class NonCanonSessions {
         //Player lb  = session.players[4]; //F1X TH1S!
         Player hb  = session.players[4];
 
-
         session.players[0].leader = true;
 
         /*var rng = new Math.Random();

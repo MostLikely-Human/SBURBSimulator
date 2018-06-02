@@ -214,15 +214,19 @@ void sbahjMode(Session session){
 		dreamGnosis(session);
 	}
 
-	if (getParameterByName("God", null) == "Tier") {
+	if (getParameterByName("god", null) == "tier") {
 		godTierify(session);
 	}
 
-	if (getParameterByName("NotGod", null) == "Tier") {
+	if (getParameterByName("notgod", null) == "tier") {
 		ungodTierify(session);
 	}
 
 	processXStuck(session); //might not do anything.
+
+	if (getParameterByName("session", null) == "stabilize") {
+		stabilize(session);
+	}
 }
 
 
@@ -283,6 +287,21 @@ void ungodTierify(Session session){
 	for(num j = 0; j<session.players.length; j++){
 		session.players[j].godTier = false;
 		session.players[j].guardian.godTier = false;
+	}
+}
+
+void stabilize(Session session) {
+	if(!doNotRender) window.alert("This shouldn't change too many things");
+	for(num i = 0; i<session.players.length; i++){
+		if(session.players[i].class_name == SBURBClassManager.WASTE) session.players[i].class_name = SBURBClassManager.KNIGHT; //No randomness
+		if(session.players[i].guardian.class_name == SBURBClassManager.WASTE) session.players[i].guardian.class_name = SBURBClassManager.KNIGHT;
+		if(session.players[i].aspect == Aspects.NULL) session.players[i].aspect = Aspects.SPACE; //No randomness
+		if(session.players[i].guardian.aspect == Aspects.NULL) session.players[i].guardian.aspect = Aspects.SPACE;
+		if(session.players[i].aspect == Aspects.SAUCE) session.players[i].aspect = Aspects.TIME; //No randomness
+		if(session.players[i].guardian.aspect == Aspects.SAUCE) session.players[i].guardian.aspect = Aspects.TIME;
+		session.players[i].grimDark = 0;
+		session.players[i].murderMode = false;
+		session.players[i].leftMurderMode = false;
 	}
 }
 
