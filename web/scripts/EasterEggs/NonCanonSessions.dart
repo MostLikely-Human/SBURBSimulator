@@ -168,6 +168,7 @@ abstract class NonCanonSessions {
         else if(index == 4) {
             player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
 
+            player.guardian.robot = true;
             player.deriveSprite = false;
             player.object_to_prototype = new PotentialSprite("Software", s);
             player.sprite.addPrototyping(player.object_to_prototype);
