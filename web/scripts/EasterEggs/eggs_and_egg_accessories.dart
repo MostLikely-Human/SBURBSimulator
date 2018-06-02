@@ -87,13 +87,6 @@ void sbahjMode(Session session){
 		debugRoyalRumble(session);
 	}
 
-	if (getParameterByName("God", null) == "Tier") {
-		godTierify(session);
-	}
-
-	if (getParameterByName("NotGod", null) == "Tier") {
-		ungodTierify(session);
-	}
 
 	if (getParameterByName("COOLK1D", null) == "true") {
 		cool_kid = true;
@@ -221,6 +214,14 @@ void sbahjMode(Session session){
 		dreamGnosis(session);
 	}
 
+	if (getParameterByName("God", null) == "Tier") {
+		godTierify(session);
+	}
+
+	if (getParameterByName("NotGod", null) == "Tier") {
+		ungodTierify(session);
+	}
+
 	processXStuck(session); //might not do anything.
 }
 
@@ -269,6 +270,21 @@ void processXStuck(Session session){
 }
 
 
+void godTierify(Session session){
+	if(!doNotRender) window.alert("Everyone's god tier now, for some reason");
+	for(num j = 0; j<session.players.length; j++){
+		session.players[j].godTier = true;
+		session.players[j].guardian.godTier = true;
+	}
+}
+
+void ungodTierify(Session session){
+	if(!doNotRender) window.alert("This should be pretty normal for most sessions.");
+	for(num j = 0; j<session.players.length; j++){
+		session.players[j].godTier = false;
+		session.players[j].guardian.godTier = false;
+	}
+}
 
 void setAllAspectsTo(Session session,String a){
 	//;
@@ -281,10 +297,10 @@ void setAllAspectsTo(Session session,String a){
 
 
 
-void setAllClassesTo(Session session,String c){
+void setAllClassesTo(Session session,String c) {
 	//;
 	SBURBClass class_name = SBURBClassManager.stringToSBURBClass(c);
-	for(num i = 0; i<session.players.length; i++){
+	for (num i = 0; i < session.players.length; i++) {
 		session.players[i].class_name = class_name;
 		session.players[i].guardian.class_name = class_name;
 	}
@@ -380,22 +396,6 @@ void tricksterMode(Session session){
 }
 
 
-
-void godTierify(Session session){
-	if(!doNotRender) window.alert("Everyone's god tier now, for some reason");
-	for(num j = 0; j < session.players.length; j++){
-		session.players[j].godTier = true;
-		session.players[j].guardian.godTier = true;
-	}
-}
-
-void ungodTierify(Session session){
-	if(!doNotRender) window.alert("This should be pretty normal for most sessions.");
-	for(num j = 0; j < session.players.length; j++){
-		session.players[j].godTier = false;
-		session.players[j].guardian.godTier = false;
-	}
-}
 
 
 
