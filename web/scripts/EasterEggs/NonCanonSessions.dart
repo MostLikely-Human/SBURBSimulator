@@ -48,8 +48,9 @@ abstract class NonCanonSessions {
         Player ej = session.players[1];
         Player nb = session.players[2];
         Player da = session.players[3];
+        //Player lb  = session.players[4]; //F1X TH1S!
         Player hb  = session.players[4];
-        //Player lb  = session.players[5]; //F1X TH1S!
+
 
         session.players[0].leader = true;
 
@@ -147,7 +148,24 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Rainbows and Intensity";
             player.land.denizenFeature = new HardDenizenFeature('Loki');
-        }else if(index == 4) {
+        }/*else if(index == 4){
+            player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%BE%C2%9A%04%C3%97((%01&s=,,Irony,Artificial Intelligence,humanBot&x=AQ==");
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Hair Dye", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.land = player.spawnLand();
+            player.land.name = "Land of Rainbows and Intensity";
+            player.land.denizenFeature = new HardDenizenFeature('Loki');
+
+            player.moon = session.derse;*/
+        else if(index == 4) {
             player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
 
             player.deriveSprite = false;
@@ -164,24 +182,7 @@ abstract class NonCanonSessions {
             player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
 
 
-        } /*else if(index == 5){
-            player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%BE%C2%9A%04%C3%97((%01&s=,,Irony,Artificial Intelligence,humanBot&x=AQ==");
-
-            player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Hair Dye", s);
-            player.sprite.addPrototyping(player.object_to_prototype);
-            player.quirk.capitalization = Quirk.NORMALCAPS;
-            player.quirk.punctuation = Quirk.PERFPUNC;
-            player.quirk.lettersToReplace = [];
-            player.quirk.lettersToReplaceIgnoreCase = [];
-            player.quirk.prefix = "";
-            player.quirk.suffix = "";
-            player.land = player.spawnLand();
-            player.land.name = "Land of Rainbows and Intensity";
-            player.land.denizenFeature = new HardDenizenFeature('Loki');
-
-            player.moon = session.derse;
-         */
+        }
     }
 
     //from patron cynicalTeuthida: thanks for your support!!!
