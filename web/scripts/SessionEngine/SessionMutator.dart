@@ -859,12 +859,13 @@ class MetaPlayerHandler {
     Player authorBotJunior;
     Player forgetfulIdealist;
     Player humanBot;
+    Player shogunBot;
 
 
     List<Player> get metaPlayers {
         //everything else is 'canon' entry order
-        return <Player>[jadedResearcher, karmicRetribution, forgetfulIdealist, humanBot, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior];
-       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior, forgetfulIdealist, humanBot];
+        return <Player>[jadedResearcher, karmicRetribution, forgetfulIdealist, humanBot, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior, shogunBot];
+       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior, forgetfulIdealist, humanBot, shogunBot];
     }
 
     void initalizePlayers(Session s, bool reinitNoMatterWhat) {
@@ -886,6 +887,7 @@ class MetaPlayerHandler {
         authorBot = makeAB(s);
         forgetfulIdealist = makeFI(s);
         humanBot = makeHB(s);
+        shogunBot = makeFUB(s);
     }
 
     Player makeAW(Session s) {
@@ -1083,6 +1085,50 @@ class MetaPlayerHandler {
         f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, true));
         f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, false));
         f.desc = "FeudalUltimatum starts shitposting so hard it actually has an effect on the world around them. What the fuck is this?";
+        player.fraymotifs.add(f);
+        return player;
+
+    }
+
+    Player makeFUB(Session s) {
+        s.logger.info("Making SB");
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
+
+        player.quirk = randomHumanQuirk(s.rand);
+
+        player.copyFromOCDataString("b=%2B*-%3E%C3%B8R%04%C2%97%0F%258&s=,,Shogun,Big Bads,shogunBot&x=AQ==");
+        print("SB's moon is ${player.moon}");
+        player.land = player.spawnLand();
+        player.land.name = "Land of Coruption and Evil";
+        player.godTier = true;
+        player.deriveChatHandle = false;
+
+        player.quirk.capitalization = Quirk.NOCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+
+        player.deriveLand = false;
+        player.initialize();
+        player.makeGuardian();
+        player.guardian.copyFromPlayer(feudalUltimatum);
+        player.guardian.initialize();
+        player.guardian.guardian = player;
+
+        player.land.denizenFeature = new HardDenizenFeature('<span class = "void">Shogunbot the, Robot</span>');
+
+        player.object_to_prototype = new PotentialSprite("Sauce", s);
+        player.sprite.addPrototyping(player.object_to_prototype);
+
+        player.deriveSpecibus = false;
+        player.specibus = new Specibus("Sauce", ItemTraitFactory.PIGEON, [ ItemTraitFactory.CORRUPT, ItemTraitFactory.OBSCURING]);
+
+
+        Fraymotif f = new Fraymotif("Shitpost For Dear Life", 13);
+        f.baseValue = 1300;
+        f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, true));
+        f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, false));
+        f.desc = "shogunBot starts shitposting so hard it actually has an effect on the world around them. What the fuck is this?";
         player.fraymotifs.add(f);
         return player;
 
