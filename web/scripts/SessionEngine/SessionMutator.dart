@@ -888,6 +888,11 @@ class MetaPlayerHandler {
         forgetfulIdealist = makeFI(s);
         humanBot = makeHB(s);
         shogunBot = makeFUB(s);
+
+        Relationship.makeDiamonds(forgetfulIdealist, humanBot);
+
+        humanBot.getRelationshipWith(shogunBot).value = 20;
+        shogunBot.getRelationshipWith(humanBot).value = 0;
     }
 
     Player makeAW(Session s) {
@@ -1130,6 +1135,7 @@ class MetaPlayerHandler {
         f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, false));
         f.desc = "shogunBot starts shitposting so hard it actually has an effect on the world around them. What the fuck is this?";
         player.fraymotifs.add(f);
+
         return player;
 
     }

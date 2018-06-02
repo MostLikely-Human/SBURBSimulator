@@ -51,6 +51,9 @@ abstract class NonCanonSessions {
         //Player lb  = session.players[4]; //F1X TH1S!
         Player hb  = session.players[4];
 
+        Relationship.makeClubs(da, fi, hb);
+        Relationship.makeDiamonds(fi, hb);
+
         session.players[0].leader = true;
 
         /*var rng = new Math.Random();
