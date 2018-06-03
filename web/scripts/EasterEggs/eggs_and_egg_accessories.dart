@@ -1078,8 +1078,8 @@ void session13(Session session) {
     for(num i = 0; i<session.players.length;i++){
         Player player = session.players[i];
         Player  guardian = player.guardian;
-        player.relationships = [];
-        guardian.relationships = [];
+        //player.relationships = [];
+        //guardian.relationships = [];
         List<Player> guardians = getGuardiansForPlayers(session.players);
         guardian.generateRelationships(guardians);
         player.generateRelationships(session.players);
