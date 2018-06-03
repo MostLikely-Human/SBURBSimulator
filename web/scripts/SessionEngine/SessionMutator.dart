@@ -889,10 +889,6 @@ class MetaPlayerHandler {
         humanBot = makeHB(s);
         shogunBot = makeFUB(s);
 
-        Relationship.makeDiamonds(forgetfulIdealist, humanBot);
-
-        humanBot.getRelationshipWith(shogunBot).value = 20;
-        shogunBot.getRelationshipWith(humanBot).value = 0;
     }
 
     Player makeAW(Session s) {
@@ -1071,10 +1067,6 @@ class MetaPlayerHandler {
         player.guardian.copyFromPlayer(authorBotJunior);
         player.guardian.initialize();
         player.guardian.guardian = player;
-
-        authorBotJunior.guardian.copyFromPlayer(player);
-        authorBotJunior.guardian.initialize();
-        authorBotJunior.guardian.guardian = player;
 
         player.land.denizenFeature = new HardDenizenFeature('<span class = "void">Shogun the, Glitch</span>');
 

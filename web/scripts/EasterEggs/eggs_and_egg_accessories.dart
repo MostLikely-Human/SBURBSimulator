@@ -1065,11 +1065,7 @@ void session13(Session session) {
     ;
     session.players[0].leader = true;
 
-    session.players[3].getRelationshipWith(session.players[16]).value = 20;
-		session.players[16].getRelationshipWith(session.players[3]).value = 0;
 
-		Relationship.makeSpades(session.players[2], session.players[3]);
-		Relationship.makeDiamonds(session.players[2], session.players[3]);
 
     for(Player p in session.players) {
         p.ectoBiologicalSource = null; //can do ectobiology.
@@ -1078,14 +1074,20 @@ void session13(Session session) {
     for(num i = 0; i<session.players.length;i++){
         Player player = session.players[i];
         Player  guardian = player.guardian;
-        //player.relationships = [];
-        //guardian.relationships = [];
+        player.relationships = [];
+        guardian.relationships = [];
         List<Player> guardians = getGuardiansForPlayers(session.players);
         guardian.generateRelationships(guardians);
         player.generateRelationships(session.players);
         player.mylevels = getLevelArray(player);
         guardian.mylevels = getLevelArray(guardian);
     }
+
+	session.players[3].getRelationshipWith(session.players[16]).value = 20;
+  session.players[16].getRelationshipWith(session.players[3]).value = 0;
+
+	Relationship.makeSpades(session.players[2], session.players[3]);
+	Relationship.makeDiamonds(session.players[2], session.players[3]);
 }
 
 void sawNepeta() {
