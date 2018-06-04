@@ -1051,6 +1051,7 @@ void session420(Session session){
 
 //what even is this???
 void session13(Session session) {
+	DateTime now = new DateTime.now();
     session.mutator.metaHandler.initalizePlayers(session,true);
 	session.players = new List<Player>.from(session.mutator.metaHandler.metaPlayers); //just blow them away.
     //will this be enough to get shogun in?
@@ -1086,8 +1087,12 @@ void session13(Session session) {
 	session.players[3].getRelationshipWith(session.players[16]).value = 20;
   session.players[16].getRelationshipWith(session.players[3]).value = 0;
 
-	Relationship.makeSpades(session.players[2], session.players[3]);
-	Relationship.makeDiamonds(session.players[2], session.players[3]);
+		if (now.day % 2 == 0) {
+			Relationship.makeSpades(session.players[2], session.players[3]);
+		}
+		else {
+			Relationship.makeDiamonds(session.players[2], session.players[3]);
+		}
 }
 
 void sawNepeta() {

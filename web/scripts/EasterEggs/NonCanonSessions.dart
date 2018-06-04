@@ -41,6 +41,7 @@ abstract class NonCanonSessions {
 
     //from MLH, thanks for my support!!!!!!!!!!!!!!!!!!!!!
     static void session225(Session session) {
+        DateTime now = new DateTime.now();
         int numPlayers = 5;
         makeASessionFromSource(session, session225IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less.
@@ -51,19 +52,14 @@ abstract class NonCanonSessions {
         //Player lb  = session.players[4]; //F1X TH1S!
         Player hb  = session.players[4];
 
-        Relationship.makeClubs(da, fi, hb);
-        Relationship.makeDiamonds(fi, hb);
+        if (now.day % 2 == 0) {
+            Relationship.makeClubs(da, fi, hb);
+        }
+        else {
+            Relationship.makeDiamonds(fi, hb);
+        }
 
         session.players[0].leader = true;
-
-        /*var rng = new Math.Random();
-        var quadrant = rng.nextInt(2);
-
-        if (quadrant == 1) {
-            Relationship.makeDiamonds(fi, hb);
-        } else {
-            Relationship.makeClubs(da, fi, hb); //I'll ask them (demonicActivist) later if they can be auspitice, if not I'll just make it spades
-        }*/
     }
 
 
