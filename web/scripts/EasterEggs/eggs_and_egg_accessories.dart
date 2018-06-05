@@ -1084,7 +1084,7 @@ void session13(Session session) {
         guardian.mylevels = getLevelArray(guardian);
     }
 
-	session.players[3].getRelationshipWith(session.players[16]).value = 20;
+	session.players[3].getRelationshipWith(session.players[16]).value = 30;
   session.players[16].getRelationshipWith(session.players[3]).value = 0;
 
 		if (now.day % 2 == 0) {
