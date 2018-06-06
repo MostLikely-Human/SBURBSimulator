@@ -1,3 +1,4 @@
 2018-05-23: Hopefully this works.
 2018-05-25: I think I'll try to add HB as a wrangler. (I don't think I'll make humanBotJr, but you never know.)
 2018-05-26: I'm now a Waste.
+2018-06-06: I should probably use this more often. <span class='void'>People don't usually like looking through code.</span>
