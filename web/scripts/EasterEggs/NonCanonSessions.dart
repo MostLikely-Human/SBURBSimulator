@@ -68,7 +68,6 @@ abstract class NonCanonSessions {
         player.deriveChatHandle = false;
         player.deriveLand = false;
         if(index == 0){
-            player.godTier = false;
             player.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
@@ -179,7 +178,6 @@ abstract class NonCanonSessions {
             player.land.name = "Land of Plums and Sarcasm";
             player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
 
-            player.guardian.godTier = false;
             player.guardian.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
 
             player.guardian.quirk.capitalization = Quirk.NORMALCAPS;

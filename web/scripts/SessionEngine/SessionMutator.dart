@@ -1636,6 +1636,7 @@ class MetaPlayerHandler {
         player.deriveSprite = false;
         player.initialize();
         player.makeGuardian();
+        player.guardian.copyFromPlayer(feudalUltimatum);
         player.guardian.initialize();
         player.guardian.guardian = player;
         player.land.denizenFeature = new HardDenizenFeature('<span class = "void">Abbiejean, the </span>Scout');
