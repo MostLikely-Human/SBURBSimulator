@@ -992,7 +992,7 @@ class MetaPlayerHandler {
 
         player.quirk.capitalization = Quirk.NORMALCAPS;
         player.quirk.punctuation = Quirk.PERFPUNC;
-        player.quirk.lettersToReplace = [[",", ""]];
+        player.quirk.lettersToReplace = [[".", ","]];
         player.quirk.lettersToReplaceIgnoreCase = [];
         player.quirk.prefix = "";
         player.quirk.suffix = "";
@@ -1015,10 +1015,17 @@ class MetaPlayerHandler {
 
     Player makeHB(Session s) {
         Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
-        player.quirk = randomHumanQuirk(s.rand);
 
         s.logger.info("Making HB");
         player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
+
+
+        player.quirk.capitalization = Quirk.NOCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [[",", ""]];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
 
         player.makeGuardian();
         player.guardian.copyFromPlayer(feudalUltimatum);

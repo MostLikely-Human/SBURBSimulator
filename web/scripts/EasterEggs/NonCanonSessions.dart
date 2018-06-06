@@ -72,10 +72,10 @@ abstract class NonCanonSessions {
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
-            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplace = [[".", ","]];
             player.quirk.lettersToReplaceIgnoreCase = [];
             player.quirk.prefix = "";
-            player.quirk.suffix = "";
+            player.quirk.suffix = ""; //I can not figure out how to do this
             player.deriveSprite = false;
             player.object_to_prototype = new PotentialSprite("Cherry", s);
             player.sprite.addPrototyping(player.object_to_prototype);
