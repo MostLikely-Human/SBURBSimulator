@@ -274,6 +274,34 @@ void processXStuck(Session session){
 }
 
 
+void playerChange(Session session, Player player){
+	if(window.location.search.isEmpty && simulatedParamsGlobalVar.isEmpty) {
+		//;
+		return;
+	}
+	String params1 = null;
+	if(window.location.search.isNotEmpty) params1 = window.location.search.substring(1);
+	String params2 = simulatedParamsGlobalVar;
+	//;
+	List<String> tmp = SBURBClassManager.allClassNames;
+	List<String> all_aspects =  Aspects.names.toList();
+	String params = "";
+	if(params1 != null){
+		params = params1;
+		if(params2!= null){
+			params += "&" + params2;
+		}
+	}else if(params2 != null) params = params2;
+	List<String> paramsArray = params.split("&");
+	for(num i = 0; i<paramsArray.length; i++){
+		List<String> stuck = paramsArray[i].split("Stuck");
+		//print("stuck is: " + stuck.toString());
+		player.params2;
+		}
+}
+
+
+
 void godTierify(Session session){
 	if(!doNotRender) window.alert("Everyone's god tier now, for some reason");
 	for(num j = 0; j<session.players.length; j++){
