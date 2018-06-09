@@ -296,7 +296,7 @@ void playerChange(Session session, Player player){
 	for(num i = 0; i<paramsArray.length; i++){
 		List<String> stuck = paramsArray[i].split("Stuck");
 		//print("stuck is: " + stuck.toString());
-		player.params2;
+		//player.params2;
 		}
 }
 
