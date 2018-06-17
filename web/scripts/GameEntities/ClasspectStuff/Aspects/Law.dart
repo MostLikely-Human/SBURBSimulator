@@ -81,7 +81,7 @@ class Law extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.voidStuff(s, p);
+    return s.mutator.law(s, p);
   }
 
   @override
