@@ -224,6 +224,14 @@ void sbahjMode(Session session){
 
 	processXStuck(session); //might not do anything.
 
+	if (getParameterByName("active", null) == "true") {
+		active(session);
+	}
+
+	if (getParameterByName("passive", null) == "true") {
+		passive(session);
+	}
+
 	if (getParameterByName("session", null) == "stabilize") {
 		stabilize(session);
 	}
@@ -233,6 +241,39 @@ void sbahjMode(Session session){
 
 void janusReward(Session session){
 	session.janusReward = true;
+}
+
+
+
+void active(Session session) {
+	if(!doNotRender) window.alert("Very Active");
+	for(num j = 0; j<session.players.length; j++){
+		if (session.players[j].class_name == SBURBClassManager.KNIGHT) session.players[j].class_name = SBURBClassManager.PAGE;
+		if (session.players[j].class_name == SBURBClassManager.SEER) session.players[j].class_name = SBURBClassManager.SAGE;
+		if (session.players[j].class_name == SBURBClassManager.MAGE) session.players[j].class_name = SBURBClassManager.WITCH;
+		if (session.players[j].class_name == SBURBClassManager.GUIDE) session.players[j].class_name = SBURBClassManager.SCOUT;
+		if (session.players[j].class_name == SBURBClassManager.ROGUE) session.players[j].class_name = SBURBClassManager.THIEF;
+		if (session.players[j].class_name == SBURBClassManager.BARD) session.players[j].class_name = SBURBClassManager.PRINCE;
+		if (session.players[j].class_name == SBURBClassManager.GRACE) session.players[j].class_name = SBURBClassManager.WASTE;
+		if (session.players[j].class_name == SBURBClassManager.MUSE) session.players[j].class_name = SBURBClassManager.LORD;
+		//Not all classes are in the sim
+	}
+}
+
+
+void passive(Session session) {
+	if(!doNotRender) window.alert("Not Very Active");
+	for(num j = 0; j<session.players.length; j++){
+		if (session.players[j].class_name == SBURBClassManager.PAGE) session.players[j].class_name = SBURBClassManager.KNIGHT;
+		if (session.players[j].class_name == SBURBClassManager.SAGE) session.players[j].class_name = SBURBClassManager.SEER;
+		if (session.players[j].class_name == SBURBClassManager.WITCH) session.players[j].class_name = SBURBClassManager.MAGE;
+		if (session.players[j].class_name == SBURBClassManager.SCOUT) session.players[j].class_name = SBURBClassManager.GUIDE;
+		if (session.players[j].class_name == SBURBClassManager.THIEF) session.players[j].class_name = SBURBClassManager.ROGUE;
+		if (session.players[j].class_name == SBURBClassManager.PRINCE) session.players[j].class_name = SBURBClassManager.BARD;
+		if (session.players[j].class_name == SBURBClassManager.WASTE) session.players[j].class_name = SBURBClassManager.GRACE;
+		if (session.players[j].class_name == SBURBClassManager.LORD) session.players[j].class_name = SBURBClassManager.MUSE;
+		//Not all classes are in the sim
+	}
 }
 
 
