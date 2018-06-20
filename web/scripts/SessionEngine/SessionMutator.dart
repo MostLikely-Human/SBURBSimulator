@@ -1080,7 +1080,7 @@ class MetaPlayerHandler {
 
         player.quirk = randomHumanQuirk(s.rand);
 
-        player.copyFromOCDataString("b=%C2%80%40%009%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nkgA");
+        player.copyFromOCDataString("b=%C2%80%40%00%3D%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nmgA"); //b=%C2%80%40%009%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nkgA
         player.aspect = Aspects.LAW;
         print("Fu's moon is ${player.moon}");
         player.land = player.spawnLand();
