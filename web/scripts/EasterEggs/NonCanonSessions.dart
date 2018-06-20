@@ -45,18 +45,20 @@ abstract class NonCanonSessions {
         int numPlayers = 5;
         makeASessionFromSource(session, session225IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less.
-        Player fi  = session.players[0]; //forgetfulIdealist in case you were wondering
+        Player fi = session.players[0]; //forgetfulIdealist in case you were wondering
         Player ej = session.players[1];
         Player nb = session.players[2];
         Player da = session.players[3];
         //Player lb  = session.players[4]; //F1X TH1S!
-        Player hb  = session.players[4];
+        Player hb = session.players[4];
 
         if (now.day % 2 == 0) {
             Relationship.makeClubs(da, fi, hb);
+            fi.moon = session.derse;
         }
         else {
             Relationship.makeDiamonds(fi, hb);
+            fi.moon = session.prospit;
         }
 
         session.players[0].leader = true;
@@ -117,6 +119,7 @@ abstract class NonCanonSessions {
 
         }else if(index == 2){
             player.copyFromOCDataString("b=%01%01%00Q%C3%BE%22%04R!!!&s=,,Gaming,Literature,niceBoi&x=AQ==");
+            player.class_name = SBURBClassManager.SCOUT;
             player.deriveSprite = false;
             player.object_to_prototype = new PotentialSprite("Sprite", s);
             player.quirk.capitalization = Quirk.NORMALCAPS;
