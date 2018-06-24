@@ -1100,6 +1100,10 @@ class MetaPlayerHandler {
         player.guardian.initialize();
         player.guardian.guardian = player;
 
+        authorBotJunior.guardian.copyFromPlayer(player);
+        authorBotJunior.guardian.initialize();
+        authorBotJunior.guardian.guardian = player;
+
         player.land.denizenFeature = new HardDenizenFeature('<span class = "void">Shogun the, Glitch</span>');
 
         player.object_to_prototype = new PotentialSprite("Aku", s);
@@ -1668,7 +1672,6 @@ class MetaPlayerHandler {
         player.deriveSprite = false;
         player.initialize();
         player.makeGuardian();
-        player.guardian.copyFromPlayer(feudalUltimatum);
         player.guardian.initialize();
         player.guardian.guardian = player;
         player.land.denizenFeature = new HardDenizenFeature('<span class = "void">Abbiejean, the </span>Scout');
