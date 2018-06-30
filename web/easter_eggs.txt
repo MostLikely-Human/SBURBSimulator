@@ -6,8 +6,12 @@
 
 <p> Hall of Fame is officially closed as of 6/12/17. </p>
 <p>I wonder if any other arc numbers have sessions for them. <span class = 'void'>Like 13? Like 4037??? Maybe 225??</span></p>
+
 <p><a href = "index2.html?god=tier">People are god tier</a>: First easter egg</p>
 <p><a href = "index2.html?god=tier">People are not god tier</a>: Second easter egg</p>
+<p><a href = "index2.html?active=true">Active</a>: Passive classes replaced with active ones</p>
+<p><a href = "index2.html?passive=true">Passive</a>: Active classes replaced with passive ones</p>
+
 <p><a href = "index2.html?spacePlayers=screwed">Shogun Hates Space Players, A Saga</a>: Wait. Is JR still adding easter eggs???</p>
 <p><a href = "index2.html?self=cest">Anstus Mode</a>:  It's a refrance, dunkass. Makes all players copies of the leader player. </p>
 
