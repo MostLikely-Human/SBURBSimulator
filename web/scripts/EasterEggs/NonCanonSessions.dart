@@ -8,7 +8,7 @@ typedef void SessionSource(Session session, Player player, int index);
     20082015 -RL
     404 - cynicalTeuthida
     4037 - ???
-    225 - MLH :)
+    247 - MLH :)
  */
 abstract class NonCanonSessions {
 
@@ -19,7 +19,7 @@ abstract class NonCanonSessions {
         ret[730] = session730; //SBURBNeta
         ret[20082015] = session20082015; //RL
         ret[404] = session404; //cynicalTeuthida
-        ret[225] = session225; //MLH
+        ret[247] = session225; //MLH
         return ret;
     }
 
@@ -40,7 +40,7 @@ abstract class NonCanonSessions {
     }
 
     //from MLH, thanks for my support!!!!!!!!!!!!!!!!!!!!!
-    static void session225(Session session) {
+    static void session247(Session session) {
         DateTime now = new DateTime.now();
         int numPlayers = 5;
         makeASessionFromSource(session, session225IndexToPlayer, numPlayers);
@@ -65,7 +65,7 @@ abstract class NonCanonSessions {
     }
 
 
-    static void session225IndexToPlayer(Session session, Player player, int index){
+    static void session247IndexToPlayer(Session session, Player player, int index){
         Session s = session;
         player.deriveChatHandle = false;
         player.deriveLand = false;
