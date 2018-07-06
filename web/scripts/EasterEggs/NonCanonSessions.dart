@@ -43,7 +43,7 @@ abstract class NonCanonSessions {
     static void session247(Session session) {
         DateTime now = new DateTime.now();
         int numPlayers = 5;
-        makeASessionFromSource(session, session225IndexToPlayer, numPlayers);
+        makeASessionFromSource(session, session247IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less.
         Player fi = session.players[0]; //forgetfulIdealist in case you were wondering
         Player ej = session.players[1];
