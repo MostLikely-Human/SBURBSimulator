@@ -19,7 +19,7 @@ abstract class NonCanonSessions {
         ret[730] = session730; //SBURBNeta
         ret[20082015] = session20082015; //RL
         ret[404] = session404; //cynicalTeuthida
-        ret[247] = session225; //MLH
+        ret[247] = session247; //MLH
         return ret;
     }
 
