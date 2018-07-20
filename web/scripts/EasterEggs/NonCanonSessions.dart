@@ -9,6 +9,7 @@ typedef void SessionSource(Session session, Player player, int index);
     404 - cynicalTeuthida
     4037 - ???
     247 - MLH :)
+    12250 - Why do I do this?
  */
 abstract class NonCanonSessions {
 
@@ -20,6 +21,7 @@ abstract class NonCanonSessions {
         ret[20082015] = session20082015; //RL
         ret[404] = session404; //cynicalTeuthida
         ret[247] = session247; //MLH
+        ret[12250] = session12250; //The immortal loss meme
         return ret;
     }
 
@@ -30,6 +32,84 @@ abstract class NonCanonSessions {
             sm[id](session);
         }
     }
+
+    static void session12250(Session session) {
+        int numPlayers = 4;
+        makeASessionFromSource(session, session12250IndexToPlayer, numPlayers);
+        session.players.length = numPlayers; //no more, no less.
+        Player el = session.players[0];
+        Player rl = session.players[1];
+        Player dl = session.players[2];
+        Player ll = session.players[3];
+    }
+
+    static void session12250IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+        player.deriveChatHandle = false;
+        player.deriveLand = false;
+        if (index == 0) {
+            player.copyFromOCDataString("b=bF%0D%C3%80%C3%BEU%04%11!%09%08&s=,,Loss,Loss,IethanLoss&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Meme", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Loss and Loss";
+            player.land.denizenFeature = new DenizenFeature("Loss");
+        }else if (index == 1) {
+            player.copyFromOCDataString("b=%C3%80%C2%8D%16%C2%91%C3%BEU%04%12%0C%0CB&s=,,Loss,Loss,IIreceptionistLoss&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Meme", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Loss and Loss";
+            player.land.denizenFeature = new DenizenFeature("Loss");
+        }else if (index == 2) {
+            player.copyFromOCDataString("b=%0C%0C%0CS%C3%BEU%04%12*%15%25&s=,,Loss,Loss,IIdoctorLoss&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Meme", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Loss and Loss";
+            player.land.denizenFeature = new DenizenFeature("Loss");
+        }else if (index == 3) {
+            player.copyFromOCDataString("b=%C2%B4%C2%88%05%C2%AB%C3%BEU%04%15%14%14%1A&s=,,Loss,Loss,LlilahLoss&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Meme", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Loss and Loss";
+            player.land.denizenFeature = new DenizenFeature("Loss");
+        }
+    }
+
 
     //yes, this WILL crash in a regular session, how did you know?
     static void session4037(Session session) {
@@ -1103,5 +1183,7 @@ abstract class NonCanonSessions {
 
 
 }
+
+
 
 
