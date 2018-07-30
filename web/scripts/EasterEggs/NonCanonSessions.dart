@@ -129,7 +129,6 @@ abstract class NonCanonSessions {
         Player ej = session.players[1];
         Player nb = session.players[2];
         Player da = session.players[3];
-        //Player lb  = session.players[4]; //F1X TH1S!
         Player hb = session.players[4];
 
         if (now.day % 2 == 0) {
@@ -186,7 +185,7 @@ abstract class NonCanonSessions {
             player.copyFromOCDataString("b=%C2%AEv%16%60%C3%BE%1A%04Y%19%19%04&s=,,Playing Guitar,Programming,electricJuggernaut&x=AQ==");
 
             player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Guitar", s);
+            player.object_to_prototype = new PotentialSprite("Lemon", s);
             player.sprite.addPrototyping(player.object_to_prototype);
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -195,14 +194,14 @@ abstract class NonCanonSessions {
             player.quirk.prefix = "";
             player.quirk.suffix = "";
             player.land = player.spawnLand();
-            player.land.name = "Land of Typoes and Space";
-            player.land.denizenFeature = new DenizenFeature('Echidna');
+            player.land.name = "Land of Music and Space";
+            player.land.denizenFeature = new DenizenFeature('Hel');
 
         }else if(index == 2){
             player.copyFromOCDataString("b=%01%01%00Q%C3%BE%22%04R!!!&s=,,Gaming,Literature,niceBoi&x=AQ==");
             player.class_name = SBURBClassManager.SCOUT;
             player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Sprite", s);
+            player.object_to_prototype = new PotentialSprite("niceBoi", s);
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.lettersToReplace = [];
@@ -210,7 +209,7 @@ abstract class NonCanonSessions {
             player.quirk.prefix = "";
             player.quirk.suffix = "";
             player.land = player.spawnLand();
-            player.land.name = "Land of Patience and Culture";
+            player.land.name = "Land of Patience and Recursion";
             player.land.denizenFeature = new EasyDenizenFeature('Chronos');
 
             player.moon = session.prospit;
@@ -218,7 +217,7 @@ abstract class NonCanonSessions {
             player.copyFromOCDataString("b=%05%C2%BA%C3%96C%C3%BES%04%1C((%06&s=,,Intimidation,Dungeon Mastering,demonicActivist&x=phgA");
 
             player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Hair Dye", s);
+            player.object_to_prototype = new PotentialSprite("Book", s);
             player.sprite.addPrototyping(player.object_to_prototype);
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -229,24 +228,7 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Rainbows and Intensity";
             player.land.denizenFeature = new HardDenizenFeature('Loki');
-        }/*else if(index == 4){
-            player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%BE%C2%9A%04%C3%97((%01&s=,,Irony,Artificial Intelligence,humanBot&x=AQ==");
-
-            player.deriveSprite = false;
-            player.object_to_prototype = new PotentialSprite("Hair Dye", s);
-            player.sprite.addPrototyping(player.object_to_prototype);
-            player.quirk.capitalization = Quirk.NORMALCAPS;
-            player.quirk.punctuation = Quirk.PERFPUNC;
-            player.quirk.lettersToReplace = [];
-            player.quirk.lettersToReplaceIgnoreCase = [];
-            player.quirk.prefix = "";
-            player.quirk.suffix = "";
-            player.land = player.spawnLand();
-            player.land.name = "Land of Rainbows and Intensity";
-            player.land.denizenFeature = new HardDenizenFeature('Loki');
-
-            player.moon = session.derse;*/
-        else if(index == 4) {
+        } else if(index == 4) {
             player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
 
             player.deriveSprite = false;
