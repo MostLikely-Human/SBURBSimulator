@@ -55,7 +55,7 @@ class Session {
     List<Player> players = <Player>[];
 
     //these are stable between combos and scratches
-    List<GameEntity> bigBads = new List<GameEntity>();
+    List<GameEntity> get bigBads => npcHandler.bigBads;
     //these are not
 
     //stores them.
@@ -71,13 +71,11 @@ class Session {
     void grabActivatedBigBads() {
         List<GameEntity> bbRemove = new List<GameEntity>();
         for(GameEntity g in bigBads) {
-
             if(g.active) {
                 _activatedNPCS.add(g);
                 bbRemove.add(g);
             }
         }
-
         for(GameEntity g in bbRemove) {
             bigBads.remove(g);
         }
@@ -365,7 +363,7 @@ class Session {
 
     void setupMoons(String reason) {
          //;
-        logger.info("DEBUG DESTROY MOON: setting up moons because $reason");
+        logger.info("DEBUG CUSTOM SESSION: setting up moons because $reason");
 
          prospitRing = new Ring.withoutOptionalParams("WHITE QUEEN'S RING OF ORBS ${convertPlayerNumberToWords()}FOLD",[ ItemTraitFactory.QUEENLY] );
          Fraymotif f = new Fraymotif("Mini Red Miles", 3);
@@ -598,7 +596,12 @@ class Session {
             playerTitlesWithTag.add(p.htmlTitleWithTip());
         }
 
-        appendHtml(SimController.instance.storyElement, "<Br><br>Game ${session_id} of  SBURB has been initiated. All prepare for the arrival of ${turnArrayIntoHumanSentence(playerTitlesWithTag)}. <br><br>");
+        List<String> npcsWithTag = new List<String>();
+        for(GameEntity g in this.activatedNPCS) {
+            npcsWithTag.add(g.htmlTitleWithTip());
+        }
+
+        appendHtml(SimController.instance.storyElement, "<Br><br>Game ${session_id} of  SBURB has been initiated. All prepare for the arrival of ${turnArrayIntoHumanSentence(playerTitlesWithTag)}. The ${turnArrayIntoHumanSentence(npcsWithTag)} seem to be especially anticipating them.<br><br>");
         await callNextIntro(0);
     }
 
@@ -787,8 +790,6 @@ class Session {
 
     //used to live in scene controller but fuck that noise (also used to be named processScenes2)
     void processScenes(List<Player> playersInSession) {
-        //;
-        //SimController.instance.storyElement.append("processing scene");
         List<Player> avail = setAvailablePlayers(playersInSession);
         makeSurePlayersNotInSessionArentAvailable(playersInSession);
         resetNPCAvailability();
@@ -800,19 +801,27 @@ class Session {
                 p.processScenes();
             }
         }
-
-       // ;
         List<GameEntity> cachedActivated = new List.from(activatedNPCS);
         //(since an npc can be activated during these scenes)
         for(GameEntity g in cachedActivated) {
             if(g.active && g.available) g.processScenes();
         }
 
+        //keep it from being a concurrent mod if i activate (and thus get removed from list
+        List<GameEntity> bb = new List.from(bigBads);
+        for(GameEntity g in bb) {
+            if(g is BigBad) {
+                //handles activation and rendering
+                g.summonTriggered();
+            }
+            logger.info("done processing $g showing up, big bads is $bigBads");
+        }
+        logger.info("done processing big bads showing up");
+
         for (num i = 0; i < this.deathScenes.length; i++) {
             Scene s = this.deathScenes[i];
             if (s.trigger(playersInSession)) {
                 //	session.scenesTriggered.add(s);
-                this.numScenes ++;
                 s.renderContent(this.newScene(s.runtimeType.toString()));
             }
         }
@@ -823,7 +832,6 @@ class Session {
             Scene s = this.reckoningScenes[i];
             if (s.trigger(playerList)) {
                 //session.scenesTriggered.add(s);
-                this.numScenes ++;
                 s.renderContent(this.newScene(s.runtimeType.toString()));
             }
         }
@@ -832,7 +840,6 @@ class Session {
             Scene s = this.deathScenes[i];
             if (s.trigger(playerList)) {
                 //	session.scenesTriggered.add(s);
-                this.numScenes ++;
                 s.renderContent(this.newScene(s.runtimeType.toString()));
             }
         }
@@ -1113,17 +1120,15 @@ class Session {
     }
 
     //TODO since this lives in the session now, need to remember that ive already started a session
-    Future<Session> startSession() async {
+    Future<Session> startSession([bool dontRenit]) async {
         logger.info("session is starting");
         SimController.instance.currentSessionForErrors = this;
         globalInit(); // initialise classes and aspects if necessary
         changeCanonState(this,getParameterByName("canonState",null));
         //only do this shit if you'e completely virgin
-        if(aliensClonedOnArrival.isEmpty) {
+        if(aliensClonedOnArrival.isEmpty && !dontRenit) {
             reinit("start session");
-            this.makePlayers();
-            this.randomizeEntryOrder();
-            this.makeGuardians(); //after entry order established
+            getPlayersReady();
         }
         logger.info("session has ${players.length} players");
 
@@ -1133,6 +1138,12 @@ class Session {
         await SimController.instance.easterEggCallBack(this);
 
         return completer.future;
+    }
+
+    void getPlayersReady() {
+        this.makePlayers();
+        this.randomizeEntryOrder();
+        this.makeGuardians(); //after entry order established
     }
 
     void simulationComplete(String ending) {
@@ -1225,10 +1236,16 @@ class Session {
         return null;
     }
 
+    //slurps up players from this data string, inits etc
+    void processDataString(String dataString) {
+        players = Player.processDataString(this, dataString);
+        playerInitialization();
+    }
+
     void reinit(String source) {
         String parent = "";
         if(childSession != null) parent = "${childSession.session_id}";
-        logger.info("TEST COMPLETION: reiniting because $source after $numTicks ticks, combined: ${stats.hadCombinedSession}, ${parent}");
+        logger.info("DEBUG SESSION CUSTOMIZER: reiniting because $source after $numTicks ticks, combined: ${stats.hadCombinedSession}, ${parent}");
         GameEntity.resetNextIdTo(stats.initialGameEntityId);
         plzStartReckoning = false;
         npcHandler = new NPCHandler(this);
@@ -1262,22 +1279,41 @@ class Session {
 
 
     void makePlayers() {
+        logger.info("making players");
         this.players = <Player>[];
         resetAvailableClasspects();
         int numPlayers = this.rand.nextIntRange(2, 12); //rand.nextIntRange(2,12);
         double special = rand.nextDouble();
 
-        this.players.add(randomSpacePlayer(this));
-        ;
+        List<Player> replayer =  getReplayers(this);
+        if(replayer.isEmpty) {
+            this.players.add(randomSpacePlayer(this));
+            this.players.add(randomTimePlayer(this));
+            for (int i = 2; i < numPlayers; i++) {
+                this.players.add(randomPlayer(this));
+            }
 
-        this.players.add(randomTimePlayer(this));
-
-
-
-        for (int i = 2; i < numPlayers; i++) {
-            this.players.add(randomPlayer(this));
+            //random chance of Lord/Muse for two player sessions
+            if (numPlayers <= 2) {
+                ;
+                if (special > .6) {
+                    players[0].class_name = SBURBClassManager.LORD;
+                    players[1].class_name = SBURBClassManager.MUSE;
+                } else if (special < .3) {
+                    players[0].class_name = SBURBClassManager.MUSE;
+                    players[1].class_name = SBURBClassManager.LORD;
+                }
+            }
+        }else {
+            players = new List.from(replayer);
         }
 
+        logger.info("players is $players");
+        playerInitialization();
+    }
+
+    //called immediately after making players, whether replayers or natives
+    void playerInitialization() {
         for (num j = 0; j < this.players.length; j++) {
             Player p = this.players[j];
             p.generateRelationships(this.players);
@@ -1287,31 +1323,16 @@ class Session {
                 p.active = true;
             }
         }
-        //random chance of Lord/Muse for two player sessions
-        if(numPlayers <= 2) {
-            ;
-            if(special > .6) {
-                players[0].class_name = SBURBClassManager.LORD;
-                players[1].class_name = SBURBClassManager.MUSE;
-            }else if(special < .3) {
-                players[0].class_name = SBURBClassManager.MUSE;
-                players[1].class_name = SBURBClassManager.LORD;
-            }
-        }
+
         Relationship.decideInitialQuadrants(rand, this.players);
 
         //this.hardStrength = 500 + 20 * this.players.length;
-
         Sprite weakest = Stats.POWER.min(this.players.map((Player p) => p.sprite));
         double weakpower = weakest.getStat(Stats.POWER) / Stats.POWER.coefficient;
         this.hardStrength = (4000 + this.players.length * (85 + weakpower)) * Stats.POWER.coefficient;
 
         createScenesForPlayers();
-        ;
-
-        this.setupMoons("making players"); //happens only in reinit
-
-
+        logger.info("TEST DATASTRING: done initializing players");
     }
 
     String convertPlayerNumberToWords() {
@@ -1427,6 +1448,7 @@ class Session {
     }
 
     Element newScene(String callingScene, [overRideVoid =false]) {
+        numScenes ++;
         this.currentSceneNum ++;
         Element ret = new DivElement();
         ret.id = 'scene${this.currentSceneNum}';

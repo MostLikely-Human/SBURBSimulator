@@ -3,6 +3,7 @@ import 'dart:async';
 import '../../SBURBSim.dart';
 import '../../navbar.dart';
 import '../../v2.0/char_creator_helper.dart';
+import "dart:async";
 
 
 CharCreatorController self;
@@ -10,10 +11,10 @@ CharCreatorController self;
 Session session;
 Future<Null> main() async
 
-
 {
   await globalInit();
   loadNavbar();
+  await globalInit();
   window.onError.listen((Event event){
     ErrorEvent e = event as ErrorEvent;
     //String msg, String url, lineNo, columnNo, error
@@ -68,7 +69,7 @@ class CharCreatorController extends SimController {
   //don't actually start the session, but get players ready.
   @override
   void easterEggCallBack(Session session) {
-    initializePlayers(session.players, session);
+    //initializePlayers(session.players, session);
     charCreatorHelperGlobalVar = new CharacterCreatorHelper(session.players);
 
   }
@@ -96,6 +97,10 @@ class CharCreatorController extends SimController {
     //
     String html = "<Br><br><a href = 'index2.html?seed=$initial_seed&${generateURLParamsForPlayers(session.players,true)}' target='_blank'>Be Responsible For Sending Players into SBURB? (Link $numURLS)</a>  | <a href = 'rare_session_finder.html?seed=$initial_seed&${generateURLParamsForPlayers(session.players,true)}' target='_blank'>Have AB find different ways a session with these players could go?</a>";
     if(session.players.length == 1)  html = "<Br><br><a href = 'dead_index.html?seed=$initial_seed&${generateURLParamsForPlayers(session.players,true)}' target='_blank'>Be Responsible For Sending Player into a Dead Session? (Link $numURLS)</a> | <a href = 'dead_session_finder.html?seed=$initial_seed&${generateURLParamsForPlayers(session.players,true)}' target='_blank'>Have AB try to find a dead session where this player wins?</a>";
+
+    DivElement deprecated = new DivElement();
+    querySelector("#character_creator").append(deprecated);
+
 
     appendHtml(querySelector("#character_creator"),html);
   }

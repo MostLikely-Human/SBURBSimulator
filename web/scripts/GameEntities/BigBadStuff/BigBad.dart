@@ -41,14 +41,14 @@ class BigBad extends NPC {
 
       List<JSONObject> startSceneArray = new List<JSONObject>();
       for(Scene s in startMechanisms) {
-          if(s is SerializableScene) startSceneArray.add((s as SerializableScene).toJSON());
+          if(s is SerializableScene) startSceneArray.add(s.toJSON());
       }
       json["startMechanisms"] = startSceneArray.toString();
       return json;
   }
 
   void copyFromDataString(String data) {
-      print("copying from data: $data, looking for labelpattern: $labelPattern");
+     // print("copying from data: $data, looking for labelpattern: $labelPattern");
       String dataWithoutName = data.split("$labelPattern")[1];
       String rawJSON = LZString.decompressFromEncodedURIComponent(dataWithoutName);
 
@@ -67,16 +67,28 @@ class BigBad extends NPC {
             JSONObject j = new JSONObject();
             j.json = d;
             SummonScene ss = new SummonScene(session);
+            ss.gameEntity = this;
             ss.copyFromJSON(j);
             startMechanisms.add(ss);
         }
     }
 
 
-  static BigBad fromDataString(String rawDataString, session) {
+  static BigBad fromDataString(String rawDataString, Session session) {
       BigBad ret = new BigBad("TEMPORARY", session);
       ret.copyFromDataString(rawDataString);
       return ret;
+  }
+
+  void summonTriggered() {
+      //first summon scene to trigger has dibs
+      for(SummonScene s in startMechanisms) {
+          if(s.trigger(session.players)) {
+              this.session.numScenes ++;
+              s.renderContent(this.session.newScene(s.runtimeType.toString()));
+              return;
+          }
+      }
   }
 
   void syncForm() {
@@ -87,7 +99,7 @@ class BigBad extends NPC {
 
   void removeScene(SerializableScene scene) {
       String jsonString = scene.toJSON().toString();
-      List<Scene> allScenes = new List.from(startMechanisms);
+      List<Scene> allScenes = new List<Scene>.from(startMechanisms);
       allScenes.addAll(scenes);
       allScenes.addAll(stopMechanisms);
       for(Scene s in startMechanisms) {
@@ -155,7 +167,7 @@ class BigBadForm {
         button.text = "Add A Start Scene";
         container.append(startSceneSection);
         container.append(button);
-        button.onClick.listen((e)
+        button.onClick.listen((Event e)
         {
             SummonScene summonScene = new SummonScene(bigBad.session);
             summonScene.gameEntity = bigBad;
@@ -181,7 +193,7 @@ class BigBadForm {
         subContainer.append(nameElement);
         container.append(subContainer);
 
-        nameElement.onInput.listen((e) {
+        nameElement.onInput.listen((Event e) {
             bigBad.name = nameElement.value;
             syncDataBoxToBigBad();
         });
@@ -199,7 +211,7 @@ class BigBadForm {
         subContainer.append(descElement);
         container.append(subContainer);
 
-        descElement.onInput.listen((e) {
+        descElement.onInput.listen((Event e) {
             bigBad.description = descElement.value;
             syncDataBoxToBigBad();
         });
@@ -210,7 +222,7 @@ class BigBadForm {
         dataBox.value = bigBad.toDataString();
         dataBox.cols = 60;
         dataBox.rows = 10;
-        dataBox.onChange.listen((e) {
+        dataBox.onChange.listen((Event e) {
             print("syncing template to data box");
             bigBad.copyFromDataString(dataBox.value);
             syncFormToBigBad();

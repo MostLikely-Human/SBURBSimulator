@@ -46,8 +46,8 @@ abstract class Loader {
                 String bundle = manifest.getBundleForFile(path);
 
                 if (bundle != null) {
-                    _loadBundle(bundle);
-                    return _createResource(path).addListener();
+                    await _loadBundle(bundle);
+                    return _createResource(path).object;
                 }
             }
             return _load(path, format: format, absoluteRoot: absoluteRoot);
@@ -82,10 +82,31 @@ abstract class Loader {
         return res.addListener();
     }
 
-    static Future<bool> _loadBundle(String path) async {
+    /// Sets a resource at a specified path to an object, does not load a file
+    static void assignResource<T>(T object, String path) {
+        _createResource(path).object = object;
+    }
+
+    /// Removes a resource from the listings, and completes any waiting gets with an error state
+    static void purgeResource(String path) {
+        if (_resources.containsKey(path)) {
+            Resource<dynamic> r = _resources[path];
+            for(Completer<dynamic> c in r.listeners) {
+                if (!c.isCompleted) {
+                    c.completeError("Resource purged");
+                }
+            }
+        }
+        _resources.remove(path);
+    }
+
+    static Future<Null> _loadBundle(String path) async {
         Archive bundle = await Loader.getResource("$path.bundle", bypassManifest: true);
 
         String dir = path.substring(0, path.lastIndexOf(_slash));
+
+        Completer<Null> completer = new Completer<Null>();
+        List<Future<dynamic>> fileFutures = <Future<dynamic>>[];
 
         for (ArchiveFile file in bundle.files) {
             String extension = file.name.split(".").last;
@@ -93,14 +114,22 @@ abstract class Loader {
 
             String fullname = "$dir/${file.name}";
 
-            Resource<dynamic> res = _createResource(fullname);
+            if (_resources.containsKey(fullname)) {
+                fileFutures.add(getResource(fullname));
+                continue;
+            }
 
             Uint8List data = file.content as Uint8List;
 
-            format.read(await format.fromBytes(data.buffer)).then(res.populate);
+            Resource<dynamic> res = _createResource(fullname);
+            fileFutures.add(res.addListener());
+
+            format.fromBytes(data.buffer).then((dynamic thing) { format.read(thing).then(res.populate); });
         }
 
-        return true;
+        Future.wait(fileFutures).then((List<dynamic> list) { completer.complete(); });
+
+        return completer.future;
     }
 
     // JS loading extra special dom stuff

@@ -11,7 +11,7 @@ javascript is "WAT"ing me
 because of COURSE "null" == null is fucking false, so my code is like "oh, i must have some players" and then try to fucking parse!!!!!!!!!!!!!!*/
 List<Player> getReplayers(Session session) {
     //needed or i can't parse moon data
-    session.setupMoons("getting replayers");
+    if(session.prospit == null) session.setupMoons("getting replayers");
 //	var b = LZString.decompressFromEncodedURIComponent(getRawParameterByName("b"));
     //var available_classes_guardians = classes.sublist(0); //if there are replayers, then i need to reset guardian classes
     String raw = getRawParameterByName("b", null);
@@ -28,10 +28,14 @@ List<Player> getReplayers(Session session) {
     ////print(s);
     List<Player> ret =  dataBytesAndStringsToPlayers(session,b, s, x);
     //can't let them keep their null session reference.
+    //session.logger.info("replayers are $ret before moon syncing");
+
     for(Player p in ret) {
         p.session = session;
         p.syncToSessionMoon();
+        p.initialize();
     }
+    //session.logger.info("replayers are $ret");
     return ret;
 }
 
@@ -63,27 +67,7 @@ void syncReplayNumberToPlayerNumber(List<Player> replayPlayers, Session session)
 }
 
 
-//this code is needed to make sure replay players have guardians.
-void redoRelationships(List<Player> players) {
-    if(players.isEmpty) return;
-    Session session = players.first.session;
-    List<Player> guardians = <Player>[];
-    //;
-    for (num j = 0; j < players.length; j++) {
-        Player p = players[j];
-        guardians.add(p.guardian);
-        p.relationships.clear();
-        p.generateRelationships(session.players);
-        p.initializeRelationships();
-    }
 
-    for (num j = 0; j < guardians.length; j++) {
-        Player p = guardians[j];
-        p.relationships.clear();
-        p.generateRelationships(guardians);
-        p.initializeRelationships();
-    }
-}
 
 void initializePlayersNoReplayers(List<Player> players, Session session) {
     for (num i = 0; i < players.length; i++) {
@@ -97,58 +81,7 @@ void initializePlayersNoReplayers(List<Player> players, Session session) {
 
 }
 
-void initializePlayers(List<Player> players, Session session) {
-    session.logger.info("initializing ${players.length} players which includes overwriting them to be replayers");
-    List<Player> replayPlayers = getReplayers(session);
-    ;
-    if (replayPlayers.isEmpty && session != null) replayPlayers = session.replayers; //<-- probably blank too, but won't be for fan oc easter eggs.
-    syncReplayNumberToPlayerNumber(replayPlayers, session);
-    //replay players will negate foreign players
-    ;
-    for (num i = 0; i < players.length; i++) {
 
-        if (replayPlayers.length > i) {
-
-            players[i].copyFromPlayer(replayPlayers[i]); //DOES NOT use MORE PLAYERS THAN SESSION HAS ROOM FOR, BUT AT LEAST WON'T CRASH ON LESS.
-        }
-            if (players[i].land != null) { //don't reinit aliens, their stats stay how they were cloned.
-            players[i].initialize();
-            players[i].guardian.initialize();
-            if (replayPlayers.length > i) {
-                players[i].quirk.favoriteNumber = replayPlayers[i].quirk.favoriteNumber; //int.parse(replayPlayers[i].quirk.favoriteNumber, onError:(String input) => 0) ;//has to be after initialization;
-                if (players[i].isTroll) {
-                    players[i].quirk.makeTrollQuirk(players[i]); //redo quirk
-                } else {
-                    players[i].quirk.makeHumanQuirk(players[i]);
-                }
-            }
-        }
-    }
-    players[0].leader == true; //TODO why does this need to happen, why isn't it already true?
-    if (!replayPlayers.isEmpty) {
-        redoRelationships(players); //why was i doing this, this overrides robot and gim dark and initial relationships
-        //oh because it makes replayed sessions with scratches crash.
-    }
-    //;
-    session.logger.info("done initializing ${players.length} players (length could have changed due to replayers)");
-
-}
-
-
-void initializePlayersNoDerived(List<Player> players, Session session) {
-    List<Player> replayPlayers = getReplayers(session);
-    for (num i = 0; i < players.length; i++) {
-        if (replayPlayers[i] != null) players[i].copyFromPlayer(replayPlayers[i]); //DOES NOT use MORE PLAYERS THAN SESSION HAS ROOM FOR, BUT AT LEAST WON'T CRASH ON LESS.
-        players[i].initializeStats();
-        players[i].initializeSprite();
-    }
-
-    //might not be needed.   futureJadedResearcher (FJR) has begun pestering pastJadedResearcher(PJR).  FJR: Yeah, no shit sherlock
-    if (!replayPlayers.isEmpty) {
-        redoRelationships(players); //why was i doing this, this overrides robot and gim dark and initial relationships
-        //oh because it makes replayed sessions with scratches crash.
-    }
-}
 
 
 Player blankPlayerNoDerived(Session session) {

@@ -103,7 +103,7 @@ void sbahjMode(Session session){
 		faceOffMode(session);
 	}
 
-	if (getParameterByName("tier", null) == "cod") {
+	if (getParameterByName("tier", null) == "cod" || getParameterByName("mode", null) == "manic") {
 		bardQuestMode(session);
 	}
 

@@ -5,6 +5,8 @@ import 'dart:html';
 class TargetIsCarapace extends TargetConditionLiving {
   SelectElement select;
 
+  static String ANY = "ANY";
+
   @override
   String name = "IsCarapace";
 
@@ -24,6 +26,7 @@ class TargetIsCarapace extends TargetConditionLiving {
     Session session = scene.session;
     List<GameEntity> allCarapaces = new List.from(session.prospit.associatedEntities);
     allCarapaces.addAll(session.derse.associatedEntities);
+    print("all carapaces is $allCarapaces");
     DivElement me = new DivElement();
     div.append(me);
     me.setInnerHtml("<br>Target must be a carapace: <br>");
@@ -31,6 +34,11 @@ class TargetIsCarapace extends TargetConditionLiving {
     select = new SelectElement();
     select.size = 13;
     me.append(select);
+
+    OptionElement o = new OptionElement();
+    o.value = ANY;
+    o.text = ANY;
+    select.append(o);
     for(GameEntity carapace in allCarapaces) {
       OptionElement o = new OptionElement();
       o.value = carapace.initials;
@@ -40,9 +48,12 @@ class TargetIsCarapace extends TargetConditionLiving {
         print("selecting ${o.value}");
         o.selected = true;
       }
+
     }
 
-    if(carapaceInitials == null) select.selectedIndex = 0;
+
+
+    if(select.selectedIndex == -1) select.options[0].selected = true;
     select.onChange.listen((e) => syncToForm());
     syncToForm();
   }
@@ -58,6 +69,12 @@ class TargetIsCarapace extends TargetConditionLiving {
         return;
       }
     }
+    if(select.selectedIndex == -1) select.options[0].selected = true;
+  }
+
+  @override
+  String toString() {
+    return "TargetIsCarapace: ${carapaceInitials}";
   }
 
   @override
@@ -72,6 +89,11 @@ class TargetIsCarapace extends TargetConditionLiving {
   }
   @override
   List<GameEntity> filter(List<GameEntity> list) {
-    // TODO: implement filter
+    if(carapaceInitials != ANY) {
+      list.removeWhere((GameEntity item) => !(item is Carapace) || item.initials != carapaceInitials);
+    }else {
+      list.removeWhere((GameEntity item) => !(item is Carapace));
+    }
+    return list;
   }
 }

@@ -163,7 +163,7 @@ class DeadSession extends Session {
 
 
     @override
-    Future<Session> startSession() async {
+    Future<Session> startSession([bool dontReinit]) async {
         globalInit(); // initialise classes and aspects if necessary
         SimController.instance.currentSessionForErrors = this;
 
@@ -190,7 +190,7 @@ class DeadSession extends Session {
     @override
     void easterEggCallBack() {
         DeadSession ds = (this as DeadSession);
-        initializePlayers(this.players, this); //will take care of overriding players if need be.
+        //initializePlayers(this.players, this); //will take care of overriding players if need be.
         //has to happen here cuz initializePlayers can wipe out relationships.
         ds.players[0].deriveLand = false;
         //ds.players[0].relationships.add(new Relationship(ds.players[0], -999, ds.metaPlayer)); //if you need to talk to anyone, talk to metaplayer.

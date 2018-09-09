@@ -16,7 +16,7 @@ Future<Null> main() async {
   startTime =new DateTime.now();
 
   await globalInit();
-
+  
   //;
   new DateTime.now();
   new Timer(new Duration(milliseconds: 1000), () =>window.scrollTo(0, 0));
