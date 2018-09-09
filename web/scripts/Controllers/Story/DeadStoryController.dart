@@ -6,11 +6,17 @@ import 'dart:html';
 import 'dart:typed_data';
 import 'dart:collection';
 
+
+
+
+
 //replaces the poorly named scenario_controller2.js
 Future<Null> main() async {
   //maybe if i define it here it won't be the same as end time
   startTime =new DateTime.now();
+
   await globalInit();
+  
   //;
   new DateTime.now();
   new Timer(new Duration(milliseconds: 1000), () =>window.scrollTo(0, 0));

@@ -1,3 +1,5 @@
+[MLH notes in square brackets]
+
 Greetings, JR.
 
 I hope I am not distracting you.
@@ -6,7 +8,7 @@ This paste contains brief descriptions of 10 Sburb Glitch FAQ Aspects and a few 
 
 Note: Absolutely Fucking Nothing here means "Ultimate Riddle stuff". Or whatever does not advance the player's Land Quest.
 
-Dreams: The Aspect of Dreams tends to focus on creativity and systemization.
+Dreams: The Aspect of Dreams tends to focus on creativity and systemization. [Done by JR already]
 Suggested effect: Players are supposed to get echeladder experience for doing random shit, right? 
 Heroes of Dream get more experience for completing any random task, like "saving consorts" or "robbing tombs", but whenever that task's repeated, the experience for it falls by a few percent so eventually repetitions'll give zero experience. Gotta be original.
 Tasks: "Solving an enormous puzzle blocking the entry to a dungeon via an unorthodox method", "Drastically change consorts' lives with a gimmicky invention", "Creating a one-of-a-kind thing via witnessing its creation in Skaia's prophetic clouds".
@@ -19,7 +21,7 @@ Flow: The Aspect of Flow tends to focus on intensity, acceleration and fire.
 Suggested effect: The Player of Flow can complete quests a bit faster.
 Tasks: "Lose oneself in a grindfest, gaining ungodly amounts of Grist", "Rush across the Land in a matter of minutes to deliver an express parcel", "Setting the stage on fire, both literally and metaphorically".
 
-Law: The Aspect of Law tends to focus on restrictions and decisions.
+Law: The Aspect of Law tends to focus on restrictions and decisions. [Working on it]
 Suggested effect: Slightly increase the chance of the player making the correct Choice.
 Tasks: "Swear an oath to defeat a strong enemy and fulfill it", "Wipe a horde of enemies via a set of stupid conflicting restrictions", "Save a consort via banning them from dying".
 
@@ -57,6 +59,8 @@ Snow: The Aspect of Snow tends to focus on consequences and patterns.
 Suggested effect: Repeating random quests takes less time.
 Tasks: "Figuring out how the random bullshit quests connect to give a more useful hint about the Ultimate Riddle", "Creating a complex system to maximize the efficiency of the interactions between villages", "Succeeding in saving a plan from a last-minute disruption".
 
+[Juice: The Aspect of Juice is the opposite of Sauce, Sauce being a reskin of rage (law), will have the opposite effects of rage (law).]
+
 With due respect, 
 
-AW
+AW [and MLH]

@@ -87,6 +87,7 @@ void sbahjMode(Session session){
 		debugRoyalRumble(session);
 	}
 
+
 	if (getParameterByName("COOLK1D", null) == "true") {
 		cool_kid = true;
 		coolK1DMode(session);
@@ -213,13 +214,66 @@ void sbahjMode(Session session){
 		dreamGnosis(session);
 	}
 
+	if (getParameterByName("god", null) == "tier") {
+		godTierify(session);
+	}
+
+	if (getParameterByName("notgod", null) == "tier") {
+		ungodTierify(session);
+	}
+
 	processXStuck(session); //might not do anything.
+
+	if (getParameterByName("active", null) == "true") {
+		active(session);
+	}
+
+	if (getParameterByName("passive", null) == "true") {
+		passive(session);
+	}
+
+	if (getParameterByName("session", null) == "stabilize") {
+		stabilize(session);
+	}
 }
 
 
 
 void janusReward(Session session){
 	session.janusReward = true;
+}
+
+
+
+void active(Session session) {
+	if(!doNotRender) window.alert("Very Active");
+	for(num j = 0; j<session.players.length; j++){
+		if (session.players[j].class_name == SBURBClassManager.KNIGHT) session.players[j].class_name = SBURBClassManager.PAGE;
+		if (session.players[j].class_name == SBURBClassManager.SEER) session.players[j].class_name = SBURBClassManager.SAGE;
+		if (session.players[j].class_name == SBURBClassManager.MAGE) session.players[j].class_name = SBURBClassManager.WITCH;
+		if (session.players[j].class_name == SBURBClassManager.GUIDE) session.players[j].class_name = SBURBClassManager.SCOUT;
+		if (session.players[j].class_name == SBURBClassManager.ROGUE) session.players[j].class_name = SBURBClassManager.THIEF;
+		if (session.players[j].class_name == SBURBClassManager.BARD) session.players[j].class_name = SBURBClassManager.PRINCE;
+		if (session.players[j].class_name == SBURBClassManager.GRACE) session.players[j].class_name = SBURBClassManager.WASTE;
+		if (session.players[j].class_name == SBURBClassManager.MUSE) session.players[j].class_name = SBURBClassManager.LORD;
+		//Not all classes are in the sim
+	}
+}
+
+
+void passive(Session session) {
+	if(!doNotRender) window.alert("Not Very Active");
+	for(num j = 0; j<session.players.length; j++){
+		if (session.players[j].class_name == SBURBClassManager.PAGE) session.players[j].class_name = SBURBClassManager.KNIGHT;
+		if (session.players[j].class_name == SBURBClassManager.SAGE) session.players[j].class_name = SBURBClassManager.SEER;
+		if (session.players[j].class_name == SBURBClassManager.WITCH) session.players[j].class_name = SBURBClassManager.MAGE;
+		if (session.players[j].class_name == SBURBClassManager.SCOUT) session.players[j].class_name = SBURBClassManager.GUIDE;
+		if (session.players[j].class_name == SBURBClassManager.THIEF) session.players[j].class_name = SBURBClassManager.ROGUE;
+		if (session.players[j].class_name == SBURBClassManager.PRINCE) session.players[j].class_name = SBURBClassManager.BARD;
+		if (session.players[j].class_name == SBURBClassManager.WASTE) session.players[j].class_name = SBURBClassManager.GRACE;
+		if (session.players[j].class_name == SBURBClassManager.LORD) session.players[j].class_name = SBURBClassManager.MUSE;
+		//Not all classes are in the sim
+	}
 }
 
 
@@ -261,6 +315,64 @@ void processXStuck(Session session){
 }
 
 
+void playerChange(Session session, Player player){
+	if(window.location.search.isEmpty && simulatedParamsGlobalVar.isEmpty) {
+		//;
+		return;
+	}
+	String params1 = null;
+	if(window.location.search.isNotEmpty) params1 = window.location.search.substring(1);
+	String params2 = simulatedParamsGlobalVar;
+	//;
+	List<String> tmp = SBURBClassManager.allClassNames;
+	List<String> all_aspects =  Aspects.names.toList();
+	String params = "";
+	if(params1 != null){
+		params = params1;
+		if(params2!= null){
+			params += "&" + params2;
+		}
+	}else if(params2 != null) params = params2;
+	List<String> paramsArray = params.split("&");
+	for(num i = 0; i<paramsArray.length; i++){
+		List<String> stuck = paramsArray[i].split("Stuck");
+		//print("stuck is: " + stuck.toString());
+		//player.params2;
+		}
+}
+
+
+
+void godTierify(Session session){
+	if(!doNotRender) window.alert("Everyone's god tier now, for some reason");
+	for(num j = 0; j<session.players.length; j++){
+		session.players[j].godTier = true;
+		session.players[j].guardian.godTier = true;
+	}
+}
+
+void ungodTierify(Session session){
+	if(!doNotRender) window.alert("This should be pretty normal for most sessions.");
+	for(num j = 0; j<session.players.length; j++){
+		session.players[j].godTier = false;
+		session.players[j].guardian.godTier = false;
+	}
+}
+
+void stabilize(Session session) {
+	if(!doNotRender) window.alert("This shouldn't change too many things");
+	for(num i = 0; i<session.players.length; i++){
+		if(session.players[i].class_name == SBURBClassManager.WASTE) session.players[i].class_name = SBURBClassManager.KNIGHT; //No randomness
+		if(session.players[i].guardian.class_name == SBURBClassManager.WASTE) session.players[i].guardian.class_name = SBURBClassManager.KNIGHT;
+		if(session.players[i].aspect == Aspects.NULL) session.players[i].aspect = Aspects.SPACE; //No randomness
+		if(session.players[i].guardian.aspect == Aspects.NULL) session.players[i].guardian.aspect = Aspects.SPACE;
+		if(session.players[i].aspect == Aspects.SAUCE) session.players[i].aspect = Aspects.TIME; //No randomness
+		if(session.players[i].guardian.aspect == Aspects.SAUCE) session.players[i].guardian.aspect = Aspects.TIME;
+		session.players[i].grimDark = 0;
+		session.players[i].murderMode = false;
+		session.players[i].leftMurderMode = false;
+	}
+}
 
 void setAllAspectsTo(Session session,String a){
 	//;
@@ -273,10 +385,10 @@ void setAllAspectsTo(Session session,String a){
 
 
 
-void setAllClassesTo(Session session,String c){
+void setAllClassesTo(Session session,String c) {
 	//;
 	SBURBClass class_name = SBURBClassManager.stringToSBURBClass(c);
-	for(num i = 0; i<session.players.length; i++){
+	for (num i = 0; i < session.players.length; i++) {
 		session.players[i].class_name = class_name;
 		session.players[i].guardian.class_name = class_name;
 	}
@@ -370,6 +482,8 @@ void tricksterMode(Session session){
 
 	}
 }
+
+
 
 
 
@@ -1006,6 +1120,7 @@ void session420(Session session){
 
 //what even is this???
 void session13(Session session) {
+	DateTime now = new DateTime.now();
     session.mutator.metaHandler.initalizePlayers(session,true);
 	session.players = new List<Player>.from(session.mutator.metaHandler.metaPlayers); //just blow them away.
     //will this be enough to get shogun in?
@@ -1019,6 +1134,9 @@ void session13(Session session) {
     }
     ;
     session.players[0].leader = true;
+
+
+
     for(Player p in session.players) {
         p.ectoBiologicalSource = null; //can do ectobiology.
     }
@@ -1034,6 +1152,18 @@ void session13(Session session) {
         player.mylevels = getLevelArray(player);
         guardian.mylevels = getLevelArray(guardian);
     }
+
+	session.players[3].getRelationshipWith(session.players[16]).value = 30;
+  session.players[16].getRelationshipWith(session.players[3]).value = 0;
+
+  if (now.day % 2 == 0) {
+  	Relationship.makeSpades(session.players[2], session.players[3]);
+  	session.players[2].moon = session.derse;
+  }
+  else {
+  	Relationship.makeDiamonds(session.players[2], session.players[3]);
+  	session.players[2].moon = session.prospit;
+  }
 }
 
 void sawNepeta() {

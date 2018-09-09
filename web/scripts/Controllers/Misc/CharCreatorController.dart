@@ -1,8 +1,10 @@
 import 'dart:html';
+import 'dart:async';
 import '../../SBURBSim.dart';
 import '../../navbar.dart';
 import '../../v2.0/char_creator_helper.dart';
 import "dart:async";
+
 
 CharCreatorController self;
 //only one session on this page
@@ -10,6 +12,7 @@ Session session;
 Future<Null> main() async
 
 {
+  await globalInit();
   loadNavbar();
   await globalInit();
   window.onError.listen((Event event){

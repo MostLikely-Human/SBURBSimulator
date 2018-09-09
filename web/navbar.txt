@@ -1,5 +1,6 @@
 <div class = "banner">
-      <center><a href = "index.html"><img src = "images/StatusBanners/sburb_sim_page_header_zalgo.png"/></a></center>
+      <center><a href = "index.html"><img src = "images/StatusBanners/sburb_sim_page_header.png"/></a></center>
+      <center><font color="red" size=15px>This is a mod of the original SBURBSim at <a href="http://www.farragofiction.com/SBURBSim/landing.html" style="color:#dd0088;">farragofiction.com</a>, go check it out!</font><center>
 </div>
 <ul class = "menuPureCSS">
   <span class = 'centeredMenu'>
@@ -49,7 +50,7 @@
       <a href="todo.html">TODO Pile</a>
       <a href="glitches.html">Glitch FAQ</a>
       <a href="gnosis.html">Gnosis FAQ</a>
-      <a href = "https://github.com/jadedResearcher/SBURBSimulator"> GitHub Repo</a>
+      <a href = "https://github.com/MostLikely-Human/SBURBSimulator"> GitHub Repo</a>
     </div>
   </li>
 
@@ -61,6 +62,7 @@
       <a href="index_pw.html">[???]</a>
       <a target = "_blank" href="land_of_rods_and_screens.html">The Land of Rods and Screens</a>
       <a href="index_shogun.html">Who is Shogun???</a>
+      <a href="index_hb.html">just a random puzzle</a>
 
 
     </div>

@@ -52,6 +52,7 @@ class Relationship {
         if (this.saved_type == this.clubs) return "auspistice";
         if (this.saved_type == this.spades) return "kismesis";
         if (this.saved_type == this.neutral) return "friend";
+        if (this.saved_type == this.heart) return "matesprit";
         return "friend";
     }
 

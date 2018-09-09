@@ -20,6 +20,7 @@ class SessionMutator {
     bool timeField = false; //means time player will be replacing their past self. basically 100% of time's effect.
     bool spaceField = false; //exclusively controls combo endings .
     bool dreamField = false; //alchemy doesn't consume items, alchemy can happen as many times as you want.
+    bool lawField = false; //cumulusCanine recommended that after gnosis 4 activates everything reads like a bad fanfiction (because their word is law)
 
     @override
     String toString() {
@@ -37,6 +38,7 @@ class SessionMutator {
         if(timeField) ret = "$ret time";
         if(spaceField) ret = "$ret space";
         if(dreamField) ret = "$ret dream";
+        if(lawField) ret = "$ret law";
 
         return ret;
     }
@@ -133,6 +135,31 @@ class SessionMutator {
         return true;
     }
 
+
+    String law(Session s, Player activatingPlayer) {
+        effectsInPlay ++;
+        voidField = true;
+        s.logger.info("AB: Huh. Looks like a ${activatingPlayer.title()} is going at it.");
+        String ret = "The ${activatingPlayer.htmlTitle()} is doing something. It's kind of hard to see.  Look at those line of code though...";
+        ret += "Huh. You get the strangest feelings that they are looking directly at you.  It's kind of unsettling. ";
+        ret += " Suddenly, everything vanishes. Even if  you knew how to see into the Void, you see nothing now. <span class='void'>The ${activatingPlayer.htmlTitle()} is on to you.</span> The ${activatingPlayer.htmlTitle()} is no longer going to suffer for your amusement. ";
+        ret += "Maybe.... Maybe you'll at least get to see the ending? ";
+        //a bunch of shit gets randomized.  oh sure, the void player is doing things for REASONS
+        //but if you can't see what those reasons are, it sure as fuck looks random.
+        s.sessionHealth += s.sessionHealth / -2;
+        for (Player p in s.players) {
+            p.grist += s.rand.nextInt(s.expectedGristContributionPerPlayer);
+            p.landLevel += s.rand.nextInt(s.goodFrogLevel);
+            p.corruptionLevelOther += s.rand.nextIntRange(-100, 100);
+            for (Stat str in Stats.pickable) {
+                //can lower it but way more likely to raise it
+                if (str != Stats.RELATIONSHIPS) {
+                    p.addStat(str, s.rand.nextIntRange((-1 * s.hardStrength / 10).round(), s.hardStrength.round()));
+                }
+            }
+        }
+        return ret;
+    }
 
 
     //TODO have variables that session can query to see if it needs to have alt behavior
@@ -855,12 +882,15 @@ class MetaPlayerHandler {
     Player jadedResearcher;
     Player authorBot;
     Player authorBotJunior;
+    Player forgetfulIdealist;
+    Player humanBot;
+    Player shogunBot;
 
 
     List<Player> get metaPlayers {
         //everything else is 'canon' entry order
-        return <Player>[jadedResearcher, karmicRetribution, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior];
-       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior];
+        return <Player>[jadedResearcher, karmicRetribution, forgetfulIdealist, humanBot, recusiveSlacker, aspiringWatcher, manicInsomniac, insufferableOracle, wooMod, somebody, paradoxLands, dilletantMathematician,tableGuardian, feudalUltimatum,authorBot, authorBotJunior, shogunBot];
+       // return <Player>[jadedResearcher, aspiringWatcher, dilletantMathematician, insufferableOracle, manicInsomniac, nobody, wooMod, recusiveSlacker, paradoxLands, karmicRetribution, authorBot, authorBotJunior, forgetfulIdealist, humanBot, shogunBot];
     }
 
     void initalizePlayers(Session s, bool reinitNoMatterWhat) {
@@ -880,6 +910,10 @@ class MetaPlayerHandler {
         paradoxLands = makePL(s);
         karmicRetribution = makeKR(s);
         authorBot = makeAB(s);
+        forgetfulIdealist = makeFI(s);
+        humanBot = makeHB(s);
+        shogunBot = makeFUB(s);
+
     }
 
     Player makeAW(Session s) {
@@ -974,12 +1008,74 @@ class MetaPlayerHandler {
 
     }
 
-    Player makeFU(Session s) {
-        s.logger.info("Making fu");
+    Player makeFI(Session s) {
         Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
         player.quirk = randomHumanQuirk(s.rand);
 
-        player.copyFromOCDataString("b=%C2%80%40%009%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nkgA");
+        s.logger.info("Making MLH");
+        player.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
+        player.class_name = SBURBClassManager.HUMAN;
+
+        player.quirk.capitalization = Quirk.NORMALCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [[".", ","]];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+        player.deriveSprite = false;
+        player.makeGuardian();
+        player.guardian.copyFromPlayer(feudalUltimatum);
+        player.guardian.initialize();
+        player.guardian.guardian = player;
+        player.object_to_prototype = new PotentialSprite("Cherry", s);
+        player.sprite.addPrototyping(player.object_to_prototype);
+        player.deriveLand = false;
+        player.land = player.spawnLand();
+        player.land.name = "Land of Automation and Fruit";
+        player.deriveSpecibus = false;
+        player.specibus = new Specibus("Sword", ItemTraitFactory.SWORD, [ ItemTraitFactory.METAL, ItemTraitFactory.POINTY]);
+        player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
+        return player;
+
+    }
+
+    Player makeHB(Session s) {
+        s.logger.info("Making HB");
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
+        player.quirk = randomHumanQuirk(s.rand);
+
+        player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
+
+        player.makeGuardian();
+        player.guardian.copyFromPlayer(feudalUltimatum);
+        player.guardian.initialize();
+        player.guardian.guardian = player;
+        player.deriveLand = false;
+        player.deriveSprite = false;
+        player.object_to_prototype = new PotentialSprite("Software", s);
+        player.sprite.addPrototyping(player.object_to_prototype);
+        player.quirk.capitalization = Quirk.NOCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [[",", ""]];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+        player.land = player.spawnLand();
+        player.land.name = "Land of Plums and Sarcasm";
+        player.land.denizenFeature = new HardDenizenFeature("<span class = 'void'>Humabot, The</span> Robot");
+        return player;
+
+    }
+    
+    
+    Player makeFU(Session s) {
+        s.logger.info("Making fu");
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.LORD, Aspects.LAW);
+
+        player.quirk = randomHumanQuirk(s.rand);
+
+        player.copyFromOCDataString("b=%C2%80%40%00%3D%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nmgA"); //b=%C2%80%40%009%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nkgA
+        player.aspect = Aspects.LAW;
         print("Fu's moon is ${player.moon}");
         player.land = player.spawnLand();
         player.land.name = "Land of Dynasties and Taint";
@@ -1017,6 +1113,51 @@ class MetaPlayerHandler {
         f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, false));
         f.desc = "FeudalUltimatum starts shitposting so hard it actually has an effect on the world around them. What the fuck is this?";
         player.fraymotifs.add(f);
+        return player;
+
+    }
+
+    Player makeFUB(Session s) {
+        s.logger.info("Making SB");
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.PAGE, Aspects.VOID);
+
+        player.quirk = randomHumanQuirk(s.rand);
+
+        player.copyFromOCDataString("b=%2B*-%3E%C3%B8R%04%C2%97%0F%258&s=,,Shogun,Big Bads,shogunBot&x=AQ==");
+        print("SB's moon is ${player.moon}");
+        player.land = player.spawnLand();
+        player.land.name = "Land of Coruption and Evil";
+        player.godTier = true;
+        player.deriveChatHandle = false;
+
+        player.quirk.capitalization = Quirk.NOCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+
+        player.deriveLand = false;
+        player.initialize();
+        player.makeGuardian();
+        player.guardian.copyFromPlayer(feudalUltimatum);
+        player.guardian.initialize();
+        player.guardian.guardian = player;
+
+        player.land.denizenFeature = new HardDenizenFeature('<span class = "void">Shogunbot the, Robot</span>');
+
+        player.object_to_prototype = new PotentialSprite("Sauce", s);
+        player.sprite.addPrototyping(player.object_to_prototype);
+
+        player.deriveSpecibus = false;
+        player.specibus = new Specibus("Sauce", ItemTraitFactory.PIGEON, [ ItemTraitFactory.CORRUPT, ItemTraitFactory.OBSCURING]);
+
+
+        Fraymotif f = new Fraymotif("Shitpost For Dear Life", 13);
+        f.baseValue = 1300;
+        f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, true));
+        f.effects.add(new FraymotifEffect(Stats.MOBILITY, 3, false));
+        f.desc = "shogunBot starts shitposting so hard it actually has an effect on the world around them. What the fuck is this?";
+        player.fraymotifs.add(f);
+
         return player;
 
     }

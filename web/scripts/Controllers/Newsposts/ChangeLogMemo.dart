@@ -25,6 +25,8 @@ class ChangeLogMemo {
     static Wrangler tableGuardian;
     static Wrangler shogun;
     static Wrangler insufferableOracle;
+    static Wrangler forgetfulIdealist;
+    static Wrangler humanBot;
 
 
 
@@ -46,8 +48,11 @@ class ChangeLogMemo {
         jadedResearcher = new Wrangler("jadedResearcher", "images/Credits/jadedResearcher_icon$end", new Colour.fromStyleString("#3da35a"));
         karmicRetribution = new Wrangler("karmicRetribution", "images/Credits/Smith_of_Dreams_icon$end", new Colour.fromStyleString("#9630BF"));
         paradoxLands = new Wrangler("paradoxLands", "images/Credits/pl_icon$end", new Colour.fromStyleString("#000066"));
-        authorBot = new Wrangler("authorBot", "images/Credits/AB_icon$end", new Colour.fromStyleString("#ff0000"));
+        authorBot = new Wrangler("authorBot", "images/Credits/ab_icon$end", new Colour.fromStyleString("#ff0000"));
         authorBotJunior = new Wrangler("authorBotJunior", "images/Credits/abj_icon$end", new Colour.fromStyleString("#ffa500"));
+
+        forgetfulIdealist = new Wrangler("forgetfulIdealist", "images/Credits/mlh_icon$end", new Colour.fromStyleString("#fcf000"));
+        humanBot = new Wrangler("humanBot", "images/Credits/hb_icon$end", new Colour.fromStyleString("#ffc000"));
 
         recursiveSlacker = new Wrangler("recursiveSlacker", "images/Credits/rs_icon$end", new Colour.fromStyleString("#000066"));
         aspiringWatcher = new Wrangler("aspiringWatcher", "images/Credits/aw_icon$end", new Colour.fromStyleString("#494132"));

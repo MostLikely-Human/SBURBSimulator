@@ -9,6 +9,8 @@ import "../Lands/FeatureTypes/EnemyFeature.dart";
 import 'dart:async';
 import 'dart:html';
 //only one player, player has no sprite, player has DeadLand, and session has 16 (or less) subLands.
+
+
 class DeadSession extends Session {
 
 

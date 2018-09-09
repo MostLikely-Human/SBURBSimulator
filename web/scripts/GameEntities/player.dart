@@ -1703,10 +1703,10 @@ class Player extends GameEntity{
                 }
             }
         }
-        if (this.robot || this.grimDark > 1) { //you can technically start grimDark
+        if (this.grimDark > 1) { //you can technically start grimDark
             for (num k = 0; k < this.relationships.length; k++) {
                 Relationship r = this.relationships[k];
-                r.value = 0; //robots are tin cans with no feelings
+                r.value = 0; //robots are tin cans with no feelings [That's robo-racist]
                 r.saved_type = r.neutral;
                 r.old_type = r.neutral;
             }

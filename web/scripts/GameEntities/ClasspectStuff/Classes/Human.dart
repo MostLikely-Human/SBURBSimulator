@@ -1,0 +1,180 @@
+import "../../../SBURBSim.dart";
+import "SBURBClass.dart";
+import "../../GameEntity.dart";
+
+import "../../../Lands/FeatureTypes/QuestChainFeature.dart";
+import "../../../Lands/Reward.dart";
+import "../../../Lands/Quest.dart";
+class Human extends SBURBClass {
+  @override
+  String sauceTitle = "Hooman";
+
+  //what sort of quests rewards do I get?
+  @override
+  double itemWeight = 0.01;
+  @override
+  double fraymotifWeight = 0.01;
+  @override
+  double companionWeight = 1.01;
+
+
+  @override
+  List<String> levels = <String>["413TH WALL APPRECIATOR", "CATACLYSM COMMANDEER", "MLH"];
+  @override
+  List<String> quests = <String>["blatantly cheating with FAQs", "destroying stuff to cheat more", "learning that sometimes you have to do things right, and can't just skip ahead [sic, you can skip ahead]"];
+  @override
+  List<String> postDenizenQuests = <String>["yeeting the consorts", "joining another cult.", "accidentally causing MORE destruction in an attempt to help clean up after their epic as fuck fight agains their Denizen"];
+  @override
+  List<String> handles = <String>["human", "helpful", "hemo", "hallucinating", "hurtful", "holistic"];
+
+  @override
+  bool isProtective = false;
+  @override
+  bool isSmart = true;
+  @override
+  bool isSneaky = false;
+  @override
+  bool isMagical = true;
+  @override
+  bool isDestructive = false;
+  @override
+  bool isHelpful = false;
+
+  Human() : super("Human", 21, false);
+
+  @override
+  List<AssociatedStat> stats = new List<AssociatedStat>.unmodifiable(<AssociatedStat>[
+    new AssociatedStat(Stats.SBURB_LORE, 4.0, false), //basically all Hoomans have.
+    new AssociatedStat(Stats.EXPERIENCE, -3.0, false)
+  ]);
+
+  @override
+  bool highHinit() {
+    return true;
+  }
+
+  @override
+  bool isActive([double multiplier = 0.0]) {
+    return true;
+  }
+
+  @override
+  void initializeItems() {
+    items = new WeightedList<Item>()
+      ..add(new Item("Footstick",<ItemTrait>[ItemTraitFactory.STICK, ItemTraitFactory.CLASSRELATED,ItemTraitFactory.PLYWOOD, ItemTraitFactory.LEGENDARY],abDesc:"Wait. Did you beat LORAS?"))
+      ..add(new Item("SBURBSim Cheating Guide",<ItemTrait>[ItemTraitFactory.BOOK, ItemTraitFactory.CLASSRELATED,ItemTraitFactory.SMARTPHONE,ItemTraitFactory.PAPER],shogunDesc: "The Shoguns Guide to Winning",abDesc:"Hell no, you leave your grubby fucking mitts outta the code."))
+      ..add(new Item("Body Pillow of Shogun",<ItemTrait>[ItemTraitFactory.CLOTH, ItemTraitFactory.CLASSRELATED,ItemTraitFactory.PILLOW, ItemTraitFactory.IRONICSHITTYFUNNY, ItemTraitFactory.COMFORTABLE],shogunDesc: "The JR's Vessel",abDesc:"...I would ask why, but I already calculated all possible responses at a million times the speed I could get an answer."))
+      ..add(new Item("Macrobots",<ItemTrait>[ItemTraitFactory.ROBOTIC2, ItemTraitFactory.CLASSRELATED,ItemTraitFactory.AI],shogunDesc: "MACROMACHINES SON, THEY HARDEN IN RESPONSE TO PHYSICAL TRAUMA",abDesc:"Oh look, a NON hacking way to fuck everything up, forever."));
+  }
+//humans comically suck at combat
+  @override
+  double getAttackerModifier() {
+    return 0.5;
+  }
+
+  @override
+  double getDefenderModifier() {
+    return 0.5;
+  }
+
+  @override
+  double getMurderousModifier() {
+    return 0.5;
+  }
+
+  @override
+  void processCard() {
+    storeCard("N4Igzg9grgTgxgUxALhAWQmALgGQJYDWCANgJ4C0AElALYCGAdiADQgN01KoAqeYABAEF+1ek1ZYEADywoQ-CAHcGCGAnacY-AKIM40BpLUATfnREQIY-gAoAchCxn+ACzrEAZuTgvVUAEbM-MYIHngMeJJkzi60jACU-Cwg-nRwBADmMAbGdhxcIADqEAwZxAg4mGAAdAAOpclYMHgZGaoAwm56BQAM1QCsyWCIKmDcEACqDMQQ6XIA2gC6yWpgUMRYYADKWHSbC8AAOmz5x8jHAJIAItqCOBdb3Bftx8zHAG7uUAhnxwCMfwAzMcAL7LCTNVqqHZ7MA4BBgMCqA7HDQ-FDHAAKgie2js3FeHy+6POIGBIDBjUhbRgMM2AHE1Htkah5kcTpxfiB6XYAPJbB6EkCfYjfLkAJlB4JATRaNLpYG0AEcoO4URySccroI7O0AGIXNAXe5bNBCkVijFkqUUoA");
+  }
+
+
+  @override
+  num modPowerBoostByClass(num powerBoost, AssociatedStat stat) {
+    if (stat.isFromAspect || stat.stat != Stats.SBURB_LORE) {
+      powerBoost = powerBoost * 0; //wasted aspect
+    } else {
+      powerBoost = powerBoost * 1;
+    }
+    return powerBoost;
+  }
+
+  @override
+  void initializeThemes() {
+    /*
+        new Quest(" "),
+        new Quest(""),
+        new Quest(" ")
+
+        */
+    //[REDACTED]
+    //[REDACTED]
+    addTheme(new Theme(<String>["Horses","Fields", "Meadows", "Majesty","Ponies","Screens","Fourth Walls","Self Inserts", "Meta","Indulgence"])
+      ..addFeature(FeatureFactory.ZOOSMELL, Feature.HIGH)
+      ..addFeature(FeatureFactory.STUPIDFEELING, Feature.HIGH)
+      ..addFeature(FeatureFactory.CREATIVEFEELING, Feature.HIGH)
+      ..addFeature(FeatureFactory.NATURESOUND, Feature.HIGH)
+      ..addFeature(FeatureFactory.CLACKINGSOUND, Feature.HIGH) //sound of keys being pressed
+      ..addFeature(FeatureFactory.CONFUSINGFEELING, Feature.HIGH)
+      ..addFeature(FeatureFactory.NOTHINGSMELL, Feature.MEDIUM)
+
+      ..addFeature(new PreDenizenQuestChain("A Complete Waste Of Time", [
+        new Quest("A short while after arriving at their land, the ${Quest.PLAYER1} decides to fuck around. But to nobody's surprise, they discover historical documents that spell impending doom to every ${Quest.CONSORT} in the land. Blah blah blah, a meteor will strike in seven minutes and they must travel back in time to redirect the meteor and save everyone, blah blah blah, you've all heard it before. Surely ${Quest.PLAYER1} can't fuck this up."),
+        new Quest("Of course, they do fuck it up. Living up to their classpect, they decide to first visit the far future(i.e. 8 minutes from now) to see what the consequences of their procrastination might possibly be. After all, they have all the time in the world, right? However, the second ${Quest.PLAYER1} sets foot in the future ${Quest.PLAYER1} is almost compeletly annihilated by burning rubble and debris. Luckily, a future ${Quest.PLAYER1} warps in and brings them to safety with seconds to spare! Great! But NOW you're going to save the ${Quest.CONSORT}s, right?"),
+        new Quest("Wrong. ${Quest.PLAYER1} manages to waste EVEN MORE TIME by fucking around in general with random shit. Needless to say, eventually they get their shit together and finally time travel to a time in the past with plenty of time before the meteor strike. They manage to convince the ${Quest.CONSORT} leader to use magic (i.e. strap a bomb on a spaceship) to blow up the meteor before it becomes a problem! Great. At least ${Quest.PLAYER1} has grown SLIGHLTY more mature over the course of this."),
+        new Quest("But now they have to create a stable time loop. Of course, ${Quest.PLAYER1} didn't plan any of this out beforehand, so in a rush of action(and procrastination) they get around to saving their past (but technically future) self. Then they place the historical documents in a place where they'll be found in a few hundred years. Finally, they warp back to the present (future?) to do whatever else they have to do on this godforsaken land.Good job! The quest is finally over. ${Quest.PLAYER1} gets to fuck around as much as they want! Luckily, they have matured slightly over the course of the quest, so they will finally understand the importance of good time management and who am I kidding. They get back to fucking around right away. Great job growing as a person, dumbass.")
+
+      ], new Reward(), QuestChainFeature.timePlayer), Feature.WAY_LOW)
+
+      ..addFeature(new DenizenQuestChain("Stop the Turtles from [Redacted]", [
+        new Quest("{Quest.PLAYER1} explores their land but is horrified to see all of the turtles [REDACTED]ing. ${Quest.DENIZEN} probably is making them [REDACTED]. ${Quest.DENIZEN} is a [REDACTED] piece of shit. Also. Why are there even turtles here? Is it a refrance?"),
+        new Quest("${Quest.PLAYER1} tries to manually separate the turtles by catching them with a net and ${Quest.WEAPON}. They have mixed results, and ${Quest.PLAYER1} probably got some reptilian-borne disease. ${Quest.PLAYER1} tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren’t [REDACTED] anymore."),
+        new Quest("${Quest.PLAYER1} manages to fix the fish problem, but is back where they started with the turtles. ${Quest.DENIZEN} cackles from their giant castle. ${Quest.PLAYER1} needs to take a break from trying to get turtles to stop [REDACTED]ing."),
+        new DenizenFightQuest("${Quest.PLAYER1} has learned some stuff, and thinks that they can get the turtles to stop by changing the turtle [REDACTED] values in the game’s code. This pisses the ${Quest.DENIZEN} off and causes this entire strife thing to happen. Bluh.", "Okay. FINALLY, the turtles have stopped ${Quest.CONSORTSOUND}ing. Everything is fine again. Wait. ${Quest.CONSORTSOUND}ing? Is that what all that [REDACTED] was? I thought.... Nevermind.","These god damned turtles are never going to stop [REDACT]ing.")
+      ], new DenizenReward(), QuestChainFeature.bloodPlayer), Feature.WAY_LOW)
+
+      ..addFeature(new PreDenizenQuestChain("Be Spooked By a Wolf", [
+        new Quest("The ${Quest.PLAYER1} is trapped in an attic. Bullies chased them here. AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!  Oh god, that Wolf Head is terrifying!"),
+        new Quest("QUITE FRANKLY, your majesty, I don't think you realize what kind of hell the ${Quest.PLAYER1} been through. Do you have even the SLIGHTEST CLUE how many times that wolf head over there has SCARED THE SHIT OUT OF THEM???"),
+        new Quest("Fuck. The ${Quest.PLAYER1} is so upset that you don't understand how scary that Spooky Wolf is that they've started babbling about different forms of fictional romance. Welp. Nothing to see here. We better just skip this. ")
+      ], new Reward(), QuestChainFeature.defaultOption), Feature.WAY_LOW) //not guaranteed like other quests are
+      ..addFeature(new DenizenQuestChain("Be The Illegitimate Player", [
+        new Quest("A wizened ${Quest.CONSORT} explains the rules of some convoluted, boring-ass puzzle to the ${Quest.PLAYER1}. Wait wait wait, did they just say something about 'no legitimate way to meet ${Quest.DENIZEN}'?  Hell FUCKING yes, that means there's some ILLEGITIMATE way. "),
+        new Quest("After way too much obsessive focus, the ${Quest.PLAYER1} thinks they are onto something. This shitty game is just code, right?  There must be some glitch or exploit or out-right fucking HACK to get to the secret content.  They are gonna meet the FUCK out of ${Quest.DENIZEN}."),
+        new Quest("Hell FUCKING yes!!! The ${Quest.PLAYER1} has bugged and fussed and meddled with the code until they are standing in front of ${Quest.DENIZEN}. After solving some bullshit extra bonus Riddle, they gain access to The Hoarde. ")]
+          , new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_HIGH)
+
+      ..addFeature(new DenizenQuestChain("Wear the Merch, Be the Rider", [
+        new Quest("The ${Quest.PLAYER1} is sick and tired of being bullied!  If only there was some way they could finally defeat those mean old bullies.   A wizened ${Quest.CONSORT} tells of a legendary artifact that could-- Wait. No. That's so boring.   The ${Quest.PLAYER1} decides to update their highly-indulgent meta work instead."),
+        new Quest("Holy shit, did you know you could alchemize MERCHANDISE of your highly indulgent meta work? The ${Quest.PLAYER1} is just covered in merch now. It's great."),
+        new Quest("Holy fuck! It turns out that the ${Quest.DENIZEN} is a fan of the ${Quest.PLAYER1}'s highly indulgent meta work!  They also agreed to be called 'Falcor', because, come ON that was a great movie!  The ${Quest.PLAYER1} hops up onto Falcor's back and this is the single coolest thing that has ever happened in all of Paradox Space."),
+        new Quest("With a dramatic 'BORF' the bullies are defeated by Falcor! And so came to an end the most heroic thing that ever happened in the history of metafiction. <br><br>Let's move on.")
+      ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_HIGH)
+      ..addFeature(new PostDenizenQuestChain("Die Ironically, In The Proximity Of Some Horses", [
+        new Quest("A wizened ${Quest.CONSORT} tells the ${Quest.PLAYER1} that they are going to die. Ironically.   In the proximity of some horses.  The ${Quest.PLAYER1} shrugs and keeps updating their highly indulgent meta work. "),
+        new Quest("Glowing letters, three stories tall,  lit by flame, heavy with the weight of prophecy proclaim 'You Are Going To Die. Ironically.   In the Proximity Of Some Horses'. The ${Quest.PLAYER1} wonders if it's like, a metaphor or something?"),
+        new Quest("In a scene predicted by no one, the ${Quest.PLAYER1} dies. In the proximity of some horses. How ironic, that their very demise would be in the proximity of some horses. What? You didn't follow that? Just think it over. Think it over...  Luckily being dead doesn't seem to affect the ${Quest.PLAYER1}'s narrative importance at all.   Hell, are you sure they weren't dead all along? ")//hussie has white ghost eyes the whole session, after all.
+      ], new BoonieFraymotifReward(), QuestChainFeature.defaultOption), Feature.LOW)
+      ..addFeature(new PostDenizenQuestChain("Die Ironically, In The Proximity Of Some Pigeons", [
+        new Quest("A ${Quest.CONSORT} that is also a SHOGUN minion tells the ${Quest.PLAYER1} that they are going to die. Ironically.   In the proximity of some pigeons.  The ${Quest.PLAYER1} shrugs and keeps updating SBURBSim. "),
+        new Quest("Glowing letters, three stories tall,  lit by flame, heavy with the weight of prophecy proclaim 'You Are Going To Die. Ironically.   In the Proximity Of Some Pigeons'. The ${Quest.PLAYER1} wonders if it's like, a refrance or something they are missing?"),
+        new Quest("In a scene predicted by no one, the ${Quest.PLAYER1} dies. In the proximity of some pigeons. How ironic, that their very demise would be in the proximity of some pigeons. What? You didn't follow that? Just think it over. Think it over...  Luckily being dead doesn't seem to affect the ${Quest.PLAYER1}'s narrative importance at all.   Hell, are you sure they weren't dead all along? ")//hussie has white ghost eyes the whole session, after all.
+      ], new FraymotifReward("Hey, is that JR?", "Whoa, shit, it is. I think that means they should just win? Right?"), QuestChainFeature.isJadedResearcher), Feature.WAY_HIGH)
+      ..addFeature(new PostDenizenQuestChain("Run The Simulations", [
+        new Quest("Huh. The ${Quest.PLAYER1} has figured out how to run simulations of SBURB? What is even the point? Man, it's a fucking Waste. Maybe there IS no point??? "),
+        new Quest("Okay, revised statement: maybe the point of running simulations is to map out all of Paradox Space? Makes way more sense than just having a big black sheet of paper, right? The ${Quest.PLAYER1} makes a robot doppelganger to go explore areas of Paradox Space that are predicted to have useful features. Huh, looks like it's working!"),
+        new Quest("Welp. Whatever original reason the ${Quest.PLAYER1} had for finding other sessions has fallen by the wayside. They've gotten completely distracted helping out sessions with no alpha and accidentally dooming the fuck out of everyone when they make a typo in some code.   I thought these were just simulations? Fuck Paradox Space. ")
+      ], new ItemReward(items), QuestChainFeature.defaultOption), Feature.LOW)
+
+      ..addFeature(new PostDenizenFrogChain("Waste the Frogs", [
+        new Quest("The ${Quest.DENIZEN} explains um. What? Where did the ${Quest.PLAYER1} go?"),
+        new Quest("The ${Quest.PLAYER1} is sick and tired of being bullied!  If only there was some way they could finally defeat those mean old bullies.   A wizened ${Quest.CONSORT} tells of a legendary artifact that could-- Wait. No. That's so boring.   The ${Quest.PLAYER1} decides to update their highly-indulgent meta work instead."),
+        new Quest("Holy shit, did you know you could alchemize MERCHANDISE of your highly indulgent meta work? The ${Quest.PLAYER1} is just covered in merch now. It's great."),
+        new Quest("Holy fuck! It turns out that the ${Quest.DENIZEN} is a fan of the ${Quest.PLAYER1}'s highly indulgent meta work!  They also agreed to be called 'Falcor', because, come ON that was a great movie!  The ${Quest.PLAYER1} hops up onto Falcor's back and this is the single coolest thing that has ever happened in all of Paradox Space."),
+        new Quest("With a dramatic 'BORF' the bullies are defeated by Falcor! And so came to an end the most heroic thing that ever happened in the history of metafiction. <br><br>Let's move on.  Wait. What? How did THAT somehow breed the Ultimate Frog???")
+      ], new FrogReward(), QuestChainFeature.spacePlayer), Feature.WAY_HIGH)
+
+        ,  Theme.HIGH);
+  }
+
+
+}

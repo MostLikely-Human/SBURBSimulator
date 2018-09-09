@@ -12,6 +12,15 @@
 	color: lime;
 }
 
+#pw_container_hb {
+    margin-left: auto;
+    margin-right: auto;
+    width:650px;
+	color: #ffc000;
+	font-family: cursive
+	/*images/canvasUltimate.bmp*/
+}
+
 #story{
 	width:1000px;
 	background-color: white;
