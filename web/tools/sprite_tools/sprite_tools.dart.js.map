@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "engine": "v1",
+  "file": "sprite_tools.dart.js",
+  "sourceRoot": "",
+  "sources": ["sprite_tools.dart"],
+  "names": ["main"],
+  "mappings": "A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EACAA,YAEAA,A,A"
+}
