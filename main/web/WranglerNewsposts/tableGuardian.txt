@@ -1,0 +1,9 @@
+2018-04-20: Going on a bug hunt. To start, I found one that let carapaces survive scratches. Next, some strange name business was going on when players tried strifing for a ring. Finally, and this one I think is the best, blowing up planets no longer teleportalizes the loot of its entire population into your sylladex.<br><br> Funny story about that last bug too. When I first encountered it, it was all because a ringwraith had destroyed 2 sessions worth of dream moons only to die at the hands of a Witch of Space. Said Witch of Space took the ringwraith's inventory into their own sylladex and combined all the items. Yes, all of them. The resulting item, surprisingly, had a rank of -0.1. That's alchemy for you.
+2018-03-22: It turned out that the cause of our opossum infestation was nothing more than a typo that treated the Black Queen as being alive while also being dead. Thankfully, this means I no longer have to hide my jarred fruit far from the reaches of their grubby little opposable thumbs
+2017-09-27: Grist drops now contain 137% less JPEG-artifacts.
+2017-10-26: Frogs for the Frog God. Heroes of Space who manage to produce a Genesis Frog will now be rewarded with a photograph of the moment they created it.
+2017-11-19: Hope you like Alchemiters.
+2017-11-26: It's table time. Operation "give every two traits a combo" is a-go. And it will be glorious. I guarantee it.
+2017-11-27: Table production efficiency has increased by 230% since yesterday. More traits have been added to fill out the table.
+2017-12-10: More table optimizations. Having to find names for these combinations is quite the mental exercise. All for the glory of the TABLE.
+2017-12-13: Due to a small coding error, I was unable to guard my tables. This issue has since been fixed, and hopefully will never happen again for as long as I live.

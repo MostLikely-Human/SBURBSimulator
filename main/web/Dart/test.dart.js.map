@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "engine": "v1",
+  "file": "test.dart.js",
+  "sourceRoot": "",
+  "sources": ["test.dart"],
+  "names": ["main"],
+  "mappings": "A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EACAA,WACEA,YAAkBA,G,MAElBA,CAMFA,A"
+}
