@@ -85,6 +85,8 @@ class SBURBClassManager {
 
     static Iterable<SBURBClass> get fanon => _classes.values.where((SBURBClass c) => !c.isCanon);
 
+    static Iterable<SBURBClass> get mlh_fanon => _classes.values.where((SBURBClass c) => c.isMLHFanon);
+
     static List<String> get allClassNames {
         List<String> ret = new List<String>();
         for (SBURBClass c in _classes.values) {
@@ -147,6 +149,7 @@ class SBURBClass {
     int id = 256; //for classNameToInt
     bool isCanon = false; //you gotta earn canon, baby.
     bool isInternal = false; //if you're an internal aspect or class you shouldn't show up in lists.
+    bool isMLHFanon = false; //not mine
 
     //for quests and shit, assume canon classes pick ONE of these and fanon can pick two
     bool isProtective = false;
@@ -160,7 +163,7 @@ class SBURBClass {
     WeightedList<Item> items = new WeightedList<Item>();
 
 
-    SBURBClass(this.name, this.id, this.isCanon,{ this.isInternal = false}) {
+    SBURBClass(this.name, this.id, this.isCanon,{this.isMLHFanon = false, this.isInternal = false}) {
         this.savedName = name;
         faqFile = new FAQFile("Classes/$name.xml");
         //;

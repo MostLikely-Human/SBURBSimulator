@@ -40,7 +40,7 @@ class Human extends SBURBClass {
   @override
   bool isHelpful = false;
 
-  Human() : super("Human", 21, false);
+  Human() : super("Human", 21, false, isMLHFanon: true);
 
   @override
   List<AssociatedStat> stats = new List<AssociatedStat>.unmodifiable(<AssociatedStat>[

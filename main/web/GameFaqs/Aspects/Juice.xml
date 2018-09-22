@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faq>
+    <ascii>
+    </ascii>
+    <section>
+        <header>
+            What is Juice?
+        </header>
+        <body>
+            The thing you drink, done, next question.
+        </body>
+    </section>
+    <section>
+        <header>
+            What is this 'Sauce' aspect people are talking about?
+        </header>
+        <body>
+            Well, it's not really an aspect, it's an entity.
+        </body>
+    </section>
+    <section>
+        <header>
+            Whoa, what is this 'Juice entity' thing?
+        </header>
+        <body>
+            It's an entity that motivates you to battle against Sauce.
+        </body>
+    </section>
+    <section>
+        <header>
+            Who is my counter player?
+        </header>
+        <body>
+            There's no easy way to figure that out.
+        </body>
+    </section>
+</faq>

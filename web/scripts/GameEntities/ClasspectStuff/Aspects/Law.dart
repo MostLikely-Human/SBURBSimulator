@@ -77,7 +77,7 @@ class Law extends Aspect {
     new AssociatedStat(Stats.SANITY, -2.0, true)
   ]);
 
-  Law(int id) :super(id, "Law", isCanon: false);
+  Law(int id) :super(id, "Law", isCanon: false, isMLHFanon: true); //ehhh, I did code it in
 
   @override
   String activateCataclysm(Session s, Player p) {

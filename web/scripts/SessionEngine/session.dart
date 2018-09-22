@@ -7,6 +7,7 @@ import "../SBURBSim.dart";
 enum CanonLevel {
     CANON_ONLY,
     FANON_ONLY,
+    MLH_FANON_ONLY,
     EVERYTHING_FUCKING_GOES
 }
 
@@ -554,6 +555,10 @@ class Session {
             this.available_classes_players = new List<SBURBClass>.from(SBURBClassManager.fanon);
             this.available_classes_guardians = new List<SBURBClass>.from(SBURBClassManager.fanon);
             this.available_aspects = new List<Aspect>.from(Aspects.fanon);
+        }else if(canonLevel == CanonLevel.MLH_FANON_ONLY) {
+            this.available_classes_players = new List<SBURBClass>.from(SBURBClassManager.mlh_fanon);
+            this.available_classes_guardians = new List<SBURBClass>.from(SBURBClassManager.mlh_fanon);
+            this.available_aspects = new List<Aspect>.from(Aspects.mlh_fanon);
         }else {
             this.available_classes_players = new List<SBURBClass>.from(SBURBClassManager.all);
             this.available_classes_guardians = new List<SBURBClass>.from(SBURBClassManager.all);

@@ -21,6 +21,7 @@ class SessionMutator {
     bool spaceField = false; //exclusively controls combo endings .
     bool dreamField = false; //alchemy doesn't consume items, alchemy can happen as many times as you want.
     bool lawField = false; //cumulusCanine recommended that after gnosis 4 activates everything reads like a bad fanfiction (because their word is law)
+    bool juiceField = false; //I don't even know
 
     @override
     String toString() {
@@ -39,6 +40,7 @@ class SessionMutator {
         if(spaceField) ret = "$ret space";
         if(dreamField) ret = "$ret dream";
         if(lawField) ret = "$ret law";
+        if(juiceField) ret = "$ret juice";
 
         return ret;
     }
@@ -280,6 +282,34 @@ class SessionMutator {
 
         if observer dies.  Players leave session and it just ends.
      */
+        return ret;
+    }
+
+
+    String juice(Session s, Player activatingPlayer) {
+        s.logger.info("AB: Huh. Looks like a ${activatingPlayer.title()} is going at it.");
+
+        effectsInPlay ++;
+        juiceField = true;
+
+        String ret = "The ${activatingPlayer.htmlTitle()} is attempting to purify the world, they begin to glow bright yellow... ";
+        ret += "All players in the session become Juice. ";
+        ret += "But all Sauce players will die... ";
+        if (activatingPlayer.chatHandle == "forgetfulIdealist") ret += "Wait, is that me??? This isn't going to end well at all.";
+
+        for (Player p in s.players) {
+            if (p.aspect == Aspects.SAUCE) {
+                p.dead = true;
+            }
+            else if (p.aspect == Aspects.SPACE) {
+            }
+            else if (p.aspect == Aspects.TIME) {
+            }
+            else {
+                p.aspect = Aspects.JUICE;
+            }
+        }
+
         return ret;
     }
 
@@ -1015,6 +1045,8 @@ class MetaPlayerHandler {
         s.logger.info("Making MLH");
         player.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
         player.class_name = SBURBClassManager.HUMAN;
+        player.aspect = Aspects.JUICE;
+
 
         player.quirk.capitalization = Quirk.NORMALCAPS;
         player.quirk.punctuation = Quirk.PERFPUNC;
@@ -1045,6 +1077,7 @@ class MetaPlayerHandler {
         player.quirk = randomHumanQuirk(s.rand);
 
         player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
+        player.aspect = Aspects.JUICE;
 
         player.makeGuardian();
         player.guardian.copyFromPlayer(feudalUltimatum);
@@ -1124,6 +1157,7 @@ class MetaPlayerHandler {
         player.quirk = randomHumanQuirk(s.rand);
 
         player.copyFromOCDataString("b=%2B*-%3E%C3%B8R%04%C2%97%0F%258&s=,,Shogun,Big Bads,shogunBot&x=AQ==");
+        player.aspect = Aspects.SAUCE;
         print("SB's moon is ${player.moon}");
         player.land = player.spawnLand();
         player.land.name = "Land of Coruption and Evil";

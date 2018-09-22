@@ -18,6 +18,7 @@ import "Void.dart";
 import "Dream.dart";
 import "Law.dart";
 import "Sauce.dart";
+import "Juice.dart";
 
 abstract class Aspects {
     static Aspect SPACE;
@@ -35,6 +36,7 @@ abstract class Aspects {
     static Aspect DREAM;
     static Aspect LAW;
     static Aspect SAUCE; //just shogun [that doesn't mean it has to be a reskin, srsly JR]
+    static Aspect JUICE;
 
     static Aspect NULL;
 
@@ -53,7 +55,8 @@ abstract class Aspects {
         LIFE = new Life(11);
         DREAM = new Dream(12);
         LAW = new Law(13);
-        SAUCE = new Sauce(14);
+        JUICE = new Juice(14);
+        SAUCE = new Sauce(15);
 
         NULL = new Aspect(255, "Null", isInternal:true);
     }
@@ -94,6 +97,8 @@ abstract class Aspects {
     static Iterable<Aspect> get canon => _aspects.values.where((Aspect a) => a.isCanon);
 
     static Iterable<Aspect> get fanon => _aspects.values.where((Aspect a) => !a.isCanon);
+
+    static Iterable<Aspect> get mlh_fanon => _aspects.values.where((Aspect a) => a.isMLHFanon);
 
     static Iterable<int> get ids => _aspects.keys;
 
@@ -138,6 +143,7 @@ class Aspect {
     /// Only canon aspects will appear in random sessions.
     final bool isCanon;
     final bool isInternal; //don't let null show up in lists.
+    final bool isMLHFanon;
 
     // ##################################################################################################
     // Tags
@@ -238,7 +244,7 @@ class Aspect {
     // ##################################################################################################
     // Constructor
 
-    Aspect(int this.id, String this.name, {this.isCanon = false, this.isInternal = false}) {
+    Aspect(int this.id, String this.name, {this.isMLHFanon = false, this.isCanon = false, this.isInternal = false}) {
         faqFile = new FAQFile("Aspects/$name.xml");
         this.savedName = this.name;
 
