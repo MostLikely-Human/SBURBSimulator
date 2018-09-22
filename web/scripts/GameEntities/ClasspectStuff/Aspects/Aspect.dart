@@ -19,6 +19,7 @@ import "Dream.dart";
 import "Law.dart";
 import "Sauce.dart";
 import "Juice.dart";
+import "Taze.dart";
 
 abstract class Aspects {
     static Aspect SPACE;
@@ -37,6 +38,8 @@ abstract class Aspects {
     static Aspect LAW;
     static Aspect SAUCE; //just shogun [that doesn't mean it has to be a reskin, srsly JR]
     static Aspect JUICE;
+    static Aspect TAZE;
+    //static Aspect RULE;
 
     static Aspect NULL;
 
@@ -57,6 +60,8 @@ abstract class Aspects {
         LAW = new Law(13);
         JUICE = new Juice(14);
         SAUCE = new Sauce(15);
+        TAZE = new Taze(16);
+        //RULE = new Rule(17);
 
         NULL = new Aspect(255, "Null", isInternal:true);
     }
