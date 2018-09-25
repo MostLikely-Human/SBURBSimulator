@@ -97,7 +97,7 @@ abstract class Aspects {
 
     static Iterable<Aspect> get all => _aspects.values.where((Aspect a) => !a.isInternal);
 
-
+    static Iterable<Aspect> get everything => _aspects.values;
 
     static Iterable<Aspect> get canon => _aspects.values.where((Aspect a) => a.isCanon);
 

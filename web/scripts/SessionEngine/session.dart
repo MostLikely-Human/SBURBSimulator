@@ -560,9 +560,9 @@ class Session {
             this.available_classes_guardians = new List<SBURBClass>.from(SBURBClassManager.mlh_fanon);
             this.available_aspects = new List<Aspect>.from(Aspects.mlh_fanon);
         }else {
-            this.available_classes_players = new List<SBURBClass>.from(SBURBClassManager.all);
-            this.available_classes_guardians = new List<SBURBClass>.from(SBURBClassManager.all);
-            this.available_aspects = new List<Aspect>.from(Aspects.all);
+            this.available_classes_players = new List<SBURBClass>.from(SBURBClassManager.everything);
+            this.available_classes_guardians = new List<SBURBClass>.from(SBURBClassManager.everything);
+            this.available_aspects = new List<Aspect>.from(Aspects.everything);
         }
       this.required_aspects = <Aspect>[Aspects.TIME, Aspects.SPACE];
     }

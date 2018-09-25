@@ -123,7 +123,7 @@ abstract class NonCanonSessions {
     //from MLH, thanks for my support!!!!!!!!!!!!!!!!!!!!!
     static void session247(Session session) {
         DateTime now = new DateTime.now();
-        int numPlayers = 5;
+        int numPlayers = 6;
         makeASessionFromSource(session, session247IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less.
         Player fi = session.players[0]; //forgetfulIdealist in case you were wondering
@@ -131,15 +131,11 @@ abstract class NonCanonSessions {
         Player nb = session.players[2];
         Player da = session.players[3];
         Player hb = session.players[4];
+        Player rr = session.players[5];
 
-        if (now.day % 2 == 0) {
-            Relationship.makeClubs(da, fi, hb);
-            fi.moon = session.derse;
-        }
-        else {
-            Relationship.makeDiamonds(fi, hb);
-            fi.moon = session.prospit;
-        }
+        Relationship.makeClubs(da, fi, rr);
+        Relationship.makeDiamonds(fi, hb);
+
 
         session.players[0].leader = true;
     }
@@ -266,6 +262,21 @@ abstract class NonCanonSessions {
             player.guardian.land.name = "Land of Automation and Juice";
             player.guardian.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
 
+        } else if(index == 5) {
+            player.copyFromOCDataString("b=%C3%8E%C2%BF%09%5B%C3%BEU%04%12..%01&s=,,Violence,Intimidation,revengefulRealist&x=rlgA");
+            player.setStat(Stats.SANITY, -100);
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Twix", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Rot and Anger";
+            player.land.denizenFeature = new DenizenFeature("<span class = 'void'>Reverea, The</span> Twisted");
         }
     }
 
