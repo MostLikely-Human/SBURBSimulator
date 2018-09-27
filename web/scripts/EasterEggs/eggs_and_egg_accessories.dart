@@ -1156,15 +1156,8 @@ void session13(Session session) {
 
 	session.players[3].getRelationshipWith(session.players[16]).value = 30;
   session.players[16].getRelationshipWith(session.players[3]).value = 0;
-
-  if (now.day % 2 == 0) {
-  	Relationship.makeSpades(session.players[2], session.players[3]);
-  	session.players[2].moon = session.derse;
-  }
-  else {
+	
   	Relationship.makeDiamonds(session.players[2], session.players[3]);
-  	session.players[2].moon = session.prospit;
-  }
 }
 
 void sawNepeta() {
