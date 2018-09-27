@@ -31,9 +31,10 @@ class Session {
     Battlefield battlefield;
     Moon prospit;
     Moon derse;
+    //Moon despacito;
     //needed for dreams now, null moons are possible
     Moon furthestRing;
-    List<Moon> get moons => <Moon>[prospit, derse];
+    List<Moon> get moons => <Moon>[prospit, derse]; //despacito
 
     List<Land> get allLands {
         List<Land> targets = new List<Land>();
@@ -244,6 +245,7 @@ class Session {
         ;
         if(string == prospit.name) return prospit;
         if(string == derse.name) return derse;
+        //if(string == despacito.name) return despacito;
         return null;
     }
 

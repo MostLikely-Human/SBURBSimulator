@@ -21,13 +21,15 @@ class Player extends GameEntity{
     //set when you set moon, so you know what your dream self looks like even if you don't have a moon.
     Palette dreamPalette;
 
+    bool tazeChangeAspect = false;
+
     //if 0, not yet woken up.
     double moonChance = 0.0;
     num pvpKillCount = 0; //for stats.
     num timesDied = 0;
     //mostly for dead sessions.
     bool unconditionallyImmortal = false;
-   static num maxHornNumber = 73; //don't fuck with this
+   static num maxHornNumber = 74; //don't fuck with this
     static num maxHairNumber = 74; //same
     Sprite sprite = null; //gets set to a blank sprite when character is created.
     bool deriveChatHandle = true;
@@ -469,6 +471,13 @@ class Player extends GameEntity{
             fraymotifs.add(new Fraymotif("Seinfeld Remix", 13)
                 ..effects.add(new FraymotifEffect(Stats.FREE_WILL, 2, true))
                 ..desc = " What the fuck? What even is this? Is it a riddle? I thought JR said it wasn't important... ");
+        }
+        if (aspect == Aspects.TAZE && session.rand.pickFrom([1, 2, 3]) == 1) {
+          this.tazeChangeAspect = true;
+          this.aspect = session.rand.pickFrom(Aspects.all);
+          this.class_name = session.rand.pickFrom(SBURBClassManager.all);
+          this.associatedStats = [];
+          this.aspect.initAssociatedStats(this);
         }
         this.godTier = true;
         this.session.stats.godTier = true;
