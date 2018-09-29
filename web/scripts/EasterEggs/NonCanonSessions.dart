@@ -146,9 +146,11 @@ abstract class NonCanonSessions {
         player.deriveChatHandle = false;
         player.deriveLand = false;
         if(index == 0){
-            player.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ=="); //Life is placheholder for Juice
+            player.copyFromOCDataString("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ==");
             player.class_name = SBURBClassManager.HUMAN;
             player.aspect = Aspects.JUICE;
+            player.tazeAspect = Aspects.SAUCE;
+            player.tazeClass_name = SBURBClassManager.GRACE; //testing this out, not important
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;

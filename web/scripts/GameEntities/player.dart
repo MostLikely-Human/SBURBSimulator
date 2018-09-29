@@ -22,6 +22,8 @@ class Player extends GameEntity{
     Palette dreamPalette;
 
     bool tazeChangeAspect = false;
+    Aspect tazeAspect = null;
+    SBURBClass tazeClass_name = null;
 
     //if 0, not yet woken up.
     double moonChance = 0.0;
@@ -472,12 +474,18 @@ class Player extends GameEntity{
                 ..effects.add(new FraymotifEffect(Stats.FREE_WILL, 2, true))
                 ..desc = " What the fuck? What even is this? Is it a riddle? I thought JR said it wasn't important... ");
         }
-        if (aspect == Aspects.TAZE && session.rand.pickFrom([1, 2, 3]) == 1) {
-          this.tazeChangeAspect = true;
-          this.aspect = session.rand.pickFrom(Aspects.all);
-          this.class_name = session.rand.pickFrom(SBURBClassManager.all);
-          this.associatedStats = [];
-          this.aspect.initAssociatedStats(this);
+        if (aspect == Aspects.TAZE) {
+          if(session.rand.pickFrom([1, 2, 3]) == 1 || tazeAspect != null || tazeClass_name != null) {
+            {
+              this.tazeChangeAspect = true;
+              if(tazeAspect == null) {this.aspect = session.rand.pickFrom(Aspects.all);}
+              if(tazeAspect != null) {this.aspect = this.tazeAspect;}
+              if(tazeClass_name == null) {this.class_name = session.rand.pickFrom(SBURBClassManager.all);}
+              if(tazeClass_name != null) {this.class_name = this.tazeClass_name;}
+              this.associatedStats = [];
+              this.aspect.initAssociatedStats(this);
+            }
+          }
         }
         this.godTier = true;
         this.session.stats.godTier = true;
