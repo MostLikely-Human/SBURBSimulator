@@ -91,12 +91,12 @@ class Rule extends Aspect {
       ..addFeature(FeatureFactory.ENERGIZINGFEELING, Feature.MEDIUM)
       ..addFeature(FeatureFactory.CONTEMPLATATIVEFEELING, Feature.LOW)
 
-      ..addFeature(new DenizenQuestChain("Be the Yondu", [
+      /*..addFeature(new DenizenQuestChain("Be the Yondu", [
         new Quest("The ${Quest.PLAYER1} is walking around on their land, when a ${Quest.CONSORT} walks up to them, and tells them about ${Quest.DENIZEN} and how it's destroying the land. The ${Quest.PLAYER1} doesn't care."),
         new Quest("The ${Quest.PLAYER1} sees another ${Quest.CONSORT}. The ${Quest.CONSORT} starts ${Quest.CONSORTSOUND}ing about how urgent it is to fight ${Quest.DENIZEN}. Again The ${Quest.PLAYER1} doesn't care in the slightest."),
         new Quest("The ${Quest.PLAYER1} is told about the great treasure that the ${Quest.DENIZEN} holds, The ${Quest.PLAYER1} decides to travel to the ${Quest.DENIZEN}'s lair. To fight the ${Quest.DENIZEN}."),
         new DenizenFightQuest("The ${Quest.PLAYER1} thunders into the ${Quest.DENIZEN}'s lair, and they demand a prize.", "The ${Quest.DENIZEN} is defeated, The ${Quest.PLAYER1} takes the grist without a second glance.","The ${Quest.PLAYER1} is defeated, maybe they should've played the game the right way.")
-      ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_LOW)
+      ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_LOW)*/
 
         ,  Theme.HIGH);
   }
