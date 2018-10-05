@@ -22,8 +22,8 @@ class Rule extends Aspect {
     ..cloak_light = '#c64f4f'
     ..cloak_mid = '#a33f3f'
     ..cloak_dark = '#843333'
-    ..shirt_light = '#d5e1f2'
-    ..shirt_dark = '#b3bdcc'
+    ..shirt_light = '#b5c1d2'
+    ..shirt_dark = '#939dac'
     ..pants_light = '#3c3e42'
     ..pants_dark = '#202123';
 
@@ -72,7 +72,7 @@ class Rule extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.rage(s, p); //I don't like coding Gnosises
+    return s.mutator.hope(s, p);
   }
 
   @override
@@ -91,12 +91,12 @@ class Rule extends Aspect {
       ..addFeature(FeatureFactory.ENERGIZINGFEELING, Feature.MEDIUM)
       ..addFeature(FeatureFactory.CONTEMPLATATIVEFEELING, Feature.LOW)
 
-      /*..addFeature(new DenizenQuestChain("Be the Yondu", [
-        new Quest("The ${Quest.PLAYER1} is walking around on their land, when a ${Quest.CONSORT} walks up to them, and tells them about ${Quest.DENIZEN} and how it's destroying the land. The ${Quest.PLAYER1} doesn't care."),
-        new Quest("The ${Quest.PLAYER1} sees another ${Quest.CONSORT}. The ${Quest.CONSORT} starts ${Quest.CONSORTSOUND}ing about how urgent it is to fight ${Quest.DENIZEN}. Again The ${Quest.PLAYER1} doesn't care in the slightest."),
-        new Quest("The ${Quest.PLAYER1} is told about the great treasure that the ${Quest.DENIZEN} holds, The ${Quest.PLAYER1} decides to travel to the ${Quest.DENIZEN}'s lair. To fight the ${Quest.DENIZEN}."),
-        new DenizenFightQuest("The ${Quest.PLAYER1} thunders into the ${Quest.DENIZEN}'s lair, and they demand a prize.", "The ${Quest.DENIZEN} is defeated, The ${Quest.PLAYER1} takes the grist without a second glance.","The ${Quest.PLAYER1} is defeated, maybe they should've played the game the right way.")
-      ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_LOW)*/
+      ..addFeature(new DenizenQuestChain("Be the Yondu", [
+        new Quest("The ${Quest.PLAYER1} is walking around their land, when suddenly an arrow starts floating, The ${Quest.PLAYER1} figures out they can control it with their mind."),
+        new Quest("The ${Quest.PLAYER1} is practicing in using their arrows, they see an imp walk close to them. The ${Quest.PLAYER1} tries to strife it, on their second attempt, The ${Quest.PLAYER1} is able to defeat the imp with their arrow, they have improved in their abilities."),
+        new Quest("The ${Quest.PLAYER1} has been practicing with their arrow abilities. They can now use many arrows in a giant wave to bring pain upon their enemies. The ${Quest.PLAYER1} is now able to take on their denizen."),
+        new DenizenFightQuest("The ${Quest.PLAYER1} walks into the ${Quest.DENIZEN}'s lair, arrows flying behind them.", "The ${Quest.DENIZEN} is slain, it looks like it was accupunctured.","The power of the arrows was not enough to help The ${Quest.PLAYER1}...")
+      ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_LOW)
 
         ,  Theme.HIGH);
   }
