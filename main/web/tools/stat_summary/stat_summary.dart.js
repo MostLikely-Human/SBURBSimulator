@@ -3641,8 +3641,8 @@ h.i(0,$.ad,L.c("#07090f"),!0)
 h.i(0,$.a8,L.c("#c64f4f"),!0)
 h.i(0,$.a9,L.c("#a33f3f"),!0)
 h.i(0,$.a7,L.c("#843333"),!0)
-h.i(0,$.a3,L.c("#d5e1f2"),!0)
-h.i(0,$.ac,L.c("#b3bdcc"),!0)
+h.i(0,$.a3,L.c("#b5c1d2"),!0)
+h.i(0,$.ac,L.c("#939dac"),!0)
 h.i(0,$.ab,L.c("#3c3e42"),!0)
 h.i(0,$.aa,L.c("#202123"),!0)
 k=P.h(H.a(["ABSOLUTE LOYALTY","ARROW EXTRAORDINAIRE","EMPATHETIC WARRIOR"],p),t)
@@ -11477,7 +11477,7 @@ C.a.j(t.b,new Q.d(r,t.k(r,1),q))
 s=A.e("Empathy",H.a([$.E,$.oU,$.aJ],s),null,!1,null)
 C.a.j(t.b,new Q.d(s,t.k(s,1),q))
 this.x2=t},
-C:function(){var t,s
+C:function(){var t,s,r,q,p,o,n,m
 t=[P.A]
 s=H.a(["Empathy","Arrows","Emotions","Bows"],t)
 H.a([],t)
@@ -11486,6 +11486,15 @@ t.h(0,$.a4,$.i)
 t.h(0,$.bU,$.v)
 t.h(0,$.aE,$.i)
 t.h(0,$.aP,$.v)
+r=$.j
+q="The "+r+" is walking around their land, when suddenly an arrow starts floating, The "+r+" figures out they can control it with their mind."
+p="The "+r+" is practicing in using their arrows, they see an imp walk close to them. The "+r+" tries to strife it, on their second attempt, The "+r+" is able to defeat the imp with their arrow, they have improved in their abilities."
+o="The "+r+" has been practicing with their arrow abilities. They can now use many arrows in a giant wave to bring pain upon their enemies. The "+r+" is now able to take on their denizen."
+n="The "+r+" walks into the "
+m=$.n
+n=n+m+"'s lair, arrows flying behind them."
+m="The "+m+" is slain, it looks like it was accupunctured."
+t.h(0,new R.z("Be the Yondu",!1,[new U.b(q),new U.b(p),new U.b(o),new U.G(n,"The power of the arrows was not enough to help The "+r+"...",m)],H.a([],[U.b]),R.m(),!1,!1,new Y.D("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.o)
 this.f.h(0,new X.q(s,t,null),$.X)},
 gX:function(){return this.l},
 gG:function(){return this.m},
