@@ -51,6 +51,7 @@ class Player extends GameEntity{
     Player _guardian = null; //no longer the sessions job to keep track.
     num number_confessions = 0;
     num number_times_confessed_to = 0;
+    int tgno = null;
     bool baby_stuck = false;
     String influenceSymbol = null; //multiple aspects can influence/mind control.
     Player influencePlayer = null; //who is controlling me? (so i can break free if i have more free will or they die)
@@ -280,6 +281,7 @@ class Player extends GameEntity{
 
     void unmakeMurderMode() {
         if(session.mutator.rageField) return; //you don't LEAVE murdermode until you are mothering fuck DONE you heretic
+        if(this.tgno == 1) return; //Same for Taze
         this.murderMode = false;
         this.leftMurderMode = true;
         this.renderSelf("unmakeMurderMode");

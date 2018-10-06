@@ -558,9 +558,10 @@ class GetWasted extends Scene {
 
     void tier4(Element div) {
         if(player.trickster) {
-            String rant = "Haha. No. Never ever ever again will I let a trickster into my code. Wow. No. Tier4 is locked to this asshole.  Sure I'll let the ${player.htmlTitle()} have the stat, but like HELL are they allowed to do anything with it.";
+            String rant = "Haha. No. Never ever ever again will I let a trickster into my code. Wow. No. Tier4 is locked to this asshole.  Sure I'll let the ${player.htmlTitle()} have the stat, but like HELL are they allowed to do anything with it. ";
+            rant += "MLH here, I'm removing this restriction, because lol why not, I guess I never learned enough restraint in my maturity quests, le shrug.";
             appendHtml(div, "$rant");
-            return;
+            //return;
         }
 
         session.stats.hasTier4Events = true;
@@ -568,7 +569,7 @@ class GetWasted extends Scene {
         if(player.class_name == SBURBClassManager.GRACE) rant = "Bluh.  I don't trust that Grace in my code one bit. But I guess they ARE supposed to be more subtle than us Wastes....so....Maybe things WON'T crash?";
         if(player.class_name != SBURBClassManager.GRACE && player.class_name != SBURBClassManager.WASTE) rant = "... Oh. Fuck.  What the hell is a ${player.class_name.name.toUpperCase()} doing in my code. How did this even happen. Don't come crying to me when they fuck things up.";
         appendHtml(div, "$rant");
-        session.mutator.checkForCrash(session);
+        //session.mutator.checkForCrash(session);
         CanvasElement canvas = new CanvasElement(width: canvasWidth, height: canvasHeight);
         div.append(canvas);
         appendHtml(div,"${player.aspect.activateCataclysm(session, player)}");

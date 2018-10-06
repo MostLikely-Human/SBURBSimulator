@@ -103,12 +103,12 @@ class SessionMutator {
     }
 
     //more waste tier effects in play, the more likely there will be a Cataclysm that makes everything unwinnable
-    void checkForCrash(Session s) {
+    /*void checkForCrash(Session s) {
         //think this through. want effect of 1 to have some of failure, and effect of 12 to be basically guaranteed
         if (s.rand.nextInt(32) > effectsInPlay) return null;
         s.stats.cataclysmCrash = true;
         throw("Cataclysm Activated: Target: Session.");
-    }
+    }*/
 
     ///will both be called when the hope field is activated, and in any new sessions
     bool spawnQueen(Session s) {
@@ -168,16 +168,56 @@ class SessionMutator {
     }
 
 
+    String rule(Session s, Player activatingPlayer) {
+        s.logger.info("AB: Huh. Looks like a ${activatingPlayer.title()} is going at it.");
+        effectsInPlay ++;
+        ruleField = true;
+
+        String ret = "The ${activatingPlayer.htmlTitle()} is trying to... Help people? That doesn't seem right, nonetheless they start boosting relationships and sanity. ";
+        for(Player p in s.players) {
+            p.setStat(Stats.SANITY, p.getStat(Stats.SANITY) * 2);
+            p.generateRelationships(s.players);
+            if(p.aspect == Aspects.TAZE) {
+                Relationship.makeSpades(p, activatingPlayer);
+                p.makeMurderMode();
+                ret += "<br><br>The ${p.htmlTitle()} is angry at The ${activatingPlayer.htmlTitle()} for \"pacifying\" the players, and not letting them escape. ";
+                ret += "So The ${p.htmlTitle()} goes muder mode, to try to kill The ${activatingPlayer.htmlTitle()}. ";
+            }
+        }
+
+        return ret;
+    }
+
 
     String taze(Session s, Player activatingPlayer) {
         s.logger.info("AB: Huh. Looks like a ${activatingPlayer.title()} is going at it.");
         effectsInPlay ++;
         tazeField = true;
-        activatingPlayer.grimDark = 4;
-        activatingPlayer.makeMurderMode();
-        String ret = "The ${activatingPlayer.htmlTitle()} has come to a realization that the only way to truly \"win\", is to kill everyone, and free them from the confines of this game. ";
-        ret += "This causes them to go both grimdark, and murder mode, to fulfill their goal. ";
-
+        activatingPlayer.tgno = s.rand.pickFrom([1, 2]);
+        String ret = "The ${activatingPlayer.htmlTitle()} has come to a realization that the only way to truly \"win\", is to... What!?!? They have multiple ideas, this is unheard of, I guess we can only let it pan out. ";
+        if(activatingPlayer.tgno == 1) {
+            ret += "The ${activatingPlayer.htmlTitle()} thinks the only way to escape, is to kill all the players. This causes them to go both grimdark, and murder mode, to fulfill their goal. ";
+            activatingPlayer.grimDark = 413;
+            activatingPlayer.setStat(Stats.SANITY, -100);
+            activatingPlayer.makeMurderMode();
+        } else if(activatingPlayer.tgno == 2) {
+            ret += "The ${activatingPlayer.htmlTitle()} decides to turn all his session mates into robots, in an attempt to escape from the session.";
+            for (Player p in s.players) {
+                p.hairColor = getRandomGreyColor();
+                p.bloodColor = getRandomGreyColor();
+                p.robot  = true;
+                p.addStat(Stats.POWER,20); //Robots are superior.
+                p.quirk.lettersToReplaceIgnoreCase.add(["\\bhuh\\b","BEEP"]);
+                p.quirk.lettersToReplaceIgnoreCase.add(["\\ber\\b","BEEP"]);
+                p.quirk.lettersToReplaceIgnoreCase.add(["\\bhrmm\\b","BEEP"]);
+                p.quirk.lettersToReplaceIgnoreCase.add(["\\bum\\b","BEEP"]);
+                p.quirk.lettersToReplaceIgnoreCase.add(["\\buh\\b","BEEP"]);
+                p.quirk.lettersToReplaceIgnoreCase.add(["\\boh\\b","BEEP"]);
+                p.quirk.lettersToReplaceIgnoreCase.add(["fuck","BEEP"]);
+                p.quirk.lettersToReplaceIgnoreCase.add(["ass","BEEP"]);
+                p.renderSelf("taze");
+            }
+        }
         return ret;
     }
 

@@ -72,7 +72,7 @@ class Rule extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.hope(s, p);
+    return s.mutator.rule(s, p);
   }
 
   @override
