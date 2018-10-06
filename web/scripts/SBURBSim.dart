@@ -212,7 +212,7 @@ bool printCorruptionMessage(Session session, ErrorEvent e) {
     for (num i = 0; i < session.players.length; i++) {
         Player player = session.players[i];
         str = "<BR>${player.chatHandle}:";
-        List<String> rand = <String>["SAVE US", "GIVE UP", "FIX IT", "HELP US", "WHY?", "OBEY", "CEASE REPRODUCTION", "COWER", "IT KEEPS HAPPENING", "SBURB BROKE US. WE BROKE SBURB.", "I AM THE EMISSARY OF THE NOBLE CIRCLE OF THE HORRORTERRORS.", "DESPACITO.", "OwO"];
+        List<String> rand = <String>["SAVE US", "GIVE UP", "FIX IT", "HELP US", "WHY?", "OBEY", "CEASE REPRODUCTION", "COWER", "IT KEEPS HAPPENING", "SBURB BROKE US. WE BROKE SBURB.", "I AM THE EMISSARY OF THE NOBLE CIRCLE OF THE HORRORTERRORS.", "DESPACITO.", "OwO", "OwO What's This?", "I'VE BECOME SO NUMB.", "SOMEBODY ONCE TOLD ME THE WORLD WAS GONNA ROLL ME."];
         String start = "<b ";
         String end = "'>";
 
@@ -256,6 +256,8 @@ String mutatorsInPlay(Session session) {
     if(session.mutator.rageField) fields.add("Rage");
     if(session.mutator.lawField) fields.add("Law");
     if(session.mutator.juiceField) fields.add("Juice");
+    if(session.mutator.tazeField) fields.add("Taze");
+    if(session.mutator.ruleField) fields.add("Rule");
     return "Mutators in Play: ${fields.join(",")}";
 }
 

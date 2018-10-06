@@ -236,8 +236,20 @@ void sbahjMode(Session session){
 	if (getParameterByName("session", null) == "stabilize") {
 		stabilize(session);
 	}
+
+	if (getParameterByName("iNeedAGnosis", null) == "True") {
+		GnosisStuck(session);
+	}
 }
 
+
+void GnosisStuck(Session session) {
+	for(num j = 0; j<session.players.length; j++) {
+		session.players[j].class_name = SBURBClassManager.WASTE;
+		session.players[j].gnosis = 3;
+    session.players[j].setStat(Stats.SBURB_LORE, 40372471136969696969696969);
+	}
+}
 
 
 void janusReward(Session session){

@@ -21,7 +21,9 @@ class SessionMutator {
     bool spaceField = false; //exclusively controls combo endings .
     bool dreamField = false; //alchemy doesn't consume items, alchemy can happen as many times as you want.
     bool lawField = false; //cumulusCanine recommended that after gnosis 4 activates everything reads like a bad fanfiction (because their word is law)
-    bool juiceField = false; //I don't even know
+    bool juiceField = false; //I don't even know (But actually I do)
+    bool tazeField = false; //P much Grimdark + Murder Mode
+    bool ruleField = false; //
 
     @override
     String toString() {
@@ -41,6 +43,8 @@ class SessionMutator {
         if(dreamField) ret = "$ret dream";
         if(lawField) ret = "$ret law";
         if(juiceField) ret = "$ret juice";
+        if(tazeField) ret = "$ret taze";
+        if(ruleField) ret = "$ret rule";
 
         return ret;
     }
@@ -160,6 +164,20 @@ class SessionMutator {
                 }
             }
         }
+        return ret;
+    }
+
+
+
+    String taze(Session s, Player activatingPlayer) {
+        s.logger.info("AB: Huh. Looks like a ${activatingPlayer.title()} is going at it.");
+        effectsInPlay ++;
+        tazeField = true;
+        activatingPlayer.grimDark = 4;
+        activatingPlayer.makeMurderMode();
+        String ret = "The ${activatingPlayer.htmlTitle()} has come to a realization that the only way to truly \"win\", is to kill everyone, and free them from the confines of this game. ";
+        ret += "This causes them to go both grimdark, and murder mode, to fulfill their goal. ";
+
         return ret;
     }
 

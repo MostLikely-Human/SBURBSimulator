@@ -72,7 +72,7 @@ class Taze extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.rage(s, p); //I don't like coding Gnosises
+    return s.mutator.taze(s, p); //I don't like coding Gnosises
   }
 
   @override
