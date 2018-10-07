@@ -25,6 +25,7 @@ class SessionMutator {
     bool tazeField = false; //P much Grimdark + Murder Mode
     bool ruleField = false; //Opposite of ^
     bool hippoField = false; //Doom gnosis
+    bool bearField = false; //Rage gnosis
 
     @override
     String toString() {
@@ -47,6 +48,7 @@ class SessionMutator {
         if(tazeField) ret = "$ret taze";
         if(ruleField) ret = "$ret rule";
         if(hippoField) ret = "$ret hippo";
+        if(bearField) ret = "$ret bear";
 
         return ret;
     }

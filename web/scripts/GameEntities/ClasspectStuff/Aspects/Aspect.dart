@@ -22,6 +22,7 @@ import "Juice.dart";
 import "Taze.dart";
 import "Rule.dart";
 import "Hippo.dart";
+import "Bear.dart";
 
 abstract class Aspects {
     static Aspect SPACE;
@@ -43,6 +44,7 @@ abstract class Aspects {
     static Aspect TAZE;
     static Aspect RULE;
     static Aspect HIPPO;
+    static Aspect BEAR;
 
     static Aspect NULL;
 
@@ -66,6 +68,7 @@ abstract class Aspects {
         TAZE = new Taze(16);
         RULE = new Rule(17);
         HIPPO = new Hippo(18);
+        BEAR = new Bear(19);
 
         NULL = new Aspect(255, "Null", isInternal:true);
     }
