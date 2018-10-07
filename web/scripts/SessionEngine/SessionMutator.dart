@@ -23,7 +23,8 @@ class SessionMutator {
     bool lawField = false; //cumulusCanine recommended that after gnosis 4 activates everything reads like a bad fanfiction (because their word is law)
     bool juiceField = false; //I don't even know (But actually I do)
     bool tazeField = false; //P much Grimdark + Murder Mode
-    bool ruleField = false; //
+    bool ruleField = false; //Opposite of ^
+    bool hippoField = false;
 
     @override
     String toString() {
@@ -45,6 +46,7 @@ class SessionMutator {
         if(juiceField) ret = "$ret juice";
         if(tazeField) ret = "$ret taze";
         if(ruleField) ret = "$ret rule";
+        if(hippoField) ret = "$ret hippo";
 
         return ret;
     }

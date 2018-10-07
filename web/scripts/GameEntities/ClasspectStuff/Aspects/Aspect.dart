@@ -21,6 +21,7 @@ import "Sauce.dart";
 import "Juice.dart";
 import "Taze.dart";
 import "Rule.dart";
+import "Hippo.dart";
 
 abstract class Aspects {
     static Aspect SPACE;
@@ -41,6 +42,7 @@ abstract class Aspects {
     static Aspect JUICE;
     static Aspect TAZE;
     static Aspect RULE;
+    static Aspect HIPPO;
 
     static Aspect NULL;
 
@@ -63,6 +65,7 @@ abstract class Aspects {
         SAUCE = new Sauce(15);
         TAZE = new Taze(16);
         RULE = new Rule(17);
+        HIPPO = new Hippo(18);
 
         NULL = new Aspect(255, "Null", isInternal:true);
     }
