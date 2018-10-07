@@ -24,7 +24,7 @@ class SessionMutator {
     bool juiceField = false; //I don't even know (But actually I do)
     bool tazeField = false; //P much Grimdark + Murder Mode
     bool ruleField = false; //Opposite of ^
-    bool hippoField = false;
+    bool hippoField = false; //Doom gnosis
 
     @override
     String toString() {

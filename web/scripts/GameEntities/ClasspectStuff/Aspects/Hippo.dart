@@ -71,7 +71,7 @@ class Hippo extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.hippo(s, p);
+    return s.mutator.doom(s, p);
   }
 
   @override
@@ -84,17 +84,17 @@ class Hippo extends Aspect {
                 new DenizenFightQuest("","","")
          */
 
-    addTheme(new Theme(<String>["Rebellion", "Fear", "Fighting", "Turmoil"])
+    addTheme(new Theme(<String>["Confusion", "Ranting", "Cold", "Quiet"])
       ..addFeature(FeatureFactory.CONFUSINGFEELING, Feature.LOW)
-      ..addFeature(FeatureFactory.ENERGIZINGFEELING, Feature.HIGH)
-      ..addFeature(FeatureFactory.ANGRYFEELING, Feature.MEDIUM)
-      ..addFeature(FeatureFactory.BLOODSMELL, Feature.MEDIUM)
+      ..addFeature(FeatureFactory.SILENCE, Feature.MEDIUM)
+      ..addFeature(FeatureFactory.CLAUSTROPHOBICFEELING, Feature.MEDIUM)
+      ..addFeature(FeatureFactory.ECHOSOUND, Feature.MEDIUM)
 
-      ..addFeature(new DenizenQuestChain("Crawl Through the Airduct", [
-        new Quest("The ${Quest.PLAYER1} is walking around on their land, when a ${Quest.CONSORT} walks up to them, and tells them about ${Quest.DENIZEN} and how it's destroying the land. The ${Quest.PLAYER1} doesn't care."),
-        new Quest("The ${Quest.PLAYER1} sees another ${Quest.CONSORT}. The ${Quest.CONSORT} starts ${Quest.CONSORTSOUND}ing about how urgent it is to fight ${Quest.DENIZEN}. Again The ${Quest.PLAYER1} doesn't care in the slightest."),
-        new Quest("The ${Quest.PLAYER1} is told about the great treasure that the ${Quest.DENIZEN} holds, The ${Quest.PLAYER1} decides to travel to the ${Quest.DENIZEN}'s lair. To fight the ${Quest.DENIZEN}."),
-        new DenizenFightQuest("The ${Quest.PLAYER1} thunders into the ${Quest.DENIZEN}'s lair, and they demand a prize.", "The ${Quest.DENIZEN} is defeated, The ${Quest.PLAYER1} takes the grist without a second glance.","The ${Quest.PLAYER1} is defeated, maybe they should've played the game the right way.")
+      ..addFeature(new DenizenQuestChain("Stop the Screamening", [
+        new Quest("The ${Quest.PLAYER1} hears the screaming voice of the ${Quest.DENIZEN}, and when they walk into a consort village, a ${Quest.CONSORT} ${Quest.CONSORTSOUND}s about how loud and annoying the ${Quest.DENIZEN} is."),
+        new Quest("The ${Quest.PLAYER1} sees another ${Quest.CONSORT}. The ${Quest.CONSORT} also ${Quest.CONSORTSOUND}s about how loud the ${Quest.DENIZEN} is."),
+        new Quest("The noise finally gets to The ${Quest.PLAYER1}, and they vow to slay the ${Quest.DENIZEN}."),
+        new DenizenFightQuest("The ${Quest.PLAYER1} steps into the ${Quest.DENIZEN}'s lair, The ${Quest.PLAYER1} demands the noise to stop, so they challenge their Denizen to a duel. ", "The ${Quest.DENIZEN} is defeated, and the noise finally stops.","The ${Quest.PLAYER1} is defeated, and the ${Quest.DENIZEN} screeches more.")
       ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_LOW)
 
         ,  Theme.HIGH);
