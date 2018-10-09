@@ -23,6 +23,15 @@ import "Taze.dart";
 import "Rule.dart";
 import "Hippo.dart";
 import "Bear.dart";
+import "Mindstone.dart";
+import "Spacestone.dart";
+import "Powerstone.dart";
+import "Soulstone.dart";
+import "Timestone.dart";
+import "Realitystone.dart";
+import "Gauntlet.dart";
+
+
 
 abstract class Aspects {
     static Aspect SPACE;
@@ -45,6 +54,13 @@ abstract class Aspects {
     static Aspect RULE;
     static Aspect HIPPO;
     static Aspect BEAR;
+    static Aspect MINDSTONE;
+    static Aspect SPACESTONE;
+    static Aspect POWERSTONE;
+    static Aspect SOULSTONE;
+    static Aspect TIMESTONE;
+    static Aspect REALITYSTONE;
+    static Aspect GAUNTLET;
 
     static Aspect NULL;
 
@@ -69,6 +85,14 @@ abstract class Aspects {
         RULE = new Rule(17);
         HIPPO = new Hippo(18);
         BEAR = new Bear(19);
+        MINDSTONE = new Mindstone(20);
+        SPACESTONE = new Spacestone(21);
+        POWERSTONE = new Powerstone(22);
+        SOULSTONE = new Soulstone(23);
+        TIMESTONE = new Timestone(24);
+        REALITYSTONE = new Realitystone(25);
+        GAUNTLET = new Gauntlet(26);
+
 
         NULL = new Aspect(255, "Null", isInternal:true);
     }

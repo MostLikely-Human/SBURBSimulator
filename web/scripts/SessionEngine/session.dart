@@ -1301,14 +1301,26 @@ class Session {
             }
 
             //random chance of Lord/Muse for two player sessions
-            if (numPlayers <= 2) {
-                ;
+            if (numPlayers <= 2 && this.rand.nextIntRange(1, 2) == 2) {
+
                 if (special > .6) {
                     players[0].class_name = SBURBClassManager.LORD;
                     players[1].class_name = SBURBClassManager.MUSE;
                 } else if (special < .3) {
                     players[0].class_name = SBURBClassManager.MUSE;
                     players[1].class_name = SBURBClassManager.LORD;
+                }
+            } else if(numPlayers <= 2 && this.rand.nextIntRange(1, 2) == 1) {
+                if (special > .6) {
+                    players[0].class_name = SBURBClassManager.LORD;
+                    players[0].aspect = Aspects.GAUNTLET;
+                    players[1].class_name = SBURBClassManager.MUSE;
+                    players[1].aspect = Aspects.GAUNTLET;
+                } else if (special < .3) {
+                    players[0].class_name = SBURBClassManager.MUSE;
+                    players[0].aspect = Aspects.GAUNTLET;
+                    players[1].class_name = SBURBClassManager.LORD;
+                    players[1].aspect = Aspects.GAUNTLET;
                 }
             }
         }else {
