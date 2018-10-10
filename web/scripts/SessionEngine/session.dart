@@ -1306,38 +1306,23 @@ class Session {
             for (int i = 2; i < numPlayers; i++) {
                 this.players.add(randomPlayer(this));
             }
-            int randml = this.rand.nextIntRange(1, 2);
             //random chance of Lord/Muse for two player sessions
-            if (numPlayers <= 2 && randml == 2) {
-
+            if(numPlayers <= 2) {
                 if (special > .6) {
                     players[0].class_name = SBURBClassManager.LORD;
                     players[1].class_name = SBURBClassManager.MUSE;
+                    if(this.rand.nextIntRange(1, 2) == 1) {
+                        players[0].thanOs = true;
+                        players[1].thanOs = true;
+                    }
                 } else if (special < .3) {
                     players[0].class_name = SBURBClassManager.MUSE;
                     players[1].class_name = SBURBClassManager.LORD;
-                }
-            } else if(numPlayers <= 2 && randml == 1) {
-                    players[0].aspect = Aspects.GAUNTLET;
-                    players[1].aspect = Aspects.GAUNTLET;
-                    int randGaunt = this.rand.nextIntRange(0, 1);
-                    if (randGaunt == 0) {
-                        int randGauntElectricBoogaloo = this.rand.nextIntRange(0, 1);
-                        int randGaunt3 = null;
-                        if(randGauntElectricBoogaloo == 1) {
-                            randGaunt3 = 0;
-                        }else randGaunt3 = 1;
-                        players[randGauntElectricBoogaloo].class_name = SBURBClassManager.MUSE;
-                        players[randGaunt3].class_name = SBURBClassManager.LORD;
-                    } else {
-                        int randGauntElectricBoogaloo = this.rand.nextIntRange(0, 1);
-                        int randGaunt3 = null;
-                        if(randGauntElectricBoogaloo == 1) {
-                            randGaunt3 = 0;
-                        }else randGaunt3 = 1;
-                        players[randGauntElectricBoogaloo].class_name = SBURBClassManager.WASTE;
-                        players[randGaunt3].class_name = SBURBClassManager.GRACE;
+                    if(this.rand.nextIntRange(1, 2) == 1) {
+                        players[0].thanOs = true;
+                        players[1].thanOs = true;
                     }
+                }
             }
         }else {
             players = new List.from(replayer);
