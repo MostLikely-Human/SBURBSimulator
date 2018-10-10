@@ -140,6 +140,9 @@ class GetTiger extends Scene{
 			if (p.tazeChangeAspect) {
 				ret += "<br><Br>... After ascending, they rebel against SBURB and now are The " + p.htmlTitle() + ". Insuing a lot of glitchiness, including SBURB not rendering them properly."; //sigh, there's no way to get players to render after this kind of thing
 			}
+			if (p.StoneChange = true) {
+				ret += "<br><Br>... Paradox Space has chosen The ${p.htmlTitle()} to join the ranks of the Stone aspect, I wonder how this will end...";
+			}
 			return ret;
 		}
 	}

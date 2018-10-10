@@ -26,7 +26,8 @@ class Player extends GameEntity{
     SBURBClass tazeClass_name = null;
 	
     //To make the players GT as Stone, null as default.	
-    String thanOs = null;
+    Aspect thanOs = null;
+    bool StoneChange = false;
 
     //if 0, not yet woken up.
     double moonChance = 0.0;
@@ -478,6 +479,10 @@ class Player extends GameEntity{
             fraymotifs.add(new Fraymotif("Seinfeld Remix", 13)
                 ..effects.add(new FraymotifEffect(Stats.FREE_WILL, 2, true))
                 ..desc = " What the fuck? What even is this? Is it a riddle? I thought JR said it wasn't important... ");
+        }
+        if(thanOs != null) {
+            aspect = thanOs;
+            StoneChange = true;
         }
         if (aspect == Aspects.TAZE) {
           if(session.rand.pickFrom([1, 2, 3]) == 1 || tazeAspect != null || tazeClass_name != null) {
