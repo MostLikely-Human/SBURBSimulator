@@ -24,6 +24,9 @@ class Player extends GameEntity{
     bool tazeChangeAspect = false;
     Aspect tazeAspect = null;
     SBURBClass tazeClass_name = null;
+	
+    //To make the players GT as Stone, null as default.	
+    String thanOs = null;
 
     //if 0, not yet woken up.
     double moonChance = 0.0;
@@ -38,7 +41,6 @@ class Player extends GameEntity{
     bool deriveSprite = true;
     bool deriveSpecibus = true;
     bool deriveLand = true;
-    bool thanOs = false;
     String flipOutReason = null; //if it's null, i'm not flipping my shit.
     Player flippingOutOverDeadPlayer = null; //don't let this go into url. but, don't flip out if the friend is currently alive, you goof.
     num denizen_index = 0; //denizen quests are in order.
