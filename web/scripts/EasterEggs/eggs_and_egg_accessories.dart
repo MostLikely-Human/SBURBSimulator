@@ -320,10 +320,20 @@ void processXStuck(Session session){
 				setAllClassesTo(session,stuck[0].trim());
 			}else if(all_aspects.indexOf(stuck[0]) != -1){
 				setAllAspectsTo(session,stuck[0].trim());
+			}else if(stuck[0] == "Stone") {
+				setStoneAspects(session);
 			}
 		}
 	}
 
+}
+
+void setStoneAspects(Session session) {
+	for (Player player in session.players) {
+		Aspect a = session.rand.pickFrom([Aspects.MINDSTONE, Aspects.SPACESTONE, Aspects.POWERSTONE, Aspects.SOULSTONE, Aspects.TIMESTONE, Aspects.REALITYSTONE]);
+		if(player.aspect != Aspects.SPACE && player.aspect != Aspects.TIME) player.aspect = a;
+		if(player.guardian.aspect != Aspects.SPACE && player.guardian.aspect != Aspects.TIME) player.guardian.aspect = a;
+	}
 }
 
 
