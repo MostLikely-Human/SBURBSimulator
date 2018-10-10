@@ -1144,6 +1144,13 @@ class Session {
         //print(npcHandler.debugNPCs());
         await SimController.instance.easterEggCallBack(this);
 
+        Aspects.GAUNTLET.name = "Stone";
+        Aspects.MINDSTONE.name = "Stone";
+        Aspects.SPACESTONE.name = "Stone";
+        Aspects.POWERSTONE.name = "Stone";
+        Aspects.SOULSTONE.name = "Stone";
+        Aspects.TIMESTONE.name = "Stone";
+        Aspects.REALITYSTONE.name = "Stone";
         return completer.future;
     }
 

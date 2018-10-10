@@ -139,10 +139,6 @@ class Player extends GameEntity{
         moon = m; //set explicitly so triggers syncing.
         this.name = "player_$id"; //this.htmlTitleBasic();
         //testing something
-        if(this.aspect == Aspects.GAUNTLET) {
-            this.aspect.savedName = this.aspect.name;
-            this.aspect.name = "Stone";
-        }
     }
 
     @override
