@@ -27,7 +27,7 @@ class Player extends GameEntity{
 	
     //To make the players GT as Stone, null as default.	
     Aspect thanOs = null;
-    bool StoneChange = false;
+    bool StoneChange = null;
 
     //if 0, not yet woken up.
     double moonChance = 0.0;

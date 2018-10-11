@@ -1311,16 +1311,20 @@ class Session {
                 if (special > .6) {
                     players[0].class_name = SBURBClassManager.LORD;
                     players[1].class_name = SBURBClassManager.MUSE;
-                    if(this.rand.nextIntRange(1, 5) == 1) {
+                    if(this.rand.nextIntRange(1, 3) == 1) {
                         players[0].thanOs = Aspects.GAUNTLET;
                         players[1].thanOs = Aspects.GAUNTLET;
+                        players[0].godDestiny = true;
+                        players[1].godDestiny = true;
                     }
                 } else if (special < .3) {
                     players[0].class_name = SBURBClassManager.MUSE;
                     players[1].class_name = SBURBClassManager.LORD;
-                    if(this.rand.nextIntRange(1, 5) == 1) {
+                    if(this.rand.nextIntRange(1, 3) == 1) {
                         players[0].thanOs = Aspects.GAUNTLET;
                         players[1].thanOs = Aspects.GAUNTLET;
+                        players[0].godDestiny = true;
+                        players[1].godDestiny = true;
                     }
                 }
             }

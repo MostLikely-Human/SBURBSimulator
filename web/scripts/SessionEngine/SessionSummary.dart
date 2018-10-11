@@ -443,6 +443,7 @@ class SessionSummary {
         summary.setBoolStat("hasTier2GnosisEvents", false);
         summary.setBoolStat("hasTier3GnosisEvents", false);
         summary.setBoolStat("hasTier4GnosisEvents", false);
+        summary.setBoolStat("hasStoneChoosening", false);
         summary.setBoolStat("hasNoTier4Events", false);  //so you can tell ab to ignore tier4 events
         summary.setBoolStat("hasLuckyEvents", false);
         summary.setBoolStat("hasUnluckyEvents", false);
@@ -537,6 +538,7 @@ class SessionSummary {
         summary.setBoolStat("hasTier2GnosisEvents", session.stats.hasTier2Events);
         summary.setBoolStat("hasTier3GnosisEvents", session.stats.hasTier3Events);
         summary.setBoolStat("hasTier4GnosisEvents", session.stats.hasTier4Events);
+        summary.setBoolStat("hasStoneChoosening", session.stats.hasStoneChoosening);
         summary.setBoolStat("hasNoTier4Events", !session.stats.hasTier4Events);  //so you can tell ab to ignore tier4 events
         summary.setNumStat("averageMinLuck", Stats.MIN_LUCK.average(session.players));
         summary.setNumStat("averageMaxLuck", Stats.MAX_LUCK.average(session.players));

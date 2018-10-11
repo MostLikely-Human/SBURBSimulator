@@ -131,17 +131,17 @@ class GetTiger extends Scene{
 
 		for (num i = 0; i < this.deadPlayersToGodTier.length; i++) {
 			Player p = this.deadPlayersToGodTier[i];
-			if (p.godDestiny) p
-					.makeGodTier(); //god destiny can be set to false if you didn't have anywhere to god tier
+			if (p.godDestiny) p.makeGodTier(); //god destiny can be set to false if you didn't have anywhere to god tier
+
 			if (p.aspect == Aspects.SAUCE) {
-				ret +=
-				"<br><Br>...  Huh. What... what even happened there? Is that a SAUCE player? WTF? That's not canon... Fucking Shogun...";
+				ret += "<br><Br>...  Huh. What... what even happened there? Is that a SAUCE player? WTF? That's not canon... Fucking Shogun...";
 			}
 			if (p.tazeChangeAspect) {
 				ret += "<br><Br>... After ascending, they rebel against SBURB and now are The " + p.htmlTitle() + ". Insuing a lot of glitchiness, including SBURB not rendering them properly."; //sigh, there's no way to get players to render after this kind of thing
 			}
-			if (p.StoneChange = true) {
+			if (p.StoneChange == true) {
 				ret += "<br><Br>... Paradox Space has chosen The ${p.htmlTitle()} to join the ranks of the Stone aspect, I wonder how this will end...";
+				session.stats.hasStoneChoosening = true;
 			}
 			return ret;
 		}

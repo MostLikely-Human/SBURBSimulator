@@ -39,6 +39,7 @@ class SessionStats {
     bool hasTier2Events = false;
     bool hasTier3Events = false;
     bool hasTier4Events = false;
+    bool hasStoneChoosening = false;
     bool ectoBiologyStarted = false;
     bool doomedTimeline = false;
     bool makeCombinedSession = false; //happens if sick frog and few living players
