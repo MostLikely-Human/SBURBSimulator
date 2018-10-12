@@ -30,6 +30,7 @@ import "Soulstone.dart";
 import "Timestone.dart";
 import "Realitystone.dart";
 import "Gauntlet.dart";
+import "Meme.dart";
 
 
 
@@ -61,6 +62,7 @@ abstract class Aspects {
     static Aspect TIMESTONE;
     static Aspect REALITYSTONE;
     static Aspect GAUNTLET;
+    static Aspect MEME;
 
     static Aspect NULL;
 
@@ -92,6 +94,7 @@ abstract class Aspects {
         TIMESTONE = new Timestone(24);
         REALITYSTONE = new Realitystone(25);
         GAUNTLET = new Gauntlet(26);
+        MEME = new Meme(27);
 
 
         NULL = new Aspect(255, "Null", isInternal:true);
