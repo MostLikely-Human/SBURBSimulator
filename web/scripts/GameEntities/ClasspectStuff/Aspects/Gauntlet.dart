@@ -19,6 +19,9 @@ class Gauntlet extends Aspect {
     ..shirt_dark = '#8f8f8f'
     ..pants_light = '#a88e00'
     ..pants_dark = '#756300';
+  
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
 
   Gauntlet(int id) :super(id, "Gauntlet", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
