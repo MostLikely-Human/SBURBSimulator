@@ -20,5 +20,8 @@ class Soulstone extends Aspect {
     ..pants_light = '#a88e00'
     ..pants_dark = '#756300';
 
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+  
   Soulstone(int id) :super(id, "Soulstone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
