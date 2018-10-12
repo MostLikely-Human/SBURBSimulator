@@ -1303,29 +1303,32 @@ class Session {
         if(replayer.isEmpty) {
             this.players.add(randomSpacePlayer(this));
             this.players.add(randomTimePlayer(this));
+            int des = this.rand.nextIntRange(1, 5);
             for (int i = 2; i < numPlayers; i++) {
                 this.players.add(randomPlayer(this));
+                if(des == 1 && i != numPlayers - 1 && i != numPlayers) {
+                    players[i].class_name = SBURBClassManager.LORD;
+                    players[i].aspect = Aspects.GAUNTLET;
+                    this.players.add(randomPlayer(this));
+                    players[i+1].class_name = SBURBClassManager.MUSE;
+                    players[i+1].aspect = Aspects.GAUNTLET;
+                    players[i].godTier = true;
+                    players[i+1].godTier = true;
+                    players[i].getRelationshipWith(players[i+1]).value = this.rand.nextIntRange(-10, 10);
+                    players[i+1].getRelationshipWith(players[i]).value = this.rand.nextIntRange(-10, 10);
+                    this.stats.hasStoneChoosening = true;
+                    des = null;
+                    i += 1;
+                }
             }
             //random chance of Lord/Muse for two player sessions
             if(numPlayers <= 2) {
                 if (special > .6) {
                     players[0].class_name = SBURBClassManager.LORD;
                     players[1].class_name = SBURBClassManager.MUSE;
-                    if(this.rand.nextIntRange(1, 3) == 1) {
-                        players[0].thanOs = Aspects.GAUNTLET;
-                        players[1].thanOs = Aspects.GAUNTLET;
-                        players[0].godDestiny = true;
-                        players[1].godDestiny = true;
-                    }
                 } else if (special < .3) {
                     players[0].class_name = SBURBClassManager.MUSE;
                     players[1].class_name = SBURBClassManager.LORD;
-                    if(this.rand.nextIntRange(1, 3) == 1) {
-                        players[0].thanOs = Aspects.GAUNTLET;
-                        players[1].thanOs = Aspects.GAUNTLET;
-                        players[0].godDestiny = true;
-                        players[1].godDestiny = true;
-                    }
                 }
             }
         }else {
