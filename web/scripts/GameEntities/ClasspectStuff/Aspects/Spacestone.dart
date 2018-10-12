@@ -19,6 +19,9 @@ class Spacestone extends Aspect {
     ..shirt_dark = '#8f8f8f'
     ..pants_light = '#a88e00'
     ..pants_dark = '#756300';
+  
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
 
   Spacestone(int id) :super(id, "Spacestone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
