@@ -119,6 +119,8 @@ abstract class Aspects {
         return NULL; // return the NULL aspect instead of null
     }
 
+    static List Stone = [MINDSTONE, SPACESTONE, POWERSTONE, SOULSTONE, TIMESTONE, REALITYSTONE, GAUNTLET];
+
     static Aspect getByName(String name) {
         if (_aspects.isEmpty) init();
         for (Aspect aspect in _aspects.values) {

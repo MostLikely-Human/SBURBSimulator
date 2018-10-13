@@ -910,7 +910,16 @@ class SessionMutator {
     //if it's not done yet.
     String abjectFailure(Session s, Player activatingPlayer) {
         effectsInPlay ++;
-        return "The ${activatingPlayer.htmlTitle()} appears to be doing something fantastic. The very fabric of SBURB is being undone according to their whims. They are screaming. Dramatic lightning and wind is whipping around everywhere. Oh.  Uh.  Huh.  Was something supposed to happen?  ... Maybe they just suck at this?  Or maybe JR is a lazy piece of shit who didn't code anything for this. I know MY headcanon.";
+        String ret = "The ${activatingPlayer.htmlTitle()} appears to be doing something fantastic. The very fabric of SBURB is being undone according to their whims. They are screaming. Dramatic lightning and wind is whipping around everywhere. Oh.  Uh.  Huh.  Was something supposed to happen?  ... Maybe they just suck at this?  Or maybe JR is a lazy piece of shit who didn't code anything for this. I know MY headcanon.";
+        for (Aspect a in Aspects.Stone) {
+            if(activatingPlayer.aspect == a) {
+                ret += "<br><Br>No. Just no. A Stone player should not have a Gnosis, they're far too powerful to do anything undoable, so I'm completely banning them from going Gnosis.";
+            }
+        }
+        if(activatingPlayer.aspect == Aspects.GAUNTLET) {
+            ret += "<br>Heheh, no, Gauntlet player gnosis would be bad. They won't just *snop* their fingers and kill half the session, that would be funny though.<br>";
+        }
+        return ret;
     }
 
     SessionSummary makeBullshitSummary(Session session, SessionSummary summary) {
@@ -1006,6 +1015,31 @@ class MetaPlayerHandler {
         humanBot = makeHB(s);
         shogunBot = makeFUB(s);
 
+    }
+
+    Player makeThanos(Session s) {
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.LORD, Aspects.GAUNTLET);
+        player.quirk = randomHumanQuirk(s.rand);
+        player.copyFromOCDataString("b=%00%00%00J%C3%BAV%04%10%01%01%3D&s=,,Infinity Stones,Order,Thanos&x=ntAA");
+        player.hair = 76;
+        player.quirk.capitalization = Quirk.NORMALCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+        player.initialize();
+        player.deriveLand = false;
+        player.deriveSprite = false;
+        player.object_to_prototype = new PotentialSprite("Infinity Gauntlet", s);
+        player.sprite.addPrototyping(player.object_to_prototype);
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.land = player.spawnLand();
+        player.land.name = "Land of Abstraction and Eternity";
+        player.land.denizenFeature = new HardDenizenFeature("Uatu<span class = 'void'>, The Watcher</span>");
+
+        return player;
     }
 
     Player makeAW(Session s) {

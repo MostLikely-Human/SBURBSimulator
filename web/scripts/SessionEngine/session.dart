@@ -1303,7 +1303,7 @@ class Session {
         if(replayer.isEmpty) {
             this.players.add(randomSpacePlayer(this));
             this.players.add(randomTimePlayer(this));
-            int des = this.rand.nextIntRange(1, 5);
+            int des = this.rand.nextIntRange(1, 35);
             for (int i = 2; i < numPlayers; i++) {
                 this.players.add(randomPlayer(this));
                 if(des == 1 && i != numPlayers - 1 && i != numPlayers) {

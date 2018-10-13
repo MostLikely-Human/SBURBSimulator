@@ -23,5 +23,10 @@ class Gauntlet extends Aspect {
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
 
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.abjectFailure(s, p);
+  }
+
   Gauntlet(int id) :super(id, "Gauntlet", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }

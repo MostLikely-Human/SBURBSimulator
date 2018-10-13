@@ -23,6 +23,7 @@ abstract class NonCanonSessions {
         ret[247] = session247; //MLH
         ret[12250] = session12250; //The immortal loss meme
         ret[212] = session212; //Cipah
+        ret[350] = session350; //Thanos session
         return ret;
     }
 
@@ -32,6 +33,26 @@ abstract class NonCanonSessions {
         if (sm.containsKey(id)) {
             sm[id](session);
         }
+    }
+
+    static void session350(Session session) {
+        //makeASessionFromSource(session, session350IndexToPlayer, 1);
+        session.mutator.metaHandler.initalizePlayers(new Session(13),true);
+        session.players = <Player>[session.mutator.metaHandler.makeThanos(session)];
+        session.players.length = 1; //no more, no less.
+        session.players[0].setStat(Stats.EXPERIENCE, 1300);
+    }
+
+    static void session350IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+        player.copyFromOCDataString("b=%00%00%00J%C3%BAV%04%15%01%01%3D&s=,,Infinity Stones,Order,Thanos&x=ntAA");
+        player.hair = 75;
+        player.quirk.capitalization = Quirk.NORMALCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
     }
 
     static void session12250(Session session) {
