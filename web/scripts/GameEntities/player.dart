@@ -480,6 +480,42 @@ class Player extends GameEntity{
                 ..effects.add(new FraymotifEffect(Stats.FREE_WILL, 2, true))
                 ..desc = " What the fuck? What even is this? Is it a riddle? I thought JR said it wasn't important... ");
         }
+        int a = session.rand.nextIntRange(1, 5);
+        if(a == 1 && this.grimDark == 0 && this.murderMode == false) {
+            int StoneVar = 0;
+            for(Aspect a in Aspects.Stone) {
+              if(this.aspect == a) {
+                StoneVar = 1;
+              }
+            }
+            if(StoneVar == 0 && this.class_name != SBURBClassManager.LORD && this.class_name != SBURBClassManager.MUSE && this.class_name != SBURBClassManager.WASTE && this.class_name != SBURBClassManager.GRACE) {
+                if(this.aspect == Aspects.MIND) {
+                    thanOs = Aspects.MINDSTONE;
+                } else if(this.aspect == Aspects.SPACE) {
+                    thanOs = Aspects.SPACESTONE;
+                } else if(this.aspect == Aspects.RAGE) {
+                    thanOs = Aspects.POWERSTONE;
+                } else if(this.aspect == Aspects.HEART) {
+                    thanOs = Aspects.SOULSTONE;
+                } else if(this.aspect == Aspects.TIME) {
+                    thanOs = Aspects.TIMESTONE;
+                } else if(this.aspect == Aspects.LIGHT) {
+                    thanOs = Aspects.REALITYSTONE;
+                } else if(this.class_name == SBURBClassManager.HEIR || this.class_name == SBURBClassManager.MAGE) {
+                    thanOs = Aspects.MINDSTONE;
+                } else if(this.class_name == SBURBClassManager.MAID || this.class_name == SBURBClassManager.KNIGHT) {
+                    thanOs = Aspects.SPACESTONE;
+                } else if(this.class_name == SBURBClassManager.BARD || this.class_name == SBURBClassManager.THIEF) {
+                    thanOs = Aspects.POWERSTONE;
+                } else if(this.class_name == SBURBClassManager.PRINCE || this.class_name == SBURBClassManager.WITCH) {
+                    thanOs = Aspects.SOULSTONE;
+                } else if(this.class_name == SBURBClassManager.SEER || this.class_name == SBURBClassManager.SYLPH) {
+                    thanOs = Aspects.TIMESTONE;
+                } else if(this.class_name == SBURBClassManager.ROGUE || this.class_name == SBURBClassManager.PAGE) {
+                    thanOs = Aspects.REALITYSTONE;
+                }
+            }
+        }
         if(thanOs != null) {
             aspect = thanOs;
             StoneChange = true;
