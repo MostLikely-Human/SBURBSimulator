@@ -488,7 +488,7 @@ class Player extends GameEntity{
                 StoneVar = 1;
               }
             }
-            if(StoneVar == 0 && this.class_name != SBURBClassManager.LORD && this.class_name != SBURBClassManager.MUSE && this.class_name != SBURBClassManager.WASTE && this.class_name != SBURBClassManager.GRACE) {
+            if(StoneVar == 0 && this.class_name.isCanon) {
                 if(this.aspect == Aspects.MIND) {
                     thanOs = Aspects.MINDSTONE;
                 } else if(this.aspect == Aspects.SPACE) {
