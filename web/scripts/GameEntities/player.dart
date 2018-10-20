@@ -480,7 +480,7 @@ class Player extends GameEntity{
                 ..effects.add(new FraymotifEffect(Stats.FREE_WILL, 2, true))
                 ..desc = " What the fuck? What even is this? Is it a riddle? I thought JR said it wasn't important... ");
         }
-        int a = session.rand.nextIntRange(1, 3);
+        int a = session.rand.nextIntRange(1, 10);
         if(a == 1 && this.grimDark == 0 && this.murderMode == false) {
             int StoneVar = 0;
             for(Aspect a in Aspects.Stone) {

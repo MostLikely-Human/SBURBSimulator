@@ -3509,8 +3509,9 @@ _.k2=k2
 _.k3=k3
 _.k4=k4
 _.r1=r1
-_.r2=r2},oi:function oi(y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.r2=r2},oi:function oi(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
+_.y2=y2
 _.a=a
 _.b=b
 _.c=c
@@ -4023,8 +4024,9 @@ _.k2=k2
 _.k3=k3
 _.k4=k4
 _.r1=r1
-_.r2=r2},na:function na(y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.r2=r2},na:function na(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
+_.y2=y2
 _.a=a
 _.b=b
 _.c=c
@@ -4509,8 +4511,9 @@ _.k2=k2
 _.k3=k3
 _.k4=k4
 _.r1=r1
-_.r2=r2},p7:function p7(y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.r2=r2},p7:function p7(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
+_.y2=y2
 _.a=a
 _.b=b
 _.c=c
@@ -10741,35 +10744,37 @@ h.j(0,$.ao,L.d("#c3c3c3"),!0)
 h.j(0,$.an,L.d("#8f8f8f"),!0)
 h.j(0,$.am,L.d("#a88e00"),!0)
 h.j(0,$.al,L.d("#756300"),!0)
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#FF9B00"),!0)
-g.j(0,$.ah,L.d("#FF9B00"),!0)
-g.j(0,$.ag,L.d("#FF8700"),!0)
-g.j(0,$.aq,L.d("#7F7F7F"),!0)
-g.j(0,$.ap,L.d("#727272"),!0)
-g.j(0,$.aj,L.d("#A3A3A3"),!0)
-g.j(0,$.ak,L.d("#999999"),!0)
-g.j(0,$.ai,L.d("#898989"),!0)
-g.j(0,$.ao,L.d("#EFEFEF"),!0)
-g.j(0,$.an,L.d("#DBDBDB"),!0)
-g.j(0,$.am,L.d("#C6C6C6"),!0)
-g.j(0,$.al,L.d("#ADADAD"),!0)
-g=new U.na(h,0.01,0.01,0.01,0.5,20,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Mindstone",null,!1,!0,!0,!1,!1,!0,1,g,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
-g.X(20,"Mindstone",!1,!0,!0)
-$.yr=g
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#74a4ff"),!0)
-g.j(0,$.ah,L.d("#74a4ff"),!0)
-g.j(0,$.ag,L.d("#466299"),!0)
-g.j(0,$.aq,L.d("#466299"),!0)
-g.j(0,$.ap,L.d("#2f4166"),!0)
-g.j(0,$.aj,L.d("#d0c217"),!0)
-g.j(0,$.ak,L.d("#9e9311"),!0)
-g.j(0,$.ai,L.d("#6b640c"),!0)
-g.j(0,$.ao,L.d("#c3c3c3"),!0)
-g.j(0,$.an,L.d("#8f8f8f"),!0)
-g.j(0,$.am,L.d("#a88e00"),!0)
-g.j(0,$.al,L.d("#756300"),!0)
+g=P.f(H.a(["Stone","Sauron","Stupid","Selfish","Sock","Stuck","Selian","Sandals","Sans"],p),q)
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#FF9B00"),!0)
+f.j(0,$.ah,L.d("#FF9B00"),!0)
+f.j(0,$.ag,L.d("#FF8700"),!0)
+f.j(0,$.aq,L.d("#7F7F7F"),!0)
+f.j(0,$.ap,L.d("#727272"),!0)
+f.j(0,$.aj,L.d("#A3A3A3"),!0)
+f.j(0,$.ak,L.d("#999999"),!0)
+f.j(0,$.ai,L.d("#898989"),!0)
+f.j(0,$.ao,L.d("#EFEFEF"),!0)
+f.j(0,$.an,L.d("#DBDBDB"),!0)
+f.j(0,$.am,L.d("#C6C6C6"),!0)
+f.j(0,$.al,L.d("#ADADAD"),!0)
+f=new U.na(h,g,0.01,0.01,0.01,0.5,20,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Mindstone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+f.X(20,"Mindstone",!1,!0,!0)
+$.yr=f
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#74a4ff"),!0)
+f.j(0,$.ah,L.d("#74a4ff"),!0)
+f.j(0,$.ag,L.d("#466299"),!0)
+f.j(0,$.aq,L.d("#466299"),!0)
+f.j(0,$.ap,L.d("#2f4166"),!0)
+f.j(0,$.aj,L.d("#d0c217"),!0)
+f.j(0,$.ak,L.d("#9e9311"),!0)
+f.j(0,$.ai,L.d("#6b640c"),!0)
+f.j(0,$.ao,L.d("#c3c3c3"),!0)
+f.j(0,$.an,L.d("#8f8f8f"),!0)
+f.j(0,$.am,L.d("#a88e00"),!0)
+f.j(0,$.al,L.d("#756300"),!0)
+g=P.f(H.a(["Stone","Sauron","Stupid","Selfish","Sock","Stuck","Selian","Sandals","Sans"],p),q)
 h=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
 h.j(0,$.af,L.d("#FF9B00"),!0)
 h.j(0,$.ah,L.d("#FF9B00"),!0)
@@ -10783,7 +10788,7 @@ h.j(0,$.ao,L.d("#EFEFEF"),!0)
 h.j(0,$.an,L.d("#DBDBDB"),!0)
 h.j(0,$.am,L.d("#C6C6C6"),!0)
 h.j(0,$.al,L.d("#ADADAD"),!0)
-h=new S.oi(g,0.01,0.01,0.01,0.5,21,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Spacestone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+h=new S.oi(f,g,0.01,0.01,0.01,0.5,21,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Spacestone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
 h.X(21,"Spacestone",!1,!0,!0)
 $.yA=h
 h=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -10799,35 +10804,37 @@ h.j(0,$.ao,L.d("#c3c3c3"),!0)
 h.j(0,$.an,L.d("#8f8f8f"),!0)
 h.j(0,$.am,L.d("#a88e00"),!0)
 h.j(0,$.al,L.d("#756300"),!0)
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#FF9B00"),!0)
-g.j(0,$.ah,L.d("#FF9B00"),!0)
-g.j(0,$.ag,L.d("#FF8700"),!0)
-g.j(0,$.aq,L.d("#7F7F7F"),!0)
-g.j(0,$.ap,L.d("#727272"),!0)
-g.j(0,$.aj,L.d("#A3A3A3"),!0)
-g.j(0,$.ak,L.d("#999999"),!0)
-g.j(0,$.ai,L.d("#898989"),!0)
-g.j(0,$.ao,L.d("#EFEFEF"),!0)
-g.j(0,$.an,L.d("#DBDBDB"),!0)
-g.j(0,$.am,L.d("#C6C6C6"),!0)
-g.j(0,$.al,L.d("#ADADAD"),!0)
-g=new Z.nL(h,0.01,0.01,0.01,0.5,22,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Powerstone",null,!1,!0,!0,!1,!1,!0,1,g,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
-g.X(22,"Powerstone",!1,!0,!0)
-$.yt=g
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#ffcb6f"),!0)
-g.j(0,$.ah,L.d("#ffcb6f"),!0)
-g.j(0,$.ag,L.d("#997a42"),!0)
-g.j(0,$.aq,L.d("#997a42"),!0)
-g.j(0,$.ap,L.d("#66512c"),!0)
-g.j(0,$.aj,L.d("#d0c217"),!0)
-g.j(0,$.ak,L.d("#9e9311"),!0)
-g.j(0,$.ai,L.d("#6b640c"),!0)
-g.j(0,$.ao,L.d("#c3c3c3"),!0)
-g.j(0,$.an,L.d("#8f8f8f"),!0)
-g.j(0,$.am,L.d("#a88e00"),!0)
-g.j(0,$.al,L.d("#756300"),!0)
+g=P.f(H.a(["Stone","Sauron","Stupid","Selfish","Sock","Stuck","Selian","Sandals","Sans"],p),q)
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#FF9B00"),!0)
+f.j(0,$.ah,L.d("#FF9B00"),!0)
+f.j(0,$.ag,L.d("#FF8700"),!0)
+f.j(0,$.aq,L.d("#7F7F7F"),!0)
+f.j(0,$.ap,L.d("#727272"),!0)
+f.j(0,$.aj,L.d("#A3A3A3"),!0)
+f.j(0,$.ak,L.d("#999999"),!0)
+f.j(0,$.ai,L.d("#898989"),!0)
+f.j(0,$.ao,L.d("#EFEFEF"),!0)
+f.j(0,$.an,L.d("#DBDBDB"),!0)
+f.j(0,$.am,L.d("#C6C6C6"),!0)
+f.j(0,$.al,L.d("#ADADAD"),!0)
+f=new Z.nL(h,g,0.01,0.01,0.01,0.5,22,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Powerstone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+f.X(22,"Powerstone",!1,!0,!0)
+$.yt=f
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#ffcb6f"),!0)
+f.j(0,$.ah,L.d("#ffcb6f"),!0)
+f.j(0,$.ag,L.d("#997a42"),!0)
+f.j(0,$.aq,L.d("#997a42"),!0)
+f.j(0,$.ap,L.d("#66512c"),!0)
+f.j(0,$.aj,L.d("#d0c217"),!0)
+f.j(0,$.ak,L.d("#9e9311"),!0)
+f.j(0,$.ai,L.d("#6b640c"),!0)
+f.j(0,$.ao,L.d("#c3c3c3"),!0)
+f.j(0,$.an,L.d("#8f8f8f"),!0)
+f.j(0,$.am,L.d("#a88e00"),!0)
+f.j(0,$.al,L.d("#756300"),!0)
+g=P.f(H.a(["Stone","Sauron","Stupid","Selfish","Sock","Stuck","Selian","Sandals","Sans"],p),q)
 h=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
 h.j(0,$.af,L.d("#FF9B00"),!0)
 h.j(0,$.ah,L.d("#FF9B00"),!0)
@@ -10841,7 +10848,7 @@ h.j(0,$.ao,L.d("#EFEFEF"),!0)
 h.j(0,$.an,L.d("#DBDBDB"),!0)
 h.j(0,$.am,L.d("#C6C6C6"),!0)
 h.j(0,$.al,L.d("#ADADAD"),!0)
-h=new F.og(g,0.01,0.01,0.01,0.5,23,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Soulstone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+h=new F.og(f,g,0.01,0.01,0.01,0.5,23,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Soulstone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
 h.X(23,"Soulstone",!1,!0,!0)
 $.yy=h
 h=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -10857,35 +10864,37 @@ h.j(0,$.ao,L.d("#c3c3c3"),!0)
 h.j(0,$.an,L.d("#8f8f8f"),!0)
 h.j(0,$.am,L.d("#a88e00"),!0)
 h.j(0,$.al,L.d("#756300"),!0)
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#FF9B00"),!0)
-g.j(0,$.ah,L.d("#FF9B00"),!0)
-g.j(0,$.ag,L.d("#FF8700"),!0)
-g.j(0,$.aq,L.d("#7F7F7F"),!0)
-g.j(0,$.ap,L.d("#727272"),!0)
-g.j(0,$.aj,L.d("#A3A3A3"),!0)
-g.j(0,$.ak,L.d("#999999"),!0)
-g.j(0,$.ai,L.d("#898989"),!0)
-g.j(0,$.ao,L.d("#EFEFEF"),!0)
-g.j(0,$.an,L.d("#DBDBDB"),!0)
-g.j(0,$.am,L.d("#C6C6C6"),!0)
-g.j(0,$.al,L.d("#ADADAD"),!0)
-g=new Y.p7(h,0.01,0.01,0.01,0.5,24,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Timestone",null,!1,!0,!0,!1,!1,!0,1,g,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
-g.X(24,"Timestone",!1,!0,!0)
-$.yD=g
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#ed1c24"),!0)
-g.j(0,$.ah,L.d("#ed1c24"),!0)
-g.j(0,$.ag,L.d("#820a0f"),!0)
-g.j(0,$.aq,L.d("#820a0f"),!0)
-g.j(0,$.ap,L.d("#4f0609"),!0)
-g.j(0,$.aj,L.d("#d0c217"),!0)
-g.j(0,$.ak,L.d("#9e9311"),!0)
-g.j(0,$.ai,L.d("#6b640c"),!0)
-g.j(0,$.ao,L.d("#c3c3c3"),!0)
-g.j(0,$.an,L.d("#8f8f8f"),!0)
-g.j(0,$.am,L.d("#a88e00"),!0)
-g.j(0,$.al,L.d("#756300"),!0)
+g=P.f(H.a(["Stone","Sauron","Stupid","Selfish","Sock","Stuck","Selian","Sandals","Sans"],p),q)
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#FF9B00"),!0)
+f.j(0,$.ah,L.d("#FF9B00"),!0)
+f.j(0,$.ag,L.d("#FF8700"),!0)
+f.j(0,$.aq,L.d("#7F7F7F"),!0)
+f.j(0,$.ap,L.d("#727272"),!0)
+f.j(0,$.aj,L.d("#A3A3A3"),!0)
+f.j(0,$.ak,L.d("#999999"),!0)
+f.j(0,$.ai,L.d("#898989"),!0)
+f.j(0,$.ao,L.d("#EFEFEF"),!0)
+f.j(0,$.an,L.d("#DBDBDB"),!0)
+f.j(0,$.am,L.d("#C6C6C6"),!0)
+f.j(0,$.al,L.d("#ADADAD"),!0)
+f=new Y.p7(h,g,0.01,0.01,0.01,0.5,24,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Timestone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+f.X(24,"Timestone",!1,!0,!0)
+$.yD=f
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#ed1c24"),!0)
+f.j(0,$.ah,L.d("#ed1c24"),!0)
+f.j(0,$.ag,L.d("#820a0f"),!0)
+f.j(0,$.aq,L.d("#820a0f"),!0)
+f.j(0,$.ap,L.d("#4f0609"),!0)
+f.j(0,$.aj,L.d("#d0c217"),!0)
+f.j(0,$.ak,L.d("#9e9311"),!0)
+f.j(0,$.ai,L.d("#6b640c"),!0)
+f.j(0,$.ao,L.d("#c3c3c3"),!0)
+f.j(0,$.an,L.d("#8f8f8f"),!0)
+f.j(0,$.am,L.d("#a88e00"),!0)
+f.j(0,$.al,L.d("#756300"),!0)
+g=P.f(H.a(["Stone","Sauron","Stupid","Selfish","Sock","Stuck","Selian","Sandals","Sans"],p),q)
 h=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
 h.j(0,$.af,L.d("#FF9B00"),!0)
 h.j(0,$.ah,L.d("#FF9B00"),!0)
@@ -10899,7 +10908,7 @@ h.j(0,$.ao,L.d("#EFEFEF"),!0)
 h.j(0,$.an,L.d("#DBDBDB"),!0)
 h.j(0,$.am,L.d("#C6C6C6"),!0)
 h.j(0,$.al,L.d("#ADADAD"),!0)
-h=new F.nS(g,0.01,0.01,0.01,0.5,25,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Realitystone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+h=new F.nS(f,g,0.01,0.01,0.01,0.5,25,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Realitystone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
 h.X(25,"Realitystone",!1,!0,!0)
 $.yv=h
 h=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -10915,37 +10924,38 @@ h.j(0,$.ao,L.d("#c3c3c3"),!0)
 h.j(0,$.an,L.d("#8f8f8f"),!0)
 h.j(0,$.am,L.d("#a88e00"),!0)
 h.j(0,$.al,L.d("#756300"),!0)
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#FF9B00"),!0)
-g.j(0,$.ah,L.d("#FF9B00"),!0)
-g.j(0,$.ag,L.d("#FF8700"),!0)
-g.j(0,$.aq,L.d("#7F7F7F"),!0)
-g.j(0,$.ap,L.d("#727272"),!0)
-g.j(0,$.aj,L.d("#A3A3A3"),!0)
-g.j(0,$.ak,L.d("#999999"),!0)
-g.j(0,$.ai,L.d("#898989"),!0)
-g.j(0,$.ao,L.d("#EFEFEF"),!0)
-g.j(0,$.an,L.d("#DBDBDB"),!0)
-g.j(0,$.am,L.d("#C6C6C6"),!0)
-g.j(0,$.al,L.d("#ADADAD"),!0)
-g=new N.lX(h,0.01,0.01,0.01,0.5,26,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Gauntlet",null,!1,!0,!0,!1,!1,!0,1,g,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
-g.X(26,"Gauntlet",!1,!0,!0)
-$.yh=g
-g=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-g.j(0,$.af,L.d("#c55555"),!0)
-g.j(0,$.ah,L.d("#c55555"),!0)
-g.j(0,$.ag,L.d("#090404"),!0)
-g.j(0,$.aq,L.d("#ba872e"),!0)
-g.j(0,$.ap,L.d("#8e694e"),!0)
-g.j(0,$.aj,L.d("#b59e5d"),!0)
-g.j(0,$.ak,L.d("#837243"),!0)
-g.j(0,$.ai,L.d("#4f4528"),!0)
-g.j(0,$.ao,L.d("#9fbfbf"),!0)
-g.j(0,$.an,L.d("#95b5b5"),!0)
-g.j(0,$.am,L.d("#956f6f"),!0)
-g.j(0,$.al,L.d("#714b4b"),!0)
-h=P.f(H.a(["MEME STEALER","THANOS CAR","AGGRESIVE MEMER"],p),q)
-f=P.f(H.a(["Meme","Memetastic","Mesmerizing","Mop","Memelord","Mashedpotato"],p),q)
+g=P.f(H.a(["Stone","Sauron","Stupid","Selfish","Sock","Stuck","Selian","Sandals","Sans"],p),q)
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#FF9B00"),!0)
+f.j(0,$.ah,L.d("#FF9B00"),!0)
+f.j(0,$.ag,L.d("#FF8700"),!0)
+f.j(0,$.aq,L.d("#7F7F7F"),!0)
+f.j(0,$.ap,L.d("#727272"),!0)
+f.j(0,$.aj,L.d("#A3A3A3"),!0)
+f.j(0,$.ak,L.d("#999999"),!0)
+f.j(0,$.ai,L.d("#898989"),!0)
+f.j(0,$.ao,L.d("#EFEFEF"),!0)
+f.j(0,$.an,L.d("#DBDBDB"),!0)
+f.j(0,$.am,L.d("#C6C6C6"),!0)
+f.j(0,$.al,L.d("#ADADAD"),!0)
+f=new N.lX(h,g,0.01,0.01,0.01,0.5,26,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Gauntlet",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+f.X(26,"Gauntlet",!1,!0,!0)
+$.yh=f
+f=new L.a8(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+f.j(0,$.af,L.d("#c55555"),!0)
+f.j(0,$.ah,L.d("#c55555"),!0)
+f.j(0,$.ag,L.d("#090404"),!0)
+f.j(0,$.aq,L.d("#ba872e"),!0)
+f.j(0,$.ap,L.d("#8e694e"),!0)
+f.j(0,$.aj,L.d("#b59e5d"),!0)
+f.j(0,$.ak,L.d("#837243"),!0)
+f.j(0,$.ai,L.d("#4f4528"),!0)
+f.j(0,$.ao,L.d("#9fbfbf"),!0)
+f.j(0,$.an,L.d("#95b5b5"),!0)
+f.j(0,$.am,L.d("#956f6f"),!0)
+f.j(0,$.al,L.d("#714b4b"),!0)
+g=P.f(H.a(["MEME STEALER","THANOS CAR","AGGRESIVE MEMER"],p),q)
+h=P.f(H.a(["Meme","Memetastic","Mesmerizing","Mop","Memelord","Mashedpotato"],p),q)
 e=P.f(H.a(["Meme","Funny","Stealing","Despacito","Meme Stealing","Cursed"],p),q)
 d=P.f(H.a(["Shogun","Memelord","Air Horn","420","Thanos Car","Luis Fonsi","Bowsette"],p),q)
 c=P.f(H.a([new E.M($.cq,-1,!0)],k),l)
@@ -10962,7 +10972,7 @@ m.j(0,$.ao,L.d("#EFEFEF"),!0)
 m.j(0,$.an,L.d("#DBDBDB"),!0)
 m.j(0,$.am,L.d("#C6C6C6"),!0)
 m.j(0,$.al,L.d("#ADADAD"),!0)
-j=new D.n6(2,0.5,1,g,h,f,e,"cURSED","Some cursed meme music starts to play.",d,["memes"],["memes"],c,0.01,0.01,0.01,0.5,27,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Meme",null,!1,!1,!0,!1,!1,!0,1,m,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
+j=new D.n6(2,0.5,1,f,g,h,e,"cURSED","Some cursed meme music starts to play.",d,["memes"],["memes"],c,0.01,0.01,0.01,0.5,27,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Meme",null,!1,!1,!0,!1,!1,!0,1,m,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.F(null,null,n))
 j.X(27,"Meme",!1,!1,!0)
 $.yp=j
 $.ys=L.yb(255,"Null",!1,!0,!1)
@@ -10972,10 +10982,10 @@ m=H.a(["Siren","Singer","Tenor","Trumpeter","Baritone","Dancer","Ballerina","Har
 c=H.a(["SINGING SCURRYWORT","MUSICAL MOPPET"],p)
 d=H.a(["Rap","Music","Song Writing","Musicals","Dance","Singing","Ballet","Playing Guitar","Playing Piano","Mixtapes","Turntables"],p)
 e=H.a(["nobody"],p)
-f=P.f(H.a([],k),l)
-h=H.a(["Nobody"],p)
+h=P.f(H.a([],k),l)
 g=H.a(["Nobody"],p)
-q=new F.nc(j,q,m,c,d,!1,e,f,h,g,1,new H.t(0,null,null,null,null,null,0,o),["NONE"],Q.F(null,null,n),"loud","musical","Music")
+f=H.a(["Nobody"],p)
+q=new F.nc(j,q,m,c,d,!1,e,h,g,f,1,new H.t(0,null,null,null,null,null,0,o),["NONE"],Q.F(null,null,n),"loud","musical","Music")
 q.E()
 q.F()
 B.cM(q)
@@ -11673,8 +11683,9 @@ _.k3=k3
 _.k4=k4
 _.r1=r1
 _.r2=r2},
-nL:function nL(y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+nL:function nL(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
+_.y2=y2
 _.a=a
 _.b=b
 _.c=c
@@ -11806,8 +11817,9 @@ _.k4=k4
 _.r1=r1
 _.r2=r2},G:function G(a,b,c){this.a=a
 this.b=b
-this.c=c}},N={a4:function a4(){},lX:function lX(y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+this.c=c}},N={a4:function a4(){},lX:function lX(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
+_.y2=y2
 _.a=a
 _.b=b
 _.c=c
@@ -12796,8 +12808,9 @@ _.x=x
 _.y=y
 _.z=z
 _.Q=Q
-_.ch=ch},nS:function nS(y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.ch=ch},nS:function nS(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
+_.y2=y2
 _.a=a
 _.b=b
 _.c=c
@@ -12829,8 +12842,9 @@ _.r2=r2
 _.rx=rx
 _.ry=ry
 _.x1=x1
-_.x2=x2},og:function og(y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.x2=x2},og:function og(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
+_.y2=y2
 _.a=a
 _.b=b
 _.c=c
