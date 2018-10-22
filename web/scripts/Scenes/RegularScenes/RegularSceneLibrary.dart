@@ -17,6 +17,7 @@ export "FightQueen.dart";
 export "FreeWillStuff.dart";
 export "GetTiger.dart";
 export "GetWasted.dart";
+export "GauntletFight.dart";
 export "GodTierRevival.dart";
 export "GoGrimDark.dart";
 export "GrimDarkQuests.dart";
