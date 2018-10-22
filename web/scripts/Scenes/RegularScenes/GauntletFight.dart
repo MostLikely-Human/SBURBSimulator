@@ -30,7 +30,12 @@ class GauntletFight extends Scene{
 
   @override
   void renderContent(Element div){
+    appendHtml(div,"<br><img src = 'images/sceneIcons/flipout_icon_animated.gif'>"+this.content());
+  }
 
+  String content() {
+    String ret = "AAAAAAAAAAAAAAAAAAAAAAAAAA";
+    return ret;
   }
 
 }
