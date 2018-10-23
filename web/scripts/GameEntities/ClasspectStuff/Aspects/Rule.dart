@@ -36,7 +36,7 @@ class Rule extends Aspect {
 
 
   @override
-  List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Empathetic", "Arrowed", "Emotioanal", "Literal", "Ravaging"]);
+  List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Empathetic", "Arrowed", "Emotional", "Literal", "Ravaging"]);
 
   @override
   String denizenSongTitle = "A Song Of Arrows";
