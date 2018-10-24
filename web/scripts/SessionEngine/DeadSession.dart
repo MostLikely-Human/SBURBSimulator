@@ -180,6 +180,15 @@ class DeadSession extends Session {
 
         checkEasterEgg(this);
         easterEggCallBack();
+        
+        Aspects.GAUNTLET.name = "Stone";
+        Aspects.MINDSTONE.name = "Stone";
+        Aspects.SPACESTONE.name = "Stone";
+        Aspects.POWERSTONE.name = "Stone";
+        Aspects.SOULSTONE.name = "Stone";
+        Aspects.TIMESTONE.name = "Stone";
+        Aspects.REALITYSTONE.name = "Stone";
+        
         //red miles are way too common and also dead sessions are special
         prospit.destroyRing();
         derse.destroyRing();
