@@ -23,13 +23,7 @@ import "Taze.dart";
 import "Rule.dart";
 import "Hippo.dart";
 import "Bear.dart";
-import "Mindstone.dart";
-import "Spacestone.dart";
-import "Powerstone.dart";
-import "Soulstone.dart";
-import "Timestone.dart";
-import "Realitystone.dart";
-import "Gauntlet.dart";
+import "Stone.dart";
 import "Meme.dart";
 
 

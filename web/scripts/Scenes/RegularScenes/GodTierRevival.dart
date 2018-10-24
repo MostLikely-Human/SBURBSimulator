@@ -60,7 +60,8 @@ class GodTierRevival extends Scene {
 
 			if(p.unconditionallyImmortal) {
 				session.logger.info("AB: Found an unconditionally immortal ass hat.");
-				ret += "... Lol, what clock?  ${p.htmlTitle()} is fucking unconditionally immortal. ";
+				ret += "... Lol, what clock?  ${p
+						.htmlTitle()} is fucking unconditionally immortal. ";
 				p.canGodTierRevive = true;
 				p.increasePower();
 				p.makeAlive();

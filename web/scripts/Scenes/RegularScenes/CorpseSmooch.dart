@@ -142,7 +142,7 @@ class CorpseSmooch extends Scene {
 			//have best friend mac on you.
 			if(d.dreamSelf == true){
 				Player royalty = this.getRoyalty(d);
-				if(royalty != null){
+				if(royalty != null && d.causeOfDeath != "A duel for the Stones."){
 					royalty.lootCorpse(d);
 					royalty.addStat(Stats.SANITY, -10);
 					ret += " The " + royalty.htmlTitle() + ", as a member of the royalty of ${royalty.moonName}, administers the universal remedy for the unawakened ";
