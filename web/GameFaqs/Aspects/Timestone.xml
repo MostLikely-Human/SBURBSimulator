@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--The majority is taken directly from Proxxima's Stone document.-->
 <faq>
     <ascii>
     </ascii>
     <section>
         <header>
+            What is the Stone Aspect all about?
         </header>
         <body>
+            The Aspect of Stone is widely regarded as one of the least prominent aspects due to its ability to have abstractions based upon other aspects. The job of those Stonebound is relatively simple; keeping the other aspects in one place, sort of like the “overseers” or “council members” of Paradox Space. It’s abstractions include Mind, Space, Power (Rage abstraction), Soul (Heart abstraction), Time, and Reality (Light abstraction).
+        </body>
+    </section>
+    <section>
+        <header>
+            What about the Time Abstraction?
+        </header>
+        <body>
+            The users within the Time Stone are known for their intelligence and patience, usually having a master plan in place if all else fails; however, they usually have some sort of berserk button causing them to go insane for months on end if paradox space hadn’t noticed, and if it did, they’d be put back down to their original god tier and eventually explode. Prominent classings include Seers and Sylphs. Time Stone players have the ability to encase themself in a crystal to avoid oncoming or potential threats.
         </body>
     </section>
 </faq>

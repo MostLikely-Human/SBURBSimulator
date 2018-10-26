@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--The majority is taken directly from Proxxima's Stone document.-->
 <faq>
     <ascii>
     </ascii>
     <section>
         <header>
+            What is the Stone Aspect all about?
         </header>
         <body>
+            The Aspect of Stone is widely regarded as one of the least prominent aspects due to its ability to have abstractions based upon other aspects. The job of those Stonebound is relatively simple; keeping the other aspects in one place, sort of like the “overseers” or “council members” of Paradox Space. It’s abstractions include Mind, Space, Power (Rage abstraction), Soul (Heart abstraction), Time, and Reality (Light abstraction).
+        </body>
+    </section>
+
+    <section>
+        <header>
+            What is the Mind abstraction about?
+        </header>
+        <body>
+            Those under the Mind abstraction are often characterized as the least human in nature, close to showing no emotion due to the lack of Heart. The most prominent classings under the Mind abstraction are usually those of the Heir and Mage. Mind Stone players usually have the ability to manipulate Stone to modify them or absorb magical attacks that involve beams or other forms of light.
         </body>
     </section>
 </faq>
