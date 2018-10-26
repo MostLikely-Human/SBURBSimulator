@@ -23,6 +23,11 @@ class Mindstone extends Aspect {
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
 
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.abjectFailure(s, p);
+  }
+
   Mindstone(int id) :super(id, "Mindstone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
 
@@ -45,6 +50,11 @@ class Spacestone extends Aspect {
 
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.abjectFailure(s, p);
+  }
 
   Spacestone(int id) :super(id, "Spacestone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
@@ -69,6 +79,11 @@ class Powerstone extends Aspect {
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
 
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.abjectFailure(s, p);
+  }
+
   Powerstone(int id) :super(id, "Powerstone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
 
@@ -91,6 +106,11 @@ class Soulstone extends Aspect {
 
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.abjectFailure(s, p);
+  }
 
   Soulstone(int id) :super(id, "Soulstone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
@@ -116,6 +136,11 @@ class Timestone extends Aspect {
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
 
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.abjectFailure(s, p);
+  }
+
   Timestone(int id) :super(id, "Timestone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
 
@@ -139,6 +164,11 @@ class Realitystone extends Aspect {
 
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.abjectFailure(s, p);
+  }
 
   Realitystone(int id) :super(id, "Realitystone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }

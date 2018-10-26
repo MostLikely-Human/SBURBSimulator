@@ -34,6 +34,9 @@ class Taze extends Aspect {
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Therapist", "Tax", "Talker", "Tailess", "Teammate"]);
 
+  @override
+  List<String> landNames = new List<String>.unmodifiable(<String>["Electricity", "Tazerface", "Rebelions", "Metaphors", "Ravagers"]);
+
 
   @override
   List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Rebellion", "Desolate", "Electric", "Metaphorical", "Ravaging"]);
