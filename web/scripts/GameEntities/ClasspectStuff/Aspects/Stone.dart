@@ -503,6 +503,15 @@ class Realitystone extends Aspect {
 
 
 class Gauntlet extends Aspect {
+
+  //what sort of quests rewards do I get?
+  @override
+  double itemWeight = 2.0;
+  @override
+  double fraymotifWeight = 1.5;
+  @override
+  double companionWeight = 1.0;
+
   @override
   AspectPalette palette = new AspectPalette()
     ..accent = "#e19aca"
@@ -519,7 +528,17 @@ class Gauntlet extends Aspect {
     ..pants_dark = '#756300';
 
   @override
+  List<String> landNames = new List<String>.unmodifiable(<String>["Stone", "Gauntlet", "Infinite", "Mind", "Space", "Power", "Soul", "Time", "Reality"]);
+
+  @override
+  List<String> levels = new List<String>.unmodifiable(<String>["THANOS CAR", "GAUNTLET HOLDER", "STONE COLLECTOR"]);
+
+
+  @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+
+  @override
+  List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Stone", "Infinite", "Gauntlet", "Thanos", "Mind", "Space", "Power", "Soul", "Time", "Reality"]);
 
   @override
   String activateCataclysm(Session s, Player p) {
@@ -531,6 +550,25 @@ class Gauntlet extends Aspect {
 
   @override
   String denizenSongDesc = " The OWNER pulls energy from the Green Sun to heal themselves, and attack the ENEMY";
+
+  @override
+  List<String> symbolicMcguffins = ["stone","infinite","thanos","gauntlet"];
+
+  @override
+  List<String> physicalMcguffins = ["stone","infinite","thanos","gauntlet"];
+
+  @override
+  void initializeItems() {
+    items = new WeightedList<Item>()
+      ..add(new Item("Infinity Gauntlet",<ItemTrait>[ItemTraitFactory.ASPECTAL,ItemTraitFactory.METAL,ItemTraitFactory.BONEHURTING],shogunDesc: "THANOS CAR THANOS CAR",abDesc:"..."));
+
+  }
+
+  @override
+  List<AssociatedStat> stats = new List<AssociatedStat>.unmodifiable(<AssociatedStat>[
+    new AssociatedStat(Stats.SANITY, -1.0, true),
+    new AssociatedStat(Stats.POWER, 2.0, true)
+  ]);
 
   @override
   List<String> denizenNames = new List<String>.unmodifiable(<String>["Paradox Space"]); //Pfffft, I feel bad for these players
