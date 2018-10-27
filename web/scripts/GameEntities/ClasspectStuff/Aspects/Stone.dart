@@ -248,6 +248,15 @@ class Powerstone extends Aspect {
 
 
 class Soulstone extends Aspect {
+
+  //what sort of quests rewards do I get?
+  @override
+  double itemWeight = 0.3;
+  @override
+  double fraymotifWeight = 0.6;
+  @override
+  double companionWeight = 0.01; //inwards focus
+
   @override
   AspectPalette palette = new AspectPalette()
     ..accent = "#ffcb6f"
@@ -263,13 +272,30 @@ class Soulstone extends Aspect {
     ..pants_light = '#a88e00'
     ..pants_dark = '#756300';
 
+
+  @override
+  List<String> landNames = new List<String>.unmodifiable(<String>["Little Cubes", "Hats", "Dolls", "Selfies", "Mirrors", "Spirits", "Souls", "Jazz", "Shards", "Splinters", "Stone"]);
+
+  @override
+  List<String> levels = new List<String>.unmodifiable(<String>["SHARKBAIT HEARTHROB", "FEDORA FLEDGLING", "PENCILWART PHYLACTERY"]);
+
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+
+  @override
+  List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Stone", "Heart", "Soul", "Jazz", "Blues", "Spirit", "Splintering", "Clone", "Self", "Havoc", "Noble", "Animus", "Astral", "Shatter", "Breakdown", "Ethereal", "Beat", "Pulchritude"]);
+
 
   @override
   String activateCataclysm(Session s, Player p) {
     return s.mutator.abjectFailure(s, p);
   }
+
+  @override
+  List<String> symbolicMcguffins = ["stone","heart","identity", "emotion", "core", "beat", "shadow"];
+
+  @override
+  List<String> physicalMcguffins = ["stone","heart","doll", "locket", "mirror", "mask", "shades", "sculpture"];
 
 
   @override
@@ -281,12 +307,42 @@ class Soulstone extends Aspect {
   @override
   List<String> denizenNames = new List<String>.unmodifiable(<String>["Paradox Space"]); //Pfffft, I feel bad for these players
 
+  @override
+  List<AssociatedStat> stats = new List<AssociatedStat>.unmodifiable(<AssociatedStat>[
+    new AssociatedStat(Stats.RELATIONSHIPS, 1.0, true),
+    new AssociatedStatInterests(true)
+  ]);
+
+
+  @override
+  void initializeItems() {
+    items = new WeightedList<Item>()
+      ..add(new Item("Doll",<ItemTrait>[ItemTraitFactory.PORCELAIN,ItemTraitFactory.PRETTY,ItemTraitFactory.SENTIENT, ItemTraitFactory.ASPECTAL],shogunDesc: "Possessed Doll (Probably)", abDesc: "It's like a robot, but useless."))
+      ..add(new Item("Puppet",<ItemTrait>[ItemTraitFactory.WOOD,ItemTraitFactory.SENTIENT, ItemTraitFactory.ASPECTAL, ItemTraitFactory.LEGENDARY,ItemTraitFactory.SCARY],shogunDesc: "Baby Muppet Snuff Survivor",abDesc:"Don't touch this shit."))
+      ..add(new Item("Mirror",<ItemTrait>[ItemTraitFactory.MIRROR, ItemTraitFactory.ASPECTAL],shogunDesc: "Mirror That Shows A Reflection Of The World But A Horrible Beast Mimics Your Every Move"))
+      ..add(new Item("Shipping Grid",<ItemTrait>[ItemTraitFactory.PAPER, ItemTraitFactory.ASPECTAL, ItemTraitFactory.ROMANTIC],shogunDesc: "A Grid of Pure Taint",abDesc:"No. No cat troll shit."))
+      ..add(new Item("Shades",<ItemTrait>[ItemTraitFactory.COOLK1D,ItemTraitFactory.GLASS,ItemTraitFactory.ASPECTAL],shogunDesc: "Glasses For Try Hard Nerds", abDesc: "You can put a p great robot in these. I advise it."))
+      ..add(new Item("A Stone",<ItemTrait>[ItemTraitFactory.ASPECTAL,ItemTraitFactory.REAL,ItemTraitFactory.FAKE]));
+  }
+
   Soulstone(int id) :super(id, "Soulstone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
 
 
 
 class Timestone extends Aspect {
+
+  //what sort of quests rewards do I get?
+  @override
+  double itemWeight = 0.51;
+  @override
+  double fraymotifWeight = 1.0;
+  @override
+  double companionWeight = 0.01;
+
+  @override
+  double difficulty = 0.7;
+
   @override
   AspectPalette palette = new AspectPalette()
     ..accent = "#7ac476"
@@ -302,8 +358,18 @@ class Timestone extends Aspect {
     ..pants_light = '#a88e00'
     ..pants_dark = '#756300';
 
+
+  @override
+  List<String> landNames = new List<String>.unmodifiable(<String>["Quartz", "Clockwork", "Gears", "Melody", "Cesium", "Clocks", "Ticking", "Beats", "Mixtapes", "Songs", "Music", "Vuvuzelas", "Drums", "Pendulums", "Stone"]);
+
+  @override
+  List<String> levels = new List<String>.unmodifiable(<String>["MARQUIS MCFLY", "JUNIOR CLOCK BLOCKER", "DEAD KID COLLECTOR"]);
+
   @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+
+  @override
+  List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Stone", "Time", "Paradox", "Chrono", "Moment", "Foregone", "Reset", "Endless", "Temporal", "Shenanigans", "Clock", "Tick-Tock", "Spinning", "Repeat", "Rhythm", "Redshift", "Epoch", "Beatdown", "Slow", "Remix", "Clockwork", "Lock", "Eternal"]);
 
   @override
   String activateCataclysm(Session s, Player p) {
@@ -319,12 +385,45 @@ class Timestone extends Aspect {
   @override
   List<String> denizenNames = new List<String>.unmodifiable(<String>["Paradox Space"]); //Pfffft, I feel bad for these players
 
+  @override
+  List<String> symbolicMcguffins = ["stone","time","speed", "inevitability", "paradoxes", "rhythm"];
+  @override
+  List<String> physicalMcguffins = ["stone","time","clock", "metronome", "beat", "turntables", "music box", "sheet music", "drum", "sundial", "beatbox", "trousers", "river"];
+
+  @override
+  void initializeItems() {
+    items = new WeightedList<Item>()
+      ..add(new Item("Grandfather Clock",<ItemTrait>[ItemTraitFactory.WOOD,ItemTraitFactory.CLASSY, ItemTraitFactory.VALUABLE, ItemTraitFactory.ASPECTAL],shogunDesc: "Ticking Tower of Time"))
+      ..add(new Item("Drum",<ItemTrait>[ItemTraitFactory.LEATHER, ItemTraitFactory.ASPECTAL,ItemTraitFactory.MUSICAL],shogunDesc: "Ba Dum Tss but without the Tss Part"))
+      ..add(new Item("Dead Doppelganger",<ItemTrait>[ItemTraitFactory.UNCOMFORTABLE,ItemTraitFactory.FLESH, ItemTraitFactory.ASPECTAL,ItemTraitFactory.BONE, ItemTraitFactory.SCARY, ItemTraitFactory.DOOMED],shogunDesc: "The Inferior You",abDesc:"Time is truly the worst aspect."))
+      ..add(new Item("Music Box",<ItemTrait>[ItemTraitFactory.METAL, ItemTraitFactory.ASPECTAL,ItemTraitFactory.MUSICAL,ItemTraitFactory.CLASSY],shogunDesc: "Cube of Noise"))
+      ..add(new Item("Turn Tables",<ItemTrait>[ItemTraitFactory.METAL, ItemTraitFactory.ASPECTAL,ItemTraitFactory.MUSICAL,ItemTraitFactory.LEGENDARY, ItemTraitFactory.COOLK1D],shogunDesc: "Spinning Noise Discs on a Noise Machine",abDesc:"Do they come with ironic raps?"))
+      ..add(new Item("Metronome",<ItemTrait>[ItemTraitFactory.METAL, ItemTraitFactory.ASPECTAL,ItemTraitFactory.MUSICAL],shogunDesc: "Never Ending Ticking Device"))
+      ..add(new Item("A Stone",<ItemTrait>[ItemTraitFactory.ASPECTAL,ItemTraitFactory.REAL,ItemTraitFactory.FAKE]));
+  }
+
+  @override
+  List<AssociatedStat> stats = new List<AssociatedStat>.unmodifiable(<AssociatedStat>[
+    new AssociatedStat(Stats.MIN_LUCK, 2.0, true),
+    new AssociatedStat(Stats.MOBILITY, 1.0, true),
+    new AssociatedStat(Stats.FREE_WILL, -2.0, true)
+  ]);
+
   Timestone(int id) :super(id, "Timestone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
 
 
 
 class Realitystone extends Aspect {
+
+  //what sort of quests rewards do I get?
+  @override
+  double itemWeight = 1.01;
+  @override
+  double fraymotifWeight = 0.5;
+  @override
+  double companionWeight = 0.01; //dont' share the spotlihgt
+
   @override
   AspectPalette palette = new AspectPalette()
     ..accent = "#ed1c24"
@@ -341,7 +440,17 @@ class Realitystone extends Aspect {
     ..pants_dark = '#756300';
 
   @override
+  List<String> landNames = new List<String>.unmodifiable(<String>["Treasure", "Light", "Knowledge", "Radiance", "Gambling", "Casinos", "Fortune", "Sun", "Glow", "Chance", "Stone"]);
+
+  @override
+  List<String> levels = new List<String>.unmodifiable(<String>["SHOWOFF SQUIRT", "JUNGLEGYM SWASHBUCKLER", "SUPERSTITIOUS SCURRYWART"]);
+
+  @override
   List<String> handles = new List<String>.unmodifiable(<String>["Stone", "Sauron", "Stupid", "Selfish", "Sock", "Stuck", "Selian", "Sandals", "Sans"]);
+
+  @override
+  List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Lucky", "LIGHT", "Knowledge", "Blinding", "Brilliant", "Break", "Blazing", "Glow", "Flare", "Gamble", "Omnifold", "Apollo", "Helios", "Scintillating", "Horseshoe", "Leggiero", "Star", "Kindle", "Gambit", "Blaze", "Stone"]);
+
 
   @override
   String activateCataclysm(Session s, Player p) {
@@ -356,7 +465,37 @@ class Realitystone extends Aspect {
   String denizenSongDesc = " The OWNER pulls energy from the Green Sun to heal themselves, and attack the ENEMY";
 
   @override
+  List<String> symbolicMcguffins = ["stone","light","fortune", "knowledge", "illumination", "relevance", "rain", "sun", "rainbow"];
+
+  @override
+  List<String> physicalMcguffins = ["stone","light","clover", "horseshoe", "encyclopedia","sun", "dice", "8-ball", "deck of tarot cards"];
+
+  @override
   List<String> denizenNames = new List<String>.unmodifiable(<String>["Paradox Space"]); //Pfffft, I feel bad for these players
+
+
+  @override
+  void initializeItems() {
+    items = new WeightedList<Item>()
+      ..add(new Item("FAQ",<ItemTrait>[ItemTraitFactory.ZAP, ItemTraitFactory.ASPECTAL,ItemTraitFactory.SMART,ItemTraitFactory.LUCKY],shogunDesc: "Questions to Ping JR About",abDesc:"Probably found it on a server in the Furthest Ring."))
+      ..add(new Item("Flashlight",<ItemTrait>[ItemTraitFactory.PLASTIC, ItemTraitFactory.ASPECTAL,ItemTraitFactory.GLOWING,ItemTraitFactory.ZAP,ItemTraitFactory.LUCKY],shogunDesc: "Tube of Localised Sun"))
+      ..add(new Item("Octet",<ItemTrait>[ItemTraitFactory.ASPECTAL,ItemTraitFactory.GLOWING,ItemTraitFactory.LUCKY,ItemTraitFactory.LEGENDARY,ItemTraitFactory.CRYSTAL],shogunDesc: "D13"))
+      ..add(new Item("Horseshoe",<ItemTrait>[ItemTraitFactory.HORSESHOE, ItemTraitFactory.ASPECTAL, ItemTraitFactory.BLUNT],shogunDesc: "Horse Sneaker"))
+      ..add(new Item("Rabbits Foot",<ItemTrait>[ItemTraitFactory.RABBITSFOOT, ItemTraitFactory.ASPECTAL],shogunDesc: "Rabbit Remains"))
+      ..add(new Item("4 Leaf Clover",<ItemTrait>[ItemTraitFactory.PLANT, ItemTraitFactory.ASPECTAL,ItemTraitFactory.GLOWING,ItemTraitFactory.LUCKY],shogunDesc: "Plant of Luck +4"))
+      ..add(new Item("8-Ball",<ItemTrait>[ItemTraitFactory.GLASS, ItemTraitFactory.ASPECTAL,ItemTraitFactory.SENTIENT],shogunDesc: "Worst Characters Only Quality",abDesc:"It seems this is never right. Ask again later or some shit."))
+      ..add(new Item("A Stone",<ItemTrait>[ItemTraitFactory.ASPECTAL,ItemTraitFactory.REAL,ItemTraitFactory.FAKE]));
+
+  }
+
+  @override
+  List<AssociatedStat> stats = new List<AssociatedStat>.unmodifiable(<AssociatedStat>[
+    new AssociatedStat(Stats.MAX_LUCK, 2.0, true),
+    new AssociatedStat(Stats.FREE_WILL, 1.0, true),
+    new AssociatedStat(Stats.SANITY, -1.0, true),
+    new AssociatedStat(Stats.HEALTH, -1.0, true),
+    new AssociatedStat(Stats.SBURB_LORE, 0.2, false) //yes, technically it's from an aspect, but it's not NORMAL.
+  ]);
 
   Realitystone(int id) :super(id, "Realitystone", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
