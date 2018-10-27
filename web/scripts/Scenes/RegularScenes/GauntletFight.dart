@@ -79,6 +79,15 @@ class GauntletFight extends Scene{
         f.effects.add(new FraymotifEffect(Stats.POWER, 1, false));
         f.desc = "A powerful ${oldSpecibus.baseName}... ";
         gauntletPlayers[1].fraymotifs.add(f);
+    } else if(gauntletPlayers[1].getStat(Stats.POWER) == gauntletPlayers[0].getStat(Stats.POWER)) {
+        ret += "<br><Br>...Well, both duelists were equal in power, both of them died during the fight.";
+        gauntletPlayers[0].canGodTierRevive = false;
+        gauntletPlayers[0].makeDead("A duel for the Stones.", gauntletPlayers[1]);
+        session.removeAvailablePlayer(gauntletPlayers[0]);
+        gauntletPlayers[1].canGodTierRevive = false;
+        gauntletPlayers[1].makeDead("A duel for the Stones.", gauntletPlayers[0]);
+        session.removeAvailablePlayer(gauntletPlayers[0]);
+        this.renderMurder(div, gauntletPlayers[1], gauntletPlayers[0]);
     }
 
     return ret;
