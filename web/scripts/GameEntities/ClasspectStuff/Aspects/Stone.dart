@@ -573,5 +573,32 @@ class Gauntlet extends Aspect {
   @override
   List<String> denizenNames = new List<String>.unmodifiable(<String>["Paradox Space"]); //Pfffft, I feel bad for these players
 
+
+
+
+  @override
+  void initializeThemes() {
+
+    /*
+        new Quest(""),
+                new Quest(""),
+                new Quest(""),
+                new DenizenFightQuest("","","")
+         */
+    addTheme(new Theme(<String>["Stone","Thanos", "Mind", "Space", "Power","Soul", "Time", "Reality"])
+      ..addFeature(FeatureFactory.CONTEMPLATATIVEFEELING, Feature.MEDIUM)
+      ..addFeature(FeatureFactory.ENERGIZINGFEELING, Feature.LOW)
+      ..addFeature(FeatureFactory.BLOODSMELL, Feature.LOW)
+
+      ..addFeature(new DenizenQuestChain("Collect The Stones", [
+        new Quest("The ${Quest.PLAYER1} is wandering their land, when an imp goes up to them. Expecting a fight, the ${Quest.PLAYER1} raises their weapon. Surprisingly, the imp starts talking, and its eyes go black, it says \"You must collect the Stones, then you can prove your worth to usssss...\" the imp's eyes go back to normal, and then it dies. The ${Quest.PLAYER1} notices it droped a small glowing crystal... MINDSTONE COLLECTED, 1/6."),
+        new Quest("The ${Quest.PLAYER1} is going through a dungeon. Once they arrive in the final room, a miniboss appears. It bellows \"I am the keeper of the Space Stone, fight me if you dare!\" It then dissapears in a cloud of smoke. The ${Quest.PLAYER1} tries to look at some of the many mirrors in the room, to try to find the monster, but to no avail. The boss then flings itself at them from a random angle, and then the ${Quest.PLAYER1} was able to kill it, and it dropped a small blue gemstone... SPACESTONE COLLECTED, 2/6. Some time later, The ${Quest.PLAYER1} is going through another dungeon, when it encounters another miniboss, similar to the previous one, it bellows \"FIGHT ME, TO COLLECT THE POWER STONE!!\" It takes many hours, but the ${Quest.PLAYER1} comes out on top... POWERSTONE COLLECTED, 3/6."),
+        new Quest("The ${Quest.PLAYER1} is used to these shenanings by now, when they see a giant crystalline mini boss, they knock it down and take the stone... SOULSTONE COLLECTED, 4/6. When the ${Quest.PLAYER1} saw another miniboss, but encased in impenetrable gems, they threw it into an over and waited to get the stone... TIMESTONE COLLECTED, 5/6. When the ${Quest.PLAYER1} encounters yet another one, they try to attack it. But it dissapears, and a similar looking boss drops on their back, it goes on like that for awhile, but the ${Quest.PLAYER1} eventually defeats it... REALITYSTONE COLLECTED, 6/6, OBJECTIVE COMPLETE."),
+        new DenizenFightQuest("The ${Quest.PLAYER1} learns it's time to visit their denizen, but when they get there they only see ${Quest.DENIZEN} being [REDACTED].", "Paradox Space has declared the ${Quest.PLAYER1} is worthy, and lets them live.","Paradox Space decrees that the ${Quest.PLAYER1} is not worthy.")
+      ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.HIGH)
+        , Theme.HIGH); // end theme
+  }
+
+
   Gauntlet(int id) :super(id, "Gauntlet", isCanon: false, isInternal: true, isMLHFanon: true); //It's Proxxima's and Egg's, but I'm coding it.
 }
