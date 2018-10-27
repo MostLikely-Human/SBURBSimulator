@@ -3735,41 +3735,7 @@ _.k2=k2
 _.k3=k3
 _.k4=k4
 _.r1=r1
-_.r2=r2},pl:function pl(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
-_.y1=y1
-_.y2=y2
-_.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e
-_.f=f
-_.r=r
-_.x=x
-_.y=y
-_.z=z
-_.Q=Q
-_.ch=ch
-_.cx=cx
-_.cy=cy
-_.db=db
-_.dx=dx
-_.dy=dy
-_.fr=fr
-_.fx=fx
-_.fy=fy
-_.go=go
-_.id=id
-_.k1=k1
-_.k2=k2
-_.k3=k3
-_.k4=k4
-_.r1=r1
-_.r2=r2
-_.rx=rx
-_.ry=ry
-_.x1=x1
-_.x2=x2},fq:function fq(){},w4:function w4(){},w5:function w5(){},w6:function w6(){},up:function up(){},us:function us(){},uf:function uf(){},vP:function vP(){},w8:function w8(){},w9:function w9(){},lk:function lk(){},vF:function vF(){},vB:function vB(){},nu:function nu(){},uj:function uj(){},ua:function ua(){},lF:function lF(){},vo:function vo(){},lG:function lG(){},or:function or(){},vW:function vW(){},vT:function vT(){},vX:function vX(){},u9:function u9(){},mE:function mE(){},li:function li(){},ue:function ue(){},ud:function ud(){},vG:function vG(){},vY:function vY(){},vH:function vH(){},ur:function ur(){},uq:function uq(){},vV:function vV(){},vU:function vU(){},q7:function q7(){},w_:function w_(){},ug:function ug(){},uh:function uh(){},w7:function w7(){},hI:function hI(){},vt:function vt(){},vu:function vu(){},vv:function vv(){},vw:function vw(){},vQ:function vQ(){},vR:function vR(){},vS:function vS(){},vs:function vs(){},vy:function vy(){},vz:function vz(){},uF:function uF(){},uG:function uG(){},uH:function uH(){},vA:function vA(){},vx:function vx(){},ub:function ub(){},w1:function w1(){},w2:function w2(){},w0:function w0(){}},K={bU:function bU(a,b){this.a=a
+_.r2=r2},fq:function fq(){},w4:function w4(){},w5:function w5(){},w6:function w6(){},up:function up(){},us:function us(){},uf:function uf(){},vP:function vP(){},w8:function w8(){},w9:function w9(){},lk:function lk(){},vF:function vF(){},vB:function vB(){},nu:function nu(){},uj:function uj(){},ua:function ua(){},lF:function lF(){},vo:function vo(){},lG:function lG(){},or:function or(){},vW:function vW(){},vT:function vT(){},vX:function vX(){},u9:function u9(){},mE:function mE(){},li:function li(){},ue:function ue(){},ud:function ud(){},vG:function vG(){},vY:function vY(){},vH:function vH(){},ur:function ur(){},uq:function uq(){},vV:function vV(){},vU:function vU(){},q7:function q7(){},w_:function w_(){},ug:function ug(){},uh:function uh(){},w7:function w7(){},hI:function hI(){},vt:function vt(){},vu:function vu(){},vv:function vv(){},vw:function vw(){},vQ:function vQ(){},vR:function vR(){},vS:function vS(){},vs:function vs(){},vy:function vy(){},vz:function vz(){},uF:function uF(){},uG:function uG(){},uH:function uH(){},vA:function vA(){},vx:function vx(){},ub:function ub(){},w1:function w1(){},w2:function w2(){},w0:function w0(){}},K={bU:function bU(a,b){this.a=a
 this.b=b},ns:function ns(y1,y2,p,q,t,u,v,w,A,B,D,G,H,O,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
 _.y2=y2
@@ -4015,7 +3981,7 @@ _.k3=k3
 _.k4=k4
 _.r1=r1
 _.r2=r2},
-q_:function q_(y1,y2,p,q,t,u,v,w,A,B,D,G,H,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+q_:function q_(y1,y2,p,q,t,u,v,w,A,B,D,G,H,O,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
 _.y2=y2
 _.p=p
@@ -4029,6 +3995,7 @@ _.B=B
 _.D=D
 _.G=G
 _.H=H
+_.O=O
 _.a=a
 _.b=b
 _.c=c
@@ -4246,41 +4213,7 @@ _.k2=k2
 _.k3=k3
 _.k4=k4
 _.r1=r1
-_.r2=r2},nY:function nY(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
-_.y1=y1
-_.y2=y2
-_.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e
-_.f=f
-_.r=r
-_.x=x
-_.y=y
-_.z=z
-_.Q=Q
-_.ch=ch
-_.cx=cx
-_.cy=cy
-_.db=db
-_.dx=dx
-_.dy=dy
-_.fr=fr
-_.fx=fx
-_.fy=fy
-_.go=go
-_.id=id
-_.k1=k1
-_.k2=k2
-_.k3=k3
-_.k4=k4
-_.r1=r1
-_.r2=r2
-_.rx=rx
-_.ry=ry
-_.x1=x1
-_.x2=x2},b:function b(a){this.a=a},W:function W(b,c,a){this.b=b
+_.r2=r2},b:function b(a){this.a=a},W:function W(b,c,a){this.b=b
 this.c=c
 this.a=a},aw:function aw(y,a,b,c,d,e,f,r,x){var _=this
 _.y=y
@@ -4943,41 +4876,7 @@ _.k2=k2
 _.k3=k3
 _.k4=k4
 _.r1=r1
-_.r2=r2},qe:function qe(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
-_.y1=y1
-_.y2=y2
-_.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e
-_.f=f
-_.r=r
-_.x=x
-_.y=y
-_.z=z
-_.Q=Q
-_.ch=ch
-_.cx=cx
-_.cy=cy
-_.db=db
-_.dx=dx
-_.dy=dy
-_.fr=fr
-_.fx=fx
-_.fy=fy
-_.go=go
-_.id=id
-_.k1=k1
-_.k2=k2
-_.k3=k3
-_.k4=k4
-_.r1=r1
-_.r2=r2
-_.rx=rx
-_.ry=ry
-_.x1=x1
-_.x2=x2},dR:function dR(a,b,c,$ti){var _=this
+_.r2=r2},dR:function dR(a,b,c,$ti){var _=this
 _.a=a
 _.b=b
 _.c=c
@@ -5028,6 +4927,251 @@ _.r=r
 _.x=x},
 nb:function nb(){},
 na:function na(){},
+nY:function nY(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.y1=y1
+_.y2=y2
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=r
+_.x=x
+_.y=y
+_.z=z
+_.Q=Q
+_.ch=ch
+_.cx=cx
+_.cy=cy
+_.db=db
+_.dx=dx
+_.dy=dy
+_.fr=fr
+_.fx=fx
+_.fy=fy
+_.go=go
+_.id=id
+_.k1=k1
+_.k2=k2
+_.k3=k3
+_.k4=k4
+_.r1=r1
+_.r2=r2
+_.rx=rx
+_.ry=ry
+_.x1=x1
+_.x2=x2},
+pl:function pl(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.y1=y1
+_.y2=y2
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=r
+_.x=x
+_.y=y
+_.z=z
+_.Q=Q
+_.ch=ch
+_.cx=cx
+_.cy=cy
+_.db=db
+_.dx=dx
+_.dy=dy
+_.fr=fr
+_.fx=fx
+_.fy=fy
+_.go=go
+_.id=id
+_.k1=k1
+_.k2=k2
+_.k3=k3
+_.k4=k4
+_.r1=r1
+_.r2=r2
+_.rx=rx
+_.ry=ry
+_.x1=x1
+_.x2=x2},
+oF:function oF(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.y1=y1
+_.y2=y2
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=r
+_.x=x
+_.y=y
+_.z=z
+_.Q=Q
+_.ch=ch
+_.cx=cx
+_.cy=cy
+_.db=db
+_.dx=dx
+_.dy=dy
+_.fr=fr
+_.fx=fx
+_.fy=fy
+_.go=go
+_.id=id
+_.k1=k1
+_.k2=k2
+_.k3=k3
+_.k4=k4
+_.r1=r1
+_.r2=r2
+_.rx=rx
+_.ry=ry
+_.x1=x1
+_.x2=x2},
+pi:function pi(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.y1=y1
+_.y2=y2
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=r
+_.x=x
+_.y=y
+_.z=z
+_.Q=Q
+_.ch=ch
+_.cx=cx
+_.cy=cy
+_.db=db
+_.dx=dx
+_.dy=dy
+_.fr=fr
+_.fx=fx
+_.fy=fy
+_.go=go
+_.id=id
+_.k1=k1
+_.k2=k2
+_.k3=k3
+_.k4=k4
+_.r1=r1
+_.r2=r2
+_.rx=rx
+_.ry=ry
+_.x1=x1
+_.x2=x2},
+qe:function qe(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.y1=y1
+_.y2=y2
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=r
+_.x=x
+_.y=y
+_.z=z
+_.Q=Q
+_.ch=ch
+_.cx=cx
+_.cy=cy
+_.db=db
+_.dx=dx
+_.dy=dy
+_.fr=fr
+_.fx=fx
+_.fy=fy
+_.go=go
+_.id=id
+_.k1=k1
+_.k2=k2
+_.k3=k3
+_.k4=k4
+_.r1=r1
+_.r2=r2
+_.rx=rx
+_.ry=ry
+_.x1=x1
+_.x2=x2},
+oP:function oP(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.y1=y1
+_.y2=y2
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=r
+_.x=x
+_.y=y
+_.z=z
+_.Q=Q
+_.ch=ch
+_.cx=cx
+_.cy=cy
+_.db=db
+_.dx=dx
+_.dy=dy
+_.fr=fr
+_.fx=fx
+_.fy=fy
+_.go=go
+_.id=id
+_.k1=k1
+_.k2=k2
+_.k3=k3
+_.k4=k4
+_.r1=r1
+_.r2=r2
+_.rx=rx
+_.ry=ry
+_.x1=x1
+_.x2=x2},
+mD:function mD(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.y1=y1
+_.y2=y2
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
+_.r=r
+_.x=x
+_.y=y
+_.z=z
+_.Q=Q
+_.ch=ch
+_.cx=cx
+_.cy=cy
+_.db=db
+_.dx=dx
+_.dy=dy
+_.fr=fr
+_.fx=fx
+_.fy=fy
+_.go=go
+_.id=id
+_.k1=k1
+_.k2=k2
+_.k3=k3
+_.k4=k4
+_.r1=r1
+_.r2=r2
+_.rx=rx
+_.ry=ry
+_.x1=x1
+_.x2=x2},
 fX:function fX(){},
 h_:function(a,b,c,d){var t=new A.e1(null,null,null,null,!0,0,0,0,!0,0,0,0)
 t.fn(a,b,c,d)
@@ -11042,41 +11186,43 @@ h.j(0,$.an,L.d("#6d4d3a"),!0)
 h.j(0,$.am,L.d("#422e23"),!0)
 g=P.f(H.a(["IT'S A METAPHOR","ABSOLUTE REBEL","COLD BLOODED"],p),q)
 f=P.f(H.a(["Therapist","Tax","Talker","Tailess","Teammate"],p),q)
-e=P.f(H.a(["Rebellion","Desolate","Electric","Metaphorical","Ravaging"],p),q)
-d=P.f(H.a(["Prometheus","Lucifer","Zeus","Momus","Maui","Anansi","Arachne"],p),q)
-c=P.f(H.a([new E.N($.dU,10,!0),new E.N($.cr,-2,!0)],k),l)
-b=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-b.j(0,$.ag,L.d("#FF9B00"),!0)
-b.j(0,$.ai,L.d("#FF9B00"),!0)
-b.j(0,$.ah,L.d("#FF8700"),!0)
-b.j(0,$.ar,L.d("#7F7F7F"),!0)
-b.j(0,$.aq,L.d("#727272"),!0)
-b.j(0,$.ak,L.d("#A3A3A3"),!0)
-b.j(0,$.al,L.d("#999999"),!0)
-b.j(0,$.aj,L.d("#898989"),!0)
-b.j(0,$.ap,L.d("#EFEFEF"),!0)
-b.j(0,$.ao,L.d("#DBDBDB"),!0)
-b.j(0,$.an,L.d("#C6C6C6"),!0)
-b.j(0,$.am,L.d("#ADADAD"),!0)
-b=new L.q_(2,0.7,0.7,h,g,f,e,"Rebellion","The OWNER is immensely strengthened, and they blast the ENEMY with a bolt of electricity.",d,["Lightning","Ice","Taserface"],["Taser"],c,0.01,0.01,0.01,0.5,16,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Taze",null,!1,!1,!0,!1,!1,!0,1,b,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
-b.a0(16,"Taze",!1,!1,!0)
-$.Ao=b
-b=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
-b.j(0,$.ag,L.d("#990000"),!0)
-b.j(0,$.ai,L.d("#ff0200"),!0)
-b.j(0,$.ah,L.d("#dd0000"),!0)
-b.j(0,$.ar,L.d("#25334f"),!0)
-b.j(0,$.aq,L.d("#07090f"),!0)
-b.j(0,$.ak,L.d("#c64f4f"),!0)
-b.j(0,$.al,L.d("#a33f3f"),!0)
-b.j(0,$.aj,L.d("#843333"),!0)
-b.j(0,$.ap,L.d("#b5c1d2"),!0)
-b.j(0,$.ao,L.d("#939dac"),!0)
-b.j(0,$.an,L.d("#3c3e42"),!0)
-b.j(0,$.am,L.d("#202123"),!0)
-c=P.f(H.a(["ABSOLUTE LOYALTY","ARROW EXTRAORDINAIRE","EMPATHETIC WARRIOR"],p),q)
-d=P.f(H.a(["Relaxer","Respondant","Rememberer","Restless","Rasengan"],p),q)
-e=P.f(H.a(["Empathetic","Arrowed","Emotioanal","Literal","Ravaging"],p),q)
+e=P.f(H.a(["Electricity","Tazerface","Rebelions","Metaphors","Ravagers"],p),q)
+d=P.f(H.a(["Rebellion","Desolate","Electric","Metaphorical","Ravaging"],p),q)
+c=P.f(H.a(["Prometheus","Lucifer","Zeus","Momus","Maui","Anansi","Arachne"],p),q)
+b=P.f(H.a([new E.N($.dU,10,!0),new E.N($.cr,-2,!0)],k),l)
+a=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+a.j(0,$.ag,L.d("#FF9B00"),!0)
+a.j(0,$.ai,L.d("#FF9B00"),!0)
+a.j(0,$.ah,L.d("#FF8700"),!0)
+a.j(0,$.ar,L.d("#7F7F7F"),!0)
+a.j(0,$.aq,L.d("#727272"),!0)
+a.j(0,$.ak,L.d("#A3A3A3"),!0)
+a.j(0,$.al,L.d("#999999"),!0)
+a.j(0,$.aj,L.d("#898989"),!0)
+a.j(0,$.ap,L.d("#EFEFEF"),!0)
+a.j(0,$.ao,L.d("#DBDBDB"),!0)
+a.j(0,$.an,L.d("#C6C6C6"),!0)
+a.j(0,$.am,L.d("#ADADAD"),!0)
+a=new L.q_(2,0.7,0.7,h,g,f,e,d,"Rebellion","The OWNER is immensely strengthened, and they blast the ENEMY with a bolt of electricity.",c,["Lightning","Ice","Taserface"],["Taser"],b,0.01,0.01,0.01,0.5,16,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Taze",null,!1,!1,!0,!1,!1,!0,1,a,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+a.a0(16,"Taze",!1,!1,!0)
+$.Ao=a
+a=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
+a.j(0,$.ag,L.d("#990000"),!0)
+a.j(0,$.ai,L.d("#ff0200"),!0)
+a.j(0,$.ah,L.d("#dd0000"),!0)
+a.j(0,$.ar,L.d("#25334f"),!0)
+a.j(0,$.aq,L.d("#07090f"),!0)
+a.j(0,$.ak,L.d("#c64f4f"),!0)
+a.j(0,$.al,L.d("#a33f3f"),!0)
+a.j(0,$.aj,L.d("#843333"),!0)
+a.j(0,$.ap,L.d("#b5c1d2"),!0)
+a.j(0,$.ao,L.d("#939dac"),!0)
+a.j(0,$.an,L.d("#3c3e42"),!0)
+a.j(0,$.am,L.d("#202123"),!0)
+b=P.f(H.a(["ABSOLUTE LOYALTY","ARROW EXTRAORDINAIRE","EMPATHETIC WARRIOR"],p),q)
+c=P.f(H.a(["Relaxer","Respondant","Rememberer","Restless","Rasengan"],p),q)
+d=P.f(H.a(["Yondu","Empathy","Arrows","Emotions","Ravagers"],p),q)
+e=P.f(H.a(["Empathetic","Arrowed","Emotional","Literal","Ravaging"],p),q)
 f=P.f(H.a(["Artemus","Apollo","Eros","Cupid","Actaeon","Atalanta","Hippolytus","Orion","Paris","Philoctetes","Poeas","Teucher"],p),q)
 g=P.f(H.a([new E.N($.dU,2,!0),new E.N($.cr,5,!0)],k),l)
 h=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11092,7 +11238,7 @@ h.j(0,$.ap,L.d("#EFEFEF"),!0)
 h.j(0,$.ao,L.d("#DBDBDB"),!0)
 h.j(0,$.an,L.d("#C6C6C6"),!0)
 h.j(0,$.am,L.d("#ADADAD"),!0)
-h=new V.oZ(0.9,1.1,2,b,c,d,e,"A Song Of Arrows","The OWNER has dozens of arrows fly above their head, and right onto the ENEMY",f,["Arrow","Yondu","Empathy"],["Arrow","Bow"],g,0.01,0.01,0.01,0.5,17,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Rule",null,!1,!1,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+h=new V.oZ(0.9,1.1,2,a,b,c,d,e,"A Song Of Arrows","The OWNER has dozens of arrows fly above their head, and right onto the ENEMY",f,["Arrow","Yondu","Empathy"],["Arrow","Bow"],g,0.01,0.01,0.01,0.5,17,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Rule",null,!1,!1,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 h.a0(17,"Rule",!1,!1,!0)
 $.Aj=h
 h=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11190,7 +11336,7 @@ f.j(0,$.ap,L.d("#EFEFEF"),!0)
 f.j(0,$.ao,L.d("#DBDBDB"),!0)
 f.j(0,$.an,L.d("#C6C6C6"),!0)
 f.j(0,$.am,L.d("#ADADAD"),!0)
-f=new U.nY(h,g,0.01,0.01,0.01,0.5,20,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Mindstone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+f=new A.nY(h,g,0.01,0.01,0.01,0.5,20,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Mindstone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 f.a0(20,"Mindstone",!1,!0,!0)
 $.Ae=f
 f=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11220,7 +11366,7 @@ h.j(0,$.ap,L.d("#EFEFEF"),!0)
 h.j(0,$.ao,L.d("#DBDBDB"),!0)
 h.j(0,$.an,L.d("#C6C6C6"),!0)
 h.j(0,$.am,L.d("#ADADAD"),!0)
-h=new S.pl(f,g,0.01,0.01,0.01,0.5,21,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Spacestone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+h=new A.pl(f,g,0.01,0.01,0.01,0.5,21,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Spacestone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 h.a0(21,"Spacestone",!1,!0,!0)
 $.An=h
 h=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11250,7 +11396,7 @@ f.j(0,$.ap,L.d("#EFEFEF"),!0)
 f.j(0,$.ao,L.d("#DBDBDB"),!0)
 f.j(0,$.an,L.d("#C6C6C6"),!0)
 f.j(0,$.am,L.d("#ADADAD"),!0)
-f=new Z.oF(h,g,0.01,0.01,0.01,0.5,22,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Powerstone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+f=new A.oF(h,g,0.01,0.01,0.01,0.5,22,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Powerstone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 f.a0(22,"Powerstone",!1,!0,!0)
 $.Ag=f
 f=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11280,7 +11426,7 @@ h.j(0,$.ap,L.d("#EFEFEF"),!0)
 h.j(0,$.ao,L.d("#DBDBDB"),!0)
 h.j(0,$.an,L.d("#C6C6C6"),!0)
 h.j(0,$.am,L.d("#ADADAD"),!0)
-h=new F.pi(f,g,0.01,0.01,0.01,0.5,23,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Soulstone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+h=new A.pi(f,g,0.01,0.01,0.01,0.5,23,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Soulstone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 h.a0(23,"Soulstone",!1,!0,!0)
 $.Al=h
 h=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11310,7 +11456,7 @@ f.j(0,$.ap,L.d("#EFEFEF"),!0)
 f.j(0,$.ao,L.d("#DBDBDB"),!0)
 f.j(0,$.an,L.d("#C6C6C6"),!0)
 f.j(0,$.am,L.d("#ADADAD"),!0)
-f=new Y.qe(h,g,0.01,0.01,0.01,0.5,24,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Timestone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+f=new A.qe(h,g,0.01,0.01,0.01,0.5,24,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Timestone",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 f.a0(24,"Timestone",!1,!0,!0)
 $.Aq=f
 f=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11340,7 +11486,7 @@ h.j(0,$.ap,L.d("#EFEFEF"),!0)
 h.j(0,$.ao,L.d("#DBDBDB"),!0)
 h.j(0,$.an,L.d("#C6C6C6"),!0)
 h.j(0,$.am,L.d("#ADADAD"),!0)
-h=new F.oP(f,g,0.01,0.01,0.01,0.5,25,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Realitystone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+h=new A.oP(f,g,0.01,0.01,0.01,0.5,25,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Realitystone",null,!1,!0,!0,!1,!1,!0,1,h,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 h.a0(25,"Realitystone",!1,!0,!0)
 $.Ai=h
 h=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11370,7 +11516,7 @@ f.j(0,$.ap,L.d("#EFEFEF"),!0)
 f.j(0,$.ao,L.d("#DBDBDB"),!0)
 f.j(0,$.an,L.d("#C6C6C6"),!0)
 f.j(0,$.am,L.d("#ADADAD"),!0)
-f=new N.mD(h,g,0.01,0.01,0.01,0.5,26,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Gauntlet",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
+f=new A.mD(h,g,0.01,0.01,0.01,0.5,26,new H.t(0,null,null,null,null,null,0,o),null,"","",!1,"Gauntlet",null,!1,!0,!0,!1,!1,!0,1,f,P.f(H.a(["SNOWMAN SAVIOR","NOBODY NOWHERE","NULLZILLA"],p),q),P.f(H.a(["ERROR 404: DENIZEN NOT FOUND"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Blank","Null","Boring","Error"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),P.f(H.a(["Nothing","Errors","Glitches"],p),q),"Song","A static sound is heard. It is the one Forgetfulness uses to cover the lacunae. The OWNER is strengthened and healed. The ENEMY is weakened and hurt. And there's nothing else to say on the matter. ",P.f(H.a(["Null","Nothing","Mystery"],p),q),H.a([],k),H.a([],j),Q.G(null,null,n))
 f.a0(26,"Gauntlet",!1,!0,!0)
 $.A4=f
 f=new L.aa(P.p(null,null,null,q,m),P.p(null,null,null,i,m),P.p(null,null,null,q,i),P.p(null,null,null,i,q))
@@ -11862,7 +12008,7 @@ _.k2=k2
 _.k3=k3
 _.k4=k4
 _.r1=r1
-_.r2=r2},oZ:function oZ(y1,y2,p,q,t,u,v,w,A,B,D,G,H,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
+_.r2=r2},oZ:function oZ(y1,y2,p,q,t,u,v,w,A,B,D,G,H,O,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
 _.y1=y1
 _.y2=y2
 _.p=p
@@ -11876,6 +12022,7 @@ _.B=B
 _.D=D
 _.G=G
 _.H=H
+_.O=O
 _.a=a
 _.b=b
 _.c=c
@@ -12209,41 +12356,6 @@ _.k3=k3
 _.k4=k4
 _.r1=r1
 _.r2=r2},
-oF:function oF(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
-_.y1=y1
-_.y2=y2
-_.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e
-_.f=f
-_.r=r
-_.x=x
-_.y=y
-_.z=z
-_.Q=Q
-_.ch=ch
-_.cx=cx
-_.cy=cy
-_.db=db
-_.dx=dx
-_.dy=dy
-_.fr=fr
-_.fx=fx
-_.fy=fy
-_.go=go
-_.id=id
-_.k1=k1
-_.k2=k2
-_.k3=k3
-_.k4=k4
-_.r1=r1
-_.r2=r2
-_.rx=rx
-_.ry=ry
-_.x1=x1
-_.x2=x2},
 vi:function vi(){},
 vd:function vd(){},
 ve:function ve(){}},X={iJ:function iJ(a,b,c,d,e,f){var _=this
@@ -12343,41 +12455,7 @@ _.k4=k4
 _.r1=r1
 _.r2=r2},H:function H(a,b,c){this.a=a
 this.b=b
-this.c=c}},N={a7:function a7(){},mD:function mD(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
-_.y1=y1
-_.y2=y2
-_.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e
-_.f=f
-_.r=r
-_.x=x
-_.y=y
-_.z=z
-_.Q=Q
-_.ch=ch
-_.cx=cx
-_.cy=cy
-_.db=db
-_.dx=dx
-_.dy=dy
-_.fr=fr
-_.fx=fx
-_.fy=fy
-_.go=go
-_.id=id
-_.k1=k1
-_.k2=k2
-_.k3=k3
-_.k4=k4
-_.r1=r1
-_.r2=r2
-_.rx=rx
-_.ry=ry
-_.x1=x1
-_.x2=x2},nn:function nn(cx,cy,db,dx,dy,a,b,c,d,e,f,r,x,y,z,Q,ch){var _=this
+this.c=c}},N={a7:function a7(){},nn:function nn(cx,cy,db,dx,dy,a,b,c,d,e,f,r,x,y,z,Q,ch){var _=this
 _.cx=cx
 _.cy=cy
 _.db=db
@@ -13071,75 +13149,7 @@ _.x=x
 _.y=y
 _.z=z
 _.Q=Q
-_.ch=ch},oP:function oP(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
-_.y1=y1
-_.y2=y2
-_.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e
-_.f=f
-_.r=r
-_.x=x
-_.y=y
-_.z=z
-_.Q=Q
-_.ch=ch
-_.cx=cx
-_.cy=cy
-_.db=db
-_.dx=dx
-_.dy=dy
-_.fr=fr
-_.fx=fx
-_.fy=fy
-_.go=go
-_.id=id
-_.k1=k1
-_.k2=k2
-_.k3=k3
-_.k4=k4
-_.r1=r1
-_.r2=r2
-_.rx=rx
-_.ry=ry
-_.x1=x1
-_.x2=x2},pi:function pi(y1,y2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3,k4,r1,r2,rx,ry,x1,x2){var _=this
-_.y1=y1
-_.y2=y2
-_.a=a
-_.b=b
-_.c=c
-_.d=d
-_.e=e
-_.f=f
-_.r=r
-_.x=x
-_.y=y
-_.z=z
-_.Q=Q
-_.ch=ch
-_.cx=cx
-_.cy=cy
-_.db=db
-_.dx=dx
-_.dy=dy
-_.fr=fr
-_.fx=fx
-_.fy=fy
-_.go=go
-_.id=id
-_.k1=k1
-_.k2=k2
-_.k3=k3
-_.k4=k4
-_.r1=r1
-_.r2=r2
-_.rx=rx
-_.ry=ry
-_.x1=x1
-_.x2=x2},qJ:function qJ(cx,cy,db,dx,dy,a,b,c,d,e,f,r,x,y,z,Q,ch){var _=this
+_.ch=ch},qJ:function qJ(cx,cy,db,dx,dy,a,b,c,d,e,f,r,x,y,z,Q,ch){var _=this
 _.cx=cx
 _.cy=cy
 _.db=db
@@ -20773,7 +20783,6 @@ C:function(a){var t="[(Random from "+P.vc(this.d,"(",")")+") x "+H.z(this.b)
 return t+(this.c?" (from Aspect)":"")+"]"}}
 E.l1.prototype={
 C:function(a){return"[Stats assigned from player Interests x"+H.z(this.b)+"]"}}
-N.mD.prototype={}
 Y.mF.prototype={
 E:function(){var t,s,r,q
 t=Q.G(null,null,A.a0)
@@ -22093,7 +22102,6 @@ m="It's the final door before facing the "+m+". All four puzzles blocks are simp
 l="Finally. The "+r+" can stop solving bullshit 'logic' puzzles that keep straying into weird intuition mind reading bullshit."
 t.i(0,new R.R("Make the Connections",!1,[new U.b(q),new U.b(p),new U.b(o),new U.W(m,"Looks like the "+r+" will have to resolve some of those bullshit puzzles.",l)],H.a([],k),R.B(),!1,!1,new Y.U("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.D)
 n.i(0,new X.H(s,t,null),$.ax)}}
-U.nY.prototype={}
 E.nZ.prototype={
 E:function(){var t,s,r,q
 t=Q.G(null,null,A.a0)
@@ -22377,7 +22385,6 @@ r=" The "+r+"  has finally bested the dungeon, and retrieved the copy of The Lon
 o=this.y
 t.i(0,new R.a2("Premiere the Movie",!1,[new U.b(q),new U.b(m),new U.b(r)],H.a([],l),R.B(),!1,!1,new Y.bD("Rewards/sweetTreasure.png",o,"Rewards/no_reward.png",null),1,null,null),$.D)
 p.i(0,new X.H(s,t,null),$.aP)}}
-Z.oF.prototype={}
 N.oJ.prototype={
 E:function(){var t,s,r,q
 t=Q.G(null,null,A.a0)
@@ -22528,7 +22535,6 @@ n="This is the least satisfying quest chain, ever. With a hearty 'FUCK YOU', the
 m="Fucking YES. Finally some goddamned CATHARSIS! Maybe the "+r+" can finally put this bullshit chapter of their land behind them."
 t.i(0,new R.R("Hate This Bullshit Land",!1,[new U.b(q),new U.b(p),new U.b(o),new U.W(n,"God FUCKING DAMN IT. After all that the "+r+" LOSES!? ",m)],H.a([],g),R.B(),!1,!1,new Y.U("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.D)
 h.i(0,new X.H(s,t,null),$.ax)}}
-F.oP.prototype={}
 Y.dS.prototype={}
 Y.af.prototype={}
 Y.d3.prototype={}
@@ -23114,7 +23120,6 @@ q="The "+r+" wanders into an entire crowd of "
 o=$.v
 t.i(0,new R.a2("Protect the FLARPers",!1,[new U.b(q+o+"s dressed in authentic style fantasy armor. What is going on? The nearest one stops "+$.K+"ing long enough to explain that it's time for Paradox Space's biggest FLARP convention. The "+r+" happily joins the RP."),new U.b("The "+r+"'s character in the FLARP is nearly maximum level. This is so much fun! Suddenly, a group of underlings attack the crowd. Confusion reigns as the "+o+"s think it's somehow related to FLARP at first and don't fight back seriously. It is up to the "+r+" to save the day! All that RP practice surprisingly pays off. They win easily!   "),new U.b("The FLARP is finally coming to an end. All the "+o+"s agree that it is the best session in living memory and celebrate how the "+r+" kept it from becoming a tragedy.")],H.a([],m),R.B(),!1,!1,new Y.af("Rewards/no_reward.png",null),1,null,null),$.D)
 p.i(0,new X.H(s,t,null),$.aP)}}
-F.pi.prototype={}
 M.bC.prototype={}
 N.pk.prototype={
 E:function(){var t,s,r,q
@@ -23162,7 +23167,6 @@ t.i(0,new R.R("Light the Forge",!1,[new U.b(r[0]),new U.b(q[1]),new U.b(n[2]+" "
 p=$.o
 t.i(0,new R.bB("Breed the Frogs, But Be Boring About It",!1,[new U.b("The "+p+" collects all sorts of frogs. Various "+$.v+"s 'help' by "+$.K+"ing up a storm. "),new U.b("The "+p+" begins combining frogs into ever cooler frogs. They begin to realize that an important feature is somehow missing from all frogs. Where could the frog with this trait be?  "),new U.b("The "+p+" has found the final frog.   Universe Tadpole all ready.   ")],H.a([],s),R.B(),!1,!1,new Y.by("Rewards/sweetFrog.png","Rewards/holyShitFrogs.png",null,null,"Rewards/sweetLoot.png","Rewards/fraymotifBG.png","Rewards/no_reward.png",null),1,null,null),$.l)
 this.f.i(0,new X.H(o,t,null),$.HN)}}
-S.pl.prototype={}
 U.aw.prototype={
 gJ:function(a){return this.d+"kind"},
 $isbG:1,
@@ -23214,6 +23218,13 @@ case 1:return P.bs(r,s)}})
 return P.bt($async$P,s)},
 $asdr:function(){return[O.cX]},
 $asc8:function(){return[O.cX,P.bi]}}
+A.nY.prototype={}
+A.pl.prototype={}
+A.oF.prototype={}
+A.pi.prototype={}
+A.qe.prototype={}
+A.oP.prototype={}
+A.mD.prototype={}
 R.pW.prototype={
 E:function(){var t,s,r,q
 t=Q.G(null,null,A.a0)
@@ -23653,7 +23664,6 @@ k="There is a babbling brook. A wizened "+p+" is next to it. The water, he says,
 o=$.o
 t.i(0,new R.R("Move Forwards, Never Stop",!1,[new U.b(k+o+" contemplates this for a while. Is it really a true thing when this game has time travel in it?"),new U.b("Days in the past, but not many, the "+o+" is exploring. They find the babbling brook and the wizened "+p+" yet again. He again says that the water flows in only one direction. Irrationally angry, the "+o+" yells that it's not true, that this is the second time he's met the wizened "+p+". The wizened "+p+" simply "+$.K+"s mysteriously.  "),new U.b("Days in the future, but not enough to catch up to the present, the "+o+" is exploring. When they find the babbling brook, the wizened "+p+" brightens. 'Soon.' he says, 'you will understand that we move in only one direction.'  He gestures downstream 'So too, will you soon have our last conversation. Or, looking another way. Our first.'.  Huh. The "+o+" thinks they get it. Time travel or not, they do things in a linear order.  So does the wizened "+p+"...even if it isn't the same order. "),new U.W("Inexorably, the "+o+" is back in the present but also far in the future. The wizened "+p+" has just been slain by the "+$.C+", mere minutes after their first/last conversation. The "+o+" took the consort's advice to heart.  They have been preparing for this fight for a long time, now, going ever forward, but not on the same path in time as everyone else. It is time. ","It's a Time Paradox. Or is it? Did the "+o+" know they would be defeated? Did they fight anyways? ","This was always going to happen.")],H.a([],l),R.B(),!1,!1,new Y.U("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.D)
 j.i(0,new X.H(s,t,null),$.ax)}}
-Y.qe.prototype={}
 G.Y.prototype={
 C:function(a){var t=this.b
 if(t.length!==0)return C.b.gaj(t)
@@ -25500,7 +25510,6 @@ inherit(T.lf,t)
 inherit(T.lh,t)
 inherit(U.lP,t)
 inherit(Z.lQ,t)
-inherit(N.mD,t)
 inherit(T.mH,t)
 inherit(V.mJ,t)
 inherit(X.mL,t)
@@ -25510,18 +25519,19 @@ inherit(K.ns,t)
 inherit(G.nt,t)
 inherit(D.nR,t)
 inherit(V.nX,t)
-inherit(U.nY,t)
-inherit(Z.oF,t)
 inherit(E.oM,t)
-inherit(F.oP,t)
 inherit(V.oZ,t)
 inherit(K.p3,t)
-inherit(F.pi,t)
 inherit(N.pk,t)
-inherit(S.pl,t)
+inherit(A.nY,t)
+inherit(A.pl,t)
+inherit(A.oF,t)
+inherit(A.pi,t)
+inherit(A.qe,t)
+inherit(A.oP,t)
+inherit(A.mD,t)
 inherit(L.q_,t)
 inherit(N.q9,t)
-inherit(Y.qe,t)
 inherit(Q.qz,t)
 t=S.bI
 inherit(S.ir,t)
