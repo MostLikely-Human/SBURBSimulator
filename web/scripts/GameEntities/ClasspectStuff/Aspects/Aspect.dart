@@ -25,6 +25,7 @@ import "Hippo.dart";
 import "Bear.dart";
 import "Stone.dart";
 import "Meme.dart";
+import "Chill.dart";
 
 
 
@@ -57,6 +58,7 @@ abstract class Aspects {
     static Aspect REALITYSTONE;
     static Aspect GAUNTLET;
     static Aspect MEME;
+    static Aspect CHILL;
 
     static Aspect NULL;
 
@@ -89,6 +91,7 @@ abstract class Aspects {
         REALITYSTONE = new Realitystone(25);
         GAUNTLET = new Gauntlet(26);
         MEME = new Meme(27);
+        CHILL = new Chill(28);
 
 
         NULL = new Aspect(255, "Null", isInternal:true);
@@ -177,7 +180,7 @@ class Aspect {
 
     /// Only canon aspects will appear in random sessions.
     final bool isCanon;
-    final bool isInternal; //don't let null show up in lists.
+    bool isInternal; //don't let null show up in lists.
     final bool isMLHFanon;
 
     // ##################################################################################################

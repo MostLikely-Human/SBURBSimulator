@@ -260,6 +260,7 @@ String mutatorsInPlay(Session session) {
     if(session.mutator.ruleField) fields.add("Rule");
     if(session.mutator.hippoField) fields.add("Hippo");
     if(session.mutator.bearField) fields.add("Bear");
+    if(session.mutator.chillField) fields.add("Chill");
     return "Mutators in Play: ${fields.join(",")}";
 }
 

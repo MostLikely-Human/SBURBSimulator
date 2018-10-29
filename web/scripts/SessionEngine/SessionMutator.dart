@@ -26,6 +26,7 @@ class SessionMutator {
     bool ruleField = false; //Opposite of ^
     bool hippoField = false; //Doom gnosis
     bool bearField = false; //Rage gnosis
+    bool chillField = false; //IDK yet, maybe making people fear each other, lower sanity?
 
     @override
     String toString() {
@@ -49,6 +50,7 @@ class SessionMutator {
         if(ruleField) ret = "$ret rule";
         if(hippoField) ret = "$ret hippo";
         if(bearField) ret = "$ret bear";
+        if(chillField) ret = "$ret chill";
 
         return ret;
     }
@@ -222,6 +224,23 @@ class SessionMutator {
                 p.renderSelf("taze");
             }
         }
+        return ret;
+    }
+
+    String chill(Session s, Player activatingPlayer) {
+        s.logger.info("AB: Huh. Looks like a ${activatingPlayer.title()} is going at it.");
+        effectsInPlay ++;
+        chillField = true;
+
+        String ret = "The ${activatingPlayer.htmlTitle()} starts to glow, and they make everyone afraid...";
+
+        for(Player p in s.players) {
+            p.setStat(Stats.SANITY, p.getStat(Stats.SANITY)-1000);
+            p.damageAllRelationships();
+        }
+
+        //Make players get scared of doing quests
+
         return ret;
     }
 

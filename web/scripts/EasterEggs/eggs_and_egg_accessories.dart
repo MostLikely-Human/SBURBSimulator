@@ -203,6 +203,18 @@ void sbahjMode(Session session){
 		openBound(session);
 	}
 
+	if(getParameterByName("dev",null) == "tools") {
+		dev_tools(session);
+	}
+	
+	if(getParameterByName("reskin",null) == "aspects") {
+		reskinAspects(session);
+	}
+
+	if(getParameterByName("reskin",null) == "sessions") {
+		reskinSessions(session);
+	}
+
 	if(getParameterByName("rumpus",null)  == "fruity"){
 		fruityRumpusAssholeFactory(session);
 	}
@@ -247,6 +259,25 @@ void GnosisStuck(Session session) {
 	for(num j = 0; j<session.players.length; j++) {
 		session.players[j].gnosis = 3;
     session.players[j].setStat(Stats.SBURB_LORE, 40372471136969696969696969);
+	}
+}
+
+
+void dev_tools(Session session) {
+	for(Aspect a in Aspects.everything) {
+		a.isInternal = false;
+	}
+}
+
+
+void reskinAspects(Session session) {
+
+}
+
+
+void reskinSessions(Session session) {
+	if(session.session_id == 350) {
+		session.players[0].aspect = Aspects.CHILL;
 	}
 }
 
