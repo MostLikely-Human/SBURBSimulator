@@ -1151,6 +1151,9 @@ class Session {
         Aspects.SOULSTONE.name = "Stone";
         Aspects.TIMESTONE.name = "Stone";
         Aspects.REALITYSTONE.name = "Stone";
+
+        Aspects.RE_BEAR.name = "Bear";
+        Aspects.RE_HIPPO.name = "Hippo";
         return completer.future;
     }
 

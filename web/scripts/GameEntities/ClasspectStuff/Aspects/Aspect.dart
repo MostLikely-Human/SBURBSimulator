@@ -26,6 +26,9 @@ import "Bear.dart";
 import "Stone.dart";
 import "Meme.dart";
 import "Chill.dart";
+import "Rune.dart";
+import "Haze.dart";
+import "Reskin.dart";
 
 
 
@@ -59,6 +62,12 @@ abstract class Aspects {
     static Aspect GAUNTLET;
     static Aspect MEME;
     static Aspect CHILL;
+    static Aspect RUNE;
+    static Aspect HAZE;
+
+
+    static Aspect RE_BEAR;
+    static Aspect RE_HIPPO;
 
     static Aspect NULL;
 
@@ -92,6 +101,12 @@ abstract class Aspects {
         GAUNTLET = new Gauntlet(26);
         MEME = new Meme(27);
         CHILL = new Chill(28);
+        RUNE = new Rune(29);
+        HAZE = new Haze(30);
+
+
+        RE_BEAR = new Re_Bear(256);
+        RE_HIPPO = new Re_Hippo(257);
 
 
         NULL = new Aspect(255, "Null", isInternal:true);
@@ -126,6 +141,40 @@ abstract class Aspects {
             }
         }
         return NULL;
+    }
+
+    static findReskin(Aspect a) {
+        if(a == Aspects.RAGE) a.reskinIs = Aspects.RE_BEAR;
+        if(a == Aspects.DOOM) a.reskinIs = Aspects.RE_HIPPO;
+        else a.reskinIs = a;
+        return a.reskinIs;
+    }
+
+    static makeReskin(Aspect Original, Aspect Reskin) {
+
+        Reskin.itemWeight = Original.itemWeight;
+        Reskin.fraymotifWeight = Original.fraymotifWeight;
+        Reskin.companionWeight = Original.companionWeight;
+
+        Reskin.difficulty = Original.difficulty;
+
+        Reskin.landNames = Original.landNames;
+
+        Reskin.levels = Original.levels;
+
+        Reskin.fraymotifNames = Original.fraymotifNames;
+
+        Reskin.denizenSongTitle = Original.denizenSongTitle;
+        Reskin.denizenSongDesc = Original.denizenSongDesc;
+
+        Reskin.symbolicMcguffins = Original.symbolicMcguffins;
+        Reskin.physicalMcguffins = Original.physicalMcguffins;
+
+        Reskin.denizenNames = Original.denizenNames;
+
+        Reskin.stats = Original.stats;
+
+        return Reskin;
     }
 
     static Iterable<Aspect> get all => _aspects.values.where((Aspect a) => !a.isInternal);
@@ -182,6 +231,9 @@ class Aspect {
     final bool isCanon;
     bool isInternal; //don't let null show up in lists.
     final bool isMLHFanon;
+
+    Aspect reskinOf = null; //doesn't apply to this aspect
+    Aspect reskinIs = null;
 
     // ##################################################################################################
     // Tags
@@ -282,15 +334,24 @@ class Aspect {
     // ##################################################################################################
     // Constructor
 
-    Aspect(int this.id, String this.name, {this.isMLHFanon = false, this.isCanon = false, this.isInternal = false}) {
-        faqFile = new FAQFile("Aspects/$name.xml");
+    Aspect(int this.id, String this.name, {this.isMLHFanon = false, this.isCanon = false, this.isInternal = false, this.reskinOf = null, this.reskinIs = null}) {
         this.savedName = this.name;
 
         //not dynamically calculated because of Hope players (there IS no Dick.png), but still needs to be known.
-        this.symbolImgLocation = "$name.png";
-        this.bigSymbolImgLocation = "${name}Big.png";
-        initializeItems();
-        this.initializeThemes();
+        if(this.reskinOf == null) {
+            faqFile = new FAQFile("Aspects/$name.xml");
+            initializeItems();
+            this.initializeThemes();
+            this.symbolImgLocation = "$name.png";
+            this.bigSymbolImgLocation = "${name}Big.png";
+        } else {
+            initializeItems();
+            initializeThemes();
+            Aspects.makeReskin(this, reskinOf);
+            faqFile = new FAQFile("Aspects/$reskinOf.xml");
+            this.symbolImgLocation = "Reskins/$name.png";
+            this.bigSymbolImgLocation = "Reskins/${name}Big.png";
+        }
         Aspects.register(this);
     }
 

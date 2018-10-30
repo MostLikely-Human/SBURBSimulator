@@ -267,11 +267,16 @@ void dev_tools(Session session) {
 	for(Aspect a in Aspects.everything) {
 		a.isInternal = false;
 	}
+	for(SBURBClass c in SBURBClassManager.everything) {
+		c.isInternal= false;
+	}
 }
 
 
 void reskinAspects(Session session) {
-
+	for(Player p in session.players) {
+		p.aspect = Aspects.findReskin(p.aspect);
+	}
 }
 
 
