@@ -24,6 +24,7 @@ abstract class NonCanonSessions {
         ret[12250] = session12250; //The immortal loss meme
         ret[212] = session212; //Cipah
         ret[350] = session350; //Thanos session
+        ret[1111111] = session1111111; //Ayyyy, Memostuck
         return ret;
     }
 
@@ -43,7 +44,114 @@ abstract class NonCanonSessions {
         session.players[0].setStat(Stats.EXPERIENCE, 1300);
     }
 
-    static void session350IndexToPlayer(Session session, Player player, int index) {
+    static void session1111111(Session session) {
+        int numPlayers = 6;
+        makeASessionFromSource(session, session1111111IndexToPlayer, numPlayers);
+        session.players.length = numPlayers; //no more, no less. Unless stuff happens.
+    }
+
+
+    static void session1111111IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+        player.deriveChatHandle = false;
+        player.deriveLand;
+        if (index == 0) {
+            player.copyFromOCDataString("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [[".", ","]];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = ""; //I can not figure out how to do this
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Mouse", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Glass and Action";
+            player.land.denizenFeature = new DenizenFeature("Morpheus");
+        }else if (index == 1) {
+            player.copyFromOCDataString("b=r%070%40%C3%B5*%00%02DD%0A&s=,,Drawing,A.I.,Nebula&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NOCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [[".", ""]];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Artbunny", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Colors and Music";
+            player.land.denizenFeature = new DenizenFeature("[REDACTED]");
+        }else if (index == 2) {
+            player.copyFromOCDataString("b=%C2%80%00%00%40%C3%BEi%00%1B%0E%20%0F&s=,,Knights,Video Games,inconsequentialContinuity&x=HoAA");
+
+            player.tazeClass_name = SBURBClassManager.ROGUE;
+            player.tazeAspect = Aspects.HEART;
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Enzarthur", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Heat and Mutiny";
+            player.land.denizenFeature = new DenizenFeature("Tyche");
+        }else if (index == 3) {
+            player.copyFromOCDataString("b=%00%00%00Q%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,extraterrestrialTerror&x=JogA");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("OneShot", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Alien Worlds and Stones";
+            player.land.denizenFeature = new DenizenFeature("Ronan");
+        }else if (index == 4) {
+            player.copyFromOCDataString("b=%00%00%00%15%C3%BB%3A%00%0B%17%07%3B&s=,,Murder,The Obscure Game,fhtagnRegeclaiming&x=jigA");
+
+            player.quirk.capitalization = Quirk.KANAYACAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [[".",""]];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Inkling", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Murk and Incubus";
+            player.land.denizenFeature = new DenizenFeature("Grima");
+        }else if (index == 5) {
+            player.copyFromOCDataString("b=%C2%84%5C%10A%C3%BE%C2%9D%00%0B))%3C&s=,,Video Games,Astronomy,agnosticAsshole&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("WaluiIvagunner", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Minutes and Locomotion";
+            player.land.denizenFeature = new DenizenFeature("Kairos");
+        }
+    }
+
+    /*static void session350IndexToPlayer(Session session, Player player, int index) {
         Session s = session;
         player.copyFromOCDataString("b=%00%00%00J%C3%BAV%04%15%01%01%3D&s=,,Infinity Stones,Order,Thanos&x=ntAA");
         player.hair = 75;
@@ -53,7 +161,7 @@ abstract class NonCanonSessions {
         player.quirk.lettersToReplaceIgnoreCase = [];
         player.quirk.prefix = "";
         player.quirk.suffix = "";
-    }
+    }*/
 
     static void session12250(Session session) {
         int numPlayers = 4;

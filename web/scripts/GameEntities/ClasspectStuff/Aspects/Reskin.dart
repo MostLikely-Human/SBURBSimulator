@@ -30,6 +30,9 @@ class Re_Bear extends Aspect {
 
   Re_Bear(int id) :super(id, "Re_Bear", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.RAGE);
 
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Bear", "Boiler", "Bean", "Bepis", "Boneless", "Bop"]);
+
 }
 
 class Re_Hippo extends Aspect {
@@ -50,6 +53,9 @@ class Re_Hippo extends Aspect {
     ..shirt_dark = '#642e99'
     ..pants_light = '#4c2375'
     ..pants_dark = '#2b1442';
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Hippo", "Hardboiler", "Homestuck", "Homicide", "Hopeless", "Human", "Hippopotamus", "Hummus"]);
 
 
   @override

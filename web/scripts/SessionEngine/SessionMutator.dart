@@ -27,6 +27,8 @@ class SessionMutator {
     bool hippoField = false; //Doom gnosis
     bool bearField = false; //Rage gnosis
     bool chillField = false; //IDK yet, maybe making people fear each other, lower sanity?
+    bool runeField = false;
+    bool hazeField = false;
 
     @override
     String toString() {
@@ -51,6 +53,8 @@ class SessionMutator {
         if(hippoField) ret = "$ret hippo";
         if(bearField) ret = "$ret bear";
         if(chillField) ret = "$ret chill";
+        if(runeField) ret = "$ret rune";
+        if(hazeField) ret = "$ret haze";
 
         return ret;
     }
@@ -192,6 +196,14 @@ class SessionMutator {
         }
 
         return ret;
+    }
+
+    String rune(Session s, Player activatingPlayer) {
+
+    }
+
+    String haze(Session s, Player activatingPlayer) {
+
     }
 
 

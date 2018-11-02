@@ -268,7 +268,7 @@ void dev_tools(Session session) {
 		a.isInternal = false;
 	}
 	for(SBURBClass c in SBURBClassManager.everything) {
-		c.isInternal= false;
+		c.isInternal = false;
 	}
 }
 
@@ -281,8 +281,17 @@ void reskinAspects(Session session) {
 
 
 void reskinSessions(Session session) {
-	if(session.session_id == 350) {
-		session.players[0].aspect = Aspects.CHILL;
+	if(session.session_id == 350) session.players[0].aspect = Aspects.CHILL;
+	else {
+		window.alert("I don't know what you thought this would do");
+		for (Player p in session.players) {
+			if(p.aspect != Aspects.SPACE && p.aspect != Aspects.TIME) {
+				p.aspect = session.rand.pickFrom(Aspects.everything);
+				p.guardian.aspect = p.aspect;
+				p.class_name = session.rand.pickFrom(SBURBClassManager.everything);
+				p.guardian.class_name = p.class_name;
+			}
+		}
 	}
 }
 
