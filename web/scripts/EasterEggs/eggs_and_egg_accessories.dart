@@ -206,14 +206,7 @@ void sbahjMode(Session session){
 	if(getParameterByName("dev",null) == "tools") {
 		dev_tools(session);
 	}
-	
-	if(getParameterByName("reskin",null) == "aspects") {
-		reskinAspects(session);
-	}
 
-	if(getParameterByName("reskin",null) == "sessions") {
-		reskinSessions(session);
-	}
 
 	if(getParameterByName("rumpus",null)  == "fruity"){
 		fruityRumpusAssholeFactory(session);
@@ -236,6 +229,14 @@ void sbahjMode(Session session){
 	}
 
 	processXStuck(session); //might not do anything.
+
+	if(getParameterByName("reskin",null) == "aspects") {
+		reskinAspects(session);
+	}
+
+	if(getParameterByName("reskin",null) == "sessions") {
+		reskinSessions(session);
+	}
 
 	if (getParameterByName("active", null) == "true") {
 		active(session);
@@ -274,8 +275,10 @@ void dev_tools(Session session) {
 
 
 void reskinAspects(Session session) {
+	window.alert("Reskinning Aspects");
 	for(Player p in session.players) {
-		p.aspect = Aspects.findReskin(p.aspect);
+		p.aspect = Aspects.findReskin(p.aspect, p.moon.name);
+		session.logger.info(Aspects.findReskin(p.aspect, p.moon.name));
 	}
 }
 

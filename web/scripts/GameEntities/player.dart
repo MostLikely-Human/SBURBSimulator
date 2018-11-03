@@ -530,6 +530,10 @@ class Player extends GameEntity{
               if(tazeClass_name != null) {this.class_name = this.tazeClass_name;}
               this.associatedStats = [];
               this.aspect.initAssociatedStats(this);
+              if(this.chatHandle == "inconsequentialContinuity") {
+                this.land.name = "Land of Songs and Waves";
+                this.land.denizenFeature = new DenizenFeature("Tiamat");
+              }
             }
           }
         }

@@ -1154,6 +1154,7 @@ class Session {
 
         Aspects.RE_BEAR.name = "Bear";
         Aspects.RE_HIPPO.name = "Hippo";
+        Aspects.RE_LOCK.name = "Lock";
         return completer.future;
     }
 

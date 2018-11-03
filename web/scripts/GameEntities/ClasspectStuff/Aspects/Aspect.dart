@@ -68,6 +68,7 @@ abstract class Aspects {
 
     static Aspect RE_BEAR;
     static Aspect RE_HIPPO;
+    static Aspect RE_LOCK;
 
     static Aspect NULL;
 
@@ -107,6 +108,7 @@ abstract class Aspects {
 
         RE_BEAR = new Re_Bear(256);
         RE_HIPPO = new Re_Hippo(257);
+        RE_LOCK = new Re_Lock(258);
 
 
         NULL = new Aspect(255, "Null", isInternal:true);
@@ -143,9 +145,10 @@ abstract class Aspects {
         return NULL;
     }
 
-    static findReskin(Aspect a) {
+    static findReskin(Aspect a, String name) {
         if(a == Aspects.RAGE) a.reskinIs = Aspects.RE_BEAR;
-        if(a == Aspects.DOOM) a.reskinIs = Aspects.RE_HIPPO;
+        else if(a == Aspects.DOOM && name == "Derse") a.reskinIs = Aspects.RE_HIPPO;
+        else if(a == Aspects.DOOM && name == "Prospit") a.reskinIs = Aspects.RE_LOCK;
         else a.reskinIs = a;
         return a.reskinIs;
     }

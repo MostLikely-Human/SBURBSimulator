@@ -54,7 +54,7 @@ abstract class NonCanonSessions {
     static void session1111111IndexToPlayer(Session session, Player player, int index) {
         Session s = session;
         player.deriveChatHandle = false;
-        player.deriveLand;
+        player.deriveLand = false;
         if (index == 0) {
             player.copyFromOCDataString("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==");
 

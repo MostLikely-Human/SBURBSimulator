@@ -65,3 +65,36 @@ class Re_Hippo extends Aspect {
 
 
 }
+
+
+
+class Re_Lock extends Aspect {
+
+  Re_Lock(int id) :super(id, "Re_Lock", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.DOOM);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#3c733c"
+    ..aspect_light = '#3c733c'
+    ..aspect_dark = '#214021'
+    ..shoe_light = '#214021'
+    ..shoe_dark = '#070d07'
+    ..cloak_light = '#2f402f'
+    ..cloak_mid = '#1c261c'
+    ..cloak_dark = '#090d09'
+    ..shirt_light = '#2e582e'
+    ..shirt_dark = '#142614'
+    ..pants_light = '#1b331b'
+    ..pants_dark = '#070d07';
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Lock", "Lockpicker", "Loser", "Loss", "Leeway"]);
+
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.doom(s, p);
+  }
+
+
+}
