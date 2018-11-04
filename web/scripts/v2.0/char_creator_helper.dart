@@ -168,6 +168,8 @@ class CharacterCreatorHelper {
             player.dead;
         (querySelector("#robot${player.id}") as CheckboxInputElement).checked =
             player.robot;
+        (querySelector("#reskin${player.id}") as CheckboxInputElement).checked =
+            player.aspect == Aspects.findReskin(player.aspect, player.moon.name);
     }
 
     void syncPlayerToTextBoxes(Player player) {
@@ -246,6 +248,8 @@ class CharacterCreatorHelper {
         '<span class="formElementLeft">Dead:</span> <input id="dead${player.id}" type="checkbox">';
         str +=
         '<span class="formElementRight">Robot:</span> <input id="robot${player.id}" type="checkbox">';
+        str +=
+        '<span class="formElementLeft">Reskin:</span> <input id="reskin${player.id}" type = "checkbox">';
 
         str += "</div>";
         return str;
@@ -558,6 +562,7 @@ class CharacterCreatorHelper {
         querySelector("#leftMurderMode${player.id}");
         CheckboxInputElement dead = querySelector("#dead${player.id}");
         CheckboxInputElement robot = querySelector("#robot${player.id}");
+        CheckboxInputElement reskin = querySelector("#reskin${player.id}");
         grimDark.checked = player.grimDark == 4;
         godTier.checked = player.godTier;
         isDreamSelf.checked = player.isDreamSelf;
@@ -566,6 +571,7 @@ class CharacterCreatorHelper {
         leftMurderMode.checked = player.leftMurderMode;
         dead.checked = player.dead;
         robot.checked = player.robot;
+        reskin.checked = player.aspect.reskinOf != null;
 
         Element helpText = querySelector("#helpText${player.id}");
         var that = this;
@@ -626,6 +632,15 @@ class CharacterCreatorHelper {
             player.robot = robot.checked;
             that.redrawSinglePlayer(player);
             helpText.setInnerHtml(that.generateHelpText("robot", player.class_name.name));
+        });
+
+        reskin.onChange.listen((Event e) {
+            if (reskin.checked) {
+                player.aspect = Aspects.findReskin(player.aspect, player.moon.name);
+            } else {
+                player.aspect = player.aspect.reskinOf;
+            }
+            that.redrawSinglePlayer(player);
         });
     }
 

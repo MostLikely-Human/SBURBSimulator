@@ -364,6 +364,7 @@ abstract class NonCanonSessions {
             player.moon = session.prospit;
         }else if(index == 3){
             player.copyFromOCDataString("b=%05%C2%BA%C3%96C%C3%BES%04%1C((%06&s=,,Intimidation,Dungeon Mastering,demonicActivist&x=phgA");
+            player.aspect = Aspects.RAIN;
 
             player.deriveSprite = false;
             player.object_to_prototype = new PotentialSprite("Book", s);

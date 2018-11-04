@@ -139,10 +139,12 @@ abstract class Aspects {
         FLOW = new Flow(40);
         STARS = new Stars(41);
 
+        int maxID = 41;
 
-        RE_BEAR = new Re_Bear(256);
-        RE_HIPPO = new Re_Hippo(257);
-        RE_LOCK = new Re_Lock(258);
+
+        RE_BEAR = new Re_Bear(maxID+1);
+        RE_HIPPO = new Re_Hippo(maxID+2);
+        RE_LOCK = new Re_Lock(maxID+3);
 
 
         NULL = new Aspect(255, "Null", isInternal:true);
@@ -168,6 +170,7 @@ abstract class Aspects {
     }
 
     static List Stone = [MINDSTONE, SPACESTONE, POWERSTONE, SOULSTONE, TIMESTONE, REALITYSTONE, GAUNTLET];
+    static List Reskins = [RE_BEAR, RE_HIPPO, RE_LOCK];
 
     static Aspect getByName(String name) {
         if (_aspects.isEmpty) init();
