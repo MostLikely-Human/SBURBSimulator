@@ -5,18 +5,28 @@ import "../../../Lands/Quest.dart";
 
 import "Blood.dart";
 import "Breath.dart";
-import "Doom.dart";
+import "Fate.dart";
+import "Flow.dart";
 import "Heart.dart";
 import "Hope.dart";
+import "Doom.dart";
+import "Law.dart";
 import "Life.dart";
 import "Light.dart";
+import "Might.dart";
 import "Mind.dart";
+import "Mist.dart";
 import "Rage.dart";
+import "Rain.dart";
+import "Rhyme.dart";
+import "Sand.dart";
+import "Sky.dart";
+import "Snow.dart";
 import "Space.dart";
+import "Stars.dart";
 import "Time.dart";
 import "Void.dart";
 import "Dream.dart";
-import "Law.dart";
 import "Sauce.dart";
 import "Juice.dart";
 import "Taze.dart";
@@ -46,7 +56,6 @@ abstract class Aspects {
     static Aspect HOPE;
     static Aspect LIFE;
     static Aspect DREAM;
-    static Aspect LAW;
     static Aspect SAUCE; //just shogun [that doesn't mean it has to be a reskin, srsly JR]
     static Aspect JUICE;
     static Aspect TAZE;
@@ -64,6 +73,19 @@ abstract class Aspects {
     static Aspect CHILL;
     static Aspect RUNE;
     static Aspect HAZE;
+
+
+    static Aspect MIGHT;
+    static Aspect MIST;
+    static Aspect RAIN;
+    static Aspect SAND;
+    static Aspect SKY;
+    static Aspect RHYME;
+    static Aspect LAW;
+    static Aspect FATE;
+    static Aspect SNOW;
+    static Aspect FLOW;
+    static Aspect STARS;
 
 
     static Aspect RE_BEAR;
@@ -86,7 +108,6 @@ abstract class Aspects {
         HOPE = new Hope(10);
         LIFE = new Life(11);
         DREAM = new Dream(12);
-        LAW = new Law(13);
         JUICE = new Juice(14);
         SAUCE = new Sauce(15);
         TAZE = new Taze(16);
@@ -104,6 +125,19 @@ abstract class Aspects {
         CHILL = new Chill(28);
         RUNE = new Rune(29);
         HAZE = new Haze(30);
+
+
+        MIGHT = new Might(31);
+        MIST = new Mist(32);
+        RAIN = new Rain(33);
+        SAND = new Sand(34);
+        SKY = new Sky(35);
+        RHYME = new Rhyme(36);
+        LAW = new Law(37);
+        FATE = new Fate(38);
+        SNOW = new Snow(39);
+        FLOW = new Flow(40);
+        STARS = new Stars(41);
 
 
         RE_BEAR = new Re_Bear(256);

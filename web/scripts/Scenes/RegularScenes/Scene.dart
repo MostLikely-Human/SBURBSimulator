@@ -34,7 +34,7 @@ abstract class Scene {
     player.scenes = [new FuckingDie(session),new OhShitFuckWheresTheRing(session), new GetWasted(session), new QueenRejectRing(session)];
     //relationship drama has a high priority because it can distract a session from actually making progress. happened to universe a trolls.
     player.scenes.addAll([new QuadrantDialogue(session),new FreeWillStuff(session),new Gristmas(session), new GrimDarkQuests(session),new Breakup(session), new RelationshipDrama(session), new UpdateShippingGrid(session),  new EngageMurderMode(session), new GoGrimDark(session),  new DisengageMurderMode(session),new MurderPlayers(session),new BeTriggered(session),]);
-    player.scenes.addAll([new VoidyStuff(session),  new DoEctobiology(session), new LuckStuff(session), new GauntletFight(session), new QuestsAndStuff(session)]);
+    player.scenes.addAll([new VoidyStuff(session),  new DoEctobiology(session), new RainClone(session), new LuckStuff(session), new GauntletFight(session), new QuestsAndStuff(session)]);
     player.scenes.addAll([new LevelTheHellUp(session)]);
 
     //make sure kiss, then godtier, then godtierrevival, then any other form of revival.

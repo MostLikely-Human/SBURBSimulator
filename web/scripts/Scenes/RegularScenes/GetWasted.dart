@@ -243,7 +243,7 @@ class GetWasted extends Scene {
         if(player.aspect == Aspects.LIFE || player.aspect == Aspects.DOOM) return exploitDoom(div);
         if(player.aspect == Aspects.DREAM ) return exploitAlchemy(div);
 
-        return "OMFG, THIS WOULD DO SOMETHING IF JR WASN'T A LAZY PIECE OF SHIT.";
+        return "OMFG, THIS WOULD DO SOMETHING IF JR OR MLH OR CACTUS WASN'T A LAZY PIECE OF SHIT.";
     }
 
     String exploitAlchemy(Element div) {

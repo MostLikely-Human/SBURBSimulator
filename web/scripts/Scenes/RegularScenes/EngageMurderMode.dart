@@ -22,7 +22,7 @@ class EngageMurderMode extends Scene{
 		num moon = 0;
 
 		if(this.player != null){
-			return !this.player.murderMode && this.player.getEnemies().length > 0 && this.flipsShit(); //dude, don't engage murder mode if you're already in it
+			return !this.player.murderMode && this.player.getEnemies().length > 0 && this.flipsShit() && this.player.aspect != Aspects.RHYME; //dude, don't engage murder mode if you're already in it
 
 		}
 		return false;

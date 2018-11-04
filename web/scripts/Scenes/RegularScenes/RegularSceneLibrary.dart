@@ -10,6 +10,7 @@ export "Breakup.dart";
 export "CorpseSmooch.dart";
 export "DisengageMurderMode.dart";
 export "DoEctobiology.dart";
+export "RainClone.dart";
 export "QuestsAndStuff.dart";
 export "EngageMurderMode.dart";
 

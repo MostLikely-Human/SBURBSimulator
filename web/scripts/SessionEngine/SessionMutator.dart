@@ -152,30 +152,40 @@ class SessionMutator {
     }
 
 
-    String law(Session s, Player activatingPlayer) {
-        effectsInPlay ++;
-        voidField = true;
-        s.logger.info("AB: Huh. Looks like a ${activatingPlayer.title()} is going at it.");
-        String ret = "The ${activatingPlayer.htmlTitle()} is doing something. It's kind of hard to see.  Look at those line of code though...";
-        ret += "Huh. You get the strangest feelings that they are looking directly at you.  It's kind of unsettling. ";
-        ret += " Suddenly, everything vanishes. Even if  you knew how to see into the Void, you see nothing now. <span class='void'>The ${activatingPlayer.htmlTitle()} is on to you.</span> The ${activatingPlayer.htmlTitle()} is no longer going to suffer for your amusement. ";
-        ret += "Maybe.... Maybe you'll at least get to see the ending? ";
-        //a bunch of shit gets randomized.  oh sure, the void player is doing things for REASONS
-        //but if you can't see what those reasons are, it sure as fuck looks random.
-        s.sessionHealth += s.sessionHealth / -2;
-        for (Player p in s.players) {
-            p.grist += s.rand.nextInt(s.expectedGristContributionPerPlayer);
-            p.landLevel += s.rand.nextInt(s.goodFrogLevel);
-            p.corruptionLevelOther += s.rand.nextIntRange(-100, 100);
-            for (Stat str in Stats.pickable) {
-                //can lower it but way more likely to raise it
-                if (str != Stats.RELATIONSHIPS) {
-                    p.addStat(str, s.rand.nextIntRange((-1 * s.hardStrength / 10).round(), s.hardStrength.round()));
-                }
-            }
-        }
-        return ret;
+    String fate(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
     }
+    String flow(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String law(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String might(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String mist(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String rain(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String rhyme(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String sand(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String sky(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String snow(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+    String stars(Session s, Player activatingPlayer) {
+        return abjectFailure(s, activatingPlayer);
+    }
+
 
 
     String rule(Session s, Player activatingPlayer) {
