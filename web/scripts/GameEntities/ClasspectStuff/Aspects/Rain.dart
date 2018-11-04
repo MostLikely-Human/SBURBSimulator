@@ -4,18 +4,18 @@ import 'Aspect.dart';
 class Rain extends Aspect {
   @override
   AspectPalette palette = new AspectPalette()
-    ..accent = '#00FFFF'
-    ..aspect_light = '#00ffff'
-    ..aspect_dark = '#009090'
-    ..shoe_light = '#FEFEFE'
-    ..shoe_dark = '#707070'
-    ..cloak_light = '#0000FF'
-    ..cloak_mid = '#0000b3'
-    ..cloak_dark = '#000080'
-    ..shirt_light = '#9900ff'
-    ..shirt_dark = '#5c0099'
-    ..pants_light = '#00FF00'
-    ..pants_dark = '#008000';
+    ..accent = getRandomColor()
+    ..aspect_light = getRandomColor()
+    ..aspect_dark = getRandomColor()
+    ..shoe_light = getRandomColor()
+    ..shoe_dark = getRandomColor()
+    ..cloak_light = getRandomColor()
+    ..cloak_mid = getRandomColor()
+    ..cloak_dark = getRandomColor()
+    ..shirt_light = getRandomColor()
+    ..shirt_dark = getRandomColor()
+    ..pants_light = getRandomColor()
+    ..pants_dark = getRandomColor();
 
 
   @override

@@ -45,7 +45,7 @@ abstract class NonCanonSessions {
     }
 
     static void session1111111(Session session) {
-        int numPlayers = 6;
+        int numPlayers = 7;
         makeASessionFromSource(session, session1111111IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less. Unless stuff happens.
     }
@@ -72,6 +72,7 @@ abstract class NonCanonSessions {
             player.land.denizenFeature = new DenizenFeature("Morpheus");
         }else if (index == 1) {
             player.copyFromOCDataString("b=r%070%40%C3%B5*%00%02DD%0A&s=,,Drawing,A.I.,Nebula&x=AQ==");
+            player.aspect = Aspects.MIST;
 
             player.quirk.capitalization = Quirk.NOCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -89,7 +90,7 @@ abstract class NonCanonSessions {
             player.copyFromOCDataString("b=%C2%80%00%00%40%C3%BEi%00%1B%0E%20%0F&s=,,Knights,Video Games,inconsequentialContinuity&x=HoAA");
 
             player.tazeClass_name = SBURBClassManager.ROGUE;
-            player.tazeAspect = Aspects.HEART;
+            player.tazeAspect = Aspects.MIGHT;
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -120,6 +121,8 @@ abstract class NonCanonSessions {
             player.land.denizenFeature = new DenizenFeature("Ronan");
         }else if (index == 4) {
             player.copyFromOCDataString("b=%00%00%00%15%C3%BB%3A%00%0B%17%07%3B&s=,,Murder,The Obscure Game,fhtagnRegeclaiming&x=jigA");
+            player.aspect = Aspects.MIST;
+            player.class_name = SBURBClassManager.SYLPH;
 
             player.quirk.capitalization = Quirk.KANAYACAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -148,6 +151,23 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Minutes and Locomotion";
             player.land.denizenFeature = new DenizenFeature("Kairos");
+        }else if (index == 6) {
+            player.copyFromOCDataString("b=%00%00%00%C2%B0%C3%BE%C2%99%00%0C%06%05%23&s=,,Video Games,Occult,celticNight&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NOCAPS;
+            player.quirk.punctuation = Quirk.NOPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "!!!! :D";
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Tabitha", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Frogs and Strings";
+            player.land.denizenFeature = new DenizenFeature("Thesis");
         }
     }
 
