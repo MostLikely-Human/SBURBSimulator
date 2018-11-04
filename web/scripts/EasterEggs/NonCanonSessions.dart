@@ -57,13 +57,14 @@ abstract class NonCanonSessions {
         player.deriveLand = false;
         if (index == 0) {
             player.copyFromOCDataString("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==");
+            player.aspect = Aspects.FLOW;
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.lettersToReplace = [[".", ","]];
             player.quirk.lettersToReplaceIgnoreCase = [];
             player.quirk.prefix = "";
-            player.quirk.suffix = ""; //I can not figure out how to do this
+            player.quirk.suffix = "";
             player.deriveSprite = false;
             player.object_to_prototype = new PotentialSprite("Mouse", s);
             player.sprite.addPrototyping(player.object_to_prototype);
