@@ -273,15 +273,16 @@ abstract class NonCanonSessions {
     //from MLH, thanks for my support!!!!!!!!!!!!!!!!!!!!!
     static void session247(Session session) {
         DateTime now = new DateTime.now();
-        int numPlayers = 6;
+        int numPlayers = 7;
         makeASessionFromSource(session, session247IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less.
         Player fi = session.players[0]; //forgetfulIdealist in case you were wondering
         Player ej = session.players[1];
         Player nb = session.players[2];
         Player da = session.players[3];
-        Player hb = session.players[4];
-        Player rr = session.players[5];
+        Player lp = session.players[4];
+        Player hb = session.players[5];
+        Player rr = session.players[6];
 
         Relationship.makeClubs(da, fi, rr);
         Relationship.makeDiamonds(fi, hb);
@@ -379,7 +380,25 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Rainbows and Intensity";
             player.land.denizenFeature = new HardDenizenFeature('Loki');
-        } else if(index == 4) {
+        }else if (index == 4) {
+            player.copyFromOCDataString("b=%C2%BC%C2%AF%162%C3%BE%25%C2%84P%09%09-&s=,,Drawing,Death,lalaPoof&x=AQ==");
+            player.grimDark = 1; //ASasfjaijfdkfja they broke the session
+            player.leftMurderMode = true;
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Paintbrush", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [[". ", ""]];
+            player.quirk.lettersToReplaceIgnoreCase = [["sorry","soz"],[" you "," u "],[" are "," r "]];
+            player.quirk.prefix = "";
+            player.quirk.suffix = " ";
+            player.land = player.spawnLand();
+            player.land.name = "Land of Art and Destruction";
+            player.land.denizenFeature = new HardDenizenFeature('Rahu');
+        
+        } else if(index == 5) {
             player.copyFromOCDataString("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ=="); //Life is placeholder for Juice
             player.aspect = Aspects.JUICE;
 
@@ -415,7 +434,7 @@ abstract class NonCanonSessions {
             player.guardian.land.name = "Land of Automation and Juice";
             player.guardian.land.denizenFeature = new DenizenFeature("<span class = 'void'>Mosthuman, The</span> Awakened");
 
-        } else if(index == 5) {
+        } else if(index == 6) {
             player.copyFromOCDataString("b=%C3%8E%C2%BF%09%5B%C3%BEU%04%12..%01&s=,,Violence,Intimidation,revengefulRealist&x=rlgA");
             player.setStat(Stats.SANITY, -100);
             player.quirk.capitalization = Quirk.NORMALCAPS;

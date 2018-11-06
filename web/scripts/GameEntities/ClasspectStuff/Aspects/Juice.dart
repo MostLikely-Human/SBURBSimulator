@@ -17,7 +17,7 @@ class Juice extends Aspect {
 
   @override
   AspectPalette palette = new AspectPalette()
-    ..accent = "#ffff00"
+    ..accent = "#ff0000"
     ..aspect_light = '#ffff00'
     ..aspect_dark = '#ffff00'
     ..shoe_light = '#508b2d'
