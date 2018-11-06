@@ -2683,7 +2683,7 @@ f=new Z.ii(1.01,0.3,0.01,q,o,n,m,l,["dream","creativity","obsession","art"],["dr
 f.O(12,"Dream",!1,!1,!1,null,null)
 $.qS=f
 f=new L.D(P.f(null,null,null,t,s),P.f(null,null,null,r,s),P.f(null,null,null,t,r),P.f(null,null,null,r,t))
-f.h(0,$.F,L.b("#ffff00"),!0)
+f.h(0,$.F,L.b("#ff0000"),!0)
 f.h(0,$.H,L.b("#ffff00"),!0)
 f.h(0,$.G,L.b("#ffff00"),!0)
 f.h(0,$.P,L.b("#508b2d"),!0)

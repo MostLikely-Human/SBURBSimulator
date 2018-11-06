@@ -4515,7 +4515,7 @@ f=new Z.h3(1.01,0.3,0.01,q,o,n,m,l,["dream","creativity","obsession","art"],["dr
 f.O(12,"Dream",!1,!1,!1,null,null)
 $.ow=f
 f=new L.z(P.f(null,null,null,t,s),P.f(null,null,null,r,s),P.f(null,null,null,t,r),P.f(null,null,null,r,t))
-f.h(0,$.C,L.b("#ffff00"),!0)
+f.h(0,$.C,L.b("#ff0000"),!0)
 f.h(0,$.A,L.b("#ffff00"),!0)
 f.h(0,$.D,L.b("#ffff00"),!0)
 f.h(0,$.L,L.b("#508b2d"),!0)

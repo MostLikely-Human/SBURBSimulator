@@ -5704,7 +5704,7 @@ f=new Z.nS(1.01,0.3,0.01,q,o,n,m,l,["dream","creativity","obsession","art"],["dr
 f.ab(12,"Dream",!1,!1,!1,null,null)
 $.F4=f
 f=new L.X(P.i(null,null,null,t,s),P.i(null,null,null,r,s),P.i(null,null,null,t,r),P.i(null,null,null,r,t))
-f.j(0,$.Y,L.b("#ffff00"),!0)
+f.j(0,$.Y,L.b("#ff0000"),!0)
 f.j(0,$.a2,L.b("#ffff00"),!0)
 f.j(0,$.a1,L.b("#ffff00"),!0)
 f.j(0,$.ab,L.b("#508b2d"),!0)
