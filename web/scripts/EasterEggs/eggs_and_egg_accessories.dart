@@ -284,22 +284,24 @@ void reskinAspects(Session session) {
 
 
 void reskinSessions(Session session) {
-	if(session.session_id == 350) session.players[0].aspect = Aspects.CHILL;
+	if(session.session_id == 350) {
+		window.alert("UwU its Thanos");
+		session.players[0].aspect = Aspects.CHILL;
+	}
 	else {
-		if(window.confirm("Hrmmmmm? Y/N")) {
-			window.alert
-
-			for (Player p in session.players) {
-				if(p.aspect != Aspects.SPACE && p.aspect != Aspects.TIME) {
-					p.aspect = session.rand.pickFrom(Aspects.everything);
-					p.guardian.aspect = p.aspect;
-					p.class_name = session.rand.pickFrom(SBURBClassManager.everything);
-					p.guardian.class_name = p.class_name;
-				}
+		window.alert("I don't know what you thought this would do");
+		for (Player p in session.players) {
+			if(p.aspect != Aspects.SPACE && p.aspect != Aspects.TIME) {
+				p.aspect = session.rand.pickFrom(Aspects.everything);
+				p.guardian.aspect = p.aspect;
+				p.class_name = session.rand.pickFrom(SBURBClassManager.everything);
+				p.guardian.class_name = session.rand.pickFrom(SBURBClassManager.everything);
+			} else{
+				p.class_name = session.rand.pickFrom(SBURBClassManager.everything);
+				p.guardian.class_name = session.rand.pickFrom(SBURBClassManager.everything);
 			}
-	} else {
-
 		}
+	}
 }
 
 

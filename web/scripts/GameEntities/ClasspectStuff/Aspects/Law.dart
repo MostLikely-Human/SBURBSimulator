@@ -43,4 +43,7 @@ class Law extends Aspect{
   String activateCataclysm(Session s, Player p) {
     return s.mutator.law(s, p);
   }
+
+  @override
+  List<String> fraymotifNames = new List<String>.unmodifiable(<String>["Akashic Record"]);
 }

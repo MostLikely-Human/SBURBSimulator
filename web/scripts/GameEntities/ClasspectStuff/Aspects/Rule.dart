@@ -99,8 +99,8 @@ class Rule extends Aspect {
         new Quest("The ${Quest.PLAYER1} is practicing in using their arrows, they see an imp walk close to them. The ${Quest.PLAYER1} tries to strife it, on their second attempt, The ${Quest.PLAYER1} is able to defeat the imp with their arrow, they have improved in their abilities."),
         new Quest("The ${Quest.PLAYER1} has been practicing with their arrow abilities. They can now use many arrows in a giant wave to bring pain upon their enemies. The ${Quest.PLAYER1} is now able to take on their denizen."),
         new DenizenFightQuest("The ${Quest.PLAYER1} walks into the ${Quest.DENIZEN}'s lair, arrows flying behind them.", "The ${Quest.DENIZEN} is slain, it looks like it was accupunctured.","The power of the arrows was not enough to help The ${Quest.PLAYER1}...")
-      ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_LOW)
+      ], new NameChangeReward("Rule", "Yondu"), QuestChainFeature.rulePlayer), Feature.WAY_LOW)
 
-        ,  Theme.HIGH);
+        ,  Theme.LOW);
   }
 }

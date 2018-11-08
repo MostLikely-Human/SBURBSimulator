@@ -123,6 +123,11 @@ class QuestChainFeature extends Feature {
 
     //whatever, 12x spam combo
 
+    static bool rulePlayer(List<GameEntity> ps) {
+        Player p = ps.first as Player;
+        return p.aspect == Aspects.RULE;
+    }
+
     static bool bloodPlayer(List<GameEntity> ps) {
         Player p = ps.first as Player;
         return p.aspect == Aspects.BLOOD;

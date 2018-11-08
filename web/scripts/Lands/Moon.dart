@@ -309,6 +309,9 @@ class Moon extends Land {
     @override
     bool doQuest(Element div, Player p1, GameEntity p2) {
         // the chain will handle rendering it, as well as calling it's reward so it can be rendered too.
+        if(p1.dreamPlayer != null) {
+          p1 = p1.dreamPlayer;
+        }
         bool ret = currentQuestChain.doQuest(p1, p2, denizenFeature, consortFeature, symbolicMcguffin, physicalMcguffin, div, this);
         if(currentQuestChain.finished){
             currentQuestChain = null;

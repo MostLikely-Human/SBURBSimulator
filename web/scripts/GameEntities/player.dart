@@ -64,6 +64,8 @@ class Player extends GameEntity{
     Land land;
     //want to be able to see when it's set
     Moon _moon;
+    Player dreamPlayerProspit = null;
+    Player dreamPlayerDerse = null;
     Interest interest1 = null;
     Interest interest2 = null;
     String chatHandle = null;
@@ -1117,6 +1119,8 @@ class Player extends GameEntity{
         clone.hair = hair;
         clone.hairColor = hairColor;
         clone.dreamSelf = dreamSelf;
+        clone.dreamPlayerProspit = dreamPlayerProspit;
+        clone.dreamPlayerDerse = dreamPlayerDerse;
         clone.isTroll = isTroll; //later
         clone.bloodColor = bloodColor;
         clone.leftHorn = leftHorn;
@@ -1922,6 +1926,8 @@ class Player extends GameEntity{
             this.deriveChatHandle = false;
         }
         this.isDreamSelf = replayPlayer.isDreamSelf;
+        this.dreamPlayerProspit = replayPlayer.dreamPlayerProspit;
+        this.dreamPlayerDerse = replayPlayer.dreamPlayerDerse;
         this.godTier = replayPlayer.godTier;
         this.godDestiny = replayPlayer.godDestiny;
         this.murderMode = replayPlayer.murderMode;
@@ -2289,6 +2295,8 @@ class Player extends GameEntity{
         ret.isTroll = player.isTroll;
         ret.godTier = player.godTier;
         ret.isDreamSelf = player.isDreamSelf;
+        ret.dreamPlayerProspit = player.dreamPlayerProspit;
+        ret.dreamPlayerDerse = player.dreamPlayerDerse;
         ret.hair = player.hair;
         ret.bloodColor = player.bloodColor;
         ret.hairColor = player.hairColor;

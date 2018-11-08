@@ -103,6 +103,25 @@ class BoonieFraymotifReward extends FraymotifReward {
     String bgImage = "Rewards/sweetBoonies.png";
 
 }
+class NameChangeReward extends Reward {
+    String sAspect = null;
+    String trueName = null;
+
+    NameChangeReward([String this.sAspect = null, this.trueName = null]);
+
+    @override
+    void apply(Element div, Player p1, GameEntity p2, Land land, [String t]) {
+        String text = "";
+        if (t != null) text = t;
+
+        text += " <br><Br>The ${Reward.PLAYER1} fixes ${Aspects.getByName(sAspect).name}'s name to it's true name: ${trueName}";
+
+        Aspects.getByName(sAspect).name = trueName;
+        text = text.replaceAll("${Reward.PLAYER1}", "${p1.htmlTitleBasicNoTip()}");
+
+        super.apply(div, p1, p2, land,text);
+    }
+}
 //TODO have it take in a name and then the fraymotif cna have a custom name?
 class FraymotifReward extends Reward
 {

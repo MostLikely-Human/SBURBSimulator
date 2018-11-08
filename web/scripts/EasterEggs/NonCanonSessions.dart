@@ -45,7 +45,7 @@ abstract class NonCanonSessions {
     }
 
     static void session1111111(Session session) {
-        int numPlayers = 7;
+        int numPlayers = 8;
         makeASessionFromSource(session, session1111111IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less. Unless stuff happens.
     }
@@ -58,6 +58,8 @@ abstract class NonCanonSessions {
         if (index == 0) {
             player.copyFromOCDataString("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==");
             player.aspect = Aspects.FLOW;
+
+            player.dreamPlayerProspit = RemiOpinat(s);
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -92,6 +94,9 @@ abstract class NonCanonSessions {
 
             player.tazeClass_name = SBURBClassManager.ROGUE;
             player.tazeAspect = Aspects.MIGHT;
+
+            player.dreamPlayerDerse = POMethan(session);
+            player.dreamPlayerProspit = ROHethan(session);
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -169,7 +174,91 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Frogs and Strings";
             player.land.denizenFeature = new DenizenFeature("Thesis");
+        }else if(index == 7) {
+            player.copyFromOCDataString("b=8%22%07%C2%8B%C3%BE%C3%98%00U%24*%1E&s=,,Science,Gardening,plutonicStarlight&x=AQ==");
+
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Rudy", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Prisms and Plants";
+            player.land.denizenFeature = new DenizenFeature("Lumos");
+
+        }else if(index == 8) {
+            player.copyFromOCDataString("b=%00%00%00%C2%98%C3%B8%C2%8B%2B%2B%11B&s=,,Gardening,Animals,bombardedVigilante&x=AQ==");
+
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [["ow","0vv"],["wo","vv0"]];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Ribbit Beast", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Horror and Mystery";
+            player.land.denizenFeature = new DenizenFeature("Sieg");
+
         }
+    }
+
+    static Player RemiOpinat(Session s) {
+        Player player = new Player(s, SBURBClassManager.KNIGHT, Aspects.DREAM, null, null, null);
+        player.quirk = randomHumanQuirk(s.rand);
+
+        player.copyFromOCDataString("b=%2CF%04%3C%C3%BE)%08I%13%13%3C&s=,,Art,Action Movies,&x=AQ==");
+        player.chatHandle = "artisticEndeavor";
+
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.capitalization = Quirk.NOCAPS;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+
+        return player;
+    }
+
+    static Player ROHethan(Session s) {
+        Player player = new Player(s, SBURBClassManager.ROGUE, Aspects.HEART, null, null, null);
+        player.quirk = randomHumanQuirk(s.rand);
+
+        player.copyFromOCDataString("b=%C2%80%00%00E%C3%BEi%08%5B%0E%20%0F&s=,,JUSTICE,Video Games,identityCrusader&x=AQ==");
+
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.capitalization = Quirk.NOCAPS;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+
+        return player;
+    }
+    static Player POMethan(Session s) {
+        Player player = new Player(s, SBURBClassManager.PRINCE, Aspects.MIND, null, null, null);
+        player.quirk = randomHumanQuirk(s.rand);
+
+        player.copyFromOCDataString("b=%C2%80%00%00%C2%A6%C3%BEj%08%1B%0E%20%0F&s=,,Knights,Robots,intellectualComrade&x=AQ==");
+
+        player.quirk.punctuation = Quirk.NOPUNC;
+        player.quirk.capitalization = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = ".";
+
+        return player;
     }
 
     /*static void session350IndexToPlayer(Session session, Player player, int index) {

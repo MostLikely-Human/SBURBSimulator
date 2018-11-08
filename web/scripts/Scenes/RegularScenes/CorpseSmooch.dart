@@ -148,7 +148,12 @@ class CorpseSmooch extends Scene {
 					ret += " The " + royalty.htmlTitle() + ", as a member of the royalty of ${royalty.moonName}, administers the universal remedy for the unawakened ";
 					ret += " to the " + d.htmlTitle() + ". Their dream self takes over on ${d.moonName}. ";
 					if(d.aspect == Aspects.DOOM) ret += "The prophecy is fulfilled. ";
-					this.renderForPlayer(div, this.dreamersToRevive[i], royalty);
+					if(d.dreamPlayer != null) {
+						ret += "It looks like the " + d.htmlTitle() + " has a different player as their dreamself?? The " + d.dreamPlayer.htmlTitle() + " is the one that takes over.";
+						this.renderForPlayer(div, this.dreamersToRevive[i].dreamPlayer, royalty);
+					}else {
+						this.renderForPlayer(div, this.dreamersToRevive[i], royalty);
+					}
 					session.removeAvailablePlayer(royalty);
 					//this.makeAlive(d);
 					this.combo ++;
