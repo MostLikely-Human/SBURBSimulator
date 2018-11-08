@@ -45,7 +45,7 @@ abstract class NonCanonSessions {
     }
 
     static void session1111111(Session session) {
-        int numPlayers = 8;
+        int numPlayers = 9;
         makeASessionFromSource(session, session1111111IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less. Unless stuff happens.
     }
@@ -55,6 +55,7 @@ abstract class NonCanonSessions {
         Session s = session;
         player.deriveChatHandle = false;
         player.deriveLand = false;
+        player.deriveSpecibus = true;
         if (index == 0) {
             player.copyFromOCDataString("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==");
             player.aspect = Aspects.FLOW;
@@ -94,6 +95,9 @@ abstract class NonCanonSessions {
 
             player.tazeClass_name = SBURBClassManager.ROGUE;
             player.tazeAspect = Aspects.MIGHT;
+
+            player.moon.name = session.rand.pickFrom(["Prospit", "Derse"])
+            player.syncToSessionMoon();
 
             player.dreamPlayerDerse = POMethan(session);
             player.dreamPlayerProspit = ROHethan(session);
@@ -193,7 +197,7 @@ abstract class NonCanonSessions {
             player.land.denizenFeature = new DenizenFeature("Lumos");
 
         }else if(index == 8) {
-            player.copyFromOCDataString("b=%00%00%00%C2%98%C3%B8%C2%8B%2B%2B%11B&s=,,Gardening,Animals,bombardedVigilante&x=AQ==");
+            player.copyFromOCDataString("b=%00%00%00%C2%98%C3%B8%C2%8B%10Q%2B%2B%11&s=,,Gardening,Animals,bombardedVigilante&x=AQ==");
 
             player.quirk.punctuation = Quirk.PERFPUNC;
             player.quirk.capitalization = Quirk.NORMALCAPS;
@@ -252,7 +256,7 @@ abstract class NonCanonSessions {
         player.copyFromOCDataString("b=%C2%80%00%00%C2%A6%C3%BEj%08%1B%0E%20%0F&s=,,Knights,Robots,intellectualComrade&x=AQ==");
 
         player.quirk.punctuation = Quirk.NOPUNC;
-        player.quirk.capitalization = Quirk.PERFPUNC;
+        player.quirk.capitalization = Quirk.NORMALCAPS;
         player.quirk.lettersToReplace = [];
         player.quirk.lettersToReplaceIgnoreCase = [];
         player.quirk.prefix = "";

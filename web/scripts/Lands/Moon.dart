@@ -309,12 +309,25 @@ class Moon extends Land {
     @override
     bool doQuest(Element div, Player p1, GameEntity p2) {
         // the chain will handle rendering it, as well as calling it's reward so it can be rendered too.
-        if(p1.dreamPlayer != null) {
-          p1 = p1.dreamPlayer;
+        Player Op1 = p1;
+        if(p1.dreamPlayerDerse != null && p1.moon.name == "Derse") {
+          p1 = p1.dreamPlayerDerse;
+        }else if(p1.dreamPlayerProspit != null && p1.moon.name == "Prospit") {
+          p1 = p1.dreamPlayerProspit;
         }
+
         bool ret = currentQuestChain.doQuest(p1, p2, denizenFeature, consortFeature, symbolicMcguffin, physicalMcguffin, div, this);
         if(currentQuestChain.finished){
             currentQuestChain = null;
+            if(Op1.dreamPlayerProspit != null && Op1.dreamPlayerDerse != null) {
+              if(Op1.moon.name == "Prospit") {
+                Op1.moon.name = session.derse.name;
+              }else if(Op1.moon.name == "Derse") {
+                Op1.moon.name = session.prospit.name;
+              }
+
+              Op1.syncToSessionMoon();
+            }
         }
         //;
         return ret;
