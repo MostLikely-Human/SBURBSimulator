@@ -96,7 +96,7 @@ abstract class NonCanonSessions {
             player.tazeClass_name = SBURBClassManager.ROGUE;
             player.tazeAspect = Aspects.MIGHT;
 
-            player.moon.name = session.rand.pickFrom(["Prospit", "Derse"])
+            player.moon.name = session.rand.pickFrom(["Prospit", "Derse"]);
             player.syncToSessionMoon();
 
             player.dreamPlayerDerse = POMethan(session);
@@ -263,6 +263,24 @@ abstract class NonCanonSessions {
         player.quirk.suffix = ".";
 
         return player;
+    }
+
+    static void session21520(Session session) {
+        int numPlayers = 4;
+        makeASessionFromSource(session, session21520IndexToPlayer, numPlayers);
+        session.players.length = numPlayers; //no more, no less.
+    }
+
+    static void session21520IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+        player.deriveChatHandle = false;
+        player.deriveLand = false;
+        player.deriveSpecibus = true;
+
+        if(index == 0) {
+            player.copyFromOCDataString("b=%C3%BF%C3%B3%C2%BD%1A%C3%BE%2B%00W%14%14%2C&s=,,Chatting,Online Roleplaying,generalChan&x=jlAA");
+
+        }
     }
 
     /*static void session350IndexToPlayer(Session session, Player player, int index) {
