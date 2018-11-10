@@ -25,6 +25,8 @@ abstract class NonCanonSessions {
         ret[212] = session212; //Cipah
         ret[350] = session350; //Thanos session
         ret[1111111] = session1111111; //Ayyyy, Memostuck
+        ret[21520] = session21520; //Bot session 1
+        ret[1222112] = session1222112; //Bot(?) session 2
         return ret;
     }
 
@@ -280,6 +282,79 @@ abstract class NonCanonSessions {
         if(index == 0) {
             player.copyFromOCDataString("b=%C3%BF%C3%B3%C2%BD%1A%C3%BE%2B%00W%14%14%2C&s=,,Chatting,Online Roleplaying,generalChan&x=jlAA");
 
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("User", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Cartons and Inactivity";
+            player.land.denizenFeature = new DenizenFeature("Channel");
+        } else if(index == 1) {
+            player.copyFromOCDataString("b=%C2%B7%00%00%C2%B1%C3%BE%C2%A2%00%3A%14%1F8&s=,,,Music,rythmBot&x=AQ==");
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Corly", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Kicks and Lag";
+            player.land.denizenFeature = new DenizenFeature("Retrieve Arms");
+        }else if(index == 2) {
+            player.copyFromOCDataString("b=%11%C3%95%C3%8Fr%C3%BE%C2%A2%00%C3%90((%1E&s=,,Say ;;help,Music,fredBoat&x=NpAA");
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Silence", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Voice Chats and Databanks";
+            player.land.denizenFeature = new DenizenFeature("ProxximHour");
+        }else if(index == 3) {
+            player.copyFromOCDataString("b=%C2%AC%C2%A0%C2%BC%20%C3%BE%C2%AB%00%1C%08%08%25&s=,,Message for help,Live Action Roleplaying,roleplayBot&x=AQ==");
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Aftik", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Campaigns and Towers";
+            player.land.denizenFeature = new DenizenFeature("Roll Requests");
+        }
+    }
+
+
+    static void session1222112(Session session) {
+        int numPlayers = 2;
+        makeASessionFromSource(session, session1222112IndexToPlayer, numPlayers);
+        session.players.length = numPlayers; //no more, no less.
+    }
+
+    static void session1222112IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+        player.deriveChatHandle = false;
+        player.deriveLand = false;
+        player.deriveSpecibus = true;
+
+        if(index == 0) {
+            player.copyFromOCDataString("b=%26750%C3%BE(%00%1A.%06%1D&s=,,Chatting,Moderating,lonelyBandicoot&x=ngAA");
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Mod", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Memery and Pepperoni Secrets";
+            player.land.denizenFeature = new DenizenFeature("Egg");
+        }else if(index == 1) {
+            player.copyFromOCDataString("b=%C3%BE%C3%BD%C3%85!%C3%BE%C3%92%00W%1B%1B'&s=,,Puzzles,Confusion,popcornLove&x=lggA");
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Workshop", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Bases and Puzzles";
+            player.land.denizenFeature = new DenizenFeature("DITE");
         }
     }
 
