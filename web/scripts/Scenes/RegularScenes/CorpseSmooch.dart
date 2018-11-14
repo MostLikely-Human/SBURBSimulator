@@ -154,6 +154,9 @@ class CorpseSmooch extends Scene {
           }else if(d.dreamPlayerDerse != null && d.moonName == "Derse") {
             ret += "It looks like the " + d.htmlTitle() + " has a different player as their dreamself?? The " + d.dreamPlayerDerse.htmlTitle() + " is the one that takes over.";
             this.renderForPlayer(div, this.dreamersToRevive[i].dreamPlayerDerse, royalty);
+					}else if (d.dreamPlayerDerse != null && d.dreamPlayerProspit != null) {
+						ret += "The " + d.htmlTitle() + " has not one, but two different dreamselves. Both the " + d.dreamPlayerProspit.htmlTitle() + " and the " + d.dreamPlayerDerse.htmlTitle() + " take over.";
+						this.renderForPlayer(div, this.dreamersToRevive[i], royalty);
 					}else {
 						this.renderForPlayer(div, this.dreamersToRevive[i], royalty);
 					}

@@ -310,23 +310,26 @@ class Moon extends Land {
     bool doQuest(Element div, Player p1, GameEntity p2) {
         // the chain will handle rendering it, as well as calling it's reward so it can be rendered too.
         Player Op1 = p1;
-        if(p1.dreamPlayerDerse != null && p1.moon.name == "Derse") {
-          p1 = p1.dreamPlayerDerse;
-        }else if(p1.dreamPlayerProspit != null && p1.moon.name == "Prospit") {
-          p1 = p1.dreamPlayerProspit;
+        if(Op1.dreamPlayerDerse != null && Op1.moon == session.derse) {
+          p1 = Op1.dreamPlayerDerse;
+        }else if(Op1.dreamPlayerProspit != null && Op1.moon == session.prospit) {
+          p1 = Op1.dreamPlayerProspit;
         }
+
+        /*if(Op1.dreamPlayerProspit != null && Op1.moon.name == session.prospit.name) {
+          p1 = Op1.dreamPlayerProspit;
+        }*/
 
         bool ret = currentQuestChain.doQuest(p1, p2, denizenFeature, consortFeature, symbolicMcguffin, physicalMcguffin, div, this);
         if(currentQuestChain.finished){
             currentQuestChain = null;
             if(Op1.dreamPlayerProspit != null && Op1.dreamPlayerDerse != null) {
-              if(Op1.moon.name == "Prospit") {
-                Op1.moon.name = session.derse.name;
-              }else if(Op1.moon.name == "Derse") {
-                Op1.moon.name = session.prospit.name;
+              if(Op1.moon == session.prospit) {
+                Op1.moon = session.derse;
+              }else if(Op1.moon == session.derse) {
+                Op1.moon = session.prospit;
               }
 
-              Op1.syncToSessionMoon();
             }
         }
         //;
