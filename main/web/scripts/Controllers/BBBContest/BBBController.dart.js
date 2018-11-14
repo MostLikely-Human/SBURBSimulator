@@ -3050,7 +3050,7 @@ iI:function iI(){},
 iJ:function iJ(){},
 kA:function kA(a,$ti){this.a=a
 this.$ti=$ti},
-ce:function ce(){},
+cd:function cd(){},
 u_:function u_(){},
 lV:function lV(){},
 h9:function h9(){},
@@ -3058,7 +3058,7 @@ m0:function m0(){},
 ae:function ae(){},
 at:function at(){},
 mw:function mw(){},
-cg:function cg(){},
+cf:function cf(){},
 fj:function fj(){},
 j4:function j4(){},
 jo:function jo(){},
@@ -3118,7 +3118,7 @@ oD:function oD(){},
 oF:function oF(){},
 ee:function ee(){},
 oL:function oL(){},
-ci:function ci(){},
+ch:function ch(){},
 k8:function k8(){},
 jh:function jh(){},
 jB:function jB(){},
@@ -4768,7 +4768,7 @@ m=t.createElement("textarea")
 m.id="shogunComment"
 l=t.createElement("button")
 l.textContent="Submit"
-k=H.a([r,q,p,o,n,m],[W.ce])
+k=H.a([r,q,p,o,n,m],[W.cd])
 for(j=0;j<6;++j){i=k[j]
 t=J.aw(i)
 if(!!t.$isht){s.appendChild(i)
@@ -6086,7 +6086,7 @@ n=$.x
 H.a([],p)
 o=new G.bL(n,o,-0.1)
 $.$get$d().h(0,o)
-$.ch=o
+$.cg=o
 o=H.a(["plant","leaf","vine"],p)
 n=$.x
 H.a([],p)
@@ -6698,7 +6698,7 @@ $.$get$d().h(0,o)
 $.Co=o
 o=H.a(["pleather","faux fur"],p)
 n=$.x
-k=H.a([$.ch,$.aT],l)
+k=H.a([$.cg,$.aT],l)
 H.a([],p)
 o=new G.e("Faux Fur",k,n,o,0)
 $.$get$d().h(0,o)
@@ -6845,7 +6845,7 @@ $.$get$d().h(0,o)
 $.GY=o
 o=H.a(["rabbit's foot"],p)
 n=$.ak
-k=H.a([$.bE,$.ch],l)
+k=H.a([$.bE,$.cg],l)
 H.a([],p)
 o=new G.e("Rabbit's Foot",k,n,o,0)
 $.$get$d().h(0,o)
@@ -7503,7 +7503,7 @@ $.$get$d().h(0,o)
 $.vk=o
 o=H.a(["shag"],p)
 n=$.x
-k=H.a([$.ch,$.ba],l)
+k=H.a([$.cg,$.ba],l)
 H.a([],p)
 o=new G.e("Shag",k,n,o,0)
 $.$get$d().h(0,o)
@@ -7867,7 +7867,7 @@ $.$get$d().h(0,o)
 $.vi=o
 o=H.a(["felt"],p)
 n=$.t
-k=H.a([$.S,$.ch],l)
+k=H.a([$.S,$.cg],l)
 H.a([],p)
 o=new G.e("Felt",k,n,o,0)
 $.$get$d().h(0,o)
@@ -8882,7 +8882,7 @@ $.$get$d().h(0,o)
 $.D7=o
 o=H.a(["Porcupine"],p)
 n=$.x
-k=H.a([$.aX,$.ch],l)
+k=H.a([$.aX,$.cg],l)
 H.a([],p)
 o=new G.e("Porcupine",k,n,o,0)
 $.$get$d().h(0,o)
@@ -8994,7 +8994,7 @@ $.$get$d().h(0,o)
 $.D0=o
 o=H.a(["Burdock"],p)
 n=$.x
-k=H.a([$.b7,$.ch],l)
+k=H.a([$.b7,$.cg],l)
 H.a([],p)
 o=new G.e("Burdock",k,n,o,0)
 $.$get$d().h(0,o)
@@ -9171,7 +9171,7 @@ H.a([],p)
 $.$get$d().h(0,new G.e("Carbon",k,n,o,0))
 o=H.a(["Mossy"],p)
 n=$.K
-k=H.a([$.aG,$.ch],l)
+k=H.a([$.aG,$.cg],l)
 H.a([],p)
 $.$get$d().h(0,new G.e("Mossy",k,n,o,0))
 o=H.a(["Lensed"],p)
@@ -9810,22 +9810,22 @@ H.a([],p)
 $.$get$d().h(0,new G.e("Destructive",i,n,o,0))
 o=H.a(["Growling"],p)
 n=$.K
-i=H.a([$.ch,$.aS],l)
+i=H.a([$.cg,$.aS],l)
 H.a([],p)
 $.$get$d().h(0,new G.e("Growling",i,n,o,0))
 o=H.a(["Coconut"],p)
 n=$.x
-i=H.a([$.ch,$.aH],l)
+i=H.a([$.cg,$.aH],l)
 H.a([],p)
 $.$get$d().h(0,new G.e("Coconut",i,n,o,0))
 o=H.a(["Beastmaster's"],p)
 n=$.ao
-i=H.a([$.ch,$.bi],l)
+i=H.a([$.cg,$.bi],l)
 H.a([],p)
 $.$get$d().h(0,new G.e("Beastmaster's",i,n,o,0))
 o=H.a(["Fluffy"],p)
 n=$.x
-i=H.a([$.ch,$.bA],l)
+i=H.a([$.cg,$.bA],l)
 H.a([],p)
 $.$get$d().h(0,new G.e("Fluffy",i,n,o,0))
 o=H.a(["Feather Grass","Fern"],p)
@@ -10485,7 +10485,7 @@ H.a([],p)
 $.$get$d().h(0,new G.e("Pyrebitten",i,n,o,0))
 o=H.a(["Mink"],p)
 n=$.x
-i=H.a([$.aP,$.ch],l)
+i=H.a([$.aP,$.cg],l)
 H.a([],p)
 $.$get$d().h(0,new G.e("Mink",i,n,o,0))
 o=H.a(["Wildfire"],p)
@@ -10580,7 +10580,7 @@ H.a([],p)
 $.$get$d().h(0,new G.e("Cod Tier",i,n,o,0))
 o=H.a(["Dog Tier"],p)
 n=$.K
-i=H.a([$.R,$.J,$.aV,$.ch],l)
+i=H.a([$.R,$.J,$.aV,$.cg],l)
 H.a([],p)
 $.$get$d().h(0,new G.e("Dog Tier",i,n,o,0))
 o=H.a(["Cracked"],p)
@@ -11131,7 +11131,7 @@ $.iU=new K.bY(0,"lucky")
 $.mo=new K.bY(0,"claustrophobic")
 $.mr=new K.bY(0,"overheated")
 $.em=new K.bY(k,"confusing")
-$.cf=new K.bY(0,"contemplatative")
+$.ce=new K.bY(0,"contemplatative")
 $.cX=new M.bC(0,"clanking")
 $.cC=new M.bC(0,"laughing")
 $.bg=new M.bC(m,"rustling")
@@ -18171,7 +18171,7 @@ $isk:1,
 $isA:1,
 gar:function(a){return a.href},
 sar:function(a,b){return a.href=b}}
-W.f3.prototype={$isf3:1,$isce:1,$isas:1,$isA:1}
+W.f3.prototype={$isf3:1,$iscd:1,$isas:1,$isA:1}
 W.cL.prototype={$isA:1}
 W.l8.prototype={
 gq:function(a){return a.length},
@@ -18379,7 +18379,7 @@ $isu:1,
 $asu:null,
 $iso:1,
 $aso:null}
-W.ce.prototype={
+W.cd.prototype={
 gez:function(a){return new W.rx(a)},
 geB:function(a){return new W.ry(a)},
 gcq:function(a){return P.HP(C.d.bf(a.offsetLeft),C.d.bf(a.offsetTop),C.d.bf(a.offsetWidth),C.d.bf(a.offsetHeight),null)},
@@ -18426,7 +18426,7 @@ fp:function(a,b,c,d){a.textContent=null
 a.appendChild(this.b1(a,b,c,d))},
 cF:function(a,b){return this.fp(a,b,null,null)},
 dE:function(a){return a.getBoundingClientRect()},
-$isce:1,
+$iscd:1,
 $isas:1,
 $isA:1,
 $isk:1,
@@ -18435,7 +18435,7 @@ gb6:function(a){return a.style},
 gec:function(a){return a.namespaceURI},
 giT:function(a){return a.tagName}}
 W.u_.prototype={
-$1:function(a){return!!J.aw(a).$isce},
+$1:function(a){return!!J.aw(a).$iscd},
 $S:function(){return{func:1,args:[,]}}}
 W.lV.prototype={
 gM:function(a){return a.name},
@@ -18453,7 +18453,7 @@ hs:function(a,b,c,d){return a.removeEventListener(b,H.dr(c,1),!1)},
 $isat:1}
 W.mw.prototype={
 gM:function(a){return a.name}}
-W.cg.prototype={$iscg:1,$isA:1,
+W.cf.prototype={$iscf:1,$isA:1,
 gM:function(a){return a.name}}
 W.fj.prototype={
 gq:function(a){return a.length},
@@ -18466,27 +18466,27 @@ return a[b]},
 O:function(a,b){return a.item(b)},
 $isfj:1,
 $isaU:1,
-$asaU:function(){return[W.cg]},
+$asaU:function(){return[W.cf]},
 $isaQ:1,
-$asaQ:function(){return[W.cg]},
+$asaQ:function(){return[W.cf]},
 $isA:1,
 $isr:1,
-$asr:function(){return[W.cg]},
+$asr:function(){return[W.cf]},
 $isu:1,
-$asu:function(){return[W.cg]},
+$asu:function(){return[W.cf]},
 $iso:1,
-$aso:function(){return[W.cg]}}
+$aso:function(){return[W.cf]}}
 W.j4.prototype={
-$asr:function(){return[W.cg]},
-$asu:function(){return[W.cg]},
-$aso:function(){return[W.cg]},
+$asr:function(){return[W.cf]},
+$asu:function(){return[W.cf]},
+$aso:function(){return[W.cf]},
 $isr:1,
 $isu:1,
 $iso:1}
 W.jo.prototype={
-$asr:function(){return[W.cg]},
-$asu:function(){return[W.cg]},
-$aso:function(){return[W.cg]},
+$asr:function(){return[W.cf]},
+$asu:function(){return[W.cf]},
+$aso:function(){return[W.cf]},
 $isr:1,
 $isu:1,
 $iso:1}
@@ -18575,9 +18575,9 @@ W.hr.prototype={}
 W.mZ.prototype={
 gM:function(a){return a.name}}
 W.hs.prototype={$ishs:1}
-W.fn.prototype={$isfn:1,$isce:1,$isas:1,$isA:1,
+W.fn.prototype={$isfn:1,$iscd:1,$isas:1,$isA:1,
 aW:function(a,b){return a.complete.$1(b)}}
-W.ht.prototype={$isht:1,$isce:1,$isk:1,$isA:1,$isat:1,$isas:1,
+W.ht.prototype={$isht:1,$iscd:1,$isk:1,$isA:1,$isat:1,$isas:1,
 gdf:function(a){return a.files},
 gM:function(a){return a.name},
 gaZ:function(a){return a.value},
@@ -18655,7 +18655,7 @@ $iso:1}
 W.ec.prototype={
 gcq:function(a){var t,s,r,q,p
 if(!!a.offsetX)return new P.dD(a.offsetX,a.offsetY,[null])
-else{if(!J.aw(W.zd(a.target)).$isce)throw H.l(new P.a5("offsetX is only supported on elements"))
+else{if(!J.aw(W.zd(a.target)).$iscd)throw H.l(new P.a5("offsetX is only supported on elements"))
 t=W.zd(a.target)
 s=a.clientX
 r=a.clientY
@@ -18767,9 +18767,9 @@ W.ee.prototype={
 gM:function(a){return a.name}}
 W.oL.prototype={
 gq:function(a){return a.length}}
-W.ci.prototype={
+W.ch.prototype={
 O:function(a,b){return a.item(b)},
-$isci:1,
+$isch:1,
 $isA:1,
 gq:function(a){return a.length},
 gM:function(a){return a.name}}
@@ -18783,27 +18783,27 @@ a3:function(a,b){if(b>>>0!==b||b>=a.length)return H.w(a,b)
 return a[b]},
 O:function(a,b){return a.item(b)},
 $isr:1,
-$asr:function(){return[W.ci]},
+$asr:function(){return[W.ch]},
 $isu:1,
-$asu:function(){return[W.ci]},
+$asu:function(){return[W.ch]},
 $iso:1,
-$aso:function(){return[W.ci]},
+$aso:function(){return[W.ch]},
 $isA:1,
 $isaU:1,
-$asaU:function(){return[W.ci]},
+$asaU:function(){return[W.ch]},
 $isaQ:1,
-$asaQ:function(){return[W.ci]}}
+$asaQ:function(){return[W.ch]}}
 W.jh.prototype={
-$asr:function(){return[W.ci]},
-$asu:function(){return[W.ci]},
-$aso:function(){return[W.ci]},
+$asr:function(){return[W.ch]},
+$asu:function(){return[W.ch]},
+$aso:function(){return[W.ch]},
 $isr:1,
 $isu:1,
 $iso:1}
 W.jB.prototype={
-$asr:function(){return[W.ci]},
-$asu:function(){return[W.ci]},
-$aso:function(){return[W.ci]},
+$asr:function(){return[W.ch]},
+$asu:function(){return[W.ch]},
+$aso:function(){return[W.ch]},
 $isr:1,
 $isu:1,
 $iso:1}
@@ -18823,7 +18823,7 @@ W.ka.prototype={
 bu:function(a,b){return a.send(b)}}
 W.kb.prototype={
 saC:function(a,b){return a.type=b}}
-W.fB.prototype={$isfB:1,$isce:1,$isas:1,$isA:1,
+W.fB.prototype={$isfB:1,$iscd:1,$isas:1,$isA:1,
 saC:function(a,b){return a.type=b}}
 W.kc.prototype={
 O:function(a,b){return a.item(b)},
@@ -19615,7 +19615,7 @@ if(typeof a==="string")return a
 s=J.aw(a)
 if(!!s.$ise5)return new Date(a.a)
 if(!!s.$isHR)throw H.l(new P.eN("structured clone of RegExp"))
-if(!!s.$iscg)return a
+if(!!s.$iscf)return a
 if(!!s.$isf5)return a
 if(!!s.$isfj)return a
 if(!!s.$ishs)return a
@@ -20918,7 +20918,7 @@ n="With a satisfying CLICK, the "+p+" has solved the final block puzzle.  A wave
 l="It is time for the "+p+"  to finally face the "
 k=$.C
 l=l+k+". "
-j="The "+k+" lies slain by the "+p+"'s "+$.cd+". The "+p+" has won! "
+j="The "+k+" lies slain by the "+p+"'s "+$.ci+". The "+p+" has won! "
 i=[U.c]
 q.i(0,new R.a4("Revive the Consorts",!1,[new U.c(o),new U.c(m),new U.c(n),new U.ab(l,"The tyranny of "+k+" continues with the defeat of the "+p+".",j)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 j=this.f
@@ -20941,7 +20941,7 @@ n="The "+p+" manages to get the factories working at peak efficiency.  The gear 
 k="It is time for the "+p+"  to finally face the "
 h=$.C
 k=k+h+". "
-g="The "+h+" lies slain by the "+p+"'s "+$.cd+". The "+p+" has won! "
+g="The "+h+" lies slain by the "+p+"'s "+$.ci+". The "+p+" has won! "
 s.i(0,new R.a4("Produce the Goods",!1,[new U.c(o),new U.c(m),new U.c(l),new U.c(n),new U.ab(k,"The tyranny of "+h+" continues with the defeat of the "+p+".",g)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 j.i(0,new X.I(q,s,null),$.aB)
 s=H.a(["Peace","Tranquility","Rest"],t)
@@ -20961,7 +20961,7 @@ n="The "+r+" finds the foretold RELAXING MIX TAPE and plays it for all the local
 p="It is time for the "+r+"  to finally face the "
 m=$.C
 p=p+m+". "
-l="The "+m+" lies slain by the "+r+"'s "+$.cd+". The "+r+" has won! "
+l="The "+m+" lies slain by the "+r+"'s "+$.ci+". The "+r+" has won! "
 t.i(0,new R.af("Relax the Consorts According to Prophecy",!1,[new U.c(q),new U.c(o),new U.c(n),new U.ab(p,"The tyranny of "+m+" continues with the defeat of the "+r+".",l)],H.a([],i),R.w7(),!1,!1,new Y.c2(null,null,"Rewards/sweetLoot.png","Rewards/fraymotifBG.png","Rewards/no_reward.png",null),1,null,null),$.N)
 l=$.p
 r="The "+l+" learns that all of the local "
@@ -20972,7 +20972,7 @@ m="The "+l+"  teaches the local "+m+"s to find their chill. "
 n="It is time for the "+l+"  to finally face the "
 o=$.C
 n=n+o+". "
-q="The "+o+" lies slain by the "+l+"'s "+$.cd+". The "+l+" has won! "
+q="The "+o+" lies slain by the "+l+"'s "+$.ci+". The "+l+" has won! "
 t.i(0,new R.a4("Relax the Consorts",!1,[new U.c(r),new U.c(p),new U.c(m),new U.ab(n,"The tyranny of "+o+" continues with the defeat of the "+l+".",q)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 j.i(0,new X.I(s,t,null),$.aB)},
 H:function(a){return this.Q},
@@ -21229,7 +21229,7 @@ t=[P.y]
 s=H.a(["Contemplative","Transitions","Quiet"],t)
 H.a([],t)
 t=new H.q(0,null,null,null,null,null,0,[N.aj,P.a6])
-t.i(0,$.cf,$.m)
+t.i(0,$.ce,$.m)
 t.i(0,$.dk,$.n)
 t.i(0,$.bS,$.n)
 t.i(0,$.er,$.E)
@@ -21297,7 +21297,7 @@ m=$.p
 o="The "+m+" discovers the correct sequence of hydraulic pumps to activate to increase the river pressure enough to jettison away the blockage in a geyser of candy red. The first river begins to flow, and the local "+n+"s begin resuming trade activities.   "
 j="As the "+m+" goes around unplugging each river in turn, they begin to notice more and more debris among the candy red flow. Is "+l+" conspiring to reclog the rivers? "
 i="It is time for the "+m+"  to finally face the "+l+". The rivers are too vital to the "+n+"s to risk having them reclog."
-n="The "+l+" lies slain by the "+m+"'s "+$.cd+". The "+m+" has won! The "+n+"s have a bustling trade based economy once again."
+n="The "+l+" lies slain by the "+m+"'s "+$.ci+". The "+m+" has won! The "+n+"s have a bustling trade based economy once again."
 q.i(0,new R.a4("Unplug the Rivers",!1,[new U.c(p),new U.c(o),new U.c(j),new U.ab(i,"The tyranny of "+l+" continues with the defeat of the "+m+".",n)],H.a([],k),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 n=this.f
 n.i(0,new X.I(s,q,null),$.aB)
@@ -21328,7 +21328,7 @@ i=i+p+" arrived, the chains connected each tower to each other, and facilitated 
 m="The "+h+" delves in dungeons until the right items are discovered to alchemize new connectors for the chains. The first set of towers are reconnected, and trade and communication immediately resumes. The local "+m+"s discover that "+m+"s from other villages aren't so different, after all.  Another victory against xenophobia! "
 j="The "+h+" has been working tirelessly to hook up tower after tower, only to discover that the first tower they repaired is already broken again. There is no getting around it, "+p+" needs to be stopped. "
 l="The "+h+" has tracked down "+p+". There can be no mercy. "
-o="The "+p+" lies slain by the "+h+"'s "+$.cd+". The "+h+" is finally free to restore the chains, bringing peace and understanding to the land. "
+o="The "+p+" lies slain by the "+h+"'s "+$.ci+". The "+h+" is finally free to restore the chains, bringing peace and understanding to the land. "
 h="The tyranny  and xenophobia of "+p+" continues with the defeat of the "+h+"."
 p=$.He
 s.i(0,new R.a4("Chain the Towers",!1,[new U.c(i),new U.c(m),new U.c(j),new U.ab(l,h,o)],H.a([],k),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",p,"Rewards/no_reward.png",null),1,null,null),$.E)
@@ -21343,7 +21343,7 @@ l=o+j+" has besieged this tower since the dawn of time, snapping each Beam one b
 o="The "+p+" hears of a fantastical secret kept at the top of the "+h+" Tower. It is said that the "+j+" seeks to topple it to gain this secret. Perhaps the "+p+" is small enough to climb the tower to claim it themselves?"
 m="The "+p+" defeats a fearsome "+j+" minion, whose death unlocks the most direct path to the "+h+" Tower . "
 i="The "+p+" has crossed the field of roses. They blow their horn. There can be no mercy. It is time to face the "+j+". "
-p="The "+j+" lies slain by the "+p+"'s "+$.cd+". The "+p+" is finally able to see what lies at the top of the "+h+" Tower. Oh. Huh. That's....actually kind of disappointing, actually. Oh well, at least they saved the planet, right? "
+p="The "+j+" lies slain by the "+p+"'s "+$.ci+". The "+p+" is finally able to see what lies at the top of the "+h+" Tower. Oh. Huh. That's....actually kind of disappointing, actually. Oh well, at least they saved the planet, right? "
 s.i(0,new R.a4("Protect the Beams",!1,[new U.c(l),new U.c(o),new U.c(m),new U.ab(i,"The "+h+" Tower is more at risk than ever before.",p)],H.a([],k),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 p=$.p
 h="They say it can't be done, but the "+p+" is confident that they can become friends with every single "
@@ -21395,7 +21395,7 @@ m="In a dramatic reveal, the "+o+" discovers that "
 l=$.C
 m=m+l+" is responsible for the feud. The two "+p+" families never wronged each other, it's a huge misunderstanding. But how can they prove this to the feuding families? "
 j="The "+o+" confronts "+l+". The beast smuggly admits to its crimes, and claims that the proof needed lies within its hoard. Will the "+o+" be able to claim it?"
-p="The "+l+" lies slain by the "+o+"'s "+$.cd+". The "+o+" shows the proof to the two "+p+" families, who reconcile in a dramatic shower of happy tears and "+$.P+"ing. "
+p="The "+l+" lies slain by the "+o+"'s "+$.ci+". The "+o+" shows the proof to the two "+p+" families, who reconcile in a dramatic shower of happy tears and "+$.P+"ing. "
 t.i(0,new R.a4("Stop the Feud",!1,[new U.c(q),new U.c(r),new U.c(m),new U.ab(j,"The deception of "+l+" continues with the defeat of the "+o+".",p)],H.a([],k),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 n.i(0,new X.I(s,t,null),$.aB)},
 gaa:function(){return this.m},
@@ -21445,7 +21445,7 @@ o=o+l+" economy!"
 k="The "+p+" cleans out oil from the nearby "+n+"s, opening up a few more channels between villages. "
 n="The "+p+" gets sick of all the fucking oil in the "+n+" mail system, and realizes the only way to truly deal with it and to allow information to flow free is to confront "+m+"."
 j="It is time for the "+p+"  to finally face the "+m+". The mail is too vital to the "+l+"s to risk having them reclog."
-l="The "+m+" lies slain by the "+p+"'s "+$.cd+". The "+p+" has won! The "+l+"s have a bustling mail based economy once again."
+l="The "+m+" lies slain by the "+p+"'s "+$.ci+". The "+p+" has won! The "+l+"s have a bustling mail based economy once again."
 p="The tyranny of "+m+" continues with the defeat of the "+p+"."
 m=$.Hj
 i=[U.c]
@@ -21470,7 +21470,7 @@ k=$.v
 k=l+k+" fields. The "+k+"s "+$.P+"ing is so joyful it's literally deafening. "
 l=$.C
 j=l+" is attacking the happy wind based farming community. The "+p+" has worked too hard for it all to be lost now. There can be no mercy. "
-h="The "+l+" lies slain by the "+p+"'s "+$.cd+". The "+p+" is finally free to continue improving the land with wind. "
+h="The "+l+" lies slain by the "+p+"'s "+$.ci+". The "+p+" is finally free to continue improving the land with wind. "
 s.i(0,new R.a4("Thinking With Wind Power",!1,[new U.c(o),new U.c(n),new U.c(k),new U.ab(j,"The tyranny of "+l+" continues with the defeat of the "+p+".",h)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 m.i(0,new X.I(q,s,null),$.aB)
 s=H.a(["Twisters","Cyclones","Gales","Storms","Hurricanes","Gusts","Tornadoes","Typhoons"],t)
@@ -21489,7 +21489,7 @@ n=$.av
 o=o+n+" system that controls the storms of their land. The begin adventuring and solving puzzles to alter the layout of the "+n+" system so the storms are redirected from consort villages. "
 n="The "+r+" finishes the dungeon that holds the  "+n+" systems control panel, only to find the control room totally empty. They learn that they only needed their own "+$.aY+" to do control the storms in the first place, and it was inside them all along.  "
 l=" "+p+" arrives to challenge the "+r+" storm supremacy. Will the "+r+" be able to prove their worth?"
-k="The "+p+" lies slain by the "+r+"'s "+$.cd+". The "+r+" has become the storm master. It is them. "
+k="The "+p+" lies slain by the "+r+"'s "+$.ci+". The "+r+" has become the storm master. It is them. "
 t.i(0,new R.a4("The Winds of Change",!1,[new U.c(q),new U.c(o),new U.c(n),new U.ab(l,"The storm supremacy of "+p+" continues with the defeat of the "+r+".",k)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 m.i(0,new X.I(s,t,null),$.aB)},
 gaa:function(){return this.m},
@@ -21907,7 +21907,7 @@ m=m+l+". The player begins to search for this totally USEFUL and IMPORTANT item.
 l="The "+p+" finds the "+l+", and slays the Omni-Lich, scattering its bones to the winds, which, according to "+n+" traditions, should summon its master. Uh. Eventually."
 k=$.C
 j="FINALLY, the bones of Omni-Lich has summoned it's master, "+k+"."
-n="The "+k+" lies slain by the "+p+"'s "+$.cd+". The "+p+" has won! The "+n+"s are free to bury their dead in peace once again."
+n="The "+k+" lies slain by the "+p+"'s "+$.ci+". The "+p+" has won! The "+n+"s are free to bury their dead in peace once again."
 i=[U.c]
 q.i(0,new R.a4("Empty the Graves",!1,[new U.c(o),new U.c(m),new U.c(l),new U.ab(j,"The grave robbing of "+k+" continues with the defeat of the "+p+".",n)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 n=this.f
@@ -21936,7 +21936,7 @@ j="The "+p+" is now the warlord of nearly all of the Violent "+m+"s. There is cl
 h=$.C
 j=j+h+" has been hoarding it all to cause scarcity to breed violence and anarchy. What a huge bitch. This cannot stand. "
 g="There isn't enough room in this wasteland for the both of them. It's time to take out the "+h+"."
-m="The "+h+" lies slain by the "+p+"'s "+$.cd+". The "+p+" distributes the hoard of "+l+" to the Violent "+m+"s and keeps the hoard of grist for themself. "
+m="The "+h+" lies slain by the "+p+"'s "+$.ci+". The "+p+" distributes the hoard of "+l+" to the Violent "+m+"s and keeps the hoard of grist for themself. "
 s.i(0,new R.a4("Become the Warlord",!1,[new U.c(o),new U.c(k),new U.c(j),new U.ab(g,"The "+l+" shortage continues with the defeat of the "+p+".",m)],H.a([],i),R.eE(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.m)
 m=$.p
 p="The "+m+" is sick of their stupid uninhabitable planet, and so starts to make sections of it habitable through judicious use of alchemy and "
@@ -21947,7 +21947,7 @@ g="The "+m+" has straight up established a new consort government in the safe zo
 j=$.C
 g=g+j+" remains alive, the safe zone will be temporary at best. "
 k=j+" is attacking the safe zones. The "+m+" has worked too hard for it all to be lost now. There can be no mercy. "
-o="The "+j+" lies slain by the "+m+"'s "+$.cd+". The "+m+" is finally free to continue improving the land. "
+o="The "+j+" lies slain by the "+m+"'s "+$.ci+". The "+m+" is finally free to continue improving the land. "
 s.i(0,new R.a4("Make This Stupid Planet Habitable",!1,[new U.c(p),new U.c(l),new U.c(g),new U.ab(k,"The tyranny of "+j+" continues with the defeat of the "+m+".",o)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 n.i(0,new X.I(q,s,null),$.aB)
 s=H.a(["Prophecy","Prophets","Fate","Destiny","Rules","Sound","Judgement","Carvings","Murals","Etchings"],t)
@@ -21979,7 +21979,7 @@ r="The "+k+" goes on a daring series of stupid missions to deliver the MAGIC "+o
 l=$.C
 r=r+l+"s lair is all but undefended. "
 o="The "+k+" is finally ready to face the "+l+"."
-q="The "+l+" lies slain by the "+k+"'s "+$.cd+". The "+k+" has won! "
+q="The "+l+" lies slain by the "+k+"'s "+$.ci+". The "+k+" has won! "
 k="The tyranny of "+l+" continues with the defeat of the "+k+"."
 l=$.Ha
 t.i(0,new R.a4("Learn the Prophecy",!1,[new U.c(p),new U.c(m),new U.c(r),new U.ab(o,k,q)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",l,"Rewards/no_reward.png",null),1,null,null),$.E)
@@ -22054,7 +22054,7 @@ s=new H.q(0,null,null,null,null,null,0,r)
 s.i(0,$.cm,$.n)
 s.i(0,$.en,$.m)
 s.i(0,$.dl,$.n)
-s.i(0,$.cf,$.n)
+s.i(0,$.ce,$.n)
 s.i(0,$.em,$.n)
 s.i(0,$.cC,$.m)
 p=$.p
@@ -22074,7 +22074,7 @@ t=new H.q(0,null,null,null,null,null,0,r)
 t.i(0,$.dk,$.m)
 t.i(0,$.iR,$.n)
 t.i(0,$.b6,$.n)
-t.i(0,$.cf,$.m)
+t.i(0,$.ce,$.m)
 t.i(0,$.em,$.m)
 t.i(0,$.en,$.n)
 r=$.p
@@ -22343,7 +22343,7 @@ Y.mM.prototype={
 J:function(){var t,s,r,q
 t=Q.D(null,null,A.a9)
 s=[G.a8]
-r=A.j("Sherpa Parka",H.a([$.bk,$.R,$.ch],s),"Clearly the best class uses this.",!1,null)
+r=A.j("Sherpa Parka",H.a([$.bk,$.R,$.cg],s),"Clearly the best class uses this.",!1,null)
 q=[H.M(t,0)]
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
 r=A.j("Guide Book",H.a([$.ac,$.bk,$.aN,$.O,$.R,$.ad],s),"Clearly the best class uses this.",!1,"Dummies Guide to Shitposting")
@@ -22405,7 +22405,7 @@ m="The "+p+"realizes all the things they were adding to the space was nothing mo
 l=$.C
 m=m+l+"."
 k="It is time for the "+p+"  to finally face the "+l+". They can finally be free to just....be themselves as long as the "+l+" is gone. "
-j="The "+l+" lies slain by the "+p+"'s "+$.cd+". The "+p+" has won and finally feels free to be themselves for the first time."
+j="The "+l+" lies slain by the "+p+"'s "+$.ci+". The "+p+" has won and finally feels free to be themselves for the first time."
 i=[U.c]
 q.i(0,new R.a4("Find Yourself",!1,[new U.c(o),new U.c(n),new U.c(m),new U.ab(k,"The tyranny of "+l+" continues with the defeat of the "+p+".",j)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 j=$.p
@@ -22441,7 +22441,7 @@ l="The "+p+" realizes that the "+n+" copy is nothing more then an expresion of t
 k=$.C
 n=l+k+". They confront the copy one last time, and accept it as part of themselves. The two fuse, with a single, small "+n+" the only physical remnant of the copy. Armed with their new self actualization, they realize they are ready to face "+k+". "
 l=k+" has been the cause of so much personal grief for the "+p+".  There can be no mercy. "
-j="The "+k+" lies slain by the "+p+"'s "+$.cd+". The "+p+" is victorious. "
+j="The "+k+" lies slain by the "+p+"'s "+$.ci+". The "+p+" is victorious. "
 s.i(0,new R.a4("Confront yourself.",!1,[new U.c(o),new U.c(m),new U.c(n),new U.ab(l,"The assholeness of "+k+" continues with the defeat of the "+p+".",j)],H.a([],i),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 j="Now that the "+$.C+" has been defeated, a Copy "
 p=$.p
@@ -22620,7 +22620,7 @@ q=new H.q(0,null,null,null,null,null,0,r)
 q.i(0,$.uS,$.m)
 q.i(0,$.cD,$.n)
 q.i(0,$.b6,$.m)
-q.i(0,$.cf,$.m)
+q.i(0,$.ce,$.m)
 p=$.p
 o="The "+p+" is just minding their own business when they see a wizened "
 n=$.v
@@ -22665,7 +22665,7 @@ t=new H.q(0,null,null,null,null,null,0,r)
 t.i(0,$.b6,$.m)
 t.i(0,$.dz,$.N)
 t.i(0,$.cE,$.m)
-t.i(0,$.cf,$.m)
+t.i(0,$.ce,$.m)
 r=$.p
 q="The "+r+" finds a grey town of despondant "
 p=$.v
@@ -22730,7 +22730,7 @@ t.i(0,new R.af("A Complete Waste Of Time",!1,[new U.c(q+p+" in the land. Blah bl
 r=$.C
 p="{Quest.PLAYER1} explores their land but is horrified to see all of the turtles [REDACTED]ing. "+r+" probably is making them [REDACTED]. "+r+" is a [REDACTED] piece of shit. Also. Why are there even turtles here? Is it a refrance?"
 q=$.p
-n=q+" tries to manually separate the turtles by catching them with a net and "+$.cd+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
+n=q+" tries to manually separate the turtles by catching them with a net and "+$.ci+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
 m=q+" manages to fix the fish problem, but is back where they started with the turtles. "+r+" cackles from their giant castle. "+q+" needs to take a break from trying to get turtles to stop [REDACTED]ing."
 r=q+" has learned some stuff, and thinks that they can get the turtles to stop by changing the turtle [REDACTED] values in the game\u2019s code. This pisses the "+r+" off and causes this entire strife thing to happen. Bluh."
 q=$.P
@@ -22935,7 +22935,7 @@ t.i(0,$.em,$.az)
 t.i(0,$.cD,$.n)
 t.i(0,$.bS,$.m)
 t.i(0,$.b6,$.n)
-t.i(0,$.cf,$.m)
+t.i(0,$.ce,$.m)
 r=$.p
 q="The "+r+" sees a floating sentient "
 p=$.av
@@ -23414,7 +23414,7 @@ q=H.a(["Dutton","Charles","Fathers","Prophets","Dew"],t)
 H.a([],t)
 t=new H.q(0,null,null,null,null,null,0,r)
 t.i(0,$.xn,$.m)
-t.i(0,$.cf,$.m)
+t.i(0,$.ce,$.m)
 t.i(0,$.bg,$.m)
 t.i(0,$.b6,$.n)
 s="The "+$.C+" has been subjugated, their hoard of frogs released. Across the land castles and dungeons suddenly are accessible, and filled with croaking. The "
@@ -23571,7 +23571,7 @@ s=H.a(["Decisions","Choices","Paths","Passages","Dead Ends","Trails","Doors","Po
 H.a([],t)
 r=[N.aj,P.a6]
 q=new H.q(0,null,null,null,null,null,0,r)
-q.i(0,$.cf,$.n)
+q.i(0,$.ce,$.n)
 q.i(0,$.fe,$.N)
 q.i(0,$.cE,$.N)
 p=$.p
@@ -23596,7 +23596,7 @@ s=new H.q(0,null,null,null,null,null,0,r)
 s.i(0,$.hj,$.N)
 s.i(0,$.c9,$.n)
 s.i(0,$.cE,$.N)
-s.i(0,$.cf,$.N)
+s.i(0,$.ce,$.N)
 p=$.C
 o="The "+p+" has commited a staggering amount of crimes against the local "+$.v+" population. The natural result of this is that karma itself is conspiring for their downfall. The "
 m=$.p
@@ -23848,7 +23848,7 @@ r=A.j("Action DVD",H.a([$.aT,$.aA],s),null,!1,"Shogun The Movie")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
 r=A.j("Ghost Busters DVD",H.a([$.aT,$.bZ],s),"I refuse to call a bunch of washed up comedians.",!1,"Shogunsprite Hunters The Movie")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
-r=A.j("Snow Dogs DVD",H.a([$.aT,$.bb,$.bk,$.ch],s),null,!1,"Snow Buddies Anthology")
+r=A.j("Snow Dogs DVD",H.a([$.aT,$.bb,$.bk,$.cg],s),null,!1,"Snow Buddies Anthology")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
 r=A.j("Skateboarding Video Game",H.a([$.aT,$.aA],s),"All of these glitches are offensive to my robo-sensbilities.",!1,"Snow Buddies Anthology")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
@@ -23939,7 +23939,7 @@ s=H.a(["Endings","Finales","Epilogues","Codas","Curtains","Conclusions"],t)
 H.a([],t)
 t=new H.q(0,null,null,null,null,null,0,[N.aj,P.a6])
 t.i(0,$.cB,$.n)
-t.i(0,$.cf,$.n)
+t.i(0,$.ce,$.n)
 t.i(0,$.dR,$.N)
 r="With the closing of the curtain, the "+$.C+" has released the frogs, and yet they are nowhere to be found. The "
 q=$.p
@@ -24266,7 +24266,7 @@ t=new H.q(0,null,null,null,null,null,0,[N.aj,P.a6])
 t.i(0,$.b6,$.n)
 t.i(0,$.dk,$.N)
 t.i(0,$.bS,$.n)
-t.i(0,$.cf,$.N)
+t.i(0,$.ce,$.N)
 r=$.p
 q="The "+r+" is walking around their land, when suddenly an arrow starts floating, The "+r+" figures out they can control it with their mind."
 p="The "+r+" is practicing in using their arrows, they see an imp walk close to them. The "+r+" tries to strife it, on their second attempt, The "+r+" is able to defeat the imp with their arrow, they have improved in their abilities."
@@ -24299,24 +24299,17 @@ C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
 s=A.j("Fairy Bottle",H.a([$.aZ,$.ag],s),null,!1,null)
 C.b.h(t.b,new Q.h(s,t.k(s,C.a.l(1)),q))
 this.y2=t},
-K:function(){var t,s,r,q,p,o,n,m,l
+K:function(){var t,s,r,q,p
 t=[P.y]
 s=H.a(["Rune","Magic","Fairy","Infinite","Predictions"],t)
 H.a([],t)
 t=new H.q(0,null,null,null,null,null,0,[N.aj,P.a6])
-t.i(0,$.cf,$.n)
+t.i(0,$.ce,$.n)
 t.i(0,$.b6,$.n)
 r=$.p
-q="The "+r+" is walking around in a village of "
-p=$.v
-q=q+p+"s, when a Consort walks up to them. It says that The "+r+" has to learn magic, so they can fight the "
-o=$.C
-q=q+o+". The "+r+" promises to do their best."
-n="The "+r+" "
-m="The "+r+" "
-l="It is time for the "+r+"  to finally face the "+o+". The mail is too vital to the "+p+"s to risk having them reclog."
-p="The "+o+" lies slain by the "+r+"'s "+$.cd+". The "+r+" has won! The "+p+"s have a bustling mail based economy once again."
-t.i(0,new R.a4("Learn Magic",!1,[new U.c(q),new U.c(n),new U.c(m),new U.ab(l,"The tyranny of "+o+" continues with the defeat of the "+r+".",p)],H.a([],[U.c]),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
+q="The "+r+" is walking around in a village of "+$.v+"s, when a Consort walks up to them. It says that The "+r+" has to learn magic, so they can fight the "
+p=$.C
+t.i(0,new R.a4("Learn Magic",!1,[new U.c(q+p+". The "+r+" promises to do their best."),new U.c("The "+r+" is practicing the arcana, they're starting to get pretty good."),new U.c("The "+r+" is able to fight numerous imps with their magic now, they are ready to fight the "+p+"..."),new U.ab("","","")],H.a([],[U.c]),R.B(),!1,!1,new Y.a7("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.E)
 this.f.i(0,new X.I(s,t,null),$.aB)},
 gaa:function(){return this.m},
 ga9:function(){return this.n},
@@ -24604,7 +24597,7 @@ t.i(0,$.mn,$.m)
 t.i(0,$.bg,$.m)
 t.i(0,$.cE,$.m)
 t.i(0,$.b6,$.n)
-t.i(0,$.cf,$.n)
+t.i(0,$.ce,$.n)
 r="The "+$.C+" has caused all those fucking bird underlings to finally drop the frogs. The "
 q=$.p
 p=[U.c]
@@ -24699,16 +24692,16 @@ N.pD.prototype={
 J:function(){var t,s,r,q
 t=Q.D(null,null,A.a9)
 s=[G.a8]
-r=A.j("Fiduspawn Plush",H.a([$.ch,$.S,$.ba],s),"Hopefully just a replica.",!1,"Copyrighted Yellow Rat Plush")
+r=A.j("Fiduspawn Plush",H.a([$.cg,$.S,$.ba],s),"Hopefully just a replica.",!1,"Copyrighted Yellow Rat Plush")
 q=[H.M(t,0)]
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
-r=A.j("Teddy Bear",H.a([$.ch,$.S,$.ba],s),null,!1,"Cuddle Bear")
+r=A.j("Teddy Bear",H.a([$.cg,$.S,$.ba],s),null,!1,"Cuddle Bear")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
 r=A.j("Dice",H.a([$.ve,$.aT],s),null,!1,"D113")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
 r=A.j("Pigeon",H.a([$.bA,$.aD,$.bh,$.bc,$.bn,$.vn],s),"Better fucking tell JR. Ironic pigeons and all.",!1,"Bird of Impending Doom")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
-r=A.j("Cat Ears",H.a([$.S,$.ba,$.ch],s),"Fuck. Cat. Trolls.",!1,"Weeb Shit")
+r=A.j("Cat Ears",H.a([$.S,$.ba,$.cg],s),"Fuck. Cat. Trolls.",!1,"Weeb Shit")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
 r=A.j("Religious Text",H.a([$.aN,$.O],s),null,!1,"Religious Book Containing No Shogun, A Bad Book")
 C.b.h(t.b,new Q.h(r,t.k(r,C.a.l(1)),q))
@@ -24727,7 +24720,7 @@ r=[N.aj,P.a6]
 q=new H.q(0,null,null,null,null,null,0,r)
 q.i(0,$.dk,$.N)
 q.i(0,$.b6,$.n)
-q.i(0,$.cf,$.m)
+q.i(0,$.ce,$.m)
 q.i(0,$.cE,$.n)
 p=$.p
 o="The "+p+" finds a help wanted sign near a strange booth. Apparently the local "
@@ -24741,7 +24734,7 @@ H.a([],t)
 s=new H.q(0,null,null,null,null,null,0,r)
 s.i(0,$.dk,$.N)
 s.i(0,$.b6,$.m)
-s.i(0,$.cf,$.m)
+s.i(0,$.ce,$.m)
 s.i(0,$.uS,$.m)
 s.i(0,$.cD,$.m)
 s.i(0,$.uY,$.m)
@@ -25080,7 +25073,7 @@ t=[P.y]
 s=H.a(["Stone","Thanos","Mind","Space","Power","Soul","Time","Reality"],t)
 H.a([],t)
 t=new H.q(0,null,null,null,null,null,0,[N.aj,P.a6])
-t.i(0,$.cf,$.n)
+t.i(0,$.ce,$.n)
 t.i(0,$.bS,$.N)
 t.i(0,$.cM,$.N)
 r=$.p
@@ -25123,7 +25116,7 @@ t=[P.y]
 s=H.a(["Springs","Water","Pools","Reflection","Contemplation","Fountains","Wellsprings","Geysers"],t)
 H.a([],t)
 t=new H.q(0,null,null,null,null,null,0,[N.aj,P.a6])
-t.i(0,$.cf,$.m)
+t.i(0,$.ce,$.m)
 t.i(0,$.b6,$.m)
 t.i(0,$.dj,$.n)
 t.i(0,$.fh,$.n)
@@ -25523,7 +25516,7 @@ H.a([],t)
 t=new H.q(0,null,null,null,null,null,0,r)
 t.i(0,$.ca,$.m)
 t.i(0,$.b6,$.n)
-t.i(0,$.cf,$.m)
+t.i(0,$.ce,$.m)
 t.i(0,$.dj,$.m)
 r=$.C
 q="The door to the "+r+"'s  lair is barred by a door locked with three identical missing "
@@ -25718,7 +25711,7 @@ t.i(0,new R.af("A Complete Waste Of Time",!1,[new U.c(q+p+" in the land. Blah bl
 r=$.C
 p="{Quest.PLAYER1} explores their land but is horrified to see all of the turtles [REDACTED]ing. "+r+" probably is making them [REDACTED]. "+r+" is a [REDACTED] piece of shit. Also. Why are there even turtles here? Is it a refrance?"
 q=$.p
-n=q+" tries to manually separate the turtles by catching them with a net and "+$.cd+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
+n=q+" tries to manually separate the turtles by catching them with a net and "+$.ci+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
 m=q+" manages to fix the fish problem, but is back where they started with the turtles. "+r+" cackles from their giant castle. "+q+" needs to take a break from trying to get turtles to stop [REDACTED]ing."
 r=q+" has learned some stuff, and thinks that they can get the turtles to stop by changing the turtle [REDACTED] values in the game\u2019s code. This pisses the "+r+" off and causes this entire strife thing to happen. Bluh."
 q=$.P
@@ -26483,7 +26476,7 @@ P.de.prototype.fC=P.de.prototype.bL
 P.de.prototype.fD=P.de.prototype.c7
 P.b9.prototype.dL=P.b9.prototype.ap
 P.o.prototype.fz=P.o.prototype.cB
-W.ce.prototype.cI=W.ce.prototype.b1
+W.cd.prototype.cI=W.cd.prototype.b1
 W.ii.prototype.fE=W.ii.prototype.bm
 Q.e_.prototype.fB=Q.e_.prototype.H;(function installTearOffs(){installTearOff(H.fK.prototype,"gis",0,0,0,null,["$0"],["co"],1)
 installTearOff(H.dJ.prototype,"gfh",0,0,0,null,["$1"],["aU"],6)
@@ -26525,7 +26518,7 @@ installTearOff(W.j0.prototype,"gah",0,1,0,null,["$1"],["O"],9)
 installTearOff(W.jU.prototype,"gah",0,1,0,null,["$1"],["O"],5)
 installTearOff(W.jV.prototype,"gah",0,1,0,null,["$1"],["O"],11)
 installTearOff(W.jY.prototype,"gdn",0,1,0,null,["$0"],["dq"],7)
-installTearOff(W.ci.prototype,"gah",0,1,0,null,["$1"],["O"],11)
+installTearOff(W.ch.prototype,"gah",0,1,0,null,["$1"],["O"],11)
 installTearOff(W.k8.prototype,"gah",0,1,0,null,["$1"],["O"],18)
 installTearOff(W.kc.prototype,"gah",0,1,0,null,["$1"],["O"],10)
 installTearOff(W.ke.prototype,"gah",0,1,0,null,["$1"],["O"],19)
@@ -26782,7 +26775,7 @@ inherit(W.jg,t)
 inherit(W.oF,t)
 inherit(W.ee,t)
 inherit(W.fF,t)
-inherit(W.ci,t)
+inherit(W.ch,t)
 inherit(W.jh,t)
 inherit(W.p0,t)
 inherit(W.kb,t)
@@ -27155,13 +27148,13 @@ inherit(P.qC,t)
 inherit(P.bG,t)
 inherit(P.fY,t)
 t=W.as
-inherit(W.ce,t)
+inherit(W.cd,t)
 inherit(W.ei,t)
 inherit(W.ek,t)
 inherit(W.iD,t)
 inherit(W.fH,t)
 inherit(W.rv,t)
-t=W.ce
+t=W.cd
 inherit(W.b8,t)
 inherit(P.cl,t)
 t=W.b8
@@ -27228,7 +27221,7 @@ inherit(W.m0,t)
 inherit(W.dG,t)
 inherit(W.pI,t)
 inherit(W.pJ,t)
-inherit(W.cg,W.f5)
+inherit(W.cf,W.f5)
 inherit(W.jo,W.j4)
 inherit(W.fj,W.jo)
 inherit(W.jp,W.j5)
@@ -27818,7 +27811,7 @@ $.mr=null
 $.mo=null
 $.b6=null
 $.cE=null
-$.cf=null
+$.ce=null
 $.cm=null
 $.mq=null
 $.bS=null
@@ -27909,7 +27902,7 @@ $.v="CONSORTTAG"
 $.P="CONSORTSOUNDTAG"
 $.aY="MCGUFFINTAG"
 $.av="TAGPHYSICALMCGUFFIN"
-$.cd="TAGWEAPON"
+$.ci="TAGWEAPON"
 $.HZ=null
 $.Ib=null
 $.HT=null
@@ -28018,7 +28011,7 @@ $.aZ=null
 $.bZ=null
 $.bh=null
 $.bn=null
-$.ch=null
+$.cg=null
 $.b7=null
 $.bA=null
 $.bV=null
@@ -28503,7 +28496,7 @@ mangledGlobalNames:{H:"int",a6:"double",du:"num",y:"String",cT:"bool",d9:"Null",
 mangledNames:{},
 getTypeFromName:getGlobalFromName,
 metadata:[],
-types:[{func:1,ret:P.cT,args:[[P.r,E.j_]]},{func:1,v:true},{func:1,ret:P.dd,args:[P.bj,P.H,P.H,O.cZ]},{func:1,ret:P.bj,args:[P.H,P.bj,P.bj,O.cZ]},{func:1,v:true,args:[P.A]},{func:1,ret:P.y,args:[P.H]},{func:1,args:[,]},{func:1,ret:W.as},{func:1,v:true,args:[{func:1,v:true}]},{func:1,ret:W.as,args:[P.H]},{func:1,ret:W.ce,args:[P.H]},{func:1,ret:W.cp,args:[P.H]},{func:1,v:true,args:[P.A],opt:[P.dW]},{func:1,ret:P.cT,args:[W.ce,P.y,P.y,W.id]},{func:1,ret:P.y,args:[P.y]},{func:1,ret:W.cg,args:[P.H]},{func:1,ret:P.cT,args:[P.A]},{func:1,ret:P.cn},{func:1,ret:W.ci,args:[P.H]},{func:1,ret:W.cq,args:[P.H]},{func:1,ret:W.cr,args:[P.H]},{func:1,ret:W.fC,args:[P.H]},{func:1,ret:W.ct,args:[P.H]},{func:1,ret:W.fE,args:[P.H]},{func:1,ret:W.fG,args:[P.H]},{func:1,ret:P.bM,args:[P.H]},{func:1,ret:W.bO,args:[P.H]},{func:1,ret:P.y,args:[P.dC]},{func:1,ret:W.fH,args:[P.H]},{func:1,ret:W.cj,args:[P.H]},{func:1,ret:W.ck,args:[P.H]},{func:1,ret:P.b3,args:[P.H]},{func:1,ret:P.H,args:[P.bH,P.bH]},{func:1,v:true,args:[,P.dW]},{func:1,v:true,args:[P.y]},{func:1,ret:W.fb,args:[P.H]},{func:1,ret:W.co,args:[P.H]}],
+types:[{func:1,ret:P.cT,args:[[P.r,E.j_]]},{func:1,v:true},{func:1,ret:P.dd,args:[P.bj,P.H,P.H,O.cZ]},{func:1,ret:P.bj,args:[P.H,P.bj,P.bj,O.cZ]},{func:1,v:true,args:[P.A]},{func:1,ret:P.y,args:[P.H]},{func:1,args:[,]},{func:1,ret:W.as},{func:1,v:true,args:[{func:1,v:true}]},{func:1,ret:W.as,args:[P.H]},{func:1,ret:W.cd,args:[P.H]},{func:1,ret:W.cp,args:[P.H]},{func:1,v:true,args:[P.A],opt:[P.dW]},{func:1,ret:P.cT,args:[W.cd,P.y,P.y,W.id]},{func:1,ret:P.y,args:[P.y]},{func:1,ret:W.cf,args:[P.H]},{func:1,ret:P.cT,args:[P.A]},{func:1,ret:P.cn},{func:1,ret:W.ch,args:[P.H]},{func:1,ret:W.cq,args:[P.H]},{func:1,ret:W.cr,args:[P.H]},{func:1,ret:W.fC,args:[P.H]},{func:1,ret:W.ct,args:[P.H]},{func:1,ret:W.fE,args:[P.H]},{func:1,ret:W.fG,args:[P.H]},{func:1,ret:P.bM,args:[P.H]},{func:1,ret:W.bO,args:[P.H]},{func:1,ret:P.y,args:[P.dC]},{func:1,ret:W.fH,args:[P.H]},{func:1,ret:W.cj,args:[P.H]},{func:1,ret:W.ck,args:[P.H]},{func:1,ret:P.b3,args:[P.H]},{func:1,ret:P.H,args:[P.bH,P.bH]},{func:1,v:true,args:[,P.dW]},{func:1,v:true,args:[P.y]},{func:1,ret:W.fb,args:[P.H]},{func:1,ret:W.co,args:[P.H]}],
 interceptorsByTag:null,
 leafTags:null};(function nativeSupport(){!function(){var t=function(a){var n={}
 n[a]=1
@@ -28516,7 +28509,7 @@ for(var p=0;;p++){var o=t(q+"_"+p+"_")
 if(!(o in r)){r[o]=1
 u.isolateTag=o
 break}}u.dispatchPropertyName=u.getIsolateTag("dispatch_record")}()
-setOrUpdateInterceptorsByTag({AnimationEffectReadOnly:J.k,AnimationEffectTiming:J.k,AnimationTimeline:J.k,AppBannerPromptResult:J.k,BarProp:J.k,Body:J.k,CanvasGradient:J.k,CanvasPattern:J.k,CHROMIUMValuebuffer:J.k,CircularGeofencingRegion:J.k,Client:J.k,Clients:J.k,CompositorProxy:J.k,ConsoleBase:J.k,Coordinates:J.k,CredentialsContainer:J.k,Crypto:J.k,CryptoKey:J.k,CSS:J.k,DeprecatedStorageInfo:J.k,DeprecatedStorageQuota:J.k,DeviceRotationRate:J.k,DirectoryReader:J.k,DOMImplementation:J.k,Iterator:J.k,DOMMatrix:J.k,DOMMatrixReadOnly:J.k,DOMParser:J.k,EffectModel:J.k,Stream:J.k,FormData:J.k,GamepadButton:J.k,Geofencing:J.k,GeofencingRegion:J.k,Geolocation:J.k,Geoposition:J.k,Headers:J.k,HMDVRDevice:J.k,IdleDeadline:J.k,ImageBitmap:J.k,ImageBitmapRenderingContext:J.k,InjectedScriptHost:J.k,InputDeviceCapabilities:J.k,IntersectionObserver:J.k,IntersectionObserverEntry:J.k,KeyframeEffect:J.k,MediaDeviceInfo:J.k,MediaDevices:J.k,MediaError:J.k,MediaKeyStatusMap:J.k,MediaKeySystemAccess:J.k,MediaKeys:J.k,MediaMetadata:J.k,MediaSession:J.k,MemoryInfo:J.k,MessageChannel:J.k,Metadata:J.k,MIDIInputMap:J.k,MIDIOutputMap:J.k,MutationObserver:J.k,WebKitMutationObserver:J.k,MutationRecord:J.k,NavigatorStorageUtils:J.k,NodeFilter:J.k,NonDocumentTypeChildNode:J.k,NonElementParentNode:J.k,OffscreenCanvas:J.k,PerformanceNavigation:J.k,PerformanceObserver:J.k,PerformanceObserverEntryList:J.k,PerformanceTiming:J.k,Permissions:J.k,PositionError:J.k,PositionSensorVRDevice:J.k,Presentation:J.k,PushManager:J.k,PushMessageData:J.k,PushSubscription:J.k,ReadableByteStream:J.k,ReadableByteStreamReader:J.k,ReadableStreamReader:J.k,RTCCertificate:J.k,RTCIceCandidate:J.k,mozRTCIceCandidate:J.k,RTCStatsReport:J.k,RTCStatsResponse:J.k,Screen:J.k,ScrollState:J.k,Selection:J.k,SharedArrayBuffer:J.k,SourceInfo:J.k,StorageInfo:J.k,StorageManager:J.k,StorageQuota:J.k,StyleMedia:J.k,StylePropertyMap:J.k,SyncManager:J.k,TextMetrics:J.k,UnderlyingSourceBase:J.k,URLSearchParams:J.k,VRDevice:J.k,VREyeParameters:J.k,VRFieldOfView:J.k,VRPositionState:J.k,ValidityState:J.k,VideoPlaybackQuality:J.k,VideoTrack:J.k,WindowClient:J.k,WorkerConsole:J.k,XPathEvaluator:J.k,XPathExpression:J.k,XPathNSResolver:J.k,XPathResult:J.k,XMLSerializer:J.k,XSLTProcessor:J.k,Bluetooth:J.k,BluetoothAdvertisingData:J.k,BluetoothCharacteristicProperties:J.k,BluetoothRemoteGATTServer:J.k,BluetoothRemoteGATTService:J.k,BluetoothUUID:J.k,Cache:J.k,DOMFileSystemSync:J.k,DirectoryEntrySync:J.k,DirectoryReaderSync:J.k,EntrySync:J.k,FileEntrySync:J.k,FileReaderSync:J.k,FileWriterSync:J.k,HTMLAllCollection:J.k,NFC:J.k,PagePopupController:J.k,Request:J.k,Response:J.k,SubtleCrypto:J.k,USBAlternateInterface:J.k,USBConfiguration:J.k,USBDevice:J.k,USBEndpoint:J.k,USBInTransferResult:J.k,USBInterface:J.k,USBIsochronousInTransferPacket:J.k,USBIsochronousInTransferResult:J.k,USBIsochronousOutTransferPacket:J.k,USBIsochronousOutTransferResult:J.k,USBOutTransferResult:J.k,WebKitCSSMatrix:J.k,Worklet:J.k,WorkletGlobalScope:J.k,IDBCursor:J.k,IDBCursorWithValue:J.k,IDBFactory:J.k,IDBKeyRange:J.k,SVGAngle:J.k,SVGAnimatedAngle:J.k,SVGAnimatedBoolean:J.k,SVGAnimatedEnumeration:J.k,SVGAnimatedInteger:J.k,SVGAnimatedLength:J.k,SVGAnimatedLengthList:J.k,SVGAnimatedNumber:J.k,SVGAnimatedNumberList:J.k,SVGAnimatedPreserveAspectRatio:J.k,SVGAnimatedRect:J.k,SVGAnimatedString:J.k,SVGAnimatedTransformList:J.k,SVGMatrix:J.k,SVGPreserveAspectRatio:J.k,SVGUnitTypes:J.k,AudioListener:J.k,AudioParam:J.k,PeriodicWave:J.k,ANGLEInstancedArrays:J.k,ANGLE_instanced_arrays:J.k,WebGLBuffer:J.k,CHROMIUMSubscribeUniform:J.k,WebGLCompressedTextureASTC:J.k,WebGLCompressedTextureATC:J.k,WEBGL_compressed_texture_atc:J.k,WebGLCompressedTextureETC1:J.k,WEBGL_compressed_texture_etc1:J.k,WebGLCompressedTexturePVRTC:J.k,WEBGL_compressed_texture_pvrtc:J.k,WebGLCompressedTextureS3TC:J.k,WEBGL_compressed_texture_s3tc:J.k,WebGLDebugRendererInfo:J.k,WEBGL_debug_renderer_info:J.k,WebGLDebugShaders:J.k,WEBGL_debug_shaders:J.k,WebGLDepthTexture:J.k,WEBGL_depth_texture:J.k,WebGLDrawBuffers:J.k,WEBGL_draw_buffers:J.k,EXTsRGB:J.k,EXT_sRGB:J.k,EXTBlendMinMax:J.k,EXT_blend_minmax:J.k,EXTColorBufferFloat:J.k,EXTDisjointTimerQuery:J.k,EXTFragDepth:J.k,EXT_frag_depth:J.k,EXTShaderTextureLOD:J.k,EXT_shader_texture_lod:J.k,EXTTextureFilterAnisotropic:J.k,EXT_texture_filter_anisotropic:J.k,WebGLFramebuffer:J.k,WebGLLoseContext:J.k,WebGLExtensionLoseContext:J.k,WEBGL_lose_context:J.k,OESElementIndexUint:J.k,OES_element_index_uint:J.k,OESStandardDerivatives:J.k,OES_standard_derivatives:J.k,OESTextureFloat:J.k,OES_texture_float:J.k,OESTextureFloatLinear:J.k,OES_texture_float_linear:J.k,OESTextureHalfFloat:J.k,OES_texture_half_float:J.k,OESTextureHalfFloatLinear:J.k,OES_texture_half_float_linear:J.k,OESVertexArrayObject:J.k,OES_vertex_array_object:J.k,WebGLProgram:J.k,WebGLQuery:J.k,WebGLRenderbuffer:J.k,WebGLSampler:J.k,WebGLShader:J.k,WebGLShaderPrecisionFormat:J.k,WebGLSync:J.k,WebGLTexture:J.k,WebGLTimerQueryEXT:J.k,WebGLTransformFeedback:J.k,WebGLUniformLocation:J.k,WebGLVertexArrayObject:J.k,WebGLVertexArrayObjectOES:J.k,Database:J.k,SQLError:J.k,SQLResultSet:J.k,SQLTransaction:J.k,ArrayBuffer:H.fs,ArrayBufferView:H.eC,DataView:H.oe,Float32Array:H.of,Float64Array:H.og,Int16Array:H.oh,Int32Array:H.oi,Int8Array:H.oj,Uint16Array:H.ok,Uint32Array:H.ol,Uint8ClampedArray:H.jX,CanvasPixelArray:H.jX,Uint8Array:H.ft,HTMLBRElement:W.b8,HTMLContentElement:W.b8,HTMLDListElement:W.b8,HTMLDataListElement:W.b8,HTMLDetailsElement:W.b8,HTMLDialogElement:W.b8,HTMLHRElement:W.b8,HTMLHeadElement:W.b8,HTMLHeadingElement:W.b8,HTMLHtmlElement:W.b8,HTMLLabelElement:W.b8,HTMLLegendElement:W.b8,HTMLModElement:W.b8,HTMLOptGroupElement:W.b8,HTMLParagraphElement:W.b8,HTMLPictureElement:W.b8,HTMLPreElement:W.b8,HTMLQuoteElement:W.b8,HTMLShadowElement:W.b8,HTMLTableCaptionElement:W.b8,HTMLTableCellElement:W.b8,HTMLTableDataCellElement:W.b8,HTMLTableHeaderCellElement:W.b8,HTMLTableColElement:W.b8,HTMLTitleElement:W.b8,HTMLTrackElement:W.b8,HTMLUListElement:W.b8,HTMLUnknownElement:W.b8,HTMLDirectoryElement:W.b8,HTMLFontElement:W.b8,HTMLFrameElement:W.b8,HTMLMarqueeElement:W.b8,HTMLElement:W.b8,HTMLAnchorElement:W.f_,HTMLAreaElement:W.l1,HTMLAudioElement:W.f3,AudioTrack:W.cL,AudioTrackList:W.l8,HTMLBaseElement:W.lc,Blob:W.f5,HTMLBodyElement:W.f6,HTMLButtonElement:W.h2,CacheStorage:W.it,HTMLCanvasElement:W.lm,CanvasRenderingContext2D:W.ln,CDATASection:W.ei,CharacterData:W.ei,Comment:W.ei,ProcessingInstruction:W.ei,Text:W.ei,CompositorWorker:W.lt,Credential:W.h4,FederatedCredential:W.h4,PasswordCredential:W.h4,CSSFontFaceRule:W.lB,CSSImportRule:W.lC,CSSKeyframeRule:W.h5,MozCSSKeyframeRule:W.h5,WebKitCSSKeyframeRule:W.h5,CSSKeyframesRule:W.h6,MozCSSKeyframesRule:W.h6,WebKitCSSKeyframesRule:W.h6,CSSPageRule:W.lD,CSSCharsetRule:W.bO,CSSGroupingRule:W.bO,CSSMediaRule:W.bO,CSSNamespaceRule:W.bO,CSSSupportsRule:W.bO,CSSRule:W.bO,CSSStyleDeclaration:W.fa,MSStyleCSSProperties:W.fa,CSS2Properties:W.fa,CSSStyleRule:W.lE,CSSViewportRule:W.lF,DataTransfer:W.lK,DataTransferItem:W.fb,DataTransferItemList:W.iA,DeviceAcceleration:W.lN,HTMLDivElement:W.iC,Document:W.ek,HTMLDocument:W.ek,XMLDocument:W.ek,DocumentFragment:W.iD,ShadowRoot:W.iD,DOMError:W.iE,FileError:W.iE,DOMException:W.lO,DOMPoint:W.lP,DOMPointReadOnly:W.iF,DOMRectReadOnly:W.iG,DOMStringList:W.iH,DOMStringMap:W.iI,DOMTokenList:W.iJ,Element:W.ce,HTMLEmbedElement:W.lV,DirectoryEntry:W.h9,Entry:W.h9,FileEntry:W.h9,ErrorEvent:W.m0,AnimationEvent:W.ae,AnimationPlayerEvent:W.ae,ApplicationCacheErrorEvent:W.ae,AutocompleteErrorEvent:W.ae,BeforeInstallPromptEvent:W.ae,BeforeUnloadEvent:W.ae,BlobEvent:W.ae,ClipboardEvent:W.ae,CloseEvent:W.ae,CustomEvent:W.ae,DeviceLightEvent:W.ae,DeviceMotionEvent:W.ae,DeviceOrientationEvent:W.ae,ExtendableEvent:W.ae,ExtendableMessageEvent:W.ae,FetchEvent:W.ae,FontFaceSetLoadEvent:W.ae,GamepadEvent:W.ae,GeofencingEvent:W.ae,HashChangeEvent:W.ae,InstallEvent:W.ae,MediaEncryptedEvent:W.ae,MediaKeyMessageEvent:W.ae,MediaQueryListEvent:W.ae,MediaStreamEvent:W.ae,MediaStreamTrackEvent:W.ae,MessageEvent:W.ae,MIDIConnectionEvent:W.ae,MIDIMessageEvent:W.ae,NotificationEvent:W.ae,PageTransitionEvent:W.ae,PopStateEvent:W.ae,PresentationConnectionAvailableEvent:W.ae,PresentationConnectionCloseEvent:W.ae,ProgressEvent:W.ae,PromiseRejectionEvent:W.ae,PushEvent:W.ae,RelatedEvent:W.ae,RTCDataChannelEvent:W.ae,RTCDTMFToneChangeEvent:W.ae,RTCIceCandidateEvent:W.ae,RTCPeerConnectionIceEvent:W.ae,SecurityPolicyViolationEvent:W.ae,ServicePortConnectEvent:W.ae,ServiceWorkerMessageEvent:W.ae,SpeechRecognitionEvent:W.ae,StorageEvent:W.ae,SyncEvent:W.ae,TrackEvent:W.ae,TransitionEvent:W.ae,WebKitTransitionEvent:W.ae,ResourceProgressEvent:W.ae,USBConnectionEvent:W.ae,IDBVersionChangeEvent:W.ae,AudioProcessingEvent:W.ae,OfflineAudioCompletionEvent:W.ae,WebGLContextEvent:W.ae,Event:W.ae,InputEvent:W.ae,Animation:W.at,ApplicationCache:W.at,DOMApplicationCache:W.at,OfflineResourceList:W.at,BatteryManager:W.at,CanvasCaptureMediaStreamTrack:W.at,CrossOriginServiceWorkerClient:W.at,EventSource:W.at,MediaKeySession:W.at,MediaQueryList:W.at,MediaRecorder:W.at,MediaSource:W.at,MediaStream:W.at,MediaStreamTrack:W.at,MessagePort:W.at,MIDIAccess:W.at,NetworkInformation:W.at,Notification:W.at,Performance:W.at,PermissionStatus:W.at,PresentationAvailability:W.at,PresentationReceiver:W.at,PresentationRequest:W.at,RTCDTMFSender:W.at,RTCPeerConnection:W.at,webkitRTCPeerConnection:W.at,mozRTCPeerConnection:W.at,ScreenOrientation:W.at,ServicePortCollection:W.at,ServiceWorkerContainer:W.at,ServiceWorkerRegistration:W.at,SpeechRecognition:W.at,SpeechSynthesis:W.at,SpeechSynthesisUtterance:W.at,WorkerPerformance:W.at,BluetoothDevice:W.at,BluetoothRemoteGATTCharacteristic:W.at,USB:W.at,EventTarget:W.at,HTMLFieldSetElement:W.mw,File:W.cg,FileList:W.fj,FileReader:W.mx,DOMFileSystem:W.my,FileWriter:W.mz,FontFace:W.mC,FontFaceSet:W.mD,HTMLFormElement:W.iZ,Gamepad:W.co,History:W.mR,HTMLOptionsCollection:W.fl,HTMLCollection:W.fl,HTMLFormControlsCollection:W.j0,XMLHttpRequest:W.ea,XMLHttpRequestUpload:W.hr,XMLHttpRequestEventTarget:W.hr,HTMLIFrameElement:W.mZ,ImageData:W.hs,HTMLImageElement:W.fn,HTMLInputElement:W.ht,HTMLKeygenElement:W.ny,HTMLLIElement:W.jP,CalcLength:W.hF,LengthValue:W.hF,SimpleLength:W.hF,HTMLLinkElement:W.hG,Location:W.nP,HTMLMapElement:W.nU,HTMLMediaElement:W.jT,MediaList:W.jU,HTMLMenuElement:W.o1,HTMLMenuItemElement:W.o2,HTMLMetaElement:W.o3,HTMLMeterElement:W.o4,MIDIOutput:W.o5,MIDIInput:W.hO,MIDIPort:W.hO,MimeType:W.cp,MimeTypeArray:W.jV,MouseEvent:W.ec,DragEvent:W.ec,PointerEvent:W.ec,WheelEvent:W.ec,Navigator:W.om,NavigatorUserMediaError:W.on,Node:W.as,NodeIterator:W.jY,NodeList:W.jZ,RadioNodeList:W.jZ,HTMLOListElement:W.os,HTMLObjectElement:W.ot,HTMLOptionElement:W.ox,HTMLOutputElement:W.oz,HTMLParamElement:W.oD,Path2D:W.oF,PerformanceCompositeTiming:W.ee,PerformanceEntry:W.ee,PerformanceMark:W.ee,PerformanceMeasure:W.ee,PerformanceRenderTiming:W.ee,PerformanceResourceTiming:W.ee,Perspective:W.oL,Plugin:W.ci,PluginArray:W.k8,PositionValue:W.oR,PresentationConnection:W.oT,HTMLProgressElement:W.oX,Range:W.p0,Rotation:W.pf,RTCDataChannel:W.ka,DataChannel:W.ka,RTCSessionDescription:W.kb,mozRTCSessionDescription:W.kb,HTMLScriptElement:W.fB,HTMLSelectElement:W.kc,ServicePort:W.ps,SharedWorker:W.pv,SharedWorkerGlobalScope:W.pw,HTMLSlotElement:W.pA,SourceBuffer:W.cq,SourceBufferList:W.ke,HTMLSourceElement:W.pF,HTMLSpanElement:W.i0,SpeechGrammar:W.cr,SpeechGrammarList:W.kf,SpeechRecognitionAlternative:W.fC,SpeechRecognitionError:W.pI,SpeechRecognitionResult:W.cj,SpeechSynthesisEvent:W.pJ,SpeechSynthesisVoice:W.pK,Storage:W.pQ,HTMLStyleElement:W.qd,CSSStyleSheet:W.ck,StyleSheet:W.ck,KeywordValue:W.eM,NumberValue:W.eM,TransformValue:W.eM,StyleValue:W.eM,HTMLTableElement:W.kj,HTMLTableRowElement:W.qk,HTMLTableSectionElement:W.ql,HTMLTemplateElement:W.i1,HTMLTextAreaElement:W.i2,TextTrack:W.cR,TextTrackCue:W.cI,VTTCue:W.cI,TextTrackCueList:W.qs,TextTrackList:W.qt,TimeRanges:W.qx,Touch:W.ct,TouchList:W.kl,TrackDefault:W.fE,TrackDefaultList:W.km,Matrix:W.fF,Skew:W.fF,TransformComponent:W.fF,Translation:W.qE,TreeWalker:W.kn,CompositionEvent:W.dG,FocusEvent:W.dG,KeyboardEvent:W.dG,TextEvent:W.dG,TouchEvent:W.dG,SVGZoomEvent:W.dG,UIEvent:W.dG,URL:W.qO,HTMLVideoElement:W.qS,VideoTrackList:W.qT,VTTRegion:W.fG,VTTRegionList:W.ko,WebSocket:W.qY,Window:W.kr,DOMWindow:W.kr,Worker:W.r4,CompositorWorkerGlobalScope:W.eR,DedicatedWorkerGlobalScope:W.eR,ServiceWorkerGlobalScope:W.eR,WorkerGlobalScope:W.eR,Attr:W.fH,ClientRect:W.rm,ClientRectList:W.ia,DOMRectList:W.ia,CSSRuleList:W.ky,DocumentType:W.rv,DOMRect:W.rw,GamepadList:W.kC,HTMLFrameSetElement:W.rS,NamedNodeMap:W.ih,MozNamedAttrMap:W.ih,ServiceWorker:W.tl,SpeechRecognitionResultList:W.kH,StyleSheetList:W.kJ,WorkerLocation:W.tJ,WorkerNavigator:W.tK,IDBDatabase:P.lL,IDBIndex:P.n1,IDBObjectStore:P.ou,IDBOpenDBRequest:P.hX,IDBVersionChangeRequest:P.hX,IDBRequest:P.hX,IDBTransaction:P.qC,SVGAElement:P.kZ,SVGAnimateElement:P.eh,SVGAnimateMotionElement:P.eh,SVGAnimateTransformElement:P.eh,SVGAnimationElement:P.eh,SVGSetElement:P.eh,SVGFEBlendElement:P.m3,SVGFEColorMatrixElement:P.m4,SVGFEComponentTransferElement:P.m5,SVGFECompositeElement:P.m6,SVGFEConvolveMatrixElement:P.m7,SVGFEDiffuseLightingElement:P.m8,SVGFEDisplacementMapElement:P.m9,SVGFEFloodElement:P.ma,SVGFEGaussianBlurElement:P.mb,SVGFEImageElement:P.mc,SVGFEMergeElement:P.md,SVGFEMorphologyElement:P.me,SVGFEOffsetElement:P.mf,SVGFEPointLightElement:P.mg,SVGFESpecularLightingElement:P.mh,SVGFESpotLightElement:P.mi,SVGFETileElement:P.mj,SVGFETurbulenceElement:P.mk,SVGFilterElement:P.mA,SVGForeignObjectElement:P.mF,SVGCircleElement:P.dA,SVGEllipseElement:P.dA,SVGLineElement:P.dA,SVGPathElement:P.dA,SVGPolygonElement:P.dA,SVGPolylineElement:P.dA,SVGGeometryElement:P.dA,SVGClipPathElement:P.e9,SVGDefsElement:P.e9,SVGGElement:P.e9,SVGSwitchElement:P.e9,SVGGraphicsElement:P.e9,SVGImageElement:P.n_,SVGLength:P.d8,SVGLengthList:P.nB,SVGMarkerElement:P.nZ,SVGMaskElement:P.o_,SVGNumber:P.da,SVGNumberList:P.oq,SVGPatternElement:P.oJ,SVGPoint:P.oO,SVGPointList:P.oP,SVGRect:P.p6,SVGRectElement:P.p7,SVGScriptElement:P.hZ,SVGStringList:P.qb,SVGStyleElement:P.qe,SVGDescElement:P.cl,SVGDiscardElement:P.cl,SVGFEDistantLightElement:P.cl,SVGFEFuncAElement:P.cl,SVGFEFuncBElement:P.cl,SVGFEFuncGElement:P.cl,SVGFEFuncRElement:P.cl,SVGFEMergeNodeElement:P.cl,SVGMetadataElement:P.cl,SVGStopElement:P.cl,SVGTitleElement:P.cl,SVGComponentTransferFunctionElement:P.cl,SVGElement:P.cl,SVGSVGElement:P.qh,SVGSymbolElement:P.qj,SVGTextContentElement:P.kk,SVGTextPathElement:P.qr,SVGTSpanElement:P.i4,SVGTextElement:P.i4,SVGTextPositioningElement:P.i4,SVGTransform:P.dc,SVGTransformList:P.qD,SVGUseElement:P.qP,SVGViewElement:P.qU,SVGViewSpec:P.qV,SVGLinearGradientElement:P.ic,SVGRadialGradientElement:P.ic,SVGGradientElement:P.ic,SVGCursorElement:P.th,SVGFEDropShadowElement:P.ti,SVGMPathElement:P.tj,AudioBuffer:P.fX,AudioBufferSourceNode:P.f2,AudioContext:P.fY,webkitAudioContext:P.fY,OfflineAudioContext:P.fY,AnalyserNode:P.bG,RealtimeAnalyserNode:P.bG,AudioDestinationNode:P.bG,ChannelMergerNode:P.bG,AudioChannelMerger:P.bG,ChannelSplitterNode:P.bG,AudioChannelSplitter:P.bG,DelayNode:P.bG,DynamicsCompressorNode:P.bG,GainNode:P.bG,AudioGainNode:P.bG,IIRFilterNode:P.bG,MediaStreamAudioDestinationNode:P.bG,PannerNode:P.bG,AudioPannerNode:P.bG,webkitAudioPannerNode:P.bG,ScriptProcessorNode:P.bG,JavaScriptAudioNode:P.bG,StereoPannerNode:P.bG,WaveShaperNode:P.bG,AudioNode:P.bG,MediaElementAudioSourceNode:P.f4,MediaStreamAudioSourceNode:P.f4,AudioSourceNode:P.f4,BiquadFilterNode:P.lf,ConvolverNode:P.ly,OscillatorNode:P.k4,Oscillator:P.k4,WebGLActiveInfo:P.l0,WebGLRenderingContext:P.pa,WebGL2RenderingContext:P.pb,WebGL2RenderingContextBase:P.tI,SQLResultSetRowList:P.kg})
+setOrUpdateInterceptorsByTag({AnimationEffectReadOnly:J.k,AnimationEffectTiming:J.k,AnimationTimeline:J.k,AppBannerPromptResult:J.k,BarProp:J.k,Body:J.k,CanvasGradient:J.k,CanvasPattern:J.k,CHROMIUMValuebuffer:J.k,CircularGeofencingRegion:J.k,Client:J.k,Clients:J.k,CompositorProxy:J.k,ConsoleBase:J.k,Coordinates:J.k,CredentialsContainer:J.k,Crypto:J.k,CryptoKey:J.k,CSS:J.k,DeprecatedStorageInfo:J.k,DeprecatedStorageQuota:J.k,DeviceRotationRate:J.k,DirectoryReader:J.k,DOMImplementation:J.k,Iterator:J.k,DOMMatrix:J.k,DOMMatrixReadOnly:J.k,DOMParser:J.k,EffectModel:J.k,Stream:J.k,FormData:J.k,GamepadButton:J.k,Geofencing:J.k,GeofencingRegion:J.k,Geolocation:J.k,Geoposition:J.k,Headers:J.k,HMDVRDevice:J.k,IdleDeadline:J.k,ImageBitmap:J.k,ImageBitmapRenderingContext:J.k,InjectedScriptHost:J.k,InputDeviceCapabilities:J.k,IntersectionObserver:J.k,IntersectionObserverEntry:J.k,KeyframeEffect:J.k,MediaDeviceInfo:J.k,MediaDevices:J.k,MediaError:J.k,MediaKeyStatusMap:J.k,MediaKeySystemAccess:J.k,MediaKeys:J.k,MediaMetadata:J.k,MediaSession:J.k,MemoryInfo:J.k,MessageChannel:J.k,Metadata:J.k,MIDIInputMap:J.k,MIDIOutputMap:J.k,MutationObserver:J.k,WebKitMutationObserver:J.k,MutationRecord:J.k,NavigatorStorageUtils:J.k,NodeFilter:J.k,NonDocumentTypeChildNode:J.k,NonElementParentNode:J.k,OffscreenCanvas:J.k,PerformanceNavigation:J.k,PerformanceObserver:J.k,PerformanceObserverEntryList:J.k,PerformanceTiming:J.k,Permissions:J.k,PositionError:J.k,PositionSensorVRDevice:J.k,Presentation:J.k,PushManager:J.k,PushMessageData:J.k,PushSubscription:J.k,ReadableByteStream:J.k,ReadableByteStreamReader:J.k,ReadableStreamReader:J.k,RTCCertificate:J.k,RTCIceCandidate:J.k,mozRTCIceCandidate:J.k,RTCStatsReport:J.k,RTCStatsResponse:J.k,Screen:J.k,ScrollState:J.k,Selection:J.k,SharedArrayBuffer:J.k,SourceInfo:J.k,StorageInfo:J.k,StorageManager:J.k,StorageQuota:J.k,StyleMedia:J.k,StylePropertyMap:J.k,SyncManager:J.k,TextMetrics:J.k,UnderlyingSourceBase:J.k,URLSearchParams:J.k,VRDevice:J.k,VREyeParameters:J.k,VRFieldOfView:J.k,VRPositionState:J.k,ValidityState:J.k,VideoPlaybackQuality:J.k,VideoTrack:J.k,WindowClient:J.k,WorkerConsole:J.k,XPathEvaluator:J.k,XPathExpression:J.k,XPathNSResolver:J.k,XPathResult:J.k,XMLSerializer:J.k,XSLTProcessor:J.k,Bluetooth:J.k,BluetoothAdvertisingData:J.k,BluetoothCharacteristicProperties:J.k,BluetoothRemoteGATTServer:J.k,BluetoothRemoteGATTService:J.k,BluetoothUUID:J.k,Cache:J.k,DOMFileSystemSync:J.k,DirectoryEntrySync:J.k,DirectoryReaderSync:J.k,EntrySync:J.k,FileEntrySync:J.k,FileReaderSync:J.k,FileWriterSync:J.k,HTMLAllCollection:J.k,NFC:J.k,PagePopupController:J.k,Request:J.k,Response:J.k,SubtleCrypto:J.k,USBAlternateInterface:J.k,USBConfiguration:J.k,USBDevice:J.k,USBEndpoint:J.k,USBInTransferResult:J.k,USBInterface:J.k,USBIsochronousInTransferPacket:J.k,USBIsochronousInTransferResult:J.k,USBIsochronousOutTransferPacket:J.k,USBIsochronousOutTransferResult:J.k,USBOutTransferResult:J.k,WebKitCSSMatrix:J.k,Worklet:J.k,WorkletGlobalScope:J.k,IDBCursor:J.k,IDBCursorWithValue:J.k,IDBFactory:J.k,IDBKeyRange:J.k,SVGAngle:J.k,SVGAnimatedAngle:J.k,SVGAnimatedBoolean:J.k,SVGAnimatedEnumeration:J.k,SVGAnimatedInteger:J.k,SVGAnimatedLength:J.k,SVGAnimatedLengthList:J.k,SVGAnimatedNumber:J.k,SVGAnimatedNumberList:J.k,SVGAnimatedPreserveAspectRatio:J.k,SVGAnimatedRect:J.k,SVGAnimatedString:J.k,SVGAnimatedTransformList:J.k,SVGMatrix:J.k,SVGPreserveAspectRatio:J.k,SVGUnitTypes:J.k,AudioListener:J.k,AudioParam:J.k,PeriodicWave:J.k,ANGLEInstancedArrays:J.k,ANGLE_instanced_arrays:J.k,WebGLBuffer:J.k,CHROMIUMSubscribeUniform:J.k,WebGLCompressedTextureASTC:J.k,WebGLCompressedTextureATC:J.k,WEBGL_compressed_texture_atc:J.k,WebGLCompressedTextureETC1:J.k,WEBGL_compressed_texture_etc1:J.k,WebGLCompressedTexturePVRTC:J.k,WEBGL_compressed_texture_pvrtc:J.k,WebGLCompressedTextureS3TC:J.k,WEBGL_compressed_texture_s3tc:J.k,WebGLDebugRendererInfo:J.k,WEBGL_debug_renderer_info:J.k,WebGLDebugShaders:J.k,WEBGL_debug_shaders:J.k,WebGLDepthTexture:J.k,WEBGL_depth_texture:J.k,WebGLDrawBuffers:J.k,WEBGL_draw_buffers:J.k,EXTsRGB:J.k,EXT_sRGB:J.k,EXTBlendMinMax:J.k,EXT_blend_minmax:J.k,EXTColorBufferFloat:J.k,EXTDisjointTimerQuery:J.k,EXTFragDepth:J.k,EXT_frag_depth:J.k,EXTShaderTextureLOD:J.k,EXT_shader_texture_lod:J.k,EXTTextureFilterAnisotropic:J.k,EXT_texture_filter_anisotropic:J.k,WebGLFramebuffer:J.k,WebGLLoseContext:J.k,WebGLExtensionLoseContext:J.k,WEBGL_lose_context:J.k,OESElementIndexUint:J.k,OES_element_index_uint:J.k,OESStandardDerivatives:J.k,OES_standard_derivatives:J.k,OESTextureFloat:J.k,OES_texture_float:J.k,OESTextureFloatLinear:J.k,OES_texture_float_linear:J.k,OESTextureHalfFloat:J.k,OES_texture_half_float:J.k,OESTextureHalfFloatLinear:J.k,OES_texture_half_float_linear:J.k,OESVertexArrayObject:J.k,OES_vertex_array_object:J.k,WebGLProgram:J.k,WebGLQuery:J.k,WebGLRenderbuffer:J.k,WebGLSampler:J.k,WebGLShader:J.k,WebGLShaderPrecisionFormat:J.k,WebGLSync:J.k,WebGLTexture:J.k,WebGLTimerQueryEXT:J.k,WebGLTransformFeedback:J.k,WebGLUniformLocation:J.k,WebGLVertexArrayObject:J.k,WebGLVertexArrayObjectOES:J.k,Database:J.k,SQLError:J.k,SQLResultSet:J.k,SQLTransaction:J.k,ArrayBuffer:H.fs,ArrayBufferView:H.eC,DataView:H.oe,Float32Array:H.of,Float64Array:H.og,Int16Array:H.oh,Int32Array:H.oi,Int8Array:H.oj,Uint16Array:H.ok,Uint32Array:H.ol,Uint8ClampedArray:H.jX,CanvasPixelArray:H.jX,Uint8Array:H.ft,HTMLBRElement:W.b8,HTMLContentElement:W.b8,HTMLDListElement:W.b8,HTMLDataListElement:W.b8,HTMLDetailsElement:W.b8,HTMLDialogElement:W.b8,HTMLHRElement:W.b8,HTMLHeadElement:W.b8,HTMLHeadingElement:W.b8,HTMLHtmlElement:W.b8,HTMLLabelElement:W.b8,HTMLLegendElement:W.b8,HTMLModElement:W.b8,HTMLOptGroupElement:W.b8,HTMLParagraphElement:W.b8,HTMLPictureElement:W.b8,HTMLPreElement:W.b8,HTMLQuoteElement:W.b8,HTMLShadowElement:W.b8,HTMLTableCaptionElement:W.b8,HTMLTableCellElement:W.b8,HTMLTableDataCellElement:W.b8,HTMLTableHeaderCellElement:W.b8,HTMLTableColElement:W.b8,HTMLTitleElement:W.b8,HTMLTrackElement:W.b8,HTMLUListElement:W.b8,HTMLUnknownElement:W.b8,HTMLDirectoryElement:W.b8,HTMLFontElement:W.b8,HTMLFrameElement:W.b8,HTMLMarqueeElement:W.b8,HTMLElement:W.b8,HTMLAnchorElement:W.f_,HTMLAreaElement:W.l1,HTMLAudioElement:W.f3,AudioTrack:W.cL,AudioTrackList:W.l8,HTMLBaseElement:W.lc,Blob:W.f5,HTMLBodyElement:W.f6,HTMLButtonElement:W.h2,CacheStorage:W.it,HTMLCanvasElement:W.lm,CanvasRenderingContext2D:W.ln,CDATASection:W.ei,CharacterData:W.ei,Comment:W.ei,ProcessingInstruction:W.ei,Text:W.ei,CompositorWorker:W.lt,Credential:W.h4,FederatedCredential:W.h4,PasswordCredential:W.h4,CSSFontFaceRule:W.lB,CSSImportRule:W.lC,CSSKeyframeRule:W.h5,MozCSSKeyframeRule:W.h5,WebKitCSSKeyframeRule:W.h5,CSSKeyframesRule:W.h6,MozCSSKeyframesRule:W.h6,WebKitCSSKeyframesRule:W.h6,CSSPageRule:W.lD,CSSCharsetRule:W.bO,CSSGroupingRule:W.bO,CSSMediaRule:W.bO,CSSNamespaceRule:W.bO,CSSSupportsRule:W.bO,CSSRule:W.bO,CSSStyleDeclaration:W.fa,MSStyleCSSProperties:W.fa,CSS2Properties:W.fa,CSSStyleRule:W.lE,CSSViewportRule:W.lF,DataTransfer:W.lK,DataTransferItem:W.fb,DataTransferItemList:W.iA,DeviceAcceleration:W.lN,HTMLDivElement:W.iC,Document:W.ek,HTMLDocument:W.ek,XMLDocument:W.ek,DocumentFragment:W.iD,ShadowRoot:W.iD,DOMError:W.iE,FileError:W.iE,DOMException:W.lO,DOMPoint:W.lP,DOMPointReadOnly:W.iF,DOMRectReadOnly:W.iG,DOMStringList:W.iH,DOMStringMap:W.iI,DOMTokenList:W.iJ,Element:W.cd,HTMLEmbedElement:W.lV,DirectoryEntry:W.h9,Entry:W.h9,FileEntry:W.h9,ErrorEvent:W.m0,AnimationEvent:W.ae,AnimationPlayerEvent:W.ae,ApplicationCacheErrorEvent:W.ae,AutocompleteErrorEvent:W.ae,BeforeInstallPromptEvent:W.ae,BeforeUnloadEvent:W.ae,BlobEvent:W.ae,ClipboardEvent:W.ae,CloseEvent:W.ae,CustomEvent:W.ae,DeviceLightEvent:W.ae,DeviceMotionEvent:W.ae,DeviceOrientationEvent:W.ae,ExtendableEvent:W.ae,ExtendableMessageEvent:W.ae,FetchEvent:W.ae,FontFaceSetLoadEvent:W.ae,GamepadEvent:W.ae,GeofencingEvent:W.ae,HashChangeEvent:W.ae,InstallEvent:W.ae,MediaEncryptedEvent:W.ae,MediaKeyMessageEvent:W.ae,MediaQueryListEvent:W.ae,MediaStreamEvent:W.ae,MediaStreamTrackEvent:W.ae,MessageEvent:W.ae,MIDIConnectionEvent:W.ae,MIDIMessageEvent:W.ae,NotificationEvent:W.ae,PageTransitionEvent:W.ae,PopStateEvent:W.ae,PresentationConnectionAvailableEvent:W.ae,PresentationConnectionCloseEvent:W.ae,ProgressEvent:W.ae,PromiseRejectionEvent:W.ae,PushEvent:W.ae,RelatedEvent:W.ae,RTCDataChannelEvent:W.ae,RTCDTMFToneChangeEvent:W.ae,RTCIceCandidateEvent:W.ae,RTCPeerConnectionIceEvent:W.ae,SecurityPolicyViolationEvent:W.ae,ServicePortConnectEvent:W.ae,ServiceWorkerMessageEvent:W.ae,SpeechRecognitionEvent:W.ae,StorageEvent:W.ae,SyncEvent:W.ae,TrackEvent:W.ae,TransitionEvent:W.ae,WebKitTransitionEvent:W.ae,ResourceProgressEvent:W.ae,USBConnectionEvent:W.ae,IDBVersionChangeEvent:W.ae,AudioProcessingEvent:W.ae,OfflineAudioCompletionEvent:W.ae,WebGLContextEvent:W.ae,Event:W.ae,InputEvent:W.ae,Animation:W.at,ApplicationCache:W.at,DOMApplicationCache:W.at,OfflineResourceList:W.at,BatteryManager:W.at,CanvasCaptureMediaStreamTrack:W.at,CrossOriginServiceWorkerClient:W.at,EventSource:W.at,MediaKeySession:W.at,MediaQueryList:W.at,MediaRecorder:W.at,MediaSource:W.at,MediaStream:W.at,MediaStreamTrack:W.at,MessagePort:W.at,MIDIAccess:W.at,NetworkInformation:W.at,Notification:W.at,Performance:W.at,PermissionStatus:W.at,PresentationAvailability:W.at,PresentationReceiver:W.at,PresentationRequest:W.at,RTCDTMFSender:W.at,RTCPeerConnection:W.at,webkitRTCPeerConnection:W.at,mozRTCPeerConnection:W.at,ScreenOrientation:W.at,ServicePortCollection:W.at,ServiceWorkerContainer:W.at,ServiceWorkerRegistration:W.at,SpeechRecognition:W.at,SpeechSynthesis:W.at,SpeechSynthesisUtterance:W.at,WorkerPerformance:W.at,BluetoothDevice:W.at,BluetoothRemoteGATTCharacteristic:W.at,USB:W.at,EventTarget:W.at,HTMLFieldSetElement:W.mw,File:W.cf,FileList:W.fj,FileReader:W.mx,DOMFileSystem:W.my,FileWriter:W.mz,FontFace:W.mC,FontFaceSet:W.mD,HTMLFormElement:W.iZ,Gamepad:W.co,History:W.mR,HTMLOptionsCollection:W.fl,HTMLCollection:W.fl,HTMLFormControlsCollection:W.j0,XMLHttpRequest:W.ea,XMLHttpRequestUpload:W.hr,XMLHttpRequestEventTarget:W.hr,HTMLIFrameElement:W.mZ,ImageData:W.hs,HTMLImageElement:W.fn,HTMLInputElement:W.ht,HTMLKeygenElement:W.ny,HTMLLIElement:W.jP,CalcLength:W.hF,LengthValue:W.hF,SimpleLength:W.hF,HTMLLinkElement:W.hG,Location:W.nP,HTMLMapElement:W.nU,HTMLMediaElement:W.jT,MediaList:W.jU,HTMLMenuElement:W.o1,HTMLMenuItemElement:W.o2,HTMLMetaElement:W.o3,HTMLMeterElement:W.o4,MIDIOutput:W.o5,MIDIInput:W.hO,MIDIPort:W.hO,MimeType:W.cp,MimeTypeArray:W.jV,MouseEvent:W.ec,DragEvent:W.ec,PointerEvent:W.ec,WheelEvent:W.ec,Navigator:W.om,NavigatorUserMediaError:W.on,Node:W.as,NodeIterator:W.jY,NodeList:W.jZ,RadioNodeList:W.jZ,HTMLOListElement:W.os,HTMLObjectElement:W.ot,HTMLOptionElement:W.ox,HTMLOutputElement:W.oz,HTMLParamElement:W.oD,Path2D:W.oF,PerformanceCompositeTiming:W.ee,PerformanceEntry:W.ee,PerformanceMark:W.ee,PerformanceMeasure:W.ee,PerformanceRenderTiming:W.ee,PerformanceResourceTiming:W.ee,Perspective:W.oL,Plugin:W.ch,PluginArray:W.k8,PositionValue:W.oR,PresentationConnection:W.oT,HTMLProgressElement:W.oX,Range:W.p0,Rotation:W.pf,RTCDataChannel:W.ka,DataChannel:W.ka,RTCSessionDescription:W.kb,mozRTCSessionDescription:W.kb,HTMLScriptElement:W.fB,HTMLSelectElement:W.kc,ServicePort:W.ps,SharedWorker:W.pv,SharedWorkerGlobalScope:W.pw,HTMLSlotElement:W.pA,SourceBuffer:W.cq,SourceBufferList:W.ke,HTMLSourceElement:W.pF,HTMLSpanElement:W.i0,SpeechGrammar:W.cr,SpeechGrammarList:W.kf,SpeechRecognitionAlternative:W.fC,SpeechRecognitionError:W.pI,SpeechRecognitionResult:W.cj,SpeechSynthesisEvent:W.pJ,SpeechSynthesisVoice:W.pK,Storage:W.pQ,HTMLStyleElement:W.qd,CSSStyleSheet:W.ck,StyleSheet:W.ck,KeywordValue:W.eM,NumberValue:W.eM,TransformValue:W.eM,StyleValue:W.eM,HTMLTableElement:W.kj,HTMLTableRowElement:W.qk,HTMLTableSectionElement:W.ql,HTMLTemplateElement:W.i1,HTMLTextAreaElement:W.i2,TextTrack:W.cR,TextTrackCue:W.cI,VTTCue:W.cI,TextTrackCueList:W.qs,TextTrackList:W.qt,TimeRanges:W.qx,Touch:W.ct,TouchList:W.kl,TrackDefault:W.fE,TrackDefaultList:W.km,Matrix:W.fF,Skew:W.fF,TransformComponent:W.fF,Translation:W.qE,TreeWalker:W.kn,CompositionEvent:W.dG,FocusEvent:W.dG,KeyboardEvent:W.dG,TextEvent:W.dG,TouchEvent:W.dG,SVGZoomEvent:W.dG,UIEvent:W.dG,URL:W.qO,HTMLVideoElement:W.qS,VideoTrackList:W.qT,VTTRegion:W.fG,VTTRegionList:W.ko,WebSocket:W.qY,Window:W.kr,DOMWindow:W.kr,Worker:W.r4,CompositorWorkerGlobalScope:W.eR,DedicatedWorkerGlobalScope:W.eR,ServiceWorkerGlobalScope:W.eR,WorkerGlobalScope:W.eR,Attr:W.fH,ClientRect:W.rm,ClientRectList:W.ia,DOMRectList:W.ia,CSSRuleList:W.ky,DocumentType:W.rv,DOMRect:W.rw,GamepadList:W.kC,HTMLFrameSetElement:W.rS,NamedNodeMap:W.ih,MozNamedAttrMap:W.ih,ServiceWorker:W.tl,SpeechRecognitionResultList:W.kH,StyleSheetList:W.kJ,WorkerLocation:W.tJ,WorkerNavigator:W.tK,IDBDatabase:P.lL,IDBIndex:P.n1,IDBObjectStore:P.ou,IDBOpenDBRequest:P.hX,IDBVersionChangeRequest:P.hX,IDBRequest:P.hX,IDBTransaction:P.qC,SVGAElement:P.kZ,SVGAnimateElement:P.eh,SVGAnimateMotionElement:P.eh,SVGAnimateTransformElement:P.eh,SVGAnimationElement:P.eh,SVGSetElement:P.eh,SVGFEBlendElement:P.m3,SVGFEColorMatrixElement:P.m4,SVGFEComponentTransferElement:P.m5,SVGFECompositeElement:P.m6,SVGFEConvolveMatrixElement:P.m7,SVGFEDiffuseLightingElement:P.m8,SVGFEDisplacementMapElement:P.m9,SVGFEFloodElement:P.ma,SVGFEGaussianBlurElement:P.mb,SVGFEImageElement:P.mc,SVGFEMergeElement:P.md,SVGFEMorphologyElement:P.me,SVGFEOffsetElement:P.mf,SVGFEPointLightElement:P.mg,SVGFESpecularLightingElement:P.mh,SVGFESpotLightElement:P.mi,SVGFETileElement:P.mj,SVGFETurbulenceElement:P.mk,SVGFilterElement:P.mA,SVGForeignObjectElement:P.mF,SVGCircleElement:P.dA,SVGEllipseElement:P.dA,SVGLineElement:P.dA,SVGPathElement:P.dA,SVGPolygonElement:P.dA,SVGPolylineElement:P.dA,SVGGeometryElement:P.dA,SVGClipPathElement:P.e9,SVGDefsElement:P.e9,SVGGElement:P.e9,SVGSwitchElement:P.e9,SVGGraphicsElement:P.e9,SVGImageElement:P.n_,SVGLength:P.d8,SVGLengthList:P.nB,SVGMarkerElement:P.nZ,SVGMaskElement:P.o_,SVGNumber:P.da,SVGNumberList:P.oq,SVGPatternElement:P.oJ,SVGPoint:P.oO,SVGPointList:P.oP,SVGRect:P.p6,SVGRectElement:P.p7,SVGScriptElement:P.hZ,SVGStringList:P.qb,SVGStyleElement:P.qe,SVGDescElement:P.cl,SVGDiscardElement:P.cl,SVGFEDistantLightElement:P.cl,SVGFEFuncAElement:P.cl,SVGFEFuncBElement:P.cl,SVGFEFuncGElement:P.cl,SVGFEFuncRElement:P.cl,SVGFEMergeNodeElement:P.cl,SVGMetadataElement:P.cl,SVGStopElement:P.cl,SVGTitleElement:P.cl,SVGComponentTransferFunctionElement:P.cl,SVGElement:P.cl,SVGSVGElement:P.qh,SVGSymbolElement:P.qj,SVGTextContentElement:P.kk,SVGTextPathElement:P.qr,SVGTSpanElement:P.i4,SVGTextElement:P.i4,SVGTextPositioningElement:P.i4,SVGTransform:P.dc,SVGTransformList:P.qD,SVGUseElement:P.qP,SVGViewElement:P.qU,SVGViewSpec:P.qV,SVGLinearGradientElement:P.ic,SVGRadialGradientElement:P.ic,SVGGradientElement:P.ic,SVGCursorElement:P.th,SVGFEDropShadowElement:P.ti,SVGMPathElement:P.tj,AudioBuffer:P.fX,AudioBufferSourceNode:P.f2,AudioContext:P.fY,webkitAudioContext:P.fY,OfflineAudioContext:P.fY,AnalyserNode:P.bG,RealtimeAnalyserNode:P.bG,AudioDestinationNode:P.bG,ChannelMergerNode:P.bG,AudioChannelMerger:P.bG,ChannelSplitterNode:P.bG,AudioChannelSplitter:P.bG,DelayNode:P.bG,DynamicsCompressorNode:P.bG,GainNode:P.bG,AudioGainNode:P.bG,IIRFilterNode:P.bG,MediaStreamAudioDestinationNode:P.bG,PannerNode:P.bG,AudioPannerNode:P.bG,webkitAudioPannerNode:P.bG,ScriptProcessorNode:P.bG,JavaScriptAudioNode:P.bG,StereoPannerNode:P.bG,WaveShaperNode:P.bG,AudioNode:P.bG,MediaElementAudioSourceNode:P.f4,MediaStreamAudioSourceNode:P.f4,AudioSourceNode:P.f4,BiquadFilterNode:P.lf,ConvolverNode:P.ly,OscillatorNode:P.k4,Oscillator:P.k4,WebGLActiveInfo:P.l0,WebGLRenderingContext:P.pa,WebGL2RenderingContext:P.pb,WebGL2RenderingContextBase:P.tI,SQLResultSetRowList:P.kg})
 setOrUpdateLeafTags({AnimationEffectReadOnly:true,AnimationEffectTiming:true,AnimationTimeline:true,AppBannerPromptResult:true,BarProp:true,Body:true,CanvasGradient:true,CanvasPattern:true,CHROMIUMValuebuffer:true,CircularGeofencingRegion:true,Client:true,Clients:true,CompositorProxy:true,ConsoleBase:true,Coordinates:true,CredentialsContainer:true,Crypto:true,CryptoKey:true,CSS:true,DeprecatedStorageInfo:true,DeprecatedStorageQuota:true,DeviceRotationRate:true,DirectoryReader:true,DOMImplementation:true,Iterator:true,DOMMatrix:true,DOMMatrixReadOnly:true,DOMParser:true,EffectModel:true,Stream:true,FormData:true,GamepadButton:true,Geofencing:true,GeofencingRegion:true,Geolocation:true,Geoposition:true,Headers:true,HMDVRDevice:true,IdleDeadline:true,ImageBitmap:true,ImageBitmapRenderingContext:true,InjectedScriptHost:true,InputDeviceCapabilities:true,IntersectionObserver:true,IntersectionObserverEntry:true,KeyframeEffect:true,MediaDeviceInfo:true,MediaDevices:true,MediaError:true,MediaKeyStatusMap:true,MediaKeySystemAccess:true,MediaKeys:true,MediaMetadata:true,MediaSession:true,MemoryInfo:true,MessageChannel:true,Metadata:true,MIDIInputMap:true,MIDIOutputMap:true,MutationObserver:true,WebKitMutationObserver:true,MutationRecord:true,NavigatorStorageUtils:true,NodeFilter:true,NonDocumentTypeChildNode:true,NonElementParentNode:true,OffscreenCanvas:true,PerformanceNavigation:true,PerformanceObserver:true,PerformanceObserverEntryList:true,PerformanceTiming:true,Permissions:true,PositionError:true,PositionSensorVRDevice:true,Presentation:true,PushManager:true,PushMessageData:true,PushSubscription:true,ReadableByteStream:true,ReadableByteStreamReader:true,ReadableStreamReader:true,RTCCertificate:true,RTCIceCandidate:true,mozRTCIceCandidate:true,RTCStatsReport:true,RTCStatsResponse:true,Screen:true,ScrollState:true,Selection:true,SharedArrayBuffer:true,SourceInfo:true,StorageInfo:true,StorageManager:true,StorageQuota:true,StyleMedia:true,StylePropertyMap:true,SyncManager:true,TextMetrics:true,UnderlyingSourceBase:true,URLSearchParams:true,VRDevice:true,VREyeParameters:true,VRFieldOfView:true,VRPositionState:true,ValidityState:true,VideoPlaybackQuality:true,VideoTrack:true,WindowClient:true,WorkerConsole:true,XPathEvaluator:true,XPathExpression:true,XPathNSResolver:true,XPathResult:true,XMLSerializer:true,XSLTProcessor:true,Bluetooth:true,BluetoothAdvertisingData:true,BluetoothCharacteristicProperties:true,BluetoothRemoteGATTServer:true,BluetoothRemoteGATTService:true,BluetoothUUID:true,Cache:true,DOMFileSystemSync:true,DirectoryEntrySync:true,DirectoryReaderSync:true,EntrySync:true,FileEntrySync:true,FileReaderSync:true,FileWriterSync:true,HTMLAllCollection:true,NFC:true,PagePopupController:true,Request:true,Response:true,SubtleCrypto:true,USBAlternateInterface:true,USBConfiguration:true,USBDevice:true,USBEndpoint:true,USBInTransferResult:true,USBInterface:true,USBIsochronousInTransferPacket:true,USBIsochronousInTransferResult:true,USBIsochronousOutTransferPacket:true,USBIsochronousOutTransferResult:true,USBOutTransferResult:true,WebKitCSSMatrix:true,Worklet:true,WorkletGlobalScope:true,IDBCursor:true,IDBCursorWithValue:true,IDBFactory:true,IDBKeyRange:true,SVGAngle:true,SVGAnimatedAngle:true,SVGAnimatedBoolean:true,SVGAnimatedEnumeration:true,SVGAnimatedInteger:true,SVGAnimatedLength:true,SVGAnimatedLengthList:true,SVGAnimatedNumber:true,SVGAnimatedNumberList:true,SVGAnimatedPreserveAspectRatio:true,SVGAnimatedRect:true,SVGAnimatedString:true,SVGAnimatedTransformList:true,SVGMatrix:true,SVGPreserveAspectRatio:true,SVGUnitTypes:true,AudioListener:true,AudioParam:true,PeriodicWave:true,ANGLEInstancedArrays:true,ANGLE_instanced_arrays:true,WebGLBuffer:true,CHROMIUMSubscribeUniform:true,WebGLCompressedTextureASTC:true,WebGLCompressedTextureATC:true,WEBGL_compressed_texture_atc:true,WebGLCompressedTextureETC1:true,WEBGL_compressed_texture_etc1:true,WebGLCompressedTexturePVRTC:true,WEBGL_compressed_texture_pvrtc:true,WebGLCompressedTextureS3TC:true,WEBGL_compressed_texture_s3tc:true,WebGLDebugRendererInfo:true,WEBGL_debug_renderer_info:true,WebGLDebugShaders:true,WEBGL_debug_shaders:true,WebGLDepthTexture:true,WEBGL_depth_texture:true,WebGLDrawBuffers:true,WEBGL_draw_buffers:true,EXTsRGB:true,EXT_sRGB:true,EXTBlendMinMax:true,EXT_blend_minmax:true,EXTColorBufferFloat:true,EXTDisjointTimerQuery:true,EXTFragDepth:true,EXT_frag_depth:true,EXTShaderTextureLOD:true,EXT_shader_texture_lod:true,EXTTextureFilterAnisotropic:true,EXT_texture_filter_anisotropic:true,WebGLFramebuffer:true,WebGLLoseContext:true,WebGLExtensionLoseContext:true,WEBGL_lose_context:true,OESElementIndexUint:true,OES_element_index_uint:true,OESStandardDerivatives:true,OES_standard_derivatives:true,OESTextureFloat:true,OES_texture_float:true,OESTextureFloatLinear:true,OES_texture_float_linear:true,OESTextureHalfFloat:true,OES_texture_half_float:true,OESTextureHalfFloatLinear:true,OES_texture_half_float_linear:true,OESVertexArrayObject:true,OES_vertex_array_object:true,WebGLProgram:true,WebGLQuery:true,WebGLRenderbuffer:true,WebGLSampler:true,WebGLShader:true,WebGLShaderPrecisionFormat:true,WebGLSync:true,WebGLTexture:true,WebGLTimerQueryEXT:true,WebGLTransformFeedback:true,WebGLUniformLocation:true,WebGLVertexArrayObject:true,WebGLVertexArrayObjectOES:true,Database:true,SQLError:true,SQLResultSet:true,SQLTransaction:true,ArrayBuffer:true,ArrayBufferView:false,DataView:true,Float32Array:true,Float64Array:true,Int16Array:true,Int32Array:true,Int8Array:true,Uint16Array:true,Uint32Array:true,Uint8ClampedArray:true,CanvasPixelArray:true,Uint8Array:false,HTMLBRElement:true,HTMLContentElement:true,HTMLDListElement:true,HTMLDataListElement:true,HTMLDetailsElement:true,HTMLDialogElement:true,HTMLHRElement:true,HTMLHeadElement:true,HTMLHeadingElement:true,HTMLHtmlElement:true,HTMLLabelElement:true,HTMLLegendElement:true,HTMLModElement:true,HTMLOptGroupElement:true,HTMLParagraphElement:true,HTMLPictureElement:true,HTMLPreElement:true,HTMLQuoteElement:true,HTMLShadowElement:true,HTMLTableCaptionElement:true,HTMLTableCellElement:true,HTMLTableDataCellElement:true,HTMLTableHeaderCellElement:true,HTMLTableColElement:true,HTMLTitleElement:true,HTMLTrackElement:true,HTMLUListElement:true,HTMLUnknownElement:true,HTMLDirectoryElement:true,HTMLFontElement:true,HTMLFrameElement:true,HTMLMarqueeElement:true,HTMLElement:false,HTMLAnchorElement:true,HTMLAreaElement:true,HTMLAudioElement:true,AudioTrack:true,AudioTrackList:true,HTMLBaseElement:true,Blob:false,HTMLBodyElement:true,HTMLButtonElement:true,CacheStorage:true,HTMLCanvasElement:true,CanvasRenderingContext2D:true,CDATASection:true,CharacterData:true,Comment:true,ProcessingInstruction:true,Text:true,CompositorWorker:true,Credential:true,FederatedCredential:true,PasswordCredential:true,CSSFontFaceRule:true,CSSImportRule:true,CSSKeyframeRule:true,MozCSSKeyframeRule:true,WebKitCSSKeyframeRule:true,CSSKeyframesRule:true,MozCSSKeyframesRule:true,WebKitCSSKeyframesRule:true,CSSPageRule:true,CSSCharsetRule:true,CSSGroupingRule:true,CSSMediaRule:true,CSSNamespaceRule:true,CSSSupportsRule:true,CSSRule:false,CSSStyleDeclaration:true,MSStyleCSSProperties:true,CSS2Properties:true,CSSStyleRule:true,CSSViewportRule:true,DataTransfer:true,DataTransferItem:true,DataTransferItemList:true,DeviceAcceleration:true,HTMLDivElement:true,Document:true,HTMLDocument:true,XMLDocument:true,DocumentFragment:true,ShadowRoot:true,DOMError:true,FileError:true,DOMException:true,DOMPoint:true,DOMPointReadOnly:false,DOMRectReadOnly:false,DOMStringList:true,DOMStringMap:true,DOMTokenList:true,Element:false,HTMLEmbedElement:true,DirectoryEntry:true,Entry:true,FileEntry:true,ErrorEvent:true,AnimationEvent:true,AnimationPlayerEvent:true,ApplicationCacheErrorEvent:true,AutocompleteErrorEvent:true,BeforeInstallPromptEvent:true,BeforeUnloadEvent:true,BlobEvent:true,ClipboardEvent:true,CloseEvent:true,CustomEvent:true,DeviceLightEvent:true,DeviceMotionEvent:true,DeviceOrientationEvent:true,ExtendableEvent:true,ExtendableMessageEvent:true,FetchEvent:true,FontFaceSetLoadEvent:true,GamepadEvent:true,GeofencingEvent:true,HashChangeEvent:true,InstallEvent:true,MediaEncryptedEvent:true,MediaKeyMessageEvent:true,MediaQueryListEvent:true,MediaStreamEvent:true,MediaStreamTrackEvent:true,MessageEvent:true,MIDIConnectionEvent:true,MIDIMessageEvent:true,NotificationEvent:true,PageTransitionEvent:true,PopStateEvent:true,PresentationConnectionAvailableEvent:true,PresentationConnectionCloseEvent:true,ProgressEvent:true,PromiseRejectionEvent:true,PushEvent:true,RelatedEvent:true,RTCDataChannelEvent:true,RTCDTMFToneChangeEvent:true,RTCIceCandidateEvent:true,RTCPeerConnectionIceEvent:true,SecurityPolicyViolationEvent:true,ServicePortConnectEvent:true,ServiceWorkerMessageEvent:true,SpeechRecognitionEvent:true,StorageEvent:true,SyncEvent:true,TrackEvent:true,TransitionEvent:true,WebKitTransitionEvent:true,ResourceProgressEvent:true,USBConnectionEvent:true,IDBVersionChangeEvent:true,AudioProcessingEvent:true,OfflineAudioCompletionEvent:true,WebGLContextEvent:true,Event:false,InputEvent:false,Animation:true,ApplicationCache:true,DOMApplicationCache:true,OfflineResourceList:true,BatteryManager:true,CanvasCaptureMediaStreamTrack:true,CrossOriginServiceWorkerClient:true,EventSource:true,MediaKeySession:true,MediaQueryList:true,MediaRecorder:true,MediaSource:true,MediaStream:true,MediaStreamTrack:true,MessagePort:true,MIDIAccess:true,NetworkInformation:true,Notification:true,Performance:true,PermissionStatus:true,PresentationAvailability:true,PresentationReceiver:true,PresentationRequest:true,RTCDTMFSender:true,RTCPeerConnection:true,webkitRTCPeerConnection:true,mozRTCPeerConnection:true,ScreenOrientation:true,ServicePortCollection:true,ServiceWorkerContainer:true,ServiceWorkerRegistration:true,SpeechRecognition:true,SpeechSynthesis:true,SpeechSynthesisUtterance:true,WorkerPerformance:true,BluetoothDevice:true,BluetoothRemoteGATTCharacteristic:true,USB:true,EventTarget:false,HTMLFieldSetElement:true,File:true,FileList:true,FileReader:true,DOMFileSystem:true,FileWriter:true,FontFace:true,FontFaceSet:true,HTMLFormElement:true,Gamepad:true,History:true,HTMLOptionsCollection:true,HTMLCollection:false,HTMLFormControlsCollection:true,XMLHttpRequest:true,XMLHttpRequestUpload:true,XMLHttpRequestEventTarget:false,HTMLIFrameElement:true,ImageData:true,HTMLImageElement:true,HTMLInputElement:true,HTMLKeygenElement:true,HTMLLIElement:true,CalcLength:true,LengthValue:true,SimpleLength:true,HTMLLinkElement:true,Location:true,HTMLMapElement:true,HTMLMediaElement:false,MediaList:true,HTMLMenuElement:true,HTMLMenuItemElement:true,HTMLMetaElement:true,HTMLMeterElement:true,MIDIOutput:true,MIDIInput:true,MIDIPort:false,MimeType:true,MimeTypeArray:true,MouseEvent:true,DragEvent:true,PointerEvent:true,WheelEvent:true,Navigator:true,NavigatorUserMediaError:true,Node:false,NodeIterator:true,NodeList:true,RadioNodeList:true,HTMLOListElement:true,HTMLObjectElement:true,HTMLOptionElement:true,HTMLOutputElement:true,HTMLParamElement:true,Path2D:true,PerformanceCompositeTiming:true,PerformanceEntry:true,PerformanceMark:true,PerformanceMeasure:true,PerformanceRenderTiming:true,PerformanceResourceTiming:true,Perspective:true,Plugin:true,PluginArray:true,PositionValue:true,PresentationConnection:true,HTMLProgressElement:true,Range:true,Rotation:true,RTCDataChannel:true,DataChannel:true,RTCSessionDescription:true,mozRTCSessionDescription:true,HTMLScriptElement:true,HTMLSelectElement:true,ServicePort:true,SharedWorker:true,SharedWorkerGlobalScope:true,HTMLSlotElement:true,SourceBuffer:true,SourceBufferList:true,HTMLSourceElement:true,HTMLSpanElement:true,SpeechGrammar:true,SpeechGrammarList:true,SpeechRecognitionAlternative:true,SpeechRecognitionError:true,SpeechRecognitionResult:true,SpeechSynthesisEvent:true,SpeechSynthesisVoice:true,Storage:true,HTMLStyleElement:true,CSSStyleSheet:true,StyleSheet:true,KeywordValue:true,NumberValue:true,TransformValue:true,StyleValue:false,HTMLTableElement:true,HTMLTableRowElement:true,HTMLTableSectionElement:true,HTMLTemplateElement:true,HTMLTextAreaElement:true,TextTrack:true,TextTrackCue:true,VTTCue:true,TextTrackCueList:true,TextTrackList:true,TimeRanges:true,Touch:true,TouchList:true,TrackDefault:true,TrackDefaultList:true,Matrix:true,Skew:true,TransformComponent:false,Translation:true,TreeWalker:true,CompositionEvent:true,FocusEvent:true,KeyboardEvent:true,TextEvent:true,TouchEvent:true,SVGZoomEvent:true,UIEvent:false,URL:true,HTMLVideoElement:true,VideoTrackList:true,VTTRegion:true,VTTRegionList:true,WebSocket:true,Window:true,DOMWindow:true,Worker:true,CompositorWorkerGlobalScope:true,DedicatedWorkerGlobalScope:true,ServiceWorkerGlobalScope:true,WorkerGlobalScope:false,Attr:true,ClientRect:true,ClientRectList:true,DOMRectList:true,CSSRuleList:true,DocumentType:true,DOMRect:true,GamepadList:true,HTMLFrameSetElement:true,NamedNodeMap:true,MozNamedAttrMap:true,ServiceWorker:true,SpeechRecognitionResultList:true,StyleSheetList:true,WorkerLocation:true,WorkerNavigator:true,IDBDatabase:true,IDBIndex:true,IDBObjectStore:true,IDBOpenDBRequest:true,IDBVersionChangeRequest:true,IDBRequest:true,IDBTransaction:true,SVGAElement:true,SVGAnimateElement:true,SVGAnimateMotionElement:true,SVGAnimateTransformElement:true,SVGAnimationElement:true,SVGSetElement:true,SVGFEBlendElement:true,SVGFEColorMatrixElement:true,SVGFEComponentTransferElement:true,SVGFECompositeElement:true,SVGFEConvolveMatrixElement:true,SVGFEDiffuseLightingElement:true,SVGFEDisplacementMapElement:true,SVGFEFloodElement:true,SVGFEGaussianBlurElement:true,SVGFEImageElement:true,SVGFEMergeElement:true,SVGFEMorphologyElement:true,SVGFEOffsetElement:true,SVGFEPointLightElement:true,SVGFESpecularLightingElement:true,SVGFESpotLightElement:true,SVGFETileElement:true,SVGFETurbulenceElement:true,SVGFilterElement:true,SVGForeignObjectElement:true,SVGCircleElement:true,SVGEllipseElement:true,SVGLineElement:true,SVGPathElement:true,SVGPolygonElement:true,SVGPolylineElement:true,SVGGeometryElement:false,SVGClipPathElement:true,SVGDefsElement:true,SVGGElement:true,SVGSwitchElement:true,SVGGraphicsElement:false,SVGImageElement:true,SVGLength:true,SVGLengthList:true,SVGMarkerElement:true,SVGMaskElement:true,SVGNumber:true,SVGNumberList:true,SVGPatternElement:true,SVGPoint:true,SVGPointList:true,SVGRect:true,SVGRectElement:true,SVGScriptElement:true,SVGStringList:true,SVGStyleElement:true,SVGDescElement:true,SVGDiscardElement:true,SVGFEDistantLightElement:true,SVGFEFuncAElement:true,SVGFEFuncBElement:true,SVGFEFuncGElement:true,SVGFEFuncRElement:true,SVGFEMergeNodeElement:true,SVGMetadataElement:true,SVGStopElement:true,SVGTitleElement:true,SVGComponentTransferFunctionElement:true,SVGElement:false,SVGSVGElement:true,SVGSymbolElement:true,SVGTextContentElement:false,SVGTextPathElement:true,SVGTSpanElement:true,SVGTextElement:true,SVGTextPositioningElement:true,SVGTransform:true,SVGTransformList:true,SVGUseElement:true,SVGViewElement:true,SVGViewSpec:true,SVGLinearGradientElement:true,SVGRadialGradientElement:true,SVGGradientElement:true,SVGCursorElement:true,SVGFEDropShadowElement:true,SVGMPathElement:true,AudioBuffer:true,AudioBufferSourceNode:true,AudioContext:true,webkitAudioContext:true,OfflineAudioContext:true,AnalyserNode:true,RealtimeAnalyserNode:true,AudioDestinationNode:true,ChannelMergerNode:true,AudioChannelMerger:true,ChannelSplitterNode:true,AudioChannelSplitter:true,DelayNode:true,DynamicsCompressorNode:true,GainNode:true,AudioGainNode:true,IIRFilterNode:true,MediaStreamAudioDestinationNode:true,PannerNode:true,AudioPannerNode:true,webkitAudioPannerNode:true,ScriptProcessorNode:true,JavaScriptAudioNode:true,StereoPannerNode:true,WaveShaperNode:true,AudioNode:false,MediaElementAudioSourceNode:true,MediaStreamAudioSourceNode:true,AudioSourceNode:false,BiquadFilterNode:true,ConvolverNode:true,OscillatorNode:true,Oscillator:true,WebGLActiveInfo:true,WebGLRenderingContext:true,WebGL2RenderingContext:true,WebGL2RenderingContextBase:true,SQLResultSetRowList:true})
 H.jW.$nativeSuperclassTag="ArrayBufferView"
 H.hR.$nativeSuperclassTag="ArrayBufferView"

@@ -442,8 +442,8 @@ nA:function(a,b,c){if(a==null||typeof a==="boolean"||typeof a==="number"||typeof
 a[b]=c},
 dm:function(a){throw H.R(H.bT(a))},
 a5:function(a,b){if(a==null)J.dp(a)
-throw H.R(H.aL(a,b))},
-aL:function(a,b){var t,s
+throw H.R(H.aK(a,b))},
+aK:function(a,b){var t,s
 if(typeof b!=="number"||Math.floor(b)!==b)return new P.bW(!0,b,"index",null)
 t=J.dp(a)
 if(!(b<0)){if(typeof t!=="number")return H.dm(t)
@@ -7700,12 +7700,12 @@ gM:function(a){return a.length},
 sM:function(a,b){this.cL(a,"set length")
 if(b<0)throw H.R(P.cl(b,0,null,"newLength",null))
 a.length=b},
-D:function(a,b){if(typeof b!=="number"||Math.floor(b)!==b)throw H.R(H.aL(a,b))
-if(b>=a.length||b<0)throw H.R(H.aL(a,b))
+D:function(a,b){if(typeof b!=="number"||Math.floor(b)!==b)throw H.R(H.aK(a,b))
+if(b>=a.length||b<0)throw H.R(H.aK(a,b))
 return a[b]},
 i:function(a,b,c){this.bY(a,"indexed set")
-if(typeof b!=="number"||Math.floor(b)!==b)throw H.R(H.aL(a,b))
-if(b>=a.length||b<0)throw H.R(H.aL(a,b))
+if(typeof b!=="number"||Math.floor(b)!==b)throw H.R(H.aK(a,b))
+if(b>=a.length||b<0)throw H.R(H.aK(a,b))
 a[b]=c},
 $isbi:1,
 $asbi:function(){},
@@ -7791,10 +7791,10 @@ gad:function(a){return C.X},
 $isQ:1,
 $isbF:1}
 J.cA.prototype={
-ed:function(a,b){if(b<0)throw H.R(H.aL(a,b))
-if(b>=a.length)H.aF(H.aL(a,b))
+ed:function(a,b){if(b<0)throw H.R(H.aK(a,b))
+if(b>=a.length)H.aF(H.aK(a,b))
 return a.charCodeAt(b)},
-cf:function(a,b){if(b>=a.length)throw H.R(H.aL(a,b))
+cf:function(a,b){if(b>=a.length)throw H.R(H.aK(a,b))
 return a.charCodeAt(b)},
 aE:function(a,b){if(typeof b!=="string")throw H.R(P.fK(b,null,null))
 return a+b},
@@ -7840,8 +7840,8 @@ s^=s>>11
 return 536870911&s+((16383&s)<<15)},
 gad:function(a){return C.R},
 gM:function(a){return a.length},
-D:function(a,b){if(typeof b!=="number"||Math.floor(b)!==b)throw H.R(H.aL(a,b))
-if(b>=a.length||b<0)throw H.R(H.aL(a,b))
+D:function(a,b){if(typeof b!=="number"||Math.floor(b)!==b)throw H.R(H.aK(a,b))
+if(b>=a.length||b<0)throw H.R(H.aK(a,b))
 return a[b]},
 $isbi:1,
 $asbi:function(){},
@@ -8570,9 +8570,9 @@ $asbz:function(){},
 $isbi:1,
 $asbi:function(){}}
 H.f1.prototype={
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
-i:function(a,b,c){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+i:function(a,b,c){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 a[b]=c}}
 H.dU.prototype={
 $asbz:function(){},
@@ -8590,7 +8590,7 @@ $asa4:function(){return[P.Q]},
 $asa0:function(){return[P.Q]},
 $asO:function(){return[P.Q]}}
 H.f2.prototype={
-i:function(a,b,c){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+i:function(a,b,c){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 a[b]=c},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -8631,7 +8631,7 @@ $isO:1,
 $asO:function(){return[P.Q]}}
 H.iJ.prototype={
 gad:function(a){return C.M},
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -8641,7 +8641,7 @@ $isO:1,
 $asO:function(){return[P.a3]}}
 H.iK.prototype={
 gad:function(a){return C.N},
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -8651,7 +8651,7 @@ $isO:1,
 $asO:function(){return[P.a3]}}
 H.iL.prototype={
 gad:function(a){return C.O},
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -8661,7 +8661,7 @@ $isO:1,
 $asO:function(){return[P.a3]}}
 H.iM.prototype={
 gad:function(a){return C.S},
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -8671,7 +8671,7 @@ $isO:1,
 $asO:function(){return[P.a3]}}
 H.iN.prototype={
 gad:function(a){return C.T},
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -8682,7 +8682,7 @@ $asO:function(){return[P.a3]}}
 H.f3.prototype={
 gad:function(a){return C.U},
 gM:function(a){return a.length},
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -8693,7 +8693,7 @@ $asO:function(){return[P.a3]}}
 H.iO.prototype={
 gad:function(a){return C.V},
 gM:function(a){return a.length},
-D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aL(a,b))
+D:function(a,b){if(b>>>0!==b||b>=a.length)H.aF(H.aK(a,b))
 return a[b]},
 $isa4:1,
 $asa4:function(){return[P.a3]},
@@ -10474,7 +10474,7 @@ n="With a satisfying CLICK, the "+p+" has solved the final block puzzle.  A wave
 l="It is time for the "+p+"  to finally face the "
 k=$.o
 l=l+k+". "
-j="The "+k+" lies slain by the "+p+"'s "+$.aK+". The "+p+" has won! "
+j="The "+k+" lies slain by the "+p+"'s "+$.aP+". The "+p+" has won! "
 i=[U.c]
 q.i(0,new R.N("Revive the Consorts",!1,[new U.c(o),new U.c(m),new U.c(n),new U.U(l,"The tyranny of "+k+" continues with the defeat of the "+p+".",j)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 j=this.f
@@ -10497,7 +10497,7 @@ n="The "+p+" manages to get the factories working at peak efficiency.  The gear 
 k="It is time for the "+p+"  to finally face the "
 h=$.o
 k=k+h+". "
-g="The "+h+" lies slain by the "+p+"'s "+$.aK+". The "+p+" has won! "
+g="The "+h+" lies slain by the "+p+"'s "+$.aP+". The "+p+" has won! "
 s.i(0,new R.N("Produce the Goods",!1,[new U.c(o),new U.c(m),new U.c(l),new U.c(n),new U.U(k,"The tyranny of "+h+" continues with the defeat of the "+p+".",g)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 j.i(0,new X.t(q,s,null),$.a9)
 s=H.a(["Peace","Tranquility","Rest"],t)
@@ -10505,7 +10505,7 @@ H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.af,$.i)
 t.i(0,$.aj,$.w)
-t.i(0,$.aN,$.j)
+t.i(0,$.aM,$.j)
 r=$.k
 q="The "+r+" learns that all of the local "
 p=$.m
@@ -10517,7 +10517,7 @@ n="The "+r+" finds the foretold RELAXING MIX TAPE and plays it for all the local
 p="It is time for the "+r+"  to finally face the "
 m=$.o
 p=p+m+". "
-l="The "+m+" lies slain by the "+r+"'s "+$.aK+". The "+r+" has won! "
+l="The "+m+" lies slain by the "+r+"'s "+$.aP+". The "+r+" has won! "
 t.i(0,new R.W("Relax the Consorts According to Prophecy",!1,[new U.c(q),new U.c(o),new U.c(n),new U.U(p,"The tyranny of "+m+" continues with the defeat of the "+r+".",l)],H.a([],i),R.mi(),!1,!1,new Y.aH(null,null,"Rewards/sweetLoot.png","Rewards/fraymotifBG.png","Rewards/no_reward.png",null),1,null,null),$.w)
 l=$.k
 r="The "+l+" learns that all of the local "
@@ -10528,7 +10528,7 @@ m="The "+l+"  teaches the local "+m+"s to find their chill. "
 n="It is time for the "+l+"  to finally face the "
 o=$.o
 n=n+o+". "
-q="The "+o+" lies slain by the "+l+"'s "+$.aK+". The "+l+" has won! "
+q="The "+o+" lies slain by the "+l+"'s "+$.aP+". The "+l+" has won! "
 t.i(0,new R.N("Relax the Consorts",!1,[new U.c(r),new U.c(p),new U.c(m),new U.U(n,"The tyranny of "+o+" continues with the defeat of the "+l+".",q)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 j.i(0,new X.t(s,t,null),$.a9)},
 J:function(a){return this.Q},
@@ -10676,7 +10676,7 @@ q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Poisoned Candy",H.a([$.nf,$.S,$.hY],s),"I guess CodTier is okay.",!1,"Not So Sweet Treat")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Cursed Lyre",H.a([$.aT,$.an,$.bh,$.S,$.aP],s),"I guess CodTier is okay. Sort of.",!1,"I Don\u2019t Know What This Is Normally")
+r=A.h("Cursed Lyre",H.a([$.aT,$.an,$.bh,$.S,$.aO],s),"I guess CodTier is okay. Sort of.",!1,"I Don\u2019t Know What This Is Normally")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 s=A.h("Snare Trap",H.a([$.ag,$.aT,$.S,$.eP],s),"I guess CodTier is okay. But still. The actual codpiece. You fleshy meatbags and your weird shit.",!1,"The Perfect Trap")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
@@ -10810,7 +10810,7 @@ m=$.k
 o="The "+m+" discovers the correct sequence of hydraulic pumps to activate to increase the river pressure enough to jettison away the blockage in a geyser of candy red. The first river begins to flow, and the local "+n+"s begin resuming trade activities.   "
 j="As the "+m+" goes around unplugging each river in turn, they begin to notice more and more debris among the candy red flow. Is "+l+" conspiring to reclog the rivers? "
 i="It is time for the "+m+"  to finally face the "+l+". The rivers are too vital to the "+n+"s to risk having them reclog."
-n="The "+l+" lies slain by the "+m+"'s "+$.aK+". The "+m+" has won! The "+n+"s have a bustling trade based economy once again."
+n="The "+l+" lies slain by the "+m+"'s "+$.aP+". The "+m+" has won! The "+n+"s have a bustling trade based economy once again."
 q.i(0,new R.N("Unplug the Rivers",!1,[new U.c(p),new U.c(o),new U.c(j),new U.U(i,"The tyranny of "+l+" continues with the defeat of the "+m+".",n)],H.a([],k),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 n=this.f
 n.i(0,new X.t(s,q,null),$.a9)
@@ -10841,7 +10841,7 @@ i=i+p+" arrived, the chains connected each tower to each other, and facilitated 
 m="The "+h+" delves in dungeons until the right items are discovered to alchemize new connectors for the chains. The first set of towers are reconnected, and trade and communication immediately resumes. The local "+m+"s discover that "+m+"s from other villages aren't so different, after all.  Another victory against xenophobia! "
 j="The "+h+" has been working tirelessly to hook up tower after tower, only to discover that the first tower they repaired is already broken again. There is no getting around it, "+p+" needs to be stopped. "
 l="The "+h+" has tracked down "+p+". There can be no mercy. "
-o="The "+p+" lies slain by the "+h+"'s "+$.aK+". The "+h+" is finally free to restore the chains, bringing peace and understanding to the land. "
+o="The "+p+" lies slain by the "+h+"'s "+$.aP+". The "+h+" is finally free to restore the chains, bringing peace and understanding to the land. "
 h="The tyranny  and xenophobia of "+p+" continues with the defeat of the "+h+"."
 p=$.qq
 s.i(0,new R.N("Chain the Towers",!1,[new U.c(i),new U.c(m),new U.c(j),new U.U(l,h,o)],H.a([],k),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",p,"Rewards/no_reward.png",null),1,null,null),$.q)
@@ -10856,7 +10856,7 @@ l=o+j+" has besieged this tower since the dawn of time, snapping each Beam one b
 o="The "+p+" hears of a fantastical secret kept at the top of the "+h+" Tower. It is said that the "+j+" seeks to topple it to gain this secret. Perhaps the "+p+" is small enough to climb the tower to claim it themselves?"
 m="The "+p+" defeats a fearsome "+j+" minion, whose death unlocks the most direct path to the "+h+" Tower . "
 i="The "+p+" has crossed the field of roses. They blow their horn. There can be no mercy. It is time to face the "+j+". "
-p="The "+j+" lies slain by the "+p+"'s "+$.aK+". The "+p+" is finally able to see what lies at the top of the "+h+" Tower. Oh. Huh. That's....actually kind of disappointing, actually. Oh well, at least they saved the planet, right? "
+p="The "+j+" lies slain by the "+p+"'s "+$.aP+". The "+p+" is finally able to see what lies at the top of the "+h+" Tower. Oh. Huh. That's....actually kind of disappointing, actually. Oh well, at least they saved the planet, right? "
 s.i(0,new R.N("Protect the Beams",!1,[new U.c(l),new U.c(o),new U.c(m),new U.U(i,"The "+h+" Tower is more at risk than ever before.",p)],H.a([],k),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 p=$.k
 h="They say it can't be done, but the "+p+" is confident that they can become friends with every single "
@@ -10889,7 +10889,7 @@ H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.af,$.i)
 t.i(0,$.aj,$.w)
-t.i(0,$.aN,$.j)
+t.i(0,$.aM,$.j)
 r="In the wake of the defeat of the "+$.o+" it becomes really how isolated the individual "
 q=$.m
 r=r+q+" villages are. It is far too common for a young "+q+" to never have even MET their cousins. The "
@@ -10908,7 +10908,7 @@ m="In a dramatic reveal, the "+o+" discovers that "
 l=$.o
 m=m+l+" is responsible for the feud. The two "+p+" families never wronged each other, it's a huge misunderstanding. But how can they prove this to the feuding families? "
 j="The "+o+" confronts "+l+". The beast smuggly admits to its crimes, and claims that the proof needed lies within its hoard. Will the "+o+" be able to claim it?"
-p="The "+l+" lies slain by the "+o+"'s "+$.aK+". The "+o+" shows the proof to the two "+p+" families, who reconcile in a dramatic shower of happy tears and "+$.x+"ing. "
+p="The "+l+" lies slain by the "+o+"'s "+$.aP+". The "+o+" shows the proof to the two "+p+" families, who reconcile in a dramatic shower of happy tears and "+$.x+"ing. "
 t.i(0,new R.N("Stop the Feud",!1,[new U.c(q),new U.c(r),new U.c(m),new U.U(j,"The deception of "+l+" continues with the defeat of the "+o+".",p)],H.a([],k),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 n.i(0,new X.t(s,t,null),$.a9)},
 ga0:function(){return this.l},
@@ -10930,7 +10930,7 @@ T.fT.prototype={
 G:function(){var t,s,r,q
 t=Q.p(null,null,A.V)
 s=[G.T]
-r=A.h("Pan's Pipe",H.a([$.aP,$.an,$.bh,$.u],s),null,!1,"Smonkin Weeds Pipe")
+r=A.h("Pan's Pipe",H.a([$.aO,$.an,$.bh,$.u],s),null,!1,"Smonkin Weeds Pipe")
 q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Skeleton Key",H.a([$.cv,$.u],s),"You are never gonna be imprisoned again.",!1,"THE BONE SHAPED HOLE BREAKER")
@@ -10946,7 +10946,7 @@ s=H.a(["Wind","Breeze","Pipes","Mail","Whistles","Pipe Organs","Delivery"],t)
 H.a([],t)
 r=[N.Y,P.Q]
 q=new H.l(0,null,null,null,null,null,0,r)
-q.i(0,$.aN,$.j)
+q.i(0,$.aM,$.j)
 q.i(0,$.dG,$.i)
 q.i(0,$.af,$.j)
 p=$.k
@@ -10960,7 +10960,7 @@ o=o+l+" economy!"
 k="The "+p+" cleans out oil from the nearby "+n+"s, opening up a few more channels between villages. "
 n="The "+p+" gets sick of all the fucking oil in the "+n+" mail system, and realizes the only way to truly deal with it and to allow information to flow free is to confront "+m+"."
 j="It is time for the "+p+"  to finally face the "+m+". The mail is too vital to the "+l+"s to risk having them reclog."
-l="The "+m+" lies slain by the "+p+"'s "+$.aK+". The "+p+" has won! The "+l+"s have a bustling mail based economy once again."
+l="The "+m+" lies slain by the "+p+"'s "+$.aP+". The "+p+" has won! The "+l+"s have a bustling mail based economy once again."
 p="The tyranny of "+m+" continues with the defeat of the "+p+"."
 m=$.qv
 i=[U.c]
@@ -10974,7 +10974,7 @@ s.i(0,$.aj,$.i)
 s.i(0,$.dG,$.j)
 s.i(0,$.af,$.j)
 s.i(0,$.aC,$.j)
-s.i(0,$.aN,$.j)
+s.i(0,$.aM,$.j)
 p=$.k
 o="The "+p+" constructs a little windmill system for a joke, and suddenly an entire village of consorts has grown up around it! The "+p+" decides that they should use the winds of their land for more projects. "
 n="The "+p+" starts learning the uses of their lands "
@@ -10985,7 +10985,7 @@ k=$.m
 k=l+k+" fields. The "+k+"s "+$.x+"ing is so joyful it's literally deafening. "
 l=$.o
 j=l+" is attacking the happy wind based farming community. The "+p+" has worked too hard for it all to be lost now. There can be no mercy. "
-h="The "+l+" lies slain by the "+p+"'s "+$.aK+". The "+p+" is finally free to continue improving the land with wind. "
+h="The "+l+" lies slain by the "+p+"'s "+$.aP+". The "+p+" is finally free to continue improving the land with wind. "
 s.i(0,new R.N("Thinking With Wind Power",!1,[new U.c(o),new U.c(n),new U.c(k),new U.U(j,"The tyranny of "+l+" continues with the defeat of the "+p+".",h)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 m.i(0,new X.t(q,s,null),$.a9)
 s=H.a(["Twisters","Cyclones","Gales","Storms","Hurricanes","Gusts","Tornadoes","Typhoons"],t)
@@ -10994,7 +10994,7 @@ t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.aY,$.i)
 t.i(0,$.lT,$.i)
 t.i(0,$.dG,$.w)
-t.i(0,$.aN,$.w)
+t.i(0,$.aM,$.w)
 r=$.k
 q="The "+r+" is chilling in a "+$.m+" village when a FUCK OFF HUGE STORM blows through, destroying the consorts housing. The player learns that "
 p=$.o
@@ -11004,7 +11004,7 @@ n=$.a7
 o=o+n+" system that controls the storms of their land. The begin adventuring and solving puzzles to alter the layout of the "+n+" system so the storms are redirected from consort villages. "
 n="The "+r+" finishes the dungeon that holds the  "+n+" systems control panel, only to find the control room totally empty. They learn that they only needed their own "+$.ae+" to do control the storms in the first place, and it was inside them all along.  "
 l=" "+p+" arrives to challenge the "+r+" storm supremacy. Will the "+r+" be able to prove their worth?"
-k="The "+p+" lies slain by the "+r+"'s "+$.aK+". The "+r+" has become the storm master. It is them. "
+k="The "+p+" lies slain by the "+r+"'s "+$.aP+". The "+r+" has become the storm master. It is them. "
 t.i(0,new R.N("The Winds of Change",!1,[new U.c(q),new U.c(o),new U.c(n),new U.U(l,"The storm supremacy of "+p+" continues with the defeat of the "+r+".",k)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 m.i(0,new X.t(s,t,null),$.a9)},
 ga0:function(){return this.l},
@@ -11123,7 +11123,7 @@ s=H.a(["Pranks","Mischief","Tricks","Deceit","Ruses","Distactions"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.bb,$.w)
-t.i(0,$.aM,$.j)
+t.i(0,$.aL,$.j)
 t.i(0,$.b8,$.i)
 t.i(0,$.aC,$.j)
 t.i(0,$.lO,$.j)
@@ -11155,11 +11155,11 @@ r=A.h("Gentleman's Razor",H.a([$.qc,$.X,$.cw],s),null,!1,"Face Cutting Hair Remo
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("How To Draw Manga",H.a([$.a_,$.ar,$.ah],s),"Who is this on the cover. The Goddess of Manga or some shit?",!1,"Absolutely Shit Book")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Painting of a Horse Boxing a Football Player",H.a([$.aV,$.aO,$.a_],s),"Truly the highest of art.",!1,"A Man Spent Money To Actually Own This Fucking Thing")
+r=A.h("Painting of a Horse Boxing a Football Player",H.a([$.aV,$.aN,$.a_],s),"Truly the highest of art.",!1,"A Man Spent Money To Actually Own This Fucking Thing")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Collection of Classical Works",H.a([$.ar,$.a_],s),null,!1,"Book of Naked Renaissance People")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Documentary on Horses",H.a([$.ar,$.ay,$.aO],s),null,!1,"Prime Horse: The Movie: The Book: The Remake")
+r=A.h("Documentary on Horses",H.a([$.ar,$.ay,$.aN],s),null,!1,"Prime Horse: The Movie: The Book: The Remake")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Paint Set",H.a([$.aV,$.ar],s),null,!1,"Pain Drink Set")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
@@ -11215,7 +11215,7 @@ t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.ez,$.w)
 t.i(0,$.b0,$.w)
 t.i(0,$.dA,$.w)
-t.i(0,$.aM,$.w)
+t.i(0,$.aL,$.w)
 t.i(0,$.aj,$.j)
 t.i(0,$.af,$.j)
 r=$.k
@@ -11374,7 +11374,7 @@ m=m+l+". The player begins to search for this totally USEFUL and IMPORTANT item.
 l="The "+p+" finds the "+l+", and slays the Omni-Lich, scattering its bones to the winds, which, according to "+n+" traditions, should summon its master. Uh. Eventually."
 k=$.o
 j="FINALLY, the bones of Omni-Lich has summoned it's master, "+k+"."
-n="The "+k+" lies slain by the "+p+"'s "+$.aK+". The "+p+" has won! The "+n+"s are free to bury their dead in peace once again."
+n="The "+k+" lies slain by the "+p+"'s "+$.aP+". The "+p+" has won! The "+n+"s are free to bury their dead in peace once again."
 i=[U.c]
 q.i(0,new R.N("Empty the Graves",!1,[new U.c(o),new U.c(m),new U.c(l),new U.U(j,"The grave robbing of "+k+" continues with the defeat of the "+p+".",n)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 n=this.f
@@ -11403,7 +11403,7 @@ j="The "+p+" is now the warlord of nearly all of the Violent "+m+"s. There is cl
 h=$.o
 j=j+h+" has been hoarding it all to cause scarcity to breed violence and anarchy. What a huge bitch. This cannot stand. "
 g="There isn't enough room in this wasteland for the both of them. It's time to take out the "+h+"."
-m="The "+h+" lies slain by the "+p+"'s "+$.aK+". The "+p+" distributes the hoard of "+l+" to the Violent "+m+"s and keeps the hoard of grist for themself. "
+m="The "+h+" lies slain by the "+p+"'s "+$.aP+". The "+p+" distributes the hoard of "+l+" to the Violent "+m+"s and keeps the hoard of grist for themself. "
 s.i(0,new R.N("Become the Warlord",!1,[new U.c(o),new U.c(k),new U.c(j),new U.U(g,"The "+l+" shortage continues with the defeat of the "+p+".",m)],H.a([],i),R.cE(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.i)
 m=$.k
 p="The "+m+" is sick of their stupid uninhabitable planet, and so starts to make sections of it habitable through judicious use of alchemy and "
@@ -11414,7 +11414,7 @@ g="The "+m+" has straight up established a new consort government in the safe zo
 j=$.o
 g=g+j+" remains alive, the safe zone will be temporary at best. "
 k=j+" is attacking the safe zones. The "+m+" has worked too hard for it all to be lost now. There can be no mercy. "
-o="The "+j+" lies slain by the "+m+"'s "+$.aK+". The "+m+" is finally free to continue improving the land. "
+o="The "+j+" lies slain by the "+m+"'s "+$.aP+". The "+m+" is finally free to continue improving the land. "
 s.i(0,new R.N("Make This Stupid Planet Habitable",!1,[new U.c(p),new U.c(l),new U.c(g),new U.U(k,"The tyranny of "+j+" continues with the defeat of the "+m+".",o)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 n.i(0,new X.t(q,s,null),$.a9)
 s=H.a(["Prophecy","Prophets","Fate","Destiny","Rules","Sound","Judgement","Carvings","Murals","Etchings"],t)
@@ -11446,7 +11446,7 @@ r="The "+k+" goes on a daring series of stupid missions to deliver the MAGIC "+o
 l=$.o
 r=r+l+"s lair is all but undefended. "
 o="The "+k+" is finally ready to face the "+l+"."
-q="The "+l+" lies slain by the "+k+"'s "+$.aK+". The "+k+" has won! "
+q="The "+l+" lies slain by the "+k+"'s "+$.aP+". The "+k+" has won! "
 k="The tyranny of "+l+" continues with the defeat of the "+k+"."
 l=$.qm
 t.i(0,new R.N("Learn the Prophecy",!1,[new U.c(p),new U.c(m),new U.c(r),new U.U(o,k,q)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",l,"Rewards/no_reward.png",null),1,null,null),$.q)
@@ -11607,7 +11607,7 @@ r=[N.Y,P.Q]
 q=new H.l(0,null,null,null,null,null,0,r)
 q.i(0,$.eu,$.a8)
 q.i(0,$.b9,$.j)
-q.i(0,$.aN,$.j)
+q.i(0,$.aM,$.j)
 q.i(0,$.bb,$.w)
 p=$.k
 o="The "+p+" learns of a Beautiful "
@@ -11624,7 +11624,7 @@ p.i(0,new X.t(s,q,null),$.ab)
 q=H.a(["Vampires","Rainbows","Undead","Counts","Castles"],t)
 H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
-s.i(0,$.aM,$.i)
+s.i(0,$.aL,$.i)
 s.i(0,$.bg,$.i)
 s.i(0,$.hu,$.j)
 s.i(0,$.aI,$.i)
@@ -11638,7 +11638,7 @@ p.i(0,new X.t(q,s,null),$.ab)
 s=H.a(["Flying Saucers","Aliens","Martians","UFOs","Conspiracies"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
-t.i(0,$.aM,$.i)
+t.i(0,$.aL,$.i)
 t.i(0,$.hw,$.j)
 t.i(0,$.aI,$.i)
 t.i(0,$.ca,$.j)
@@ -11702,7 +11702,7 @@ s=H.a(["Ice","Tundra","Snow","Frost","Flurries","Avalanches"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
 t.i(0,$.lW,$.j)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 t.i(0,$.bZ,$.w)
 t.i(0,$.bG,$.i)
 r=$.m
@@ -11767,7 +11767,7 @@ s=H.a(["Mountains","Vistas","Rocks","Sherpas","Guides"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
 t.i(0,$.lW,$.i)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 t.i(0,$.bZ,$.j)
 t.i(0,$.bG,$.i)
 r="Now that the "+$.o+" is out of the way, a group of "
@@ -11796,7 +11796,7 @@ r=A.h("Mirror",H.a([$.m7,$.u],s),null,!1,"Mirror That Shows A Reflection Of The 
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Shipping Grid",H.a([$.a_,$.u,$.cf],s),"No. No cat troll shit.",!1,"A Grid of Pure Taint")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-s=A.h("Shades",H.a([$.aO,$.aU,$.u],s),"You can put a p great robot in these. I advise it.",!1,"Glasses For Try Hard Nerds")
+s=A.h("Shades",H.a([$.aN,$.aU,$.u],s),"You can put a p great robot in these. I advise it.",!1,"Glasses For Try Hard Nerds")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
 this.y2=t},
 I:function(){var t,s,r,q,p,o,n,m,l,k,j,i,h
@@ -11815,7 +11815,7 @@ m="The "+p+"realizes all the things they were adding to the space was nothing mo
 l=$.o
 m=m+l+"."
 k="It is time for the "+p+"  to finally face the "+l+". They can finally be free to just....be themselves as long as the "+l+" is gone. "
-j="The "+l+" lies slain by the "+p+"'s "+$.aK+". The "+p+" has won and finally feels free to be themselves for the first time."
+j="The "+l+" lies slain by the "+p+"'s "+$.aP+". The "+p+" has won and finally feels free to be themselves for the first time."
 i=[U.c]
 q.i(0,new R.N("Find Yourself",!1,[new U.c(o),new U.c(n),new U.c(m),new U.U(k,"The tyranny of "+l+" continues with the defeat of the "+p+".",j)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 j=$.k
@@ -11851,7 +11851,7 @@ l="The "+p+" realizes that the "+n+" copy is nothing more then an expresion of t
 k=$.o
 n=l+k+". They confront the copy one last time, and accept it as part of themselves. The two fuse, with a single, small "+n+" the only physical remnant of the copy. Armed with their new self actualization, they realize they are ready to face "+k+". "
 l=k+" has been the cause of so much personal grief for the "+p+".  There can be no mercy. "
-j="The "+k+" lies slain by the "+p+"'s "+$.aK+". The "+p+" is victorious. "
+j="The "+k+" lies slain by the "+p+"'s "+$.aP+". The "+p+" is victorious. "
 s.i(0,new R.N("Confront yourself.",!1,[new U.c(o),new U.c(m),new U.c(n),new U.U(l,"The assholeness of "+k+" continues with the defeat of the "+p+".",j)],H.a([],i),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 j="Now that the "+$.o+" has been defeated, a Copy "
 p=$.k
@@ -12027,7 +12027,7 @@ s=[G.T]
 r=A.h("Wand",H.a([$.an,$.u,$.au,$.av],s),"It's probably science powered.",!1,"Shitty Wizard Pencil")
 q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Angel Feather",H.a([$.av,$.hV,$.u,$.bx,$.aP,$.ac,$.au],s),"Angels are, like, these terrible feathery monsters. Don't fuck with them.",!1,"Shitty Wizard Pencil")
+r=A.h("Angel Feather",H.a([$.av,$.hV,$.u,$.bx,$.aO,$.ac,$.au],s),"Angels are, like, these terrible feathery monsters. Don't fuck with them.",!1,"Shitty Wizard Pencil")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Never Ending Story DVD",H.a([$.nr,$.nm,$.u,$.au,$.bK,$.av],s),null,!1,"White Dragon Kidnaps Kid The Movie")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
@@ -12067,7 +12067,7 @@ n.i(0,new X.t(s,q,null),$.a9)
 q=H.a(["Lies","Bullshit","Deceit","Slander","Fakes","Con Artists","Ruses"],t)
 H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
-s.i(0,$.aM,$.i)
+s.i(0,$.aL,$.i)
 s.i(0,$.lO,$.j)
 s.i(0,$.bI,$.i)
 p=$.k
@@ -12163,7 +12163,7 @@ t.i(0,new R.W("A Complete Waste Of Time",!1,[new U.c(q+p+" in the land. Blah bla
 r=$.o
 p="{Quest.PLAYER1} explores their land but is horrified to see all of the turtles [REDACTED]ing. "+r+" probably is making them [REDACTED]. "+r+" is a [REDACTED] piece of shit. Also. Why are there even turtles here? Is it a refrance?"
 q=$.k
-n=q+" tries to manually separate the turtles by catching them with a net and "+$.aK+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
+n=q+" tries to manually separate the turtles by catching them with a net and "+$.aP+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
 m=q+" manages to fix the fish problem, but is back where they started with the turtles. "+r+" cackles from their giant castle. "+q+" needs to take a break from trying to get turtles to stop [REDACTED]ing."
 r=q+" has learned some stuff, and thinks that they can get the turtles to stop by changing the turtle [REDACTED] values in the game\u2019s code. This pisses the "+r+" off and causes this entire strife thing to happen. Bluh."
 q=$.x
@@ -12264,7 +12264,7 @@ H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.af,$.i)
 t.i(0,$.aj,$.w)
-t.i(0,$.aN,$.j)
+t.i(0,$.aM,$.j)
 r=$.k
 q="The "+r+" learns that all of the local "
 p=$.m
@@ -12411,7 +12411,7 @@ r=A.h("Mystery Novel",H.a([$.a_,$.ah],s),null,!1,"Book where the Criminal was th
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Dish Served Cold",H.a([$.m0,$.c0,$.bJ],s),null,!1,"REVENGE")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Pony Pals: Detective Pony ",H.a([$.a_,$.ah,$.aO],s),"Truly the most ironic work of all time.",!1,"A Disgusting Book")
+r=A.h("Pony Pals: Detective Pony ",H.a([$.a_,$.ah,$.aN],s),"Truly the most ironic work of all time.",!1,"A Disgusting Book")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 s=A.h("Handcuffs",H.a([$.aJ,$.X,$.eP],s),"These ones aren't fucking pointless like those trick ones.",!1,"Wrist Imprisoning Device")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
@@ -12423,7 +12423,7 @@ H.a([],t)
 r=[N.Y,P.Q]
 q=new H.l(0,null,null,null,null,null,0,r)
 q.i(0,$.eu,$.w)
-q.i(0,$.aM,$.j)
+q.i(0,$.aL,$.j)
 q.i(0,$.ba,$.w)
 p=$.k
 o="The "+p+" finds an elaborate courtroom full of "+$.x+"ing "
@@ -12435,7 +12435,7 @@ n.i(0,new X.t(s,q,null),$.ab)
 q=H.a(["Police","Law","Jails","Slammers","Officers","Cops","Prisons","Detectives","Crime"],t)
 H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
-s.i(0,$.aM,$.i)
+s.i(0,$.aL,$.i)
 s.i(0,$.bZ,$.j)
 s.i(0,$.bp,$.j)
 p=$.k
@@ -12450,7 +12450,7 @@ n.i(0,new X.t(q,s,null),$.ab)
 s=H.a(["Classism","Struggle","Apathy","Revolution","Rebellion"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
-t.i(0,$.aM,$.i)
+t.i(0,$.aL,$.i)
 t.i(0,$.aY,$.j)
 t.i(0,$.bg,$.w)
 t.i(0,$.d3,$.j)
@@ -12558,7 +12558,7 @@ s=H.a(["Forests","Chlorophyll","Moss","Trees","Jungles","Wood","Tribes","Timber"
 H.a([],t)
 r=[N.Y,P.Q]
 q=new H.l(0,null,null,null,null,null,0,r)
-q.i(0,$.aN,$.i)
+q.i(0,$.aM,$.i)
 q.i(0,$.aj,$.i)
 q.i(0,$.ev,$.w)
 q.i(0,$.af,$.j)
@@ -12580,7 +12580,7 @@ n.i(0,new X.t(s,q,null),$.a9)
 q=H.a(["Gardens","Summer","Growth","Dew","Spring","Beginnings","Vitality","Strength","Fields","Farms"],t)
 H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
-s.i(0,$.aN,$.i)
+s.i(0,$.aM,$.i)
 s.i(0,$.b0,$.i)
 s.i(0,$.bb,$.w)
 s.i(0,$.af,$.j)
@@ -12688,7 +12688,7 @@ m.i(0,new X.t(s,q,null),$.a9)
 q=H.a(["Glow","Light","Rays","Sun","Shine","Sparkle","Sunshine","Stars"],t)
 H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
-s.i(0,$.aN,$.j)
+s.i(0,$.aM,$.j)
 s.i(0,$.af,$.j)
 s.i(0,$.c_,$.i)
 s.i(0,$.n7,$.i)
@@ -12940,7 +12940,7 @@ r=A.h("Feather Duster",H.a([$.an,$.S,$.cg,$.hV],s),"Housemaid shit.",!1,"Maids W
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Valkyrie Shield",H.a([$.aV,$.aJ,$.X,$.S,$.ac,$.i_,$.pP],s),"Shieldmaid shit",!1,"Another Weakling Piece of Metal But For Some Kind of Angel Woman I Guess?")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-s=A.h("Maiden's Songbook",H.a([$.a_,$.S,$.aP,$.ah],s),"Longing maiden shit.",!1,"Smash Mouth Lyrics")
+s=A.h("Maiden's Songbook",H.a([$.a_,$.S,$.aO,$.ah],s),"Longing maiden shit.",!1,"Smash Mouth Lyrics")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
 this.go=t},
 ag:function(){return 0.33},
@@ -12952,7 +12952,7 @@ s=H.a(["Suburbs","Parks","Playgrounds","Swingsets","Tire Swings","Neighborhoods"
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
 t.i(0,$.bG,$.i)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 t.i(0,$.af,$.j)
 t.i(0,$.aj,$.j)
 t.i(0,$.c_,$.j)
@@ -13064,7 +13064,7 @@ q=H.a(["Consequences","Results","Karma","Justice","Responsibility","Payback","Ve
 H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
 s.i(0,$.eu,$.w)
-s.i(0,$.aM,$.j)
+s.i(0,$.aL,$.j)
 s.i(0,$.ba,$.w)
 s.i(0,$.aQ,$.w)
 p=$.o
@@ -13137,7 +13137,7 @@ s=H.a(["Music","Dance","Poetry","Inspiration"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
 t.i(0,$.bG,$.i)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 t.i(0,$.af,$.j)
 t.i(0,$.aj,$.j)
 t.i(0,$.c_,$.j)
@@ -13167,22 +13167,22 @@ F.iE.prototype={
 G:function(){var t,s,r,q
 t=Q.p(null,null,A.V)
 s=[G.T]
-r=A.h("Piano",H.a([$.aS,$.an,$.aP,$.ar],s),"An entire piano. In your inventory. WHY.",!1,"Elephant Corpse Turned Amazing Instrument")
+r=A.h("Piano",H.a([$.aS,$.an,$.aO,$.ar],s),"An entire piano. In your inventory. WHY.",!1,"Elephant Corpse Turned Amazing Instrument")
 q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Flute",H.a([$.X,$.aP],s),"I feel like a spaceship captain should play this.",!1,"Pipe of Screeches 2: Orchestral Shitstorm")
+r=A.h("Flute",H.a([$.X,$.aO],s),"I feel like a spaceship captain should play this.",!1,"Pipe of Screeches 2: Orchestral Shitstorm")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Microphone",H.a([$.aZ,$.ao],s),"Do you really deserve to drop this like it's hot?",!1,"Speaking Tube of Passion +3")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Violin",H.a([$.an,$.aP],s),null,!1,"Tiny Cello")
+r=A.h("Violin",H.a([$.an,$.aO],s),null,!1,"Tiny Cello")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Sheet Music",H.a([$.a_,$.aP],s),null,!1,"Cheat Codes for Instruments")
+r=A.h("Sheet Music",H.a([$.a_,$.aO],s),null,!1,"Cheat Codes for Instruments")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Electric Guitar",H.a([$.ay,$.aP,$.ao,$.aZ,$.aO],s),null,!1,"Electrical Stringed Music Maker")
+r=A.h("Electric Guitar",H.a([$.ay,$.aO,$.ao,$.aZ,$.aN],s),null,!1,"Electrical Stringed Music Maker")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Turn Tables",H.a([$.ay,$.aP,$.ao,$.aO],s),null,!1,"Spinning Disc Sound Maker")
+r=A.h("Turn Tables",H.a([$.ay,$.aO,$.ao,$.aN],s),null,!1,"Spinning Disc Sound Maker")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-s=A.h("Guitar",H.a([$.an,$.aP],s),null,!1,"String Music Maker")
+s=A.h("Guitar",H.a([$.an,$.aO],s),null,!1,"String Music Maker")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
 this.y=t},
 I:function(){var t,s,r,q,p,o,n,m,l,k
@@ -13259,7 +13259,7 @@ s=[G.T]
 r=A.h("Shorts",H.a([$.ag,$.S,$.dI,$.ac],s),"Don't skip leg day.",!1,"Crotch Hugging Thigh Exposers. Absolutely Indecent.")
 q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Sidekick Figurine",H.a([$.ay,$.S,$.aO],s),"Robin is way cooler than Batman.",!1,"Small Statue of a White Headed Cat in a Green Suit")
+r=A.h("Sidekick Figurine",H.a([$.ay,$.S,$.aN],s),"Robin is way cooler than Batman.",!1,"Small Statue of a White Headed Cat in a Green Suit")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 s=A.h("Steroids",H.a([$.c0,$.S,$.au],s),"Shit son, calm down with all the screaming and the powering up.",!1,"My Morning Medication")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
@@ -13317,28 +13317,28 @@ G.j1.prototype={
 G:function(){var t,s,r,q
 t=Q.p(null,null,A.V)
 s=[G.T]
-r=A.h("Superhero Action Figure",H.a([$.ay,$.aO,$.ak],s),"How perfectly fucking generic. You couldn't even pick a brand name?",!1,"Shogun Action Figure")
+r=A.h("Superhero Action Figure",H.a([$.ay,$.aN,$.ak],s),"How perfectly fucking generic. You couldn't even pick a brand name?",!1,"Shogun Action Figure")
 q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Action DVD",H.a([$.ay,$.aO],s),null,!1,"Shogun The Movie")
+r=A.h("Action DVD",H.a([$.ay,$.aN],s),null,!1,"Shogun The Movie")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Ghost Busters DVD",H.a([$.ay,$.m3],s),"I refuse to call a bunch of washed up comedians.",!1,"Shogunsprite Hunters The Movie")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Snow Dogs DVD",H.a([$.ay,$.bK,$.bJ,$.eN],s),null,!1,"Snow Buddies Anthology")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Skateboarding Video Game",H.a([$.ay,$.aO],s),"All of these glitches are offensive to my robo-sensbilities.",!1,"Snow Buddies Anthology")
+r=A.h("Skateboarding Video Game",H.a([$.ay,$.aN],s),"All of these glitches are offensive to my robo-sensbilities.",!1,"Snow Buddies Anthology")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Movie Poster",H.a([$.a_,$.aO],s),null,!1,"Shogun 2: Electric Shitstorm Poster")
+r=A.h("Movie Poster",H.a([$.a_,$.aN],s),null,!1,"Shogun 2: Electric Shitstorm Poster")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Audrey II Plush",H.a([$.d7,$.aO,$.ag,$.bd],s),null,!1,"World Eating Plant Plush, A Pure Entity")
+r=A.h("Audrey II Plush",H.a([$.d7,$.aN,$.ag,$.bd],s),null,!1,"World Eating Plant Plush, A Pure Entity")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Peashooter Toy",H.a([$.d7,$.eQ,$.aO,$.ag],s),null,!1,"Plants Vs Zombies Peaplant Plush")
+r=A.h("Peashooter Toy",H.a([$.d7,$.eQ,$.aN,$.ag],s),null,!1,"Plants Vs Zombies Peaplant Plush")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Shitty Sword",H.a([$.ak,$.X,$.aO,$.eS,$.cw,$.nr],s),"So. Shitty.",!1,"Perfect Weapon")
+r=A.h("Shitty Sword",H.a([$.ak,$.X,$.aN,$.eS,$.cw,$.nr],s),"So. Shitty.",!1,"Perfect Weapon")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("GameBro Magazine",H.a([$.a_,$.aO],s),"5/5 hats.",!1,"Nerd Magazine")
+r=A.h("GameBro Magazine",H.a([$.a_,$.aN],s),"5/5 hats.",!1,"Nerd Magazine")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-s=A.h("GameGrl Magazine",H.a([$.a_,$.aO],s),"5/5 lady hats.",!1,"Nerd Magazine for Girls")
+s=A.h("GameGrl Magazine",H.a([$.a_,$.aN],s),"5/5 lady hats.",!1,"Nerd Magazine for Girls")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
 this.y=t},
 I:function(){var t,s,r,q,p,o,n,m,l,k,j
@@ -13480,7 +13480,7 @@ q.i(0,$.bZ,$.i)
 q.i(0,$.bw,$.j)
 q.i(0,$.aI,$.j)
 q.i(0,$.aY,$.j)
-q.i(0,$.aM,$.w)
+q.i(0,$.aL,$.w)
 q.i(0,$.bI,$.j)
 q.i(0,$.d0,$.i)
 q.i(0,$.hv,$.i)
@@ -13520,7 +13520,7 @@ H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
 s.i(0,$.c_,$.i)
 s.i(0,$.aI,$.j)
-s.i(0,$.aM,$.i)
+s.i(0,$.aL,$.i)
 s.i(0,$.b9,$.i)
 s.i(0,$.b8,$.i)
 s.i(0,$.b7,$.j)
@@ -13549,7 +13549,7 @@ H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.et,$.i)
 t.i(0,$.bI,$.i)
-t.i(0,$.aM,$.i)
+t.i(0,$.aL,$.i)
 t.i(0,$.bb,$.j)
 t.i(0,$.b8,$.i)
 r=$.k
@@ -13650,7 +13650,7 @@ t=[P.M]
 s=H.a(["Classism","Struggle","Apathy","Revolution","Rebellion","Rogues"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
-t.i(0,$.aM,$.i)
+t.i(0,$.aL,$.i)
 t.i(0,$.aY,$.j)
 t.i(0,$.cb,$.j)
 r="The "+$.o+" cannot release the frogs since the corrupt Noble "
@@ -13818,7 +13818,7 @@ C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 s=A.h("Fairy Bottle",H.a([$.aU,$.au],s),null,!1,null)
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
 this.y2=t},
-I:function(){var t,s,r,q,p,o,n,m,l
+I:function(){var t,s,r,q,p
 t=[P.M]
 s=H.a(["Rune","Magic","Fairy","Infinite","Predictions"],t)
 H.a([],t)
@@ -13826,16 +13826,9 @@ t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
 t.i(0,$.aQ,$.j)
 t.i(0,$.af,$.j)
 r=$.k
-q="The "+r+" is walking around in a village of "
-p=$.m
-q=q+p+"s, when a Consort walks up to them. It says that The "+r+" has to learn magic, so they can fight the "
-o=$.o
-q=q+o+". The "+r+" promises to do their best."
-n="The "+r+" "
-m="The "+r+" "
-l="It is time for the "+r+"  to finally face the "+o+". The mail is too vital to the "+p+"s to risk having them reclog."
-p="The "+o+" lies slain by the "+r+"'s "+$.aK+". The "+r+" has won! The "+p+"s have a bustling mail based economy once again."
-t.i(0,new R.N("Learn Magic",!1,[new U.c(q),new U.c(n),new U.c(m),new U.U(l,"The tyranny of "+o+" continues with the defeat of the "+r+".",p)],H.a([],[U.c]),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
+q="The "+r+" is walking around in a village of "+$.m+"s, when a Consort walks up to them. It says that The "+r+" has to learn magic, so they can fight the "
+p=$.o
+t.i(0,new R.N("Learn Magic",!1,[new U.c(q+p+". The "+r+" promises to do their best."),new U.c("The "+r+" is practicing the arcana, they're starting to get pretty good."),new U.c("The "+r+" is able to fight numerous imps with their magic now, they are ready to fight the "+p+"..."),new U.U("","","")],H.a([],[U.c]),R.n(),!1,!1,new Y.P("Rewards/sweetLoot.png","Rewards/sweetGrist.png",null,"Rewards/no_reward.png",null),1,null,null),$.q)
 this.f.i(0,new X.t(s,t,null),$.a9)},
 ga0:function(){return this.l},
 ga_:function(){return this.m},
@@ -13908,7 +13901,7 @@ H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.af,$.i)
 t.i(0,$.aj,$.w)
-t.i(0,$.aN,$.j)
+t.i(0,$.aM,$.j)
 r=$.k
 q="The "+r+" learns that all of the local "
 p=$.m
@@ -14012,7 +14005,7 @@ q.i(0,$.bZ,$.i)
 q.i(0,$.bw,$.j)
 q.i(0,$.aI,$.j)
 q.i(0,$.aY,$.j)
-q.i(0,$.aM,$.w)
+q.i(0,$.aL,$.w)
 q.i(0,$.bI,$.j)
 q.i(0,$.d0,$.i)
 q.i(0,$.hv,$.i)
@@ -14052,7 +14045,7 @@ H.a([],t)
 s=new H.l(0,null,null,null,null,null,0,r)
 s.i(0,$.c_,$.i)
 s.i(0,$.aI,$.j)
-s.i(0,$.aM,$.i)
+s.i(0,$.aL,$.i)
 s.i(0,$.b9,$.i)
 s.i(0,$.b8,$.i)
 s.i(0,$.b7,$.j)
@@ -14081,7 +14074,7 @@ H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.et,$.i)
 t.i(0,$.bI,$.i)
-t.i(0,$.aM,$.i)
+t.i(0,$.aL,$.i)
 t.i(0,$.bb,$.j)
 t.i(0,$.b8,$.i)
 r=$.k
@@ -14128,7 +14121,7 @@ s=H.a(["Maps","Trails","Compasses","Wilderness","Trails"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
 t.i(0,$.bG,$.i)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 t.i(0,$.aj,$.i)
 t.i(0,$.aC,$.w)
 t.i(0,$.af,$.w)
@@ -14270,7 +14263,7 @@ t.i(0,$.aj,$.j)
 t.i(0,$.bG,$.i)
 t.i(0,$.bb,$.j)
 t.i(0,$.af,$.j)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 r="The defeat of the "+$.o+" has somehow caused the Forge to go quiescent again? What the hell? The "
 q=$.k
 p=[U.c]
@@ -14353,7 +14346,7 @@ H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
 t.i(0,$.bp,$.w)
 t.i(0,$.ca,$.i)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 t.i(0,$.cb,$.i)
 t.i(0,$.eu,$.i)
 r=$.k
@@ -14539,7 +14532,7 @@ r=A.h("Mirror",H.a([$.m7,$.u],s),null,!1,"Mirror That Shows A Reflection Of The 
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Shipping Grid",H.a([$.a_,$.u,$.cf],s),"No. No cat troll shit.",!1,"A Grid of Pure Taint")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Shades",H.a([$.aO,$.aU,$.u],s),"You can put a p great robot in these. I advise it.",!1,"Glasses For Try Hard Nerds")
+r=A.h("Shades",H.a([$.aN,$.aU,$.u],s),"You can put a p great robot in these. I advise it.",!1,"Glasses For Try Hard Nerds")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 s=A.h("A Stone",H.a([$.u,$.av,$.ak],s),null,!1,null)
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
@@ -14565,15 +14558,15 @@ s=[G.T]
 r=A.h("Grandfather Clock",H.a([$.an,$.ar,$.dM,$.u],s),null,!1,"Ticking Tower of Time")
 q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Drum",H.a([$.nn,$.u,$.aP],s),null,!1,"Ba Dum Tss but without the Tss Part")
+r=A.h("Drum",H.a([$.nn,$.u,$.aO],s),null,!1,"Ba Dum Tss but without the Tss Part")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Dead Doppelganger",H.a([$.aJ,$.cx,$.u,$.cv,$.b2,$.aT],s),"Time is truly the worst aspect.",!1,"The Inferior You")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Music Box",H.a([$.X,$.u,$.aP,$.ar],s),null,!1,"Cube of Noise")
+r=A.h("Music Box",H.a([$.X,$.u,$.aO,$.ar],s),null,!1,"Cube of Noise")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Turn Tables",H.a([$.X,$.u,$.aP,$.ac,$.aO],s),"Do they come with ironic raps?",!1,"Spinning Noise Discs on a Noise Machine")
+r=A.h("Turn Tables",H.a([$.X,$.u,$.aO,$.ac,$.aN],s),"Do they come with ironic raps?",!1,"Spinning Noise Discs on a Noise Machine")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Metronome",H.a([$.X,$.u,$.aP],s),null,!1,"Never Ending Ticking Device")
+r=A.h("Metronome",H.a([$.X,$.u,$.aO],s),null,!1,"Never Ending Ticking Device")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 s=A.h("A Stone",H.a([$.u,$.av,$.ak],s),null,!1,null)
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
@@ -14959,7 +14952,7 @@ p.i(0,new X.t(s,q,null),$.ab)
 q=H.a(["Classism","Struggle","Apathy","Revolution","Rebellion","Hate"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
-t.i(0,$.aM,$.i)
+t.i(0,$.aL,$.i)
 t.i(0,$.bg,$.w)
 t.i(0,$.d0,$.i)
 t.i(0,$.hv,$.i)
@@ -15007,7 +15000,7 @@ t=[P.M]
 s=H.a(["Police","Law","Jails","Slammers","Officers","Cops","Prisons","Detectives","Crime","Robbers","Heists"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,[N.Y,P.Q])
-t.i(0,$.aM,$.i)
+t.i(0,$.aL,$.i)
 t.i(0,$.bZ,$.j)
 t.i(0,$.aC,$.j)
 t.i(0,$.bp,$.j)
@@ -15062,15 +15055,15 @@ s=[G.T]
 r=A.h("Grandfather Clock",H.a([$.an,$.ar,$.dM,$.u],s),null,!1,"Ticking Tower of Time")
 q=[H.y(t,0)]
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Drum",H.a([$.nn,$.u,$.aP],s),null,!1,"Ba Dum Tss but without the Tss Part")
+r=A.h("Drum",H.a([$.nn,$.u,$.aO],s),null,!1,"Ba Dum Tss but without the Tss Part")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
 r=A.h("Dead Doppelganger",H.a([$.aJ,$.cx,$.u,$.cv,$.b2,$.aT],s),"Time is truly the worst aspect.",!1,"The Inferior You")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Music Box",H.a([$.X,$.u,$.aP,$.ar],s),null,!1,"Cube of Noise")
+r=A.h("Music Box",H.a([$.X,$.u,$.aO,$.ar],s),null,!1,"Cube of Noise")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-r=A.h("Turn Tables",H.a([$.X,$.u,$.aP,$.ac,$.aO],s),"Do they come with ironic raps?",!1,"Spinning Noise Discs on a Noise Machine")
+r=A.h("Turn Tables",H.a([$.X,$.u,$.aO,$.ac,$.aN],s),"Do they come with ironic raps?",!1,"Spinning Noise Discs on a Noise Machine")
 C.a.j(t.b,new Q.e(r,t.k(r,1),q))
-s=A.h("Metronome",H.a([$.X,$.u,$.aP],s),null,!1,"Never Ending Ticking Device")
+s=A.h("Metronome",H.a([$.X,$.u,$.aO],s),null,!1,"Never Ending Ticking Device")
 C.a.j(t.b,new Q.e(s,t.k(s,1),q))
 this.y2=t},
 I:function(){var t,s,r,q,p,o,n,m,l,k,j
@@ -15118,7 +15111,7 @@ j.i(0,new X.t(q,s,null),$.a9)
 s=H.a(["Progression","Age","Change","Future","Rivers","Possibility","Flow","Streams","Inevitability","Brooks"],t)
 H.a([],t)
 t=new H.l(0,null,null,null,null,null,0,r)
-t.i(0,$.aN,$.i)
+t.i(0,$.aM,$.i)
 t.i(0,$.af,$.j)
 t.i(0,$.aQ,$.i)
 t.i(0,$.bG,$.i)
@@ -15228,7 +15221,7 @@ s=new H.l(0,null,null,null,null,null,0,r)
 s.i(0,$.bH,$.j)
 s.i(0,$.lR,$.j)
 s.i(0,$.ex,$.j)
-s.i(0,$.aM,$.i)
+s.i(0,$.aL,$.i)
 p=$.k
 o="Even with the victory of the "+p+" over the villainous "
 n=$.o
@@ -15307,7 +15300,7 @@ t.i(0,new R.W("A Complete Waste Of Time",!1,[new U.c(q+p+" in the land. Blah bla
 r=$.o
 p="{Quest.PLAYER1} explores their land but is horrified to see all of the turtles [REDACTED]ing. "+r+" probably is making them [REDACTED]. "+r+" is a [REDACTED] piece of shit. Also. Why are there even turtles here? Is it a refrance?"
 q=$.k
-n=q+" tries to manually separate the turtles by catching them with a net and "+$.aK+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
+n=q+" tries to manually separate the turtles by catching them with a net and "+$.aP+". They have mixed results, and "+q+" probably got some reptilian-borne disease. "+q+" tries drugging the water with [REDACTED], this works, but that throws the ecosystem out of balance as the fish aren\u2019t [REDACTED] anymore."
 m=q+" manages to fix the fish problem, but is back where they started with the turtles. "+r+" cackles from their giant castle. "+q+" needs to take a break from trying to get turtles to stop [REDACTED]ing."
 r=q+" has learned some stuff, and thinks that they can get the turtles to stop by changing the turtle [REDACTED] values in the game\u2019s code. This pisses the "+r+" off and causes this entire strife thing to happen. Bluh."
 q=$.x
@@ -16450,8 +16443,8 @@ $.b0=null
 $.bw=null
 $.d2=null
 $.lU=null
-$.aN=null
 $.aM=null
+$.aL=null
 $.n4=null
 $.ex=null
 $.d0=null
@@ -16542,7 +16535,7 @@ $.m="CONSORTTAG"
 $.x="CONSORTSOUNDTAG"
 $.ae="MCGUFFINTAG"
 $.a7="TAGPHYSICALMCGUFFIN"
-$.aK="TAGWEAPON"
+$.aP="TAGWEAPON"
 $.r0=null
 $.rd=null
 $.qV=null
@@ -16638,7 +16631,7 @@ $.dK=null
 $.bJ=null
 $.ao=null
 $.hY=null
-$.aP=null
+$.aO=null
 $.dM=null
 $.ce=null
 $.by=null
@@ -16651,7 +16644,7 @@ $.bd=null
 $.cf=null
 $.bK=null
 $.c0=null
-$.aO=null
+$.aN=null
 $.au=null
 $.u=null
 $.S=null
