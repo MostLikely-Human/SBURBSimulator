@@ -1637,7 +1637,13 @@ void session612IndexToTroll(Session session, Player player, int index){
 		player.quirk.suffix = "";
 		player.quirk.prefix = "";
 	}else if(index == 11){
-		player.moon = session.derse;//no way to have two dream selves righ tnow.;
+		//player.moon = session.derse;//no way to have two dream selves righ tnow.; [Well now there is JR, hahahahah]
+		
+		player.moon = session.rand.pickFrom[session.prospit, session.derse]
+		player.dreamPlayerProspit = session.players[11];
+		player.dreamPlayerDerse = session.players[11];
+		
+		
 		player.land = player.spawnLand();
 		player.land.name = "Land of Brains and Fire";
 		player.aspect = Aspects.DOOM;
@@ -1929,7 +1935,13 @@ void session612IndexToTrollAncestor(Session session, Player player, index){
 		player.quirk.prefix = "";
 	}else if(index == 11){
 		player.aspect = Aspects.DOOM;
-		player.moon = session.derse;
+		
+		//player.moon = session.derse; Sorry I forgot you Mituna
+		
+		player.moon = session.rand.pickFrom[session.prospit, session.derse];
+		player.dreamPlayerProspit = session.players[11]; //I think this one's Mituna and not Sollux, I'll have to test.
+		player.dreamPlayerDerse = session.players[11];	
+		
 		player.land = player.spawnLand();
 		player.land.name = "Land of Brains and Fire";
 		player.class_name = SBURBClassManager.HEIR;
