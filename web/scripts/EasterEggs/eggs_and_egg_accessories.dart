@@ -1637,7 +1637,13 @@ void session612IndexToTroll(Session session, Player player, int index){
 		player.quirk.suffix = "";
 		player.quirk.prefix = "";
 	}else if(index == 11){
-		player.moon = session.derse;//no way to have two dream selves righ tnow.;
+		//player.moon = session.derse;//no way to have two dream selves righ tnow.; [Well now there is JR, hahahahah]
+		
+		player.moon = session.rand.pickFrom[session.prospit, session.derse]
+		player.dreamPlayerProspit = session.players[11];
+		player.dreamPlayerDerse = session.players[11];
+		
+		
 		player.land = player.spawnLand();
 		player.land.name = "Land of Brains and Fire";
 		player.aspect = Aspects.DOOM;
