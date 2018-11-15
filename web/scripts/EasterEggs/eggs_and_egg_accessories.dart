@@ -1638,8 +1638,9 @@ void session612IndexToTroll(Session session, Player player, int index){
 		player.quirk.prefix = "";
 	}else if(index == 11){
 		//player.moon = session.derse;//no way to have two dream selves righ tnow.; [Well now there is JR, hahahahah]
-		
-		player.moon = session.rand.pickFrom[session.prospit, session.derse]
+
+		player.moon.name = session.rand.pickFrom(["Prospit", "Derse"]);
+		player.syncToSessionMoon();
 		player.dreamPlayerProspit = session.players[11];
 		player.dreamPlayerDerse = session.players[11];
 		
@@ -1937,8 +1938,9 @@ void session612IndexToTrollAncestor(Session session, Player player, index){
 		player.aspect = Aspects.DOOM;
 		
 		//player.moon = session.derse; Sorry I forgot you Mituna
-		
-		player.moon = session.rand.pickFrom[session.prospit, session.derse];
+
+		player.moon.name = session.rand.pickFrom(["Prospit", "Derse"]);
+		player.syncToSessionMoon();
 		player.dreamPlayerProspit = session.players[11]; //I think this one's Mituna and not Sollux, I'll have to test.
 		player.dreamPlayerDerse = session.players[11];	
 		
