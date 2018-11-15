@@ -539,6 +539,9 @@ class Player extends GameEntity{
             }
           }
         }
+        if(aspect == Aspects.CHILL && class_name == SBURBClassManager.LORD) {
+          this.murderMode = true;
+        }
         this.godTier = true;
         this.session.stats.godTier = true;
         this.dreamSelf = false;
