@@ -91,6 +91,7 @@ class Player extends GameEntity{
     bool isDreamSelf = false; //players can be triggered for various things. higher their triggerLevle, greater chance of going murdermode or GrimDark.
     bool murderMode = false; //kill all players you don't like. odds of a just death skyrockets.
     bool leftMurderMode = false; //have scars, unless left via death.
+    bool noChill = false;
     num corruptionLevelOther = 0; //every 100 points, sends you to next grimDarkLevel.
     num gnosis = 0; //sburbLore causes you to increase a level of this.
     num grimDark = 0; //  0 = none, 1 = some, 2 = some more 3 = full grim dark with aura and font and everything.
@@ -291,6 +292,19 @@ class Player extends GameEntity{
         this.murderMode = false;
         this.leftMurderMode = true;
         this.renderSelf("unmakeMurderMode");
+    }
+
+    void makeNoChill() {
+      this.noChill = true;
+      this.increasePower();
+      this.renderSelf("noChill"); //new scars. //can't do scars just on top of sprite 'cause hair might cover.'
+    }
+
+    void unmakeNoChill() {
+      if(session.mutator.rageField) return; //you don't LEAVE murdermode until you are mothering fuck DONE you heretic
+      if(this.tgno == 1) return; //Same for Taze
+      this.noChill = false;
+      this.renderSelf("unmakeNoChill");
     }
 
     void addDoomedTimeClone(Player timeClone) {
@@ -539,9 +553,7 @@ class Player extends GameEntity{
             }
           }
         }
-        if(aspect == Aspects.CHILL && class_name == SBURBClassManager.LORD) {
-          this.murderMode = true;
-        }
+
         this.godTier = true;
         this.session.stats.godTier = true;
         this.dreamSelf = false;
@@ -560,6 +572,7 @@ class Player extends GameEntity{
         this.influenceSymbol = null;
         this.dead = false;
         this.murderMode = false;
+        this.noChill = false;
         this.setStat(Stats.CURRENT_HEALTH, Math.max(this.getStat(Stats.HEALTH), 1)); //if for some reason your hp is negative, don't do that.
         ////print("HP after being brought back from the dead: " + this.currentHP);
         this.grimDark = 0;
@@ -605,6 +618,10 @@ class Player extends GameEntity{
 
         if (this.murderMode) {
             ret = "${ret}Murder Mode ";
+        }
+
+        if (this.noChill) {
+            ret = "${ret}No Chill ";
         }
 
         if (this.grimDark > 3) {
@@ -1135,6 +1152,7 @@ class Player extends GameEntity{
         clone.isDreamSelf = isDreamSelf; //players can be triggered for various things. higher their triggerLevle, greater chance of going murdermode or GrimDark.
         clone.murderMode = murderMode; //kill all players you don't like. odds of a just death skyrockets.
         clone.leftMurderMode = leftMurderMode; //have scars, unless left via death.
+        clone.noChill = noChill;
         clone.corruptionLevelOther = corruptionLevelOther; //every 100 points, sends you to next grimDarkLevel.
         clone.gnosis = gnosis;
         clone.grimDark = grimDark; //  0 = none, 1 = some, 2 = some more 3 = full grim dark with aura and font and everything.
@@ -1935,6 +1953,7 @@ class Player extends GameEntity{
         this.godDestiny = replayPlayer.godDestiny;
         this.murderMode = replayPlayer.murderMode;
         this.leftMurderMode = replayPlayer.leftMurderMode;
+        this.noChill = replayPlayer.noChill;
         this.grimDark = replayPlayer.grimDark;
 
         this.moon = replayPlayer.moon;
@@ -2294,6 +2313,7 @@ class Player extends GameEntity{
         ret.victimBlood = player.victimBlood;
         ret.murderMode = player.murderMode;
         ret.leftMurderMode = player.leftMurderMode; //scars
+        ret.noChill = player.noChill;
         ret.dead = player.dead;
         ret.isTroll = player.isTroll;
         ret.godTier = player.godTier;

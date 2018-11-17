@@ -220,6 +220,7 @@ dynamic loadOther(Session session, String skipInit){
   loadImage(session,"doom_res.png", skipInit);
   loadImage(session,"life_res.png", skipInit);
 	loadImage(session,"stab.png",skipInit);
+	loadImage(session, "no_chill.png", skipInit);
   loadImage(session,"denizoned.png",skipInit);
   loadImage(session,"sceptre.png",skipInit);
 	loadImage(session,"rainbow.png",skipInit);

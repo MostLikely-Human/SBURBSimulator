@@ -1546,6 +1546,9 @@ abstract class Drawing {
             if (player.leftMurderMode == true) {
                 scar_face(canvas, player);
             }
+            if (player.noChill == true) {
+                no_chill_face(canvas, player);
+            }
             if (player.robot == true) {
                 robo_face(canvas, player);
             }
@@ -1558,6 +1561,9 @@ abstract class Drawing {
                 }
                 if (player.leftMurderMode == true) {
                     scar_face(canvas, player);
+                }
+                if (player.noChill == true) {
+                    no_chill_face(canvas, player);
                 }
                 if (player.robot == true) {
                     robo_face(canvas, player);
@@ -1661,6 +1667,14 @@ abstract class Drawing {
     static void scar_face(CanvasElement canvas, Player player) {
         CanvasRenderingContext2D ctx = canvas.getContext('2d');
         String imageString = "calm_scratch_face.png";
+        addImageTag(imageString);
+        ImageElement img = imageSelector(imageString);
+        ctx.drawImage(img, 0, 0);
+    }
+
+    static void no_chill_face(CanvasElement canvas, Player player) {
+        CanvasRenderingContext2D ctx = canvas.getContext('2d');
+        String imageString = "no_chill.png";
         addImageTag(imageString);
         ImageElement img = imageSelector(imageString);
         ctx.drawImage(img, 0, 0);

@@ -91,7 +91,7 @@ class Rune extends Aspect {
         new Quest("The ${Quest.PLAYER1} is walking around in a village of ${Quest.CONSORT}s, when a Consort walks up to them. It says that The ${Quest.PLAYER1} has to learn magic, so they can fight the ${Quest.DENIZEN}. The ${Quest.PLAYER1} promises to do their best."),
         new Quest("The ${Quest.PLAYER1} is practicing the arcana, they're starting to get pretty good."),
         new Quest("The ${Quest.PLAYER1} is able to fight numerous imps with their magic now, they are ready to fight the ${Quest.DENIZEN}..."),
-        new DenizenFightQuest("","","")
+        new DenizenFightQuest("The ${Quest.PLAYER1} storms into the ${Quest.DENIZEN}'s lair, ready to duel...","The ${Quest.DENIZEN} has beem killed by the ${Quest.PLAYER1}'s impressive use of magic.","The ${Quest.PLAYER1}'s magic was not enough to do defeat the ${Quest.DENIZEN}...")
       ], new DenizenReward(), QuestChainFeature.defaultOption), Feature.WAY_LOW)
         ,  Theme.HIGH);
   }

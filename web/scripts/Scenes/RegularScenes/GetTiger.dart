@@ -143,6 +143,11 @@ class GetTiger extends Scene{
 				ret += "<br><Br>... Paradox Space has chosen The ${p.htmlTitle()} to join the ranks of the Stone aspect, I wonder how this will end...";
 				session.stats.hasStoneChoosening = true;
 			}
+			if(p.aspect == Aspects.CHILL && p.class_name == SBURBClassManager.LORD) {
+				p.makeNoChill();
+				ret += "<br><Br>... The ${p.htmlTitle()} has gone insane, and lost all their \"chill\".";
+			}
+
 			return ret;
 		}
 	}
