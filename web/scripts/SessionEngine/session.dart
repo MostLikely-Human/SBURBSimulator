@@ -1144,17 +1144,23 @@ class Session {
         //print(npcHandler.debugNPCs());
         await SimController.instance.easterEggCallBack(this);
 
-        Aspects.GAUNTLET.name = "Stone";
-        Aspects.MINDSTONE.name = "Stone";
-        Aspects.SPACESTONE.name = "Stone";
-        Aspects.POWERSTONE.name = "Stone";
-        Aspects.SOULSTONE.name = "Stone";
-        Aspects.TIMESTONE.name = "Stone";
-        Aspects.REALITYSTONE.name = "Stone";
+        if(getParameterByName("dev",null) != "tools") {
+            Aspects.GAUNTLET.name = "Stone";
+            Aspects.MINDSTONE.name = "Stone";
+            Aspects.SPACESTONE.name = "Stone";
+            Aspects.POWERSTONE.name = "Stone";
+            Aspects.SOULSTONE.name = "Stone";
+            Aspects.TIMESTONE.name = "Stone";
+            Aspects.REALITYSTONE.name = "Stone";
 
-        Aspects.RE_BEAR.name = "Bear";
-        Aspects.RE_HIPPO.name = "Hippo";
-        Aspects.RE_LOCK.name = "Lock";
+            Aspects.RE_BEAR.name = "Bear";
+            Aspects.RE_HIPPO.name = "Hippo";
+            Aspects.RE_LOCK.name = "Lock";
+
+            Aspects.MOONPROSPIT.name = "Prospit";
+            Aspects.MOONDERSE.name = "Derse";
+        }
+
         return completer.future;
     }
 

@@ -39,6 +39,8 @@ import "Chill.dart";
 import "Rune.dart";
 import "Haze.dart";
 import "Reskin.dart";
+import "MoonProspit.dart";
+import "MoonDerse.dart";
 
 
 
@@ -86,6 +88,9 @@ abstract class Aspects {
     static Aspect SNOW;
     static Aspect FLOW;
     static Aspect STARS;
+
+    static Aspect MOONPROSPIT;
+    static Aspect MOONDERSE;
 
 
     static Aspect RE_BEAR;
@@ -139,7 +144,10 @@ abstract class Aspects {
         FLOW = new Flow(40);
         STARS = new Stars(41);
 
-        int maxID = 41;
+        MOONPROSPIT = new MoonProspit(42);
+        MOONDERSE = new MoonDerse(43);
+
+        int maxID = 43;
 
 
         RE_BEAR = new Re_Bear(maxID+1);
