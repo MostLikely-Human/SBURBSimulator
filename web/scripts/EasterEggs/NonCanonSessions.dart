@@ -47,7 +47,7 @@ abstract class NonCanonSessions {
     }
 
     static void session1111111(Session session) {
-        int numPlayers = 10;
+        int numPlayers = 11;
         makeASessionFromSource(session, session1111111IndexToPlayer, numPlayers);
         session.players.length = numPlayers; //no more, no less. Unless stuff happens.
     }
@@ -233,6 +233,23 @@ abstract class NonCanonSessions {
             player.land = player.spawnLand();
             player.land.name = "Land of Crowns and Blossoms";
             player.land.denizenFeature = new DenizenFeature("Gaia");
+        }else if (index == 10) {
+            player.copyFromOCDataString("b=%00%00%00%C3%86%C3%BEW%00%17%17%17%25&s=,,Betrayal,Plot Twists,jovialReader&x=AQ==");
+
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+
+            player.deriveSprite = false;
+            player.object_to_prototype = new PotentialSprite("Orwell", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Cities and Swamps";
+            player.land.denizenFeature = new DenizenFeature("Geneva");
         }
     }
 
