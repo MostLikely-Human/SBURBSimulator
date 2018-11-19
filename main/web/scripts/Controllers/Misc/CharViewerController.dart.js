@@ -8373,7 +8373,6 @@ s.backgroundColor="#f8c858"
 t=t.querySelector("body").style
 t.backgroundImage="url(images/pen15_bg1.png)"}if(J.d(O.b4("faces",null),"off"))L.a0H(a)
 if(J.d(O.b4("tier",null),"cod")||J.d(O.b4("mode",null),"manic"))L.Px(a)
-if(J.d(O.b4("lollipop",null),"true"))L.a1U(a)
 if(J.d(O.b4("robot",null),"true"))L.a1y(a)
 if(J.d(O.b4("sbajifier",null),"true"))L.a1z(a)
 if(J.d(O.b4("babyStuck",null),"true"))L.a0m(a)
@@ -8403,6 +8402,7 @@ r.i(0,1111111,D.Yz())
 r.i(0,21520,D.YJ())
 r.i(0,1222112,D.YB())
 if(r.aA(0,t))r.p(0,t).$1(a)
+if(J.d(O.b4("lollipop",null),"true"))L.a1U(a)
 if(J.d(O.b4("self",null),"cest"))L.a0e(a)
 if(J.d(O.b4("images",null),"pumpkin"))$.cC=!0
 if(J.d(O.b4("prophecy",null),"pigeon"))L.a1n(a)
@@ -11397,6 +11397,7 @@ YW:function(a,b,c){var t,s,r,q,p,o,n,m,l,k,j
 b.sfc(!1)
 b.sfd(!1)
 b.sfL(!0)
+b.sb2(!0)
 if(c===0){b.b6("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==")
 b.su($.Lo)
 t=$.e4
@@ -43421,7 +43422,7 @@ t=a.ga7()
 t.toString
 a.gae().a5(C.f,"AB: Huh. Looks like a "+H.e(J.dj(b))+" is going at it.")
 s=b.gaI()==="jadedResearcher"?"....GOD FUCKING DAMN IT. These punk fucking asshole Wastes that don't know what they are doing have gone too far.  STAY THE FUCK AWAY FROM MY YARD YOU ASSHOLES!!!  <br><Br>Fuck. Whatever. Something something glowing code.  I'm not gonna even dignifty this asshole with a name. You know who it is.  Have fun COMPLETELY over using my gimick, asshole. See how much you like nullifying the basic ability of intelligent beings in all real and hypothetical planes of existance to give a shit.  I'm just gonna be over here, laughing when shit gets real, which it always does. And no. You do NOT get to borrow my YellowYard to do this.  Should have thought of that before you hacked the code. Good luck controlling it without the YellowYard. Also. I shouldn't even HAVE to say this.... But you DO know that gnosis fucks with transtimeline shit, right? Good luck even gettin your shit to work.  And no, I do NOT care that this asshole Waste is probably just past me.  PastJR is like, the LEAST competant JR when it comes to pulling shit like this off.":"....GOD FUCKING DAMN IT. These punk fucking asshole Wastes that don't know what they are doing have gone too far.  STAY THE FUCK AWAY FROM MY YARD YOU ASSHOLES!!!  <br><Br>Fuck. Whatever. Something something glowing code.  I'm not gonna even dignifty this asshole with a name. You know who it is.  Have fun COMPLETELY over using my gimick, asshole. See how much you like nullifying the basic ability of intelligent beings in all real and hypothetical planes of existance to give a shit.  I'm just gonna be over here, laughing when shit gets real, which it always does. And no. You do NOT get to borrow my YellowYard to do this.  Should have thought of that before you hacked the code. Good luck controlling it without the YellowYard. Also. I shouldn't even HAVE to say this.... But you DO know that gnosis fucks with transtimeline shit, right? Good luck even gettin your shit to work. "
-if(b.ghe())s+=" Since thus Waste is trickster, they get... THE YUMMY YARD.";++t.b
+if(b.ghe())s+="<br><Br>Since this Waste is trickster, they get... THE YUMMY YARD.";++t.b
 t.ch=!0
 t.Gc(a.ik("MindGnosis4"),a)
 return s},

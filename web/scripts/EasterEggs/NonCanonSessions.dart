@@ -58,6 +58,7 @@ abstract class NonCanonSessions {
         player.deriveChatHandle = false;
         player.deriveLand = false;
         player.deriveSpecibus = true;
+        player.godDestiny = true;
         if (index == 0) {
             player.copyFromOCDataString("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==");
             player.aspect = Aspects.FLOW;

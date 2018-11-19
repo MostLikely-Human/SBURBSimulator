@@ -8373,7 +8373,6 @@ s.backgroundColor="#f8c858"
 t=t.querySelector("body").style
 t.backgroundImage="url(images/pen15_bg1.png)"}if(J.d(O.bQ("faces",null),"off"))L.a1h(a)
 if(J.d(O.bQ("tier",null),"cod")||J.d(O.bQ("mode",null),"manic"))L.Qb(a)
-if(J.d(O.bQ("lollipop",null),"true"))L.a2s(a)
 if(J.d(O.bQ("robot",null),"true"))L.a26(a)
 if(J.d(O.bQ("sbajifier",null),"true"))L.a27(a)
 if(J.d(O.bQ("babyStuck",null),"true"))L.a0X(a)
@@ -8402,6 +8401,7 @@ r.i(0,1111111,D.Z9())
 r.i(0,21520,D.Zj())
 r.i(0,1222112,D.Zb())
 if(r.aA(0,t))r.p(0,t).$1(a)
+if(J.d(O.bQ("lollipop",null),"true"))L.a2s(a)
 if(J.d(O.bQ("self",null),"cest"))L.a0P(a)
 if(J.d(O.bQ("images",null),"pumpkin"))$.cE=!0
 if(J.d(O.bQ("prophecy",null),"pigeon"))L.a1W(a)
@@ -11401,6 +11401,7 @@ Zw:function(a,b,c){var t,s,r,q,p,o,n,m,l,k,j
 b.sfe(!1)
 b.sff(!1)
 b.sfN(!0)
+b.sb0(!0)
 if(c===0){b.b7("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==")
 b.su($.M1)
 t=$.e5
@@ -41823,11 +41824,11 @@ return C.c.q("They boggle vacantly at the ",this.d.gv().fy)+". "},
 AD:function(){var t,s,r,q
 t=R.kK(this.b.gL())
 s=J.d(this.d.gu(),$.aT)&&this.d.gZ()!=null&&!this.d.gZ().gic()
-r=$.p
-q=this.b
-if(s){s=t.a3(r)
-return q.eW(new Z.D5(10,q,this.d,s,1,null,0,null))}else{s=t.a3(r)
-return q.eW(new Z.A_(5,q,this.d,s,1,null,0,null))}},
+r=this.b
+q=$.p
+if(s){s=t.a3(q)
+return r.eW(new Z.D5(10,r,this.d,s,1,null,0,null))}else{s=t.a3(q)
+return r.eW(new Z.A_(5,r,this.d,s,1,null,0,null))}},
 gc4:function(){return this.d},
 sc4:function(a){return this.d=a}}
 A.aM.prototype={
@@ -43645,7 +43646,7 @@ t=a.ga7()
 t.toString
 a.gag().a5(C.e,"AB: Huh. Looks like a "+H.e(J.dk(b))+" is going at it.")
 s=b.gaG()==="jadedResearcher"?"....GOD FUCKING DAMN IT. These punk fucking asshole Wastes that don't know what they are doing have gone too far.  STAY THE FUCK AWAY FROM MY YARD YOU ASSHOLES!!!  <br><Br>Fuck. Whatever. Something something glowing code.  I'm not gonna even dignifty this asshole with a name. You know who it is.  Have fun COMPLETELY over using my gimick, asshole. See how much you like nullifying the basic ability of intelligent beings in all real and hypothetical planes of existance to give a shit.  I'm just gonna be over here, laughing when shit gets real, which it always does. And no. You do NOT get to borrow my YellowYard to do this.  Should have thought of that before you hacked the code. Good luck controlling it without the YellowYard. Also. I shouldn't even HAVE to say this.... But you DO know that gnosis fucks with transtimeline shit, right? Good luck even gettin your shit to work.  And no, I do NOT care that this asshole Waste is probably just past me.  PastJR is like, the LEAST competant JR when it comes to pulling shit like this off.":"....GOD FUCKING DAMN IT. These punk fucking asshole Wastes that don't know what they are doing have gone too far.  STAY THE FUCK AWAY FROM MY YARD YOU ASSHOLES!!!  <br><Br>Fuck. Whatever. Something something glowing code.  I'm not gonna even dignifty this asshole with a name. You know who it is.  Have fun COMPLETELY over using my gimick, asshole. See how much you like nullifying the basic ability of intelligent beings in all real and hypothetical planes of existance to give a shit.  I'm just gonna be over here, laughing when shit gets real, which it always does. And no. You do NOT get to borrow my YellowYard to do this.  Should have thought of that before you hacked the code. Good luck controlling it without the YellowYard. Also. I shouldn't even HAVE to say this.... But you DO know that gnosis fucks with transtimeline shit, right? Good luck even gettin your shit to work. "
-if(b.ghj())s+=" Since thus Waste is trickster, they get... THE YUMMY YARD.";++t.b
+if(b.ghj())s+="<br><Br>Since this Waste is trickster, they get... THE YUMMY YARD.";++t.b
 t.ch=!0
 t.GB(a.io("MindGnosis4"),a)
 return s},
@@ -45962,14 +45963,14 @@ eg:function(a,b,c,d){return this.bR(a,b,c,d,null)}}
 Y.dC.prototype={
 bR:function(a,b,c,d,e){var t,s,r,q,p
 t=e!=null?e:""
-if(c!=null){s=$.cW
-r=$.II
-if(c instanceof Q.v){t+="The "+s+" gains the fraymotif "+r+", while the "+$.hW+" gets the fraymotif "+$.Nj+"! "
+if(c!=null){s=$.II
+r=$.cW
+if(c instanceof Q.v){t+="The "+r+" gains the fraymotif "+s+", while the "+$.hW+" gets the fraymotif "+$.Nj+"! "
 q=b.eD(c)
 p=c.eD(b)
 s=this.c
 if(s!=null)J.hl(p,s)
-t=H.al(H.al(t,$.hW,c.bg()),$.Nj,H.e(J.Z(p)))}else{t+=" The "+s+" gains the fraymotif "+r+"! "
+t=H.al(H.al(t,$.hW,c.bg()),$.Nj,H.e(J.Z(p)))}else{t+=" The "+r+" gains the fraymotif "+s+"! "
 q=null}}else{t+=" The "+$.cW+" gains the fraymotif "+$.II+"! "
 q=null}if(q==null)q=b.eD(null)
 s=this.c

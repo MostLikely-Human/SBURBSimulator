@@ -8179,7 +8179,6 @@ s.backgroundColor="#f8c858"
 t=t.querySelector("body").style
 t.backgroundImage="url(images/pen15_bg1.png)"}if(J.c(O.bX("faces",null),"off"))L.a_v(a)
 if(J.c(O.bX("tier",null),"cod")||J.c(O.bX("mode",null),"manic"))L.On(a)
-if(J.c(O.bX("lollipop",null),"true"))L.a0B(a)
 if(J.c(O.bX("robot",null),"true"))L.a0h(a)
 if(J.c(O.bX("sbajifier",null),"true"))L.a0i(a)
 if(J.c(O.bX("babyStuck",null),"true"))L.a_9(a)
@@ -8209,6 +8208,7 @@ r.i(0,1111111,D.Xh())
 r.i(0,21520,D.Xr())
 r.i(0,1222112,D.Xj())
 if(r.aw(0,t))r.p(0,t).$1(a)
+if(J.c(O.bX("lollipop",null),"true"))L.a0B(a)
 if(J.c(O.bX("self",null),"cest"))L.a_1(a)
 if(J.c(O.bX("images",null),"pumpkin"))$.cY=!0
 if(J.c(O.bX("prophecy",null),"pigeon"))L.a06(a)
@@ -8548,7 +8548,7 @@ b.sf4(!1)
 b.sf5(!1)
 if(c===0){b.saG("#ff0000")
 b.sJ($.fo)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cK)
 b.sb4(3)
 b.scW("#000000")
@@ -8567,7 +8567,7 @@ b.st(b.aj())
 b.gt().fy="Land of Wind and Shade"
 b.sak(a.x)}else if(c===1){b.sak(a.y)
 b.saG("#ff0000")
-b.sb2(!0)
+b.sb1(!0)
 b.sJ($.dk)
 b.st(b.aj())
 b.gt().fy="Land of Light and Rain"
@@ -8605,7 +8605,7 @@ b.gl().f=0
 b.gl().c=0
 b.gl().a=[]
 b.gl().b=[["hey","sup"]]
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""}else if(c===3){b.sak(a.x)
 b.saG("#ff0000")
@@ -8627,12 +8627,12 @@ b.gl().c=3
 b.gl().r=5
 b.gl().a=[]
 b.gl().b=[]
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""}else if(c===4){b.sak(a.x)
 b.saG("#ff0000")
 b.sJ($.eO)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cT)
 b.st(b.aj())
 b.gt().fy="Land of Crypts and Helium"
@@ -8669,7 +8669,7 @@ b.gl().f=0
 b.gl().c=0
 b.gl().a=[]
 b.gl().b=[["like","liek"],["school","skool"]]
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""}else if(c===6){b.sak(a.y)
 b.saG("#ff0000")
@@ -8690,7 +8690,7 @@ b.gl().f=1
 b.gl().c=2
 b.gl().a=[]
 b.gl().b=[["hey","sup"]]
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""}else if(c===7){b.sak(a.x)
 b.saG("#ff0000")
@@ -8711,7 +8711,7 @@ b.gl().f=1
 b.gl().c=1
 b.gl().a=[]
 b.gl().b=[["lol","good one"]]
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""}},
 nL:function(a,b,c){b.sbK(!1)
@@ -8820,7 +8820,7 @@ b.sbu(c.dA)
 b.sb4(c.ct)
 b.saG(c.b0)
 b.scW(c.c4)
-b.sb2(c.fU)
+b.sb1(c.fU)
 b.sh1(c.cV)
 b.sae(c.y1)
 b.saJ(c.aX)
@@ -9162,7 +9162,7 @@ if(t.T()>0.6){b.sh1(!0)
 b.saG("#0021cb")
 b.scW("#313131")}if(t.T()>0.6)b.sae(!0)
 b.saJ("apocalypseArisen")
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""
 s=Z.N("Telekinesis",1,null,"")
@@ -9248,7 +9248,7 @@ b.saB(new B.a8(t,"Life Action Roleplaying"))
 b.saJ("arachnidsGrip")
 b.gl().e=""
 b.gl().d=""
-b.sb2(!0)
+b.sb1(!0)
 s=Z.N("Mind Control",1,null,"")
 t=s.r
 t.push(new Z.E($.a5,3,!0,0,1,2,3,""))
@@ -9565,7 +9565,7 @@ t=$.dC
 t.ah("Live Action Role-playing")
 b.saB(new B.a8(t,"Live Action Role-playing"))
 b.saJ("arachnidsGrip")
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""
 s=Z.N("Mind Control",1,null,"")
@@ -9638,7 +9638,7 @@ t=$.dM
 t.ah("Money")
 b.saB(new B.a8(t,"Money"))
 b.saJ("cuttlefishCuller")
-b.sb2(!0)
+b.sb1(!0)
 b.gl().e=""
 b.gl().d=""}else if(c===11){b.sv($.bM)
 J.h9(b.gak(),a.O.A(["Prospit","Derse"]))
@@ -11180,7 +11180,7 @@ a.ga6().H.lb(L.zX(13),!0)
 a.ga6().H
 t=R.da(a,$.fF,$.jp)
 t.ay=D.ej(a.gm())
-t.b1("b=%00%00%00J%C3%BAV%04%10%01%01%3D&s=,,Infinity Stones,Order,Thanos&x=ntAA")
+t.b2("b=%00%00%00J%C3%BAV%04%10%01%01%3D&s=,,Infinity Stones,Order,Thanos&x=ntAA")
 t.ct=76
 s=t.ay
 s.f=$.ch
@@ -11217,7 +11217,8 @@ XE:function(a,b,c){var t,s,r,q,p,o,n,m,l,k,j
 b.sf4(!1)
 b.sf5(!1)
 b.sfA(!0)
-if(c===0){b.b1("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==")
+b.sb1(!0)
+if(c===0){b.b2("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==")
 b.sv($.Kg)
 t=$.e2
 s=$.tl
@@ -11234,7 +11235,7 @@ j.M("",a)
 j.sak(null)
 j.go="player_"+H.f(j.U)
 j.ay=D.ej(a.gm())
-j.b1("b=%2CF%04%3C%C3%BE)%08I%13%13%3C&s=,,Art,Action Movies,&x=AQ==")
+j.b2("b=%2CF%04%3C%C3%BE)%08I%13%13%3C&s=,,Art,Action Movies,&x=AQ==")
 j.aX="artisticEndeavor"
 s=j.ay
 s.c=$.bL
@@ -11257,7 +11258,7 @@ b.sX(r)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Glass and Action"
-b.gt().k1=new Q.bm("Morpheus",null,null,null)}else if(c===1){b.b1("b=r%070%40%C3%B5*%00%02DD%0A&s=,,Drawing,A.I.,Nebula&x=AQ==")
+b.gt().k1=new Q.bm("Morpheus",null,null,null)}else if(c===1){b.b2("b=r%070%40%C3%B5*%00%02DD%0A&s=,,Drawing,A.I.,Nebula&x=AQ==")
 b.sv($.Gd)
 b.gl().f=$.hk
 b.gl().c=$.bL
@@ -11274,7 +11275,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Colors and Music"
-b.gt().k1=new Q.bm("[REDACTED]",null,null,null)}else if(c===2){b.b1("b=%C2%80%00%00%40%C3%BEi%00%1B%0E%20%0F&s=,,Knights,Video Games,inconsequentialContinuity&x=HoAA")
+b.gt().k1=new Q.bm("[REDACTED]",null,null,null)}else if(c===2){b.b2("b=%C2%80%00%00%40%C3%BEi%00%1B%0E%20%0F&s=,,Knights,Video Games,inconsequentialContinuity&x=HoAA")
 b.svL($.eP)
 b.svK($.Kh)
 J.h9(b.gak(),a.gm().A(["Prospit","Derse"]))
@@ -11294,7 +11295,7 @@ j.M("",a)
 j.sak(null)
 j.go="player_"+H.f(j.U)
 j.ay=D.ej(a.gm())
-j.b1("b=%C2%80%00%00%C2%A6%C3%BEj%08%1B%0E%20%0F&s=,,Knights,Robots,intellectualComrade&x=AQ==")
+j.b2("b=%C2%80%00%00%C2%A6%C3%BEj%08%1B%0E%20%0F&s=,,Knights,Robots,intellectualComrade&x=AQ==")
 s=j.ay
 s.c=$.z2
 s.f=$.ch
@@ -11310,7 +11311,7 @@ j.M("",a)
 j.sak(null)
 j.go="player_"+H.f(j.U)
 j.ay=D.ej(a.gm())
-j.b1("b=%C2%80%00%00E%C3%BEi%08%5B%0E%20%0F&s=,,JUSTICE,Video Games,identityCrusader&x=AQ==")
+j.b2("b=%C2%80%00%00E%C3%BEi%08%5B%0E%20%0F&s=,,JUSTICE,Video Games,identityCrusader&x=AQ==")
 t=j.ay
 t.c=$.bL
 t.f=$.hk
@@ -11332,7 +11333,7 @@ b.sX(r)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Heat and Mutiny"
-b.gt().k1=new Q.bm("Tyche",null,null,null)}else if(c===3){b.b1("b=%00%00%00Q%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,extraterrestrialTerror&x=JogA")
+b.gt().k1=new Q.bm("Tyche",null,null,null)}else if(c===3){b.b2("b=%00%00%00Q%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,extraterrestrialTerror&x=JogA")
 b.gl().f=$.ch
 b.gl().c=$.bL
 b.gl().a=[]
@@ -11348,7 +11349,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Alien Worlds and Stones"
-b.gt().k1=new Q.bm("Ronan",null,null,null)}else if(c===4){b.b1("b=%00%00%00%15%C3%BB%3A%00%0B%17%07%3B&s=,,Murder,The Obscure Game,fhtagnRegeclaiming&x=jigA")
+b.gt().k1=new Q.bm("Ronan",null,null,null)}else if(c===4){b.b2("b=%00%00%00%15%C3%BB%3A%00%0B%17%07%3B&s=,,Murder,The Obscure Game,fhtagnRegeclaiming&x=jigA")
 b.sv($.Gd)
 b.sJ($.hm)
 b.gl().f=$.YA
@@ -11366,7 +11367,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Murk and Incubus"
-b.gt().k1=new Q.bm("Grima",null,null,null)}else if(c===5){b.b1("b=%C2%84%5C%10A%C3%BE%C2%9D%00%0B))%3C&s=,,Video Games,Astronomy,agnosticAsshole&x=AQ==")
+b.gt().k1=new Q.bm("Grima",null,null,null)}else if(c===5){b.b2("b=%C2%84%5C%10A%C3%BE%C2%9D%00%0B))%3C&s=,,Video Games,Astronomy,agnosticAsshole&x=AQ==")
 b.gl().f=$.ch
 b.gl().c=$.bL
 b.gl().a=[]
@@ -11382,7 +11383,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Minutes and Locomotion"
-b.gt().k1=new Q.bm("Kairos",null,null,null)}else if(c===6){b.b1("b=%00%00%00%C2%B0%C3%BE%C2%99%00%0C%06%05%23&s=,,Video Games,Occult,celticNight&x=AQ==")
+b.gt().k1=new Q.bm("Kairos",null,null,null)}else if(c===6){b.b2("b=%00%00%00%C2%B0%C3%BE%C2%99%00%0C%06%05%23&s=,,Video Games,Occult,celticNight&x=AQ==")
 b.gl().f=$.hk
 b.gl().c=$.z2
 b.gl().a=[]
@@ -11398,7 +11399,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Frogs and Strings"
-b.gt().k1=new Q.bm("Thesis",null,null,null)}else if(c===7){b.b1("b=8%22%07%C2%8B%C3%BE%C3%98%00U%24*%1E&s=,,Science,Gardening,plutonicStarlight&x=AQ==")
+b.gt().k1=new Q.bm("Thesis",null,null,null)}else if(c===7){b.b2("b=8%22%07%C2%8B%C3%BE%C3%98%00U%24*%1E&s=,,Science,Gardening,plutonicStarlight&x=AQ==")
 b.gl().c=$.bL
 b.gl().f=$.ch
 b.gl().a=[]
@@ -11414,7 +11415,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Prisms and Plants"
-b.gt().k1=new Q.bm("Lumos",null,null,null)}else if(c===8){b.b1("b=%00%00%00%C2%98%C3%B8%C2%8B%10Q%2B%2B%11&s=,,Gardening,Animals,bombardedVigilante&x=AQ==")
+b.gt().k1=new Q.bm("Lumos",null,null,null)}else if(c===8){b.b2("b=%00%00%00%C2%98%C3%B8%C2%8B%10Q%2B%2B%11&s=,,Gardening,Animals,bombardedVigilante&x=AQ==")
 b.gl().c=$.bL
 b.gl().f=$.ch
 b.gl().a=[]
@@ -11430,7 +11431,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Horror and Mystery"
-b.gt().k1=new Q.bm("Sieg",null,null,null)}else if(c===9){b.b1("b=%C3%B5%C2%B2%C3%AA%5B%C3%BE%C2%8B%00B..%10&s=,,Gardening,Pets,simplyDelilah&x=AQ==")
+b.gt().k1=new Q.bm("Sieg",null,null,null)}else if(c===9){b.b2("b=%C3%B5%C2%B2%C3%AA%5B%C3%BE%C2%8B%00B..%10&s=,,Gardening,Pets,simplyDelilah&x=AQ==")
 b.gl().c=$.bL
 b.gl().f=$.hk
 b.gl().a=[]
@@ -11446,7 +11447,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Crowns and Blossoms"
-b.gt().k1=new Q.bm("Gaia",null,null,null)}else if(c===10){b.b1("b=%00%00%00%C3%86%C3%BEW%00%17%17%17%25&s=,,Betrayal,Plot Twists,jovialReader&x=AQ==")
+b.gt().k1=new Q.bm("Gaia",null,null,null)}else if(c===10){b.b2("b=%00%00%00%C3%86%C3%BEW%00%17%17%17%25&s=,,Betrayal,Plot Twists,jovialReader&x=AQ==")
 b.gl().c=$.bL
 b.gl().f=$.ch
 b.gl().a=[]
@@ -11469,7 +11470,7 @@ XO:function(a,b,c){var t,s
 b.sf4(!1)
 b.sf5(!1)
 b.sfA(!0)
-if(c===0){b.b1("b=%C3%BF%C3%B3%C2%BD%1A%C3%BE%2B%00W%14%14%2C&s=,,Chatting,Online Roleplaying,generalChan&x=jlAA")
+if(c===0){b.b2("b=%C3%BF%C3%B3%C2%BD%1A%C3%BE%2B%00W%14%14%2C&s=,,Chatting,Online Roleplaying,generalChan&x=jlAA")
 b.gl().f=$.ch
 b.gl().c=$.bL
 b.gl().a=[]
@@ -11485,7 +11486,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Cartons and Inactivity"
-b.gt().k1=new Q.bm("Channel",null,null,null)}else if(c===1){b.b1("b=%C2%B7%00%00%C2%B1%C3%BE%C2%A2%00%3A%14%1F8&s=,,,Music,rythmBot&x=AQ==")
+b.gt().k1=new Q.bm("Channel",null,null,null)}else if(c===1){b.b2("b=%C2%B7%00%00%C2%B1%C3%BE%C2%A2%00%3A%14%1F8&s=,,,Music,rythmBot&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -11495,7 +11496,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Kicks and Lag"
-b.gt().k1=new Q.bm("Retrieve Arms",null,null,null)}else if(c===2){b.b1("b=%11%C3%95%C3%8Fr%C3%BE%C2%A2%00%C3%90((%1E&s=,,Say ;;help,Music,fredBoat&x=NpAA")
+b.gt().k1=new Q.bm("Retrieve Arms",null,null,null)}else if(c===2){b.b2("b=%11%C3%95%C3%8Fr%C3%BE%C2%A2%00%C3%90((%1E&s=,,Say ;;help,Music,fredBoat&x=NpAA")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -11505,7 +11506,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Voice Chats and Databanks"
-b.gt().k1=new Q.bm("ProxximHour",null,null,null)}else if(c===3){b.b1("b=%C2%AC%C2%A0%C2%BC%20%C3%BE%C2%AB%00%1C%08%08%25&s=,,Message for help,Live Action Roleplaying,roleplayBot&x=AQ==")
+b.gt().k1=new Q.bm("ProxximHour",null,null,null)}else if(c===3){b.b2("b=%C2%AC%C2%A0%C2%BC%20%C3%BE%C2%AB%00%1C%08%08%25&s=,,Message for help,Live Action Roleplaying,roleplayBot&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -11522,7 +11523,7 @@ XG:function(a,b,c){var t,s
 b.sf4(!1)
 b.sf5(!1)
 b.sfA(!0)
-if(c===0){b.b1("b=%26750%C3%BE(%00%1A.%06%1D&s=,,Chatting,Moderating,lonelyBandicoot&x=ngAA")
+if(c===0){b.b2("b=%26750%C3%BE(%00%1A.%06%1D&s=,,Chatting,Moderating,lonelyBandicoot&x=ngAA")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -11532,7 +11533,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Memery and Pepperoni Secrets"
-b.gt().k1=new Q.bm("Egg",null,null,null)}else if(c===1){b.b1("b=%C3%BE%C3%BD%C3%85!%C3%BE%C3%92%00W%1B%1B'&s=,,Puzzles,Confusion,popcornLove&x=lggA")
+b.gt().k1=new Q.bm("Egg",null,null,null)}else if(c===1){b.b2("b=%C3%BE%C3%BD%C3%85!%C3%BE%C3%92%00W%1B%1B'&s=,,Puzzles,Confusion,popcornLove&x=lggA")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -11557,7 +11558,7 @@ if(3>=t.length)return H.d(t,3)},
 XI:function(a,b,c){var t,s
 b.sf4(!1)
 b.sf5(!1)
-if(c===0){b.b1("b=bF%0D%C3%80%C3%BEU%04%11!%09%08&s=,,Loss,Loss,IethanLoss&x=AQ==")
+if(c===0){b.b2("b=bF%0D%C3%80%C3%BEU%04%11!%09%08&s=,,Loss,Loss,IethanLoss&x=AQ==")
 b.gl().f=$.ch
 b.gl().c=$.bL
 b.gl().a=[]
@@ -11573,7 +11574,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Loss and Loss"
-b.gt().k1=new Q.bm("Loss",null,null,null)}else if(c===1){b.b1("b=%C3%80%C2%8D%16%C2%91%C3%BEU%04%12%0C%0CB&s=,,Loss,Loss,IIreceptionistLoss&x=AQ==")
+b.gt().k1=new Q.bm("Loss",null,null,null)}else if(c===1){b.b2("b=%C3%80%C2%8D%16%C2%91%C3%BEU%04%12%0C%0CB&s=,,Loss,Loss,IIreceptionistLoss&x=AQ==")
 b.gl().f=$.ch
 b.gl().c=$.bL
 b.gl().a=[]
@@ -11589,7 +11590,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Loss and Loss"
-b.gt().k1=new Q.bm("Loss",null,null,null)}else if(c===2){b.b1("b=%0C%0C%0CS%C3%BEU%04%12*%15%25&s=,,Loss,Loss,IIdoctorLoss&x=AQ==")
+b.gt().k1=new Q.bm("Loss",null,null,null)}else if(c===2){b.b2("b=%0C%0C%0CS%C3%BEU%04%12*%15%25&s=,,Loss,Loss,IIdoctorLoss&x=AQ==")
 b.gl().f=$.ch
 b.gl().c=$.bL
 b.gl().a=[]
@@ -11605,7 +11606,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Loss and Loss"
-b.gt().k1=new Q.bm("Loss",null,null,null)}else if(c===3){b.b1("b=%C2%B4%C2%88%05%C2%AB%C3%BEU%04%15%14%14%1A&s=,,Loss,Loss,LlilahLoss&x=AQ==")
+b.gt().k1=new Q.bm("Loss",null,null,null)}else if(c===3){b.b2("b=%C2%B4%C2%88%05%C2%AB%C3%BEU%04%15%14%14%1A&s=,,Loss,Loss,LlilahLoss&x=AQ==")
 b.gl().f=$.ch
 b.gl().c=$.bL
 b.gl().a=[]
@@ -11658,7 +11659,7 @@ t[0].seq(!0)},
 XQ:function(a,b,c){var t,s,r,q,p,o,n,m,l
 b.sf4(!1)
 b.sf5(!1)
-if(c===0){b.b1("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ==")
+if(c===0){b.b2("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ==")
 b.sJ($.zz)
 b.sv($.kz)
 b.svK($.hN)
@@ -11678,7 +11679,7 @@ b.sX(s)
 b.gaV().aF(b.gX())
 b.st(b.aj())
 b.gt().fy="Land of Automation and Juice"
-b.gt().k1=new Q.bm("<span class = 'void'>Mosthuman, The</span> Awakened",null,null,null)}else if(c===1){b.b1("b=%C2%AEv%16%60%C3%BE%1A%04Y%19%19%04&s=,,Playing Guitar,Programming,electricJuggernaut&x=AQ==")
+b.gt().k1=new Q.bm("<span class = 'void'>Mosthuman, The</span> Awakened",null,null,null)}else if(c===1){b.b2("b=%C2%AEv%16%60%C3%BE%1A%04Y%19%19%04&s=,,Playing Guitar,Programming,electricJuggernaut&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -11694,7 +11695,7 @@ b.gl().d=""
 b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Music and Space"
-b.gt().k1=new Q.bm("Hel",null,null,null)}else if(c===2){b.b1("b=%01%01%00Q%C3%BE%22%04R!!!&s=,,Gaming,Literature,niceBoi&x=AQ==")
+b.gt().k1=new Q.bm("Hel",null,null,null)}else if(c===2){b.b2("b=%01%01%00Q%C3%BE%22%04R!!!&s=,,Gaming,Literature,niceBoi&x=AQ==")
 b.sJ($.na)
 b.sbh(!1)
 t=[Y.aI]
@@ -11711,7 +11712,7 @@ b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Patience and Recursion"
 b.gt().k1=new Q.mb("Chronos",null,null,null)
-b.sak(a.gbE())}else if(c===3){b.b1("b=%05%C2%BA%C3%96C%C3%BES%04%1C((%06&s=,,Intimidation,Dungeon Mastering,demonicActivist&x=phgA")
+b.sak(a.gbE())}else if(c===3){b.b2("b=%05%C2%BA%C3%96C%C3%BES%04%1C((%06&s=,,Intimidation,Dungeon Mastering,demonicActivist&x=phgA")
 b.sv($.Ge)
 b.sbh(!1)
 t=[Y.aI]
@@ -11728,7 +11729,7 @@ b.gl().d=""
 b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Rainbows and Intensity"
-b.gt().k1=new Q.ds("Loki",null,null,null)}else if(c===4){b.b1("b=%C2%BC%C2%AF%162%C3%BE%25%C2%84P%09%09-&s=,,Drawing,Death,lalaPoof&x=AQ==")
+b.gt().k1=new Q.ds("Loki",null,null,null)}else if(c===4){b.b2("b=%C2%BC%C2%AF%162%C3%BE%25%C2%84P%09%09-&s=,,Drawing,Death,lalaPoof&x=AQ==")
 b.sb3(1)
 b.shY(!0)
 b.sbh(!1)
@@ -11746,7 +11747,7 @@ b.gl().d=""
 b.gl().e=" "
 b.st(b.aj())
 b.gt().fy="Land of Art and Destruction"
-b.gt().k1=new Q.ds("Rahu",null,null,null)}else if(c===5){b.b1("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ==")
+b.gt().k1=new Q.ds("Rahu",null,null,null)}else if(c===5){b.b2("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ==")
 b.sv($.kz)
 b.sbh(!1)
 t=[Y.aI]
@@ -11770,7 +11771,7 @@ b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Plums and Sarcasm"
 b.gt().k1=new Q.ds("<span class = 'void'>Humabot, The</span> Robot",null,null,null)
-b.gaD().b1("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ==")
+b.gaD().b2("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ==")
 b.gaD().sJ($.zz)
 b.gaD().sv($.kz)
 b.gaD().gl().f=$.ch
@@ -11787,7 +11788,7 @@ l.sX(m)
 b.gaD().gaV().aF(b.gX())
 b.gaD().st(b.aj())
 b.gaD().gt().fy="Land of Automation and Juice"
-b.gaD().gt().k1=new Q.bm("<span class = 'void'>Mosthuman, The</span> Awakened",null,null,null)}else if(c===6){b.b1("b=%C3%8E%C2%BF%09%5B%C3%BEU%04%12..%01&s=,,Violence,Intimidation,revengefulRealist&x=rlgA")
+b.gaD().gt().k1=new Q.bm("<span class = 'void'>Mosthuman, The</span> Awakened",null,null,null)}else if(c===6){b.b2("b=%C3%8E%C2%BF%09%5B%C3%BEU%04%12..%01&s=,,Violence,Intimidation,revengefulRealist&x=rlgA")
 b.bC($.B,-100)
 b.gl().f=$.ch
 b.gl().c=$.bL
@@ -12035,7 +12036,7 @@ b.sf4(!1)
 b.sf5(!1)
 if(c===0){b.saG("#A10000")
 b.sJ($.cm)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cv)
 b.sb4(46)
 b.sbt(11)
@@ -12067,7 +12068,7 @@ b.gt().fy="Land of Mines and Smoke"
 b.gt().k1=new Q.bm("Terpischore",null,null,null)
 b.sak(a.gaM())}else if(c===1){b.saG("#416600")
 b.sJ($.dk)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cK)
 b.sb4(11)
 b.sbt(57)
@@ -12095,7 +12096,7 @@ b.gt().fy="Land of Problems and Wind"
 b.gt().k1=new Q.bm("Aeolus",null,null,null)
 b.sak(a.gaM())}else if(c===2){b.saG("#a25203")
 b.sJ($.eO)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.bM)
 b.sb4(8)
 b.sbt(64)
@@ -12127,7 +12128,7 @@ b.gt().fy="Land of Poison and Paranoia"
 b.gt().k1=new Q.bm("Tartarus",null,null,null)
 b.sak(a.gaM())}else if(c===3){b.saG("#008282")
 b.sJ($.hm)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cL)
 b.sb4(60)
 b.sbt(4)
@@ -12159,7 +12160,7 @@ b.gt().fy="Land of Walls and Strife"
 b.gt().k1=new Q.bm("Bacchus",null,null,null)
 b.sak(a.gaM())}else if(c===4){b.saG("#a1a100")
 b.sJ($.f3)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.aQ)
 b.sb4(66)
 b.sbt(18)
@@ -12190,7 +12191,7 @@ b.gt().fy="Land of Clocks and Crime"
 b.gt().k1=new Q.bm("Chronos",null,null,null)
 b.sak(a.gbE())}else if(c===5){b.saG("#078446")
 b.sJ($.f4)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cE)
 b.sb4(13)
 b.sbt(24)
@@ -12221,7 +12222,7 @@ b.gt().fy="Land of Bullshit and More Bullshit"
 b.gt().k1=new Q.bm("Athena",null,null,null)
 b.sak(a.gbE())}else if(c===6){b.saG("#0021cb")
 b.sJ($.fo)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cS)
 b.sb4(30)
 b.sbt(23)
@@ -12249,7 +12250,7 @@ b.gt().fy="Land of Titanium and Dreams"
 b.gt().k1=new Q.bm("Hyperion",null,null,null)
 b.sak(a.gbE())}else if(c===7){b.saG("#631db4")
 b.sJ($.e2)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.aZ)
 b.sb4(31)
 b.sbt(48)
@@ -12277,7 +12278,7 @@ b.gt().fy="Land of Drought and Frogs"
 b.gt().k1=new Q.bm("Echidna",null,null,null)
 b.sak(a.gbE())}else if(c===8){b.saG("#008282")
 b.sJ($.dk)
-b.sb2(!0)
+b.sb1(!0)
 b.sc2(!0)
 b.sv($.aQ)
 b.sb4(4)
@@ -12308,7 +12309,7 @@ b.sak(a.gbE())}},
 XM:function(a,b,c){var t,s,r,q
 b.sf4(!1)
 b.sf5(!1)
-if(c===0){b.b1("b=2)%18%C2%87%C3%BE%C3%92%00U%17%17%02&s=,,Science,Drawing,dragoonedDrake&x=AQ==")
+if(c===0){b.b2("b=2)%18%C2%87%C3%BE%C3%92%00U%17%17%02&s=,,Science,Drawing,dragoonedDrake&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12331,7 +12332,7 @@ b.gl().d=""
 b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Gravity and Prairies"
-b.gt().k1=new Q.bm("Coeus",null,null,null)}else if(c===1){b.b1("b=%C3%B2%C2%A7%19%0A%C3%BE%1B%00%12%25%252&s=,,Musicals,Pets,Tilfie&x=AQ==")
+b.gt().k1=new Q.bm("Coeus",null,null,null)}else if(c===1){b.b2("b=%C3%B2%C2%A7%19%0A%C3%BE%1B%00%12%25%252&s=,,Musicals,Pets,Tilfie&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12354,7 +12355,7 @@ b.gl().d=""
 b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Bones and Yarn"
-b.gt().k1=new Q.bm("Zelos",null,null,null)}else if(c===2){b.b1("b=dS1%C2%A1%C3%BE%C2%A9%00Q-%03%24&s=,,Hacking,Video Games,virgosValentine&x=AQ==")
+b.gt().k1=new Q.bm("Zelos",null,null,null)}else if(c===2){b.b2("b=dS1%C2%A1%C3%BE%C2%A9%00Q-%03%24&s=,,Hacking,Video Games,virgosValentine&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12377,7 +12378,7 @@ b.gl().d=""
 b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Ebony and Ivory"
-b.gt().k1=new Q.bm("Perses",null,null,null)}else if(c===3){b.b1("b=%3D%26%19%C2%B0%C3%BE9%00%1C%0E%1F%23&s=,,Writing,Video Games,Cipah&x=AQ==")
+b.gt().k1=new Q.bm("Perses",null,null,null)}else if(c===3){b.b2("b=%3D%26%19%C2%B0%C3%BE9%00%1C%0E%1F%23&s=,,Writing,Video Games,Cipah&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12408,7 +12409,7 @@ if(c===0){b.sbK(!1)
 b.scW("#381e0a")
 b.saG("#ff0000")
 b.sJ($.fo)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.aQ)
 b.sbh(!1)
 t=[Y.aI]
@@ -12438,7 +12439,7 @@ b.sak(a.gaM())}else if(c===1){b.sbK(!1)
 b.saG("#ff0000")
 b.scW("#e0be78")
 b.sJ($.f4)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.aZ)
 b.sb4(34)
 b.sbt(57)
@@ -12470,7 +12471,7 @@ b.sak(a.gbE())}else if(c===2){b.sbK(!1)
 b.saG("#ff0000")
 b.scW("#ffffff")
 b.sJ($.hn)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.cS)
 b.sb4(73)
 b.sbt(64)
@@ -12502,7 +12503,7 @@ b.sak(a.gbE())}else if(c===3){b.sbK(!1)
 b.saG("#ff0000")
 b.scW("#b55c0d")
 b.sJ($.f4)
-b.sb2(!0)
+b.sb1(!0)
 b.sv($.co)
 b.sb4(23)
 b.sbt(4)
@@ -12534,7 +12535,7 @@ b.sak(a.gaM())}},
 XK:function(a,b,c){var t,s
 b.sf4(!1)
 b.sf5(!1)
-if(c===0){b.b1("b=%C2%80%00%C3%BF%C3%A6%C3%BE9%00%05%1F%1F%16&s=,,Dungeon Mastering,Video Games,gorristerChampion&x=AQ==")
+if(c===0){b.b2("b=%C2%80%00%C3%BF%C3%A6%C3%BE9%00%05%1F%1F%16&s=,,Dungeon Mastering,Video Games,gorristerChampion&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12550,7 +12551,7 @@ b.gl().d=""
 b.gl().e=""
 b.st(b.aj())
 b.gt().fy="Land of Paths and Tea"
-b.gt().k1=new Q.bm("Odin",null,null,null)}else if(c===1){b.b1("b=%00%C2%80%C3%BF%19%C3%BEc%00%01%08%089&s=,,Social Justice,Writing,grapefruitTwostep&x=AQ==")
+b.gt().k1=new Q.bm("Odin",null,null,null)}else if(c===1){b.b2("b=%00%C2%80%C3%BF%19%C3%BEc%00%01%08%089&s=,,Social Justice,Writing,grapefruitTwostep&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12565,7 +12566,7 @@ b.gl().b=H.a([],s)
 b.gl().d=""
 b.st(b.aj())
 b.gl().e=""
-b.gt().k1=new Q.bm("Ares",null,null,null)}else if(c===2){b.b1("b=%00%00%00Q%C3%BE%C3%93%00G''C&s=,,Knowledge,Fan Fiction,pleasantPigeon&x=AQ==")
+b.gt().k1=new Q.bm("Ares",null,null,null)}else if(c===2){b.b2("b=%00%00%00Q%C3%BE%C3%93%00G''C&s=,,Knowledge,Fan Fiction,pleasantPigeon&x=AQ==")
 b.gl().f=$.ch
 b.gl().c=$.bL
 t=[P.m]
@@ -12573,7 +12574,7 @@ b.gl().a=H.a([],t)
 b.gl().b=H.a([],t)
 b.gl().d=""
 b.gl().e=""
-b.st(b.aj())}else if(c===3){b.b1("b=%3F%19%04%20%C3%BE%25%00B%14%14F&s=,,Drawing,Death,vengefulKappa&x=AQ==")
+b.st(b.aj())}else if(c===3){b.b2("b=%3F%19%04%20%C3%BE%25%00B%14%14F&s=,,Drawing,Death,vengefulKappa&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12588,7 +12589,7 @@ b.gl().b=H.a([],s)
 b.gl().d=""
 b.st(b.aj())
 b.gl().e=""
-b.gt().k1=new Q.bm("Hades",null,null,null)}else if(c===4){b.b1("b=G2%00%C2%85%C3%BE%0B%00T%0A%0A%40&s=,,Puns,Psychology,machiosAvatar&x=AQ==")
+b.gt().k1=new Q.bm("Hades",null,null,null)}else if(c===4){b.b2("b=G2%00%C2%85%C3%BE%0B%00T%0A%0A%40&s=,,Puns,Psychology,machiosAvatar&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12602,7 +12603,7 @@ b.gl().a=H.a([],s)
 b.gl().b=H.a([],s)
 b.gl().d=""
 b.st(b.aj())
-b.gl().e=""}else if(c===5){b.b1("b=8%22%07J%C3%BEM%00G%13%13%1E&s=,,Unicycling,Phylosophy,unicycleKing&x=AQ==")
+b.gl().e=""}else if(c===5){b.b2("b=8%22%07J%C3%BEM%00G%13%13%1E&s=,,Unicycling,Phylosophy,unicycleKing&x=AQ==")
 b.sbh(!1)
 t=[Y.aI]
 s=[P.m]
@@ -12620,7 +12621,7 @@ b.gl().e=""}},
 XU:function(a,b,c){var t,s,r,q,p
 b.sf4(!1)
 b.sf5(!1)
-if(c===0){b.b1("b=%00%00%00%17%C3%B9f%10J%02%02%25&s=,,Mysteries,Detectives,abroachedPervestigator&x=AQ==")
+if(c===0){b.b2("b=%00%00%00%17%C3%B9f%10J%02%02%25&s=,,Mysteries,Detectives,abroachedPervestigator&x=AQ==")
 b.sbh(!1)
 C.a.sD(b.gaN(),0)
 b.sfA(!1)
@@ -12650,7 +12651,7 @@ b.gt().k1=new Q.bm("Synesis",null,null,null)
 t=b.gt()
 q=new S.cA("Eagle","screech",null,null)
 $.$get$d1().push(q)
-t.id=q}else if(c===1){b.b1("b=%00%00%00%C2%BA%C3%BE%C2%85%10Z%24%24(&s=,,Knitting,Cults,angelicThroes&x=AQ==")
+t.id=q}else if(c===1){b.b2("b=%00%00%00%C2%BA%C3%BE%C2%85%10Z%24%24(&s=,,Knitting,Cults,angelicThroes&x=AQ==")
 b.sbh(!1)
 C.a.sD(b.gaN(),0)
 b.sfA(!1)
@@ -12680,7 +12681,7 @@ b.gt().k1=new Q.bm("Ecclesia",null,null,null)
 t=b.gt()
 q=new S.cA("Dove","coo",null,null)
 $.$get$d1().push(q)
-t.id=q}else if(c===2){b.b1("b=%00%00%00!%C3%B7%C2%A5%10%05%3B%3B%3C&s=,,Programming,Online Trolling,perspicaciousAlieniloquy&x=AQ==")
+t.id=q}else if(c===2){b.b2("b=%00%00%00!%C3%B7%C2%A5%10%05%3B%3B%3C&s=,,Programming,Online Trolling,perspicaciousAlieniloquy&x=AQ==")
 b.sbh(!1)
 C.a.sD(b.gaN(),0)
 b.sfA(!1)
@@ -12710,7 +12711,7 @@ b.gt().k1=new Q.bm("Patrikos",null,null,null)
 t=b.gt()
 q=new S.cA("RoboPigeons","coo",null,null)
 $.$get$d1().push(q)
-t.id=q}else if(c===3){b.b1("b=%00%00%00h%C3%B0(%10%1055.&s=,,Literature,Cooking,transientTechnicality&x=AQ==")
+t.id=q}else if(c===3){b.b2("b=%00%00%00h%C3%B0(%10%1055.&s=,,Literature,Cooking,transientTechnicality&x=AQ==")
 b.sbh(!1)
 C.a.sD(b.gaN(),0)
 b.sfA(!1)
@@ -12748,7 +12749,7 @@ b.gt().k1=new Q.bm("Sige",null,null,null)
 t=b.gt()
 q=new S.cA("Raven","caw",null,null)
 $.$get$d1().push(q)
-t.id=q}else if(c===4){b.b1("b=%00%00%009%C3%B2T%10G((%20&s=,,Fighting,Survival,persistentPaletot&x=AQ==")
+t.id=q}else if(c===4){b.b2("b=%00%00%009%C3%B2T%10G((%20&s=,,Fighting,Survival,persistentPaletot&x=AQ==")
 b.sbh(!1)
 b.sfA(!1)
 C.a.sD(b.gaN(),0)
@@ -12782,7 +12783,7 @@ b.gt().k1=new Q.bm("Acinetos",null,null,null)
 t=b.gt()
 q=new S.cA("Magpie","screech",null,null)
 $.$get$d1().push(q)
-t.id=q}else if(c===5){b.b1("b=%00%00%00%03%C3%B3%7D%10%13%11%11%0E&s=,,Undead,Archaeology,palingeneticMortician&x=AQ==")
+t.id=q}else if(c===5){b.b2("b=%00%00%00%03%C3%B3%7D%10%13%11%11%0E&s=,,Undead,Archaeology,palingeneticMortician&x=AQ==")
 b.sbh(!1)
 b.sfA(!1)
 C.a.sD(b.gaN(),0)
@@ -12818,7 +12819,7 @@ b.gt().k1=new Q.bm("Sermo",null,null,null)
 q=b.gt()
 s=new S.cA("Vultures","sqwuak",null,null)
 $.$get$d1().push(s)
-q.id=s}else if(c===6){b.b1("b=%00%00%00%C2%AB%C3%BAU%10%03%13%15%06&s=,,Murder,Status,adoniseAbdicator&x=AQ==")
+q.id=s}else if(c===6){b.b2("b=%00%00%00%C2%AB%C3%BAU%10%03%13%15%06&s=,,Murder,Status,adoniseAbdicator&x=AQ==")
 b.sbh(!1)
 b.sfA(!1)
 C.a.sD(b.gaN(),0)
@@ -12848,7 +12849,7 @@ b.gt().k1=new Q.bm("Vita",null,null,null)
 t=b.gt()
 q=new S.cA("Kingfishers","peck",null,null)
 $.$get$d1().push(q)
-t.id=q}else if(c===7){b.b1("b=%00%00%00%C2%90%C3%B6f%10V%3D%3D%04&s=,,Revolution,Equality,malcontentMarionette&x=AQ==")
+t.id=q}else if(c===7){b.b2("b=%00%00%00%C2%90%C3%B6f%10V%3D%3D%04&s=,,Revolution,Equality,malcontentMarionette&x=AQ==")
 b.sbh(!1)
 C.a.sD(b.gaN(),0)
 b.sfA(!1)
@@ -15012,7 +15013,7 @@ r=a.gJ()
 q=a.gv()
 p=a.gX()
 o=a.gak()
-n=a.gb2()
+n=a.gb1()
 m=[Q.t]
 l=[Y.aI]
 k=[P.m]
@@ -35450,7 +35451,7 @@ o=this.l8(q,o==null?q.nx(R.bK(this.c)):o)
 if(o==null){o=this.a.gm().A(R.bK(this.c))
 if(o!=null&&J.Y(o.gb3(),0))o=null}o=this.l8(q,o)
 r=o==null
-if(r)q.gb2()
+if(r)q.gb1()
 if(!r&&q.gdH()!=="A duel for the Stones."){o.ph(q)
 o.ar($.B,-10)
 t=t+(" The "+o.u()+(", as a member of the royalty of "+H.f(o.gi1())+", administers the universal remedy for the unawakened "))+(" to the "+q.u()+(". Their dream self takes over on "+H.f(q.gi1())+". "))
@@ -35469,12 +35470,12 @@ if(s>=r.length)return H.d(r,s)
 this.n0(a,r[s],o)}this.a.aA(o);++this.e}else{n=this.eM(q)
 if(!(n!=null&&n.fu(a))){t=t+("<Br><Br><img src = 'images/sceneIcons/death_icon.png'>"+q.u()+"'s waits patiently for the kiss of life. But nobody came. ")+" Their dream self dies as well. "
 q.scu(!1)
-q.sae(!0)}}}else if(q.gc2()&&q.gb2()===!1&&J.c(q.gbm(),!1)&&q.gae()){n=this.eM(q)
+q.sae(!0)}}}else if(q.gc2()&&q.gb1()===!1&&J.c(q.gbm(),!1)&&q.gae()){n=this.eM(q)
 if(n!=null)n.fu(a)}}r=this.e
 return r>1?t+(""+r+"X CORPSEMOOCH COMBO!!!"):t},
 eM:function(a){var t,s
 t=R.ks(this.a.gL())
-if(a.gb2()===!1&&J.c(a.gbm(),!1)){s=this.a
+if(a.gb1()===!1&&J.c(a.gbm(),!1)){s=this.a
 return s.eM(new Z.qu(s,a,t.a1($.p),1,null,0,null))}else if(this.a.gkj()&&J.c(a.gbm(),!1)){s=this.a
 return s.eM(new Z.qu(s,a,t.a1($.p),1,null,0,null))}return}}
 M.uk.prototype={
@@ -36870,7 +36871,7 @@ s=""}q="The "+a.a7()+r+" knows how the god tiering mechanic works"
 if(J.c(t.gaV().go,"sprite"))q+=", to the point of abusing glitches and technicalities the game itself to exploit it before the "+t.u()+" is even in the Medium"
 if(a.gc7())q+=" and they are too far gone to care about casualties if it fails"
 p=t.gc2()?"slab":"bed"
-if(J.fb(t.a1($.a5),a.a1($.a5))&&J.aC(a.a1($.p),200))if(t.gb2()===!0){o=this.kt(t)
+if(J.fb(t.a1($.a5),a.a1($.a5))&&J.aC(a.a1($.p),200))if(t.gb1()===!0){o=this.kt(t)
 this.a.aA(a)
 this.a.aA(t)
 return q+". They conjole and wheedle and bug and fuss and meddle until the "+t.a7()+" agrees to go along with the plan and be killed on their "+p+". "+o+" It is not a very big deal at all. "+s}else if(t.ib()+a.ib()>200){o=this.kt(t)
@@ -36881,7 +36882,7 @@ a.fa(" how stupid they could have been to force the "+t.a7()+" to commit suicide
 this.r=a
 this.x=t
 o=q+". They conjole and wheedle and bug and fuss and meddle until the "+t.a7()+" agrees to go along with the plan and be killed on their "+p
-return(t.gb2()!==!0?C.c.F(o,t.ci("trying to go God Tier against destiny.",a))+(". A frankly ridiculous series of events causes the "+t.a7()+"'s dying body to fall off their "+p+". They were never destined to GodTier, and SBURB neurotically enforces such things. The "+a.a7()+r+" tries desparately to get them to their "+p+" in time, but in vain. They are massively triggered by their own astonishing amount of hubris. "):o)+s}else if(J.Y(a.a1($.p),200)&&this.A5(a)){o=this.kt(t)
+return(t.gb1()!==!0?C.c.F(o,t.ci("trying to go God Tier against destiny.",a))+(". A frankly ridiculous series of events causes the "+t.a7()+"'s dying body to fall off their "+p+". They were never destined to GodTier, and SBURB neurotically enforces such things. The "+a.a7()+r+" tries desparately to get them to their "+p+" in time, but in vain. They are massively triggered by their own astonishing amount of hubris. "):o)+s}else if(J.Y(a.a1($.p),200)&&this.A5(a)){o=this.kt(t)
 this.a.aA(a)
 this.a.aA(t)
 n=this.jw(a)
@@ -36889,7 +36890,7 @@ return"The "+a.a7()+r+" knows how the god tiering mechanic works. They don't lea
 zS:function(a){var t,s,r
 if(a.gbm()!==!0){t="The "+a.a7()+" knows how the god tiering mechanic works"
 if(a.gc7())t+=" and they are too far gone to care about the consequences of failure"
-if(a.gb2()===!0){this.a.aA(a)
+if(a.gb1()===!0){this.a.aA(a)
 s=this.kt(a)
 return t+". They steel their will and prepare to commit a trivial act of self suicide. "+s+" It is not a very big deal at all. "}else if(a.ib()>100){this.a.aA(a)
 s=this.kt(a)
@@ -37810,7 +37811,7 @@ this.d=[]
 if(this.a.gkj()||this.a.gu1())return!1
 t=R.i9(a)
 for(s=0;s<t.length;++s){r=t[s]
-if(r.gbm()!==!0)if(r.gb2()===!0)q=r.gc2()||r.gcu()
+if(r.gbm()!==!0)if(r.gb1()===!0)q=r.gc2()||r.gcu()
 else q=!1
 else q=!1
 if(q)this.d.push(r)}return this.d.length>0},
@@ -37835,7 +37836,7 @@ if(q>25)for(p=0;p<s.length;++p){o=s[p]
 o.bC($.a2,o.a1($.T))
 if(o.uD())t=t+(C.c.F(" Upon being laid to rest on their QUEST BED on the ",o.gt().fy)+", the "+o.u()+"'s body glows, and rises Skaiaward. ")+("On "+H.f(o.gi1())+", their dream self takes over and gets a sweet new outfit to boot.  ")
 else if(o.p3())t=t+(" You...aren't really sure how a real self made it to the SACRIFICIAL SLAB on "+H.f(o.gi1())+", but there it is.  ")+("The "+o.u()+" glows and ascends to the God Tiers with a sweet new outfit.  ")
-else o.sb2(!1)
+else o.sb1(!1)
 n=this.a.gel().hZ(this.a.gm(),[o],3)
 C.a.h(o.gaN(),n)
 t+=C.c.F(" They learn ",J.aA(n))+"."
@@ -37851,12 +37852,12 @@ t+=" Upon a wacky series of events leaving their corpse on their SACRIFICIAL SLA
 this.a.gC().snz(!0)
 n=this.a.gel().hZ(this.a.gm(),[o],3)
 C.a.h(o.gaN(),n)
-t+=C.c.F(" They learn ",J.aA(n))+"."}else if(o.gak()==null)o.sb2(!1)}this.a.gC().sbm(!0)
+t+=C.c.F(" They learn ",J.aA(n))+"."}else if(o.gak()==null)o.sb1(!1)}this.a.gC().sbm(!0)
 t+=" They are now extremely powerful. "
 if(R.Fe(this.d,$.cm)!=null)t+=" Everyone fails to ignore the Page's outfit. "
 q=this.d
 if(0<q.length){o=q[0]
-if(o.gb2()===!0)o.k7()
+if(o.gb1()===!0)o.k7()
 if(J.c(o.gv(),$.hN))t+="<br><Br>...  Huh. What... what even happened there? Is that a SAUCE player? WTF? That's not canon... Fucking Shogun..."
 if(o.gFl())t+="<br><Br>... After ascending, they rebel against SBURB and now are The "+o.u()+". Insuing a lot of glitchiness, including SBURB not rendering them properly."
 if(o.gxO()===!0){t+="<br><Br>... Paradox Space has chosen The "+o.u()+" to join the ranks of the Stone aspect, I wonder how this will end..."
@@ -39552,7 +39553,7 @@ r="<br>The "+this.d.ca()+" enters the game "+Y.a_M(b)+". "
 if(J.c(this.d.gv(),$.bo))r+="They are "+this.d.FO()+". "
 r=r+(" They manage to prototype their kernel sprite with a "+this.d.gX().u()+" pre-entry. ")+this.AO()+(C.c.F(C.c.F(" They have many INTERESTS, including ",J.aA(this.d.gav()))+" and ",J.aA(this.d.gaB()))+". ")+(C.c.F(" Their chat handle is ",this.d.gaJ())+". ")+("They wield "+H.f(J.aA(this.d.gbo()))+". "+H.f(this.d.gbo().i7(this.b.gm()))+" ")
 if(this.d.geq()===!0)r+="They are definitely the leader."
-if(this.d.gb2()===!0)r+=" They appear to be destined for greatness. "
+if(this.d.gb1()===!0)r+=" They appear to be destined for greatness. "
 if(J.Y(J.az(this.d.a1($.aN),this.d.a1($.aB)),25))r+=" They have aaaaaaaall the luck. All of it."
 if(J.aC(this.d.a1($.aB),-25))r+=" They have an insurmountable stockpile of TERRIBLE LUCK."
 if(this.d.gaN().length>0)r+=" They have special powers, including "+Y.eG(this.d.gaN())+". "
@@ -41093,7 +41094,7 @@ return t},
 F9:function(a,b){var t,s,r,q,p
 this.a.gC().sik(!0)
 if(!a.a.ow())return this.pT(a)
-if(a.a.gb2()===!0)if(a.a.gbm()!==!0)t=(a.a.gcu()||a.a.gc2())&&a.a.p3()
+if(a.a.gb1()===!0)if(a.a.gbm()!==!0)t=(a.a.gcu()||a.a.gc2())&&a.a.p3()
 else t=!1
 else t=!1
 if(t){s=" What the HELL!? The "+a.a.u()+" managed to somehow lose to REGULAR FUCKING ENEMIES!? Is that even POSSIBLE!? This is BULLSHIT. Wait. What's going on? How did they end up on their "
@@ -41116,10 +41117,10 @@ q=$.b7
 p=W.V($.b6,q)
 b.appendChild(p)
 T.m9(p,[a.a])
-return""}else if(a.a.gb2()!==!0&&a.a.gcu()&&a.a.gbm()!==!0){a.a.sb2(!0)
+return""}else if(a.a.gb1()!==!0&&a.a.gcu()&&a.a.gbm()!==!0){a.a.sb1(!0)
 return"Huh, the "+a.a.u()+" suddenly feels as if they are destined for greatness. "}else return this.pS(a)},
 F8:function(a,b){var t,s,r,q
-if(a.a.gb2()===!0&&a.a.gbm()!==!0&&a.a.gcu()){a.a.sb2(!1)
+if(a.a.gb1()===!0&&a.a.gbm()!==!0&&a.a.gcu()){a.a.sb1(!1)
 return"Huh, the "+a.a.u()+" suddenly feels a creeping sense of doom, as if they are no longer destined for greatness. "}t="What the HELL!? The "+a.a.u()+" managed to somehow lose to REGULAR FUCKING ENEMIES!? Is that even POSSIBLE!? This is BULLSHIT. How unlucky do you even need to BE!? They are DEAD."
 s=a.a
 A.a9(b,C.c.F(t,s.ci("from a Bad Break.",s)),!1)
@@ -41536,7 +41537,7 @@ t=a.ga6()
 t.toString
 a.gac().a4(C.f,"AB: Huh. Looks like a "+H.f(J.df(b))+" is going at it.")
 s=b.gaJ()==="jadedResearcher"?"....GOD FUCKING DAMN IT. These punk fucking asshole Wastes that don't know what they are doing have gone too far.  STAY THE FUCK AWAY FROM MY YARD YOU ASSHOLES!!!  <br><Br>Fuck. Whatever. Something something glowing code.  I'm not gonna even dignifty this asshole with a name. You know who it is.  Have fun COMPLETELY over using my gimick, asshole. See how much you like nullifying the basic ability of intelligent beings in all real and hypothetical planes of existance to give a shit.  I'm just gonna be over here, laughing when shit gets real, which it always does. And no. You do NOT get to borrow my YellowYard to do this.  Should have thought of that before you hacked the code. Good luck controlling it without the YellowYard. Also. I shouldn't even HAVE to say this.... But you DO know that gnosis fucks with transtimeline shit, right? Good luck even gettin your shit to work.  And no, I do NOT care that this asshole Waste is probably just past me.  PastJR is like, the LEAST competant JR when it comes to pulling shit like this off.":"....GOD FUCKING DAMN IT. These punk fucking asshole Wastes that don't know what they are doing have gone too far.  STAY THE FUCK AWAY FROM MY YARD YOU ASSHOLES!!!  <br><Br>Fuck. Whatever. Something something glowing code.  I'm not gonna even dignifty this asshole with a name. You know who it is.  Have fun COMPLETELY over using my gimick, asshole. See how much you like nullifying the basic ability of intelligent beings in all real and hypothetical planes of existance to give a shit.  I'm just gonna be over here, laughing when shit gets real, which it always does. And no. You do NOT get to borrow my YellowYard to do this.  Should have thought of that before you hacked the code. Good luck controlling it without the YellowYard. Also. I shouldn't even HAVE to say this.... But you DO know that gnosis fucks with transtimeline shit, right? Good luck even gettin your shit to work. "
-if(b.gh4())s+=" Since thus Waste is trickster, they get... THE YUMMY YARD.";++t.b
+if(b.gh4())s+="<br><Br>Since this Waste is trickster, they get... THE YUMMY YARD.";++t.b
 t.ch=!0
 t.ET(a.jf("MindGnosis4"),a)
 return s},
@@ -41766,7 +41767,7 @@ this.e=[]
 for(t=this.a.cJ(),s=t.length,r=0;r<t.length;t.length===s||(0,H.D)(t),++r){q=t[r]
 if(q.gc7())this.e.push(q)}return this.e.length>0},
 eM:function(a){var t,s
-if(a.gc2()&&a.gb2()===!1&&J.c(a.gbm(),!1)){t=R.ks(this.a.gL())
+if(a.gc2()&&a.gb1()===!1&&J.c(a.gbm(),!1)){t=R.ks(this.a.gL())
 s=this.a
 return s.eM(new Z.yF(5,s,a,t.a1($.p),1,null,0,null))}return},
 bk:function(a){A.a9(a,"<br> <img src = 'images/sceneIcons/murder_icon.png'>"+this.oH(a),!1)},
@@ -44736,7 +44737,7 @@ s=W.V($.b6,t)
 a.appendChild(s)
 T.ht(s)
 T.il(s,this.x)},
-Dp:function(){if(this.f.gae()&&!this.f.gcu()&&this.f.gbm()!==!0&&this.f.gb2()!==!0)return!0
+Dp:function(){if(this.f.gae()&&!this.f.gcu()&&this.f.gbm()!==!0&&this.f.gb1()!==!0)return!0
 return!1},
 BO:function(){if(this.Dp()&&this.a.gC().gcL()!==!0){this.r="Leader killed before ectobiology."
 return!0}return!1},
@@ -45283,7 +45284,7 @@ s=R.fa(a.gL())
 for(r=s.length,q=0;q<s.length;s.length===r||(0,H.D)(s),++q){p=s[q]
 p.sv($.jq)
 p.saJ(Y.dr(p.gaJ()))
-p.sb2(!1)
+p.sb1(!1)
 p.sb3(1)
 p.sf6(-612)
 p.d1("bloodBS")
@@ -45411,7 +45412,7 @@ if(t!=null)J.aY(t.V(b),-88888888)
 this.E=b
 this.f=!1
 b.seq(!0)
-b.sb2(!0)
+b.sb1(!0)
 s=b.gbi()
 r=new N.ab(b,88888888,b,"",!1,"","Ambivalent","Friends","Totally In Love","Rivals","Enemies","Matesprits","Moirallegiance","Auspisticism","Kismesissitude")
 r.au(0)
@@ -45505,7 +45506,7 @@ for(r=a.gL(),q=r.length,p=0;p<r.length;r.length===q||(0,H.D)(r),++p){o=r[p]
 o.ig(a.gL())
 o.scu(!o.gcu())
 o.sc2(!o.gc2())
-o.sb2(o.gb2()!==!0)
+o.sb1(o.gb1()!==!0)
 o.sbm(o.gbm()!==!0)
 o.sae(!o.gae())
 o.sc7(!o.gc7())
@@ -45758,7 +45759,7 @@ this.cy=t
 a.gac().a4(C.f,"Making fu")
 t=R.da(a,$.fF,$.Gc)
 t.ay=D.ej(a.gm())
-t.b1("b=%C2%80%40%00%3D%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nmgA")
+t.b2("b=%C2%80%40%00%3D%C3%BEU%04%17%0F%258&s=,,Classism,Genocide,feudalUltimatum&x=nmgA")
 t.ab=$.Gc
 P.fL("Fu's moon is "+H.f(t.df))
 j=t.aj()
@@ -45921,7 +45922,7 @@ C.a.h(t.q,f)
 this.a=t
 t=R.da(a,$.cm,$.bo)
 t.ay=D.ej(a.gm())
-t.b1("b=zh%03%C2%85%C3%BE%13%00%40%1F%1FB&s=,,Music,Dungeon Mastering,tableGuardian")
+t.b2("b=zh%03%C2%85%C3%BE%13%00%40%1F%1FB&s=,,Music,Dungeon Mastering,tableGuardian")
 t.cv=!1
 j=$.jN
 i=$.aF
@@ -46473,7 +46474,7 @@ this.cx=t
 t=R.da(a,$.cm,$.bo)
 t.ay=D.ej(a.gm())
 a.gac().a4(C.f,"Making MLH")
-t.b1("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ==")
+t.b2("b=%C3%96%C3%88%09%C3%8B%C3%BE%C2%A2%04W%0C%0C%01&s=,,Coding,Drawing,forgetfulIdealist&x=AQ==")
 t.ax=$.zz
 t.ab=$.kz
 j=t.ay
@@ -46512,7 +46513,7 @@ this.db=t
 a.gac().a4(C.f,"Making HB")
 t=R.da(a,$.cm,$.bo)
 t.ay=D.ej(a.gm())
-t.b1("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ==")
+t.b2("b=%C2%8F%C2%88%03%C3%BB%C3%B8%C2%93%04%C3%97((%01&s=,,Irony,Fan Fiction,humanBot&x=AQ==")
 t.ab=$.kz
 t.aI()
 if(t.a8==null)t.aI()
@@ -46542,7 +46543,7 @@ this.dx=t
 a.gac().a4(C.f,"Making SB")
 t=R.da(a,$.cm,$.bo)
 t.ay=D.ej(a.gm())
-t.b1("b=%2B*-%3E%C3%B8R%04%C2%97%0F%258&s=,,Shogun,Big Bads,shogunBot&x=AQ==")
+t.b2("b=%2B*-%3E%C3%B8R%04%C2%97%0F%258&s=,,Shogun,Big Bads,shogunBot&x=AQ==")
 t.ab=$.hN
 P.fL("SB's moon is "+H.f(t.df))
 j=t.aj()
@@ -47349,7 +47350,7 @@ if(s<2)return
 r=t[1]
 if(!r.y1)return
 if(J.de(r.gb3(),3))return
-if(r.gb2()===!0&&r.gbm()!==!0&&r.fy.gm().e2())return
+if(r.gb1()===!0&&r.gbm()!==!0&&r.fy.gm().e2())return
 r.dq()
 this.tS(a)},
 B6:function(a){var t,s,r,q,p,o,n
@@ -47360,7 +47361,7 @@ r=t[0]
 q=t[1]
 if(s!==2)return!1
 if(this.b>5)return!0
-if(q.gb2()===!0)return!1
+if(q.gb1()===!0)return!1
 s=$.a2
 s=q.r$.ag(s)
 p=$.p
@@ -48533,7 +48534,7 @@ if(this.a.gaM()!=null){r=this.gFS()
 o.push(r)
 o.push(r)
 o.push(r)}this.a.gm().A(o).$2(q,p)}this.mr(t,p)},
-Aj:function(){if(this.d.gb2()!==!0||this.d.gbm()===!0||this.d.ow())return!1
+Aj:function(){if(this.d.gb1()!==!0||this.d.gbm()===!0||this.d.ow())return!1
 this.d.gB8()
 var t=this.a.gm().a.T()
 return t>0.9},
@@ -50323,7 +50324,7 @@ this.D0()},
 jZ:function(){return this.hT(1)},
 uP:function(a){this.b8+=a<0?10:a},
 D0:function(){return this.uP(-1)},
-b1:function(a){var t,s,r,q,p
+b2:function(a){var t,s,r,q,p
 t=J.ba(window.location)+"?"+a
 if(C.c.aK(J.ba(window.location),"?"))t=J.ba(window.location)+"&"+a
 s=O.bX("b",t)
@@ -51201,7 +51202,7 @@ this.dj=!1}this.dm=a.gc2()
 this.iH=a.geA()
 this.iI=a.geT()
 this.bA=a.gbm()
-this.fU=a.gb2()
+this.fU=a.gb1()
 this.de=a.gc7()
 this.ek=a.ghY()
 this.fB=a.gvb()
@@ -51445,7 +51446,7 @@ gbt:function(){return this.dX},
 gbu:function(){return this.dA},
 gDW:function(){return this.hg},
 gl:function(){return this.ay},
-gb2:function(){return this.fU},
+gb1:function(){return this.fU},
 geN:function(){return this.iE},
 gc2:function(){return this.dm},
 gc7:function(){return this.de},
@@ -51505,7 +51506,7 @@ saG:function(a){return this.b0=a},
 sbt:function(a){return this.dX=a},
 sbu:function(a){return this.dA=a},
 sl:function(a){return this.ay=a},
-sb2:function(a){return this.fU=a},
+sb1:function(a){return this.fU=a},
 seN:function(a){return this.iE=a},
 sc2:function(a){return this.dm=a},
 sc7:function(a){return this.de=a},
@@ -51868,7 +51869,7 @@ for(t=0;t<a.length;++t){s=a[t]
 s.st(null)
 s.sak(null)
 s.scu(!1)
-s.sb2(!1)
+s.sb1(!1)
 s.seq(!1)}for(t=0;t<a.length;++t){s=a[t]
 this.y2.push(R.Oq(s,this,!1))}for(t=0;r=this.y2,t<r.length;++t)N.N_(r[t],r)
 for(t=0;t<a.length;++t)a[t].cR(this.dx)

@@ -108,9 +108,7 @@ void sbahjMode(Session session){
 		bardQuestMode(session);
 	}
 
-	if (getParameterByName("lollipop", null) == "true") {
-		tricksterMode(session);
-	}
+
 
 	if (getParameterByName("robot", null) == "true") {
 		roboMode(session);
@@ -148,6 +146,10 @@ void sbahjMode(Session session){
 
 	//if it's not a known one, no problem.
 	NonCanonSessions.callSession(session,session.session_id);
+
+	if (getParameterByName("lollipop", null) == "true") {
+		tricksterMode(session);
+	}
 
 	if(getParameterByName("self",null)  == "cest") {
 		anstusMode(session);

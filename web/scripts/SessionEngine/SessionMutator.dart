@@ -343,7 +343,7 @@ class SessionMutator {
         ret += " I'm just gonna be over here, laughing when shit gets real, which it always does. And no. You do NOT get to borrow my YellowYard to do this. ";
         ret += " Should have thought of that before you hacked the code. Good luck controlling it without the YellowYard. Also. I shouldn't even HAVE to say this.... But you DO know that gnosis fucks with transtimeline shit, right? Good luck even gettin your shit to work. ";
         if (activatingPlayer.chatHandle == "jadedResearcher") ret += " And no, I do NOT care that this asshole Waste is probably just past me.  PastJR is like, the LEAST competant JR when it comes to pulling shit like this off.";
-        if (activatingPlayer.trickster == true) ret += " Since thus Waste is trickster, they get... THE YUMMY YARD.";
+        if (activatingPlayer.trickster == true) ret += "<br><Br>Since this Waste is trickster, they get... THE YUMMY YARD.";
         effectsInPlay ++;
         mindField = true;
         //need a div here or can't wire up buttons. just means it will print out after this event but also 'before' it in time. whatever.
