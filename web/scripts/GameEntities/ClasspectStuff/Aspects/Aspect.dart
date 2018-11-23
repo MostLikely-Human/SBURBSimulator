@@ -96,6 +96,7 @@ abstract class Aspects {
     static Aspect RE_BEAR;
     static Aspect RE_HIPPO;
     static Aspect RE_LOCK;
+    static Aspect RE_PISS;
 
     static Aspect NULL;
 
@@ -153,6 +154,7 @@ abstract class Aspects {
         RE_BEAR = new Re_Bear(maxID+1);
         RE_HIPPO = new Re_Hippo(maxID+2);
         RE_LOCK = new Re_Lock(maxID+3);
+        RE_PISS = new Re_Piss(maxID+4);
 
 
         NULL = new Aspect(255, "Null", isInternal:true);
@@ -178,7 +180,7 @@ abstract class Aspects {
     }
 
     static List Stone = [MINDSTONE, SPACESTONE, POWERSTONE, SOULSTONE, TIMESTONE, REALITYSTONE, GAUNTLET];
-    static List Reskins = [RE_BEAR, RE_HIPPO, RE_LOCK];
+    static List Reskins = [RE_BEAR, RE_HIPPO, RE_LOCK, RE_PISS];
 
     static Aspect getByName(String name) {
         if (_aspects.isEmpty) init();
@@ -194,6 +196,7 @@ abstract class Aspects {
         if(a == Aspects.RAGE) a.reskinIs = Aspects.RE_BEAR;
         else if(a == Aspects.DOOM && name == "Derse") a.reskinIs = Aspects.RE_HIPPO;
         else if(a == Aspects.DOOM && name == "Prospit") a.reskinIs = Aspects.RE_LOCK;
+        else if(a == Aspects.JUICE) a.reskinIs = Aspects.RE_PISS;
         else a.reskinIs = a;
         return a.reskinIs;
     }
