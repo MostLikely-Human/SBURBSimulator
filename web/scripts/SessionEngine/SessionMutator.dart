@@ -397,7 +397,8 @@ class SessionMutator {
         juiceField = true;
 
         String ret = "The ${activatingPlayer.htmlTitle()} is attempting to purify the world, they begin to glow bright yellow... ";
-        ret += "All players in the session become Juice. ";
+        if(activatingPlayer.aspect == Aspects.RE_PISS) ret += "All players in the session become Piss. ";
+        else ret += "All players in the session become Juice. ";
         ret += "But all Sauce players will die... ";
         if (activatingPlayer.chatHandle == "forgetfulIdealist") ret += "Wait, is that me??? This isn't going to end well at all.";
 
@@ -410,7 +411,8 @@ class SessionMutator {
             else if (p.aspect == Aspects.TIME) {
             }
             else {
-                p.aspect = Aspects.JUICE;
+                if(activatingPlayer.aspect == Aspects.RE_PISS) p.aspect = Aspects.RE_PISS;
+                else p.aspect = Aspects.JUICE;
             }
         }
 
