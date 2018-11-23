@@ -95,6 +95,17 @@ class Re_Lock extends Aspect {
   String activateCataclysm(Session s, Player p) {
     return s.mutator.doom(s, p);
   }
+}
 
+class Re_Piss extends Aspect {
+  Re_Piss(int id) :super(id, "Re_Piss", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.JUICE);
+    
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.juice(s, p);
+  }
+  
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Piss", "Parmesan", "Potato", "Pointless"]);
 
 }
