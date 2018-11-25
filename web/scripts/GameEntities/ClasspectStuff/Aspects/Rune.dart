@@ -70,7 +70,7 @@ class Rune extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.rune(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 
 
