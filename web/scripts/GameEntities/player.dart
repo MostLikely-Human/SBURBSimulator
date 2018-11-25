@@ -646,7 +646,9 @@ class Player extends GameEntity{
         }
         //refrance to shogun's april fools artwork
         if(aspect == Aspects.SAUCE) {
-            ret = "$ret${this.class_name.sauceTitle} of ${this.aspect}";
+          ret = "$ret${this.class_name.sauceTitle} of ${this.aspect}";
+        }else if((aspect == Aspects.JUICE || aspect == Aspects.RE_PISS) && class_name == SBURBClassManager.LORD) {
+          ret = "${ret}Gent of ${this.aspect}";
         }else {
             ret = "$ret${this.class_name} of ${this.aspect}";
         }

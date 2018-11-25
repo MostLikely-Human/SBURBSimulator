@@ -27,8 +27,7 @@ class SessionMutator {
     bool hippoField = false; //Doom gnosis
     bool bearField = false; //Rage gnosis
     bool chillField = false; //IDK yet, maybe making people fear each other, lower sanity?
-    bool runeField = false;
-    bool hazeField = false;
+
 
     @override
     String toString() {
@@ -53,8 +52,7 @@ class SessionMutator {
         if(hippoField) ret = "$ret hippo";
         if(bearField) ret = "$ret bear";
         if(chillField) ret = "$ret chill";
-        if(runeField) ret = "$ret rune";
-        if(hazeField) ret = "$ret haze";
+
 
         return ret;
     }
@@ -152,40 +150,6 @@ class SessionMutator {
     }
 
 
-    String fate(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String flow(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String law(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String might(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String mist(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String rain(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String rhyme(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String sand(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String sky(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String snow(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-    String stars(Session s, Player activatingPlayer) {
-        return abjectFailure(s, activatingPlayer);
-    }
-
 
 
     String rule(Session s, Player activatingPlayer) {
@@ -208,13 +172,7 @@ class SessionMutator {
         return ret;
     }
 
-    String rune(Session s, Player activatingPlayer) {
 
-    }
-
-    String haze(Session s, Player activatingPlayer) {
-
-    }
 
 
     String taze(Session s, Player activatingPlayer) {
@@ -1478,7 +1436,7 @@ class MetaPlayerHandler {
     }
 
     Player makeSB(Session s) {
-        Player player = randomPlayerNoDerived(s, SBURBClassManager.LORD, Aspects.BLOOD);
+        Player player = randomPlayerNoDerived(s, SBURBClassManager.LORD, Aspects.JUICE);
         player.quirk = randomHumanQuirk(s.rand);
 
         player.deriveSpecibus = false;

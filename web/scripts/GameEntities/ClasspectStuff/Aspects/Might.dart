@@ -76,6 +76,6 @@ class Might extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.might(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

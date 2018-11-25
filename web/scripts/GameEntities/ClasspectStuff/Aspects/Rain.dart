@@ -49,6 +49,6 @@ class Rain extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.rain(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

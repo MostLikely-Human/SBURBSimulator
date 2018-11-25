@@ -75,6 +75,6 @@ class Sand extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.sand(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

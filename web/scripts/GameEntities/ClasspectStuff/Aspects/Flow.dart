@@ -49,6 +49,6 @@ class Flow extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.flow(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

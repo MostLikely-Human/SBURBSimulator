@@ -49,6 +49,6 @@ class Mist extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.mist(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

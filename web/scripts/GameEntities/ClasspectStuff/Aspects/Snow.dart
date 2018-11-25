@@ -27,6 +27,6 @@ class Snow extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.snow(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

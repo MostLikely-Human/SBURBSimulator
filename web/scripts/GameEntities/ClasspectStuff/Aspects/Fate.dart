@@ -23,6 +23,6 @@ class Fate extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.fate(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

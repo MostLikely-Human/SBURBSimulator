@@ -23,6 +23,6 @@ class Sky extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.sky(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

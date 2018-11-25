@@ -23,6 +23,6 @@ class Stars extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.stars(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

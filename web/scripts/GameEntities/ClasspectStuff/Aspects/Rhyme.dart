@@ -42,6 +42,6 @@ class Rhyme extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.rhyme(s, p);
+    return s.mutator.abjectFailure(s, p);
   }
 }

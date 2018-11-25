@@ -99,6 +99,21 @@ class Re_Lock extends Aspect {
 
 class Re_Piss extends Aspect {
   Re_Piss(int id) :super(id, "Re_Piss", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.JUICE);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#9e9248"
+    ..aspect_light = '#9e9248'
+    ..aspect_dark = '#6b6331'
+    ..shoe_light = '#6b6331'
+    ..shoe_dark = '#38341a'
+    ..cloak_light = '#9e9e3c'
+    ..cloak_mid = '#6b6b29'
+    ..cloak_dark = '#383815'
+    ..shirt_light = '#992e2e'
+    ..shirt_dark = '#661f1f'
+    ..pants_light = '#6b2c30'
+    ..pants_dark = '#381719'; 
     
   @override
   String activateCataclysm(Session s, Player p) {
