@@ -5,6 +5,9 @@ import "../../../Lands/Reward.dart";
 import "../../../Lands/Quest.dart";
 class Combo extends Aspect {
 
+  Aspect firstAspect;
+  Aspect secondAspect;
+  
   Combo(int id) :super(id, "Combo", isCanon: false, isMLHFanon: true);
 
   static void combobMaker(Aspect a1, Aspect a2) {
