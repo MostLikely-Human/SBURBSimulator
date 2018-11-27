@@ -49,6 +49,9 @@ class Mist extends Aspect{
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.abjectFailure(s, p);
+    Aspect a = s.rand.pickFrom(Aspects.all);
+    while(a.activateCataclysm(s, p) == s.mutator.abjectFailure(s, p))
+      a = s.rand.pickFrom(Aspects.all);
+    return a.activateCataclysm(s, p);
   }
 }

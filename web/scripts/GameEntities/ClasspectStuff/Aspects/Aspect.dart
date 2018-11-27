@@ -41,7 +41,7 @@ import "Haze.dart";
 import "Reskin.dart";
 import "MoonProspit.dart";
 import "MoonDerse.dart";
-
+import "Combo.dart";
 
 
 abstract class Aspects {
@@ -98,6 +98,8 @@ abstract class Aspects {
     static Aspect RE_LOCK;
     static Aspect RE_PISS;
 
+    static Aspect COMBO;
+
     static Aspect NULL;
 
     static void init() {
@@ -148,14 +150,12 @@ abstract class Aspects {
         MOONPROSPIT = new MoonProspit(42);
         MOONDERSE = new MoonDerse(43);
 
-        int maxID = 43;
+        RE_BEAR = new Re_Bear(44);
+        RE_HIPPO = new Re_Hippo(45);
+        RE_LOCK = new Re_Lock(46);
+        RE_PISS = new Re_Piss(47);
 
-
-        RE_BEAR = new Re_Bear(maxID+1);
-        RE_HIPPO = new Re_Hippo(maxID+2);
-        RE_LOCK = new Re_Lock(maxID+3);
-        RE_PISS = new Re_Piss(maxID+4);
-
+        COMBO = new Combo(48);
 
         NULL = new Aspect(255, "Null", isInternal:true);
     }
@@ -395,6 +395,8 @@ class Aspect {
             this.initializeThemes();
             this.symbolImgLocation = "$name.png";
             this.bigSymbolImgLocation = "${name}Big.png";
+        }else if(this == Aspects.COMBO){
+
         } else {
             initializeItems();
             initializeThemes();
@@ -412,7 +414,7 @@ class Aspect {
 
     void initializeItems() {
         items = new WeightedList<Item>()
-            ..add(new Item("Perfectly Generic Object",<ItemTrait>[],shogunDesc: "I Think Is The Starbound Item For Debugging Unused Item IDs"));
+        ..add(new Item("Perfectly Generic Object",<ItemTrait>[],shogunDesc: "I Think Is The Starbound Item For Debugging Unused Item IDs"));
     }
 
     // ##################################################################################################
