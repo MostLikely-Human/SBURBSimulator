@@ -1161,6 +1161,16 @@ class Session {
             Aspects.MOONPROSPIT.name = "Prospit";
             Aspects.MOONDERSE.name = "Derse";
         }
+        int id = 256;
+        for (Player p in this.players)
+            if(p.aspect == Aspects.COMBO) {
+                if(p.aspect.a1 == null || p.aspect.a2 == null) {
+                    p.aspect.a1 = this.rand.pickFrom(Aspects.all);
+                    p.aspect.a2 = this.rand.pickFrom(Aspects.all);
+                }
+                p.aspect = Aspects.combobThing(Aspects.COMBO.a1, Aspects.COMBO.a2, id);
+                id += 1;
+            }
 
         return completer.future;
     }

@@ -290,6 +290,11 @@ void reskinSessions(Session session) {
 		window.alert("UwU its Thanos");
 		session.players[0].aspect = Aspects.CHILL;
 	}
+	else if(session.session_id == 247) {
+		session.players[3].aspect = Aspects.COMBO;
+		session.players[3].aspect.a1 = Aspects.RAIN;
+		session.players[3].aspect.a2 = Aspects.DOOM;
+	}
 	else {
 		window.alert("I don't know what you thought this would do");
 		for (Player p in session.players) {

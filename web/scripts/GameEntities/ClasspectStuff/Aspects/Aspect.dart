@@ -201,6 +201,34 @@ abstract class Aspects {
         return a.reskinIs;
     }
 
+    static combobThing(Aspect a1, Aspect a2, int id) {
+        Aspect NewA;
+        NewA = new Combo(id);
+
+        NewA.a1 = a1;
+        NewA.a2 = a2;
+
+        NewA.name = a1.name + a2.name;
+
+        AspectPalette palette = new AspectPalette()
+          ..accent = a1.palette.accent
+          ..aspect_light = a1.palette.aspect_light
+          ..aspect_dark = a1.palette.aspect_dark
+          ..shoe_light = a1.palette.shoe_light
+          ..shoe_dark = a1.palette.shoe_dark
+          ..cloak_light = a2.palette.cloak_light
+          ..cloak_mid = a2.palette.cloak_mid
+          ..cloak_dark = a2.palette.cloak_dark
+          ..shirt_light = a1.palette.shirt_light
+          ..shirt_dark = a1.palette.shirt_dark
+          ..pants_light = a2.palette.pants_light
+          ..pants_dark = a2.palette.pants_dark;
+
+        NewA.palette = palette;
+
+        return NewA;
+    }
+
     static makeReskin(Aspect Original, Aspect Reskin) {
 
         Reskin.itemWeight = Original.itemWeight;
@@ -285,6 +313,9 @@ class Aspect {
 
     Aspect reskinOf = null; //doesn't apply to this aspect
     Aspect reskinIs = null;
+
+    Aspect a1;
+    Aspect a2;
 
     // ##################################################################################################
     // Tags
@@ -389,15 +420,17 @@ class Aspect {
         this.savedName = this.name;
 
         //not dynamically calculated because of Hope players (there IS no Dick.png), but still needs to be known.
-        if(this.reskinOf == null) {
+        if(this.reskinOf == null && this != Aspects.COMBO && this.id < 256) {
             faqFile = new FAQFile("Aspects/$name.xml");
             initializeItems();
             this.initializeThemes();
             this.symbolImgLocation = "$name.png";
             this.bigSymbolImgLocation = "${name}Big.png";
-        }else if(this == Aspects.COMBO){
-
-        } else {
+        }if(this.id > 255 || this == Aspects.COMBO){
+            faqFile = new FAQFile("Aspects/Time.xml");
+            symbolImgLocation = "Time.png";
+            bigSymbolImgLocation = "TimeBig.png";
+        }if(this.reskinOf != null) {
             initializeItems();
             initializeThemes();
             Aspects.makeReskin(this, reskinOf);

@@ -657,6 +657,7 @@ abstract class NonCanonSessions {
 
         } else if(index == 6) {
             player.copyFromOCDataString("b=%C3%8E%C2%BF%09%5B%C3%BEU%04%12..%01&s=,,Violence,Intimidation,revengefulRealist&x=rlgA");
+            player.aspect = Aspects.DOOM;
             player.setStat(Stats.SANITY, -100);
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
