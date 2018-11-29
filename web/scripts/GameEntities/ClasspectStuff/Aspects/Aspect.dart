@@ -226,6 +226,8 @@ abstract class Aspects {
 
         NewA.palette = palette;
 
+        //NewA.items = a1.items + a2.items;
+
         NewA.symbolImgLocation = NewA.a1.symbolImgLocation;
         NewA.bigSymbolImgLocation = NewA.a1.bigSymbolImgLocation;
 
@@ -430,6 +432,8 @@ class Aspect {
             this.symbolImgLocation = "$name.png";
             this.bigSymbolImgLocation = "${name}Big.png";
         }if(name == "Combo"){
+            initializeItems();
+            initializeThemes();
             faqFile = new FAQFile("Aspects/Time.xml");
             symbolImgLocation = "Time.png";
             bigSymbolImgLocation = "TimeBig.png";
