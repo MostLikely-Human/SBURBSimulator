@@ -261,6 +261,7 @@ String mutatorsInPlay(Session session) {
     if(session.mutator.hippoField) fields.add("Hippo");
     if(session.mutator.bearField) fields.add("Bear");
     if(session.mutator.chillField) fields.add("Chill");
+    if(session.mutator.rainField) fields.add("Rain");
     return "Mutators in Play: ${fields.join(",")}";
 }
 

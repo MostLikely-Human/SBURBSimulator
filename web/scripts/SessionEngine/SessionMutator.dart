@@ -27,6 +27,7 @@ class SessionMutator {
     bool hippoField = false; //Doom gnosis
     bool bearField = false; //Rage gnosis
     bool chillField = false; //IDK yet, maybe making people fear each other, lower sanity?
+    bool rainField = false;
 
 
     @override
@@ -52,6 +53,7 @@ class SessionMutator {
         if(hippoField) ret = "$ret hippo";
         if(bearField) ret = "$ret bear";
         if(chillField) ret = "$ret chill";
+        if(rainField) ret = "$ret rain";
 
 
         return ret;
@@ -222,6 +224,10 @@ class SessionMutator {
         //Make players get scared of doing quests
 
         return ret;
+    }
+
+    String rain(Session s, Player activatingPlayer) {
+        querySelector('#story').style.backgroundColor = getRandomColor();
     }
 
 

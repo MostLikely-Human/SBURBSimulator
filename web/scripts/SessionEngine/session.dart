@@ -1162,15 +1162,32 @@ class Session {
             Aspects.MOONDERSE.name = "Derse";
         }
         int id = 256;
-        for (Player p in this.players)
-            if(p.aspect == Aspects.COMBO) {
-                if(p.aspect.a1 == null || p.aspect.a2 == null) {
-                    p.aspect.a1 = this.rand.pickFrom(Aspects.all);
-                    p.aspect.a2 = this.rand.pickFrom(Aspects.all);
+        List combobs = [];
+        String combobName;
+        for (Player p in players) {
+            int c2 = 0;
+            if (p.aspect == Aspects.COMBO) {
+                if (p.aspect.a1 == null || p.aspect.a2 == null) {
+                    while (c2 != 2) {
+                        p.aspect.a1 = this.rand.pickFrom(Aspects.all);
+                        p.aspect.a2 = this.rand.pickFrom(Aspects.all);
+                        combobName = p.aspect.a1.name + p.aspect.a2.name;
+                        for (Object c in combobs) {
+                            if (c == combobName) {
+                                c2 = 1;
+                            }
+                        }
+                        if (c2 == 0) {
+                            c2 = 2;
+                        }
+                    }
                 }
                 p.aspect = Aspects.combobThing(Aspects.COMBO.a1, Aspects.COMBO.a2, id);
+                combobs.add(combobName);
                 id += 1;
             }
+            this.logger.info("TEEEEEEEESSSSSST");
+        }
 
         return completer.future;
     }
