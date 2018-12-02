@@ -11,7 +11,15 @@ class Combo extends Aspect {
 
   @override
   String activateCataclysm(Session s, Player p) {
-    return s.mutator.abjectFailure(s, p);
+    Aspect a = s.rand.pickFrom([a1, a2]);
+    if(a.activateCataclysm(s, p) == s.mutator.abjectFailure(s, p)) {
+      if(a == a1) {
+        a = a2;
+      }else {
+        a = a1;
+      }
+    }
+    return a.activateCataclysm(s, p);
   }
 
 }

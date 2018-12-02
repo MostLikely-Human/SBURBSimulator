@@ -1,4 +1,5 @@
 import "dart:html";
+import "dart:math";
 import "../Lands/FeatureTypes/QuestChainFeature.dart";
 import "../Lands/Quest.dart";
 import "../Lands/Reward.dart";
@@ -1164,13 +1165,20 @@ class Session {
         int id = 256;
         List combobs = [];
         String combobName;
+        Iterable<Aspect> aspects = available_aspects;
         for (Player p in players) {
             int c2 = 0;
+            this.logger.info(p);
             if (p.aspect == Aspects.COMBO) {
                 if (p.aspect.a1 == null || p.aspect.a2 == null) {
                     while (c2 != 2) {
-                        p.aspect.a1 = this.rand.pickFrom(Aspects.all);
-                        p.aspect.a2 = this.rand.pickFrom(Aspects.all);
+                        p.aspect.a1 = this.rand.pickFrom(aspects);
+                        removeFromArray(p.aspect.a1, aspects);
+                        p.aspect.a2 = this.rand.pickFrom(aspects);
+                        removeFromArray(p.aspect.a2, aspects);
+                        //p.aspect.a1 = Aspects.everything;
+                        //p.aspect.a2 = Aspects.everything;
+                        //logger.info(Aspects.ids);
                         combobName = p.aspect.a1.name + p.aspect.a2.name;
                         for (Object c in combobs) {
                             if (c == combobName) {
@@ -1186,7 +1194,6 @@ class Session {
                 combobs.add(combobName);
                 id += 1;
             }
-            this.logger.info("TEEEEEEEESSSSSST");
         }
 
         return completer.future;

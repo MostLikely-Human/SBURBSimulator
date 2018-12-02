@@ -155,8 +155,8 @@ abstract class Aspects {
         RE_LOCK = new Re_Lock(46);
         RE_PISS = new Re_Piss(47);
 
-        COMBO = new Combo(48);
 
+        COMBO = new Combo(254);
         NULL = new Aspect(255, "Null", isInternal:true);
     }
 

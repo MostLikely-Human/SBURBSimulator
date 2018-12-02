@@ -232,6 +232,8 @@ void sbahjMode(Session session){
 
 	processXStuck(session); //might not do anything.
 
+	combobAspects(session);
+
 	if(getParameterByName("reskin",null) == "aspects") {
 		reskinAspects(session);
 	}
@@ -349,6 +351,15 @@ void passive(Session session) {
 	}
 }
 
+
+void combobAspects(Session session) {
+	if(window.location.search.isEmpty && simulatedParamsGlobalVar.isEmpty) {
+		//;
+		return;
+	}
+
+
+}
 
 
 //omg, so easy, KnightStuck = true, SylphStuck = true, PageStuck = true.;
