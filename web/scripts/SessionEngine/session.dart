@@ -5,6 +5,7 @@ import "../Lands/Quest.dart";
 import "../Lands/Reward.dart";
 import "dart:async";
 import "../SBURBSim.dart";
+import "../random.dart";
 enum CanonLevel {
     CANON_ONLY,
     FANON_ONLY,
@@ -1168,7 +1169,6 @@ class Session {
         Iterable<Aspect> aspects = available_aspects;
         for (Player p in players) {
             int c2 = 0;
-            this.logger.info(p);
             if (p.aspect == Aspects.COMBO) {
                 if (p.aspect.a1 == null || p.aspect.a2 == null) {
                     while (c2 != 2) {
