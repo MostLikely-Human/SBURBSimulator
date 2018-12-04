@@ -232,8 +232,6 @@ void sbahjMode(Session session){
 
 	processXStuck(session); //might not do anything.
 
-	combobAspects(session);
-
 	if(getParameterByName("reskin",null) == "aspects") {
 		reskinAspects(session);
 	}
@@ -352,26 +350,6 @@ void passive(Session session) {
 }
 
 
-void combobAspects(Session session) {
-	//if(window.location.search.isEmpty && simulatedParamsGlobalVar.isEmpty) {
-	//	//;
-	//	return;
-	//}
-
-	String params1 = "";
-	if(window.location.search.substring(1) == "a1" || window.location.search.substring(1) == "a2") params1 = window.location.search.substring(1);
-
-	for(num j = 0; j<session.players.length; j++) {
-		Aspect a = Aspects.stringToAspect(simulatedParamsGlobalVar);
-		session.logger.info(window.location.search.substring(1));
-		if(params1 == "a1") {
-			session.players[j].aspect.a1 = a;
-		}
-		else if(params1 == "a2") {
-			session.players[j].aspect.a2 = a;
-		}
-	}
-}
 
 
 //omg, so easy, KnightStuck = true, SylphStuck = true, PageStuck = true.;
@@ -398,7 +376,6 @@ void processXStuck(Session session){
 	List<String> paramsArray = params.split("&");
 	for(num i = 0; i<paramsArray.length; i++){
 		List<String> stuck = paramsArray[i].split("Stuck");
-		session.logger.info(paramsArray[i]);
 		//print("stuck is: " + stuck.toString());
 		if(stuck.length == 2){
 			if(tmp.indexOf(stuck[0]) != -1){
@@ -407,6 +384,12 @@ void processXStuck(Session session){
 				setAllAspectsTo(session,stuck[0].trim());
 			}else if(stuck[0] == "Stone") {
 				setStoneAspects(session);
+			}
+			for(num k = 0; k<stuck.length; k++) {
+				List<String> c = stuck[k].split("AND");
+				if(c.length == 2 && all_aspects.indexOf(c[0]) != 1 && all_aspects.indexOf(c[1]) != 1) {
+					setComboAspects(session,c[0].trim(),c[1].trim());
+				}
 			}
 		}
 	}
@@ -419,6 +402,15 @@ void setStoneAspects(Session session) {
 		//if(player.aspect != Aspects.SPACE && player.aspect != Aspects.TIME) player.aspect = a;
 		//if(player.guardian.aspect != Aspects.SPACE && player.guardian.aspect != Aspects.TIME) player.guardian.aspect = a;
 
+	}
+}
+
+void setComboAspects(Session session, String a, String b) {
+	Aspect c = Aspects.stringToAspect(a);
+	Aspect d = Aspects.stringToAspect(b);
+	for(num j = 0; j<session.players.length; j++){
+		session.players[j].aspect.a1 = c;
+		session.players[j].aspect.a2 = d;
 	}
 }
 
