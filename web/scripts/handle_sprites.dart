@@ -1968,7 +1968,7 @@ abstract class Drawing {
         addImageTag(imageString);
         ImageElement img = imageSelector(imageString);
         ctx.drawImage(img, 0, 0);
-        if(player.aspect.a2 != null) {
+        if(player.aspect.a2 != null && player.aspect.id > 255) {
             String imageString = player.aspect.a2.symbolImgLocation;
             addImageTag(imageString);
             ImageElement img = imageSelector(imageString);
