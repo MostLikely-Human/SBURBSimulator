@@ -53,6 +53,8 @@ class Session {
     Scepter prospitScepter;
     Scepter derseScepter;
 
+    int id = 256;
+
     int session_id; //initial seed
     //var sceneRenderingEngine = new SceneRenderingEngine(false); //default is homestuck  //comment this line out if need to run sim without it crashing
     List<Player> players = <Player>[];
@@ -1162,40 +1164,32 @@ class Session {
             Aspects.MOONPROSPIT.name = "Prospit";
             Aspects.MOONDERSE.name = "Derse";
         }
-        int id = 256;
-        List combobs = [];
-        String combobName;
-        Iterable<Aspect> aspects = available_aspects;
-        for (Player p in players) {
-            int c2 = 0;
-            if (p.aspect == Aspects.COMBO) {
-                if (p.aspect.a1 == null || p.aspect.a2 == null) {
-                    while (c2 != 2) {
-                        p.aspect.a1 = this.rand.pickFrom(aspects);
-                        removeFromArray(p.aspect.a1, aspects);
-                        p.aspect.a2 = this.rand.pickFrom(aspects);
-                        removeFromArray(p.aspect.a2, aspects);
-                        //p.aspect.a1 = Aspects.everything;
-                        //p.aspect.a2 = Aspects.everything;
-                        //logger.info(Aspects.ids);
-                        combobName = p.aspect.a1.name + p.aspect.a2.name;
-                        for (Object c in combobs) {
-                            if (c == combobName) {
-                                c2 = 1;
-                            }
-                        }
-                        if (c2 == 0) {
-                            c2 = 2;
-                        }
-                    }
-                }
-                p.aspect = Aspects.combobThing(Aspects.COMBO.a1, Aspects.COMBO.a2, id);
-                combobs.add(combobName);
-                id += 1;
-            }
+        //Iterable<Aspect> aspects = available_aspects;
+        for (int l = 0; l < players.length; l++) {
+            combobAspectatron(players[l]);
         }
 
         return completer.future;
+    }
+
+    void combobAspectatron(Player p) {
+        int c2 = 0;
+        if (p.aspect == Aspects.COMBO) {
+            if (p.aspect.a1 == null || p.aspect.a2 == null) {
+                while (c2 != 2) {
+                    List<Aspect> combobAspect = new List<Aspect>.from(Aspects.everything);
+                    p.aspect.a1 = this.rand.pickFrom(combobAspect);
+                    //removeFromArray(players[l].aspect.a1, aspects);
+                    p.aspect.a2 = this.rand.pickFrom(combobAspect);
+                    //removeFromArray(players[l].aspect.a2, aspects);
+                    //p.aspect.a1 = Aspects.everything;
+                    //p.aspect.a2 = Aspects.everything;
+                    //logger.info(Aspects.ids);
+                }
+            }
+            p.aspect = Aspects.combobThing(Aspects.COMBO.a1, Aspects.COMBO.a2, id);
+            id += 1;
+        }
     }
 
     void getPlayersReady() {
