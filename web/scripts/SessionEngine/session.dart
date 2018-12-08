@@ -1164,7 +1164,6 @@ class Session {
             Aspects.MOONPROSPIT.name = "Prospit";
             Aspects.MOONDERSE.name = "Derse";
         }
-        //Iterable<Aspect> aspects = available_aspects;
         for (int l = 0; l < players.length; l++) {
             combobAspectatron(players[l]);
         }
@@ -1179,12 +1178,7 @@ class Session {
                 while (c2 != 2) {
                     List<Aspect> combobAspect = new List<Aspect>.from(Aspects.everything);
                     p.aspect.a1 = this.rand.pickFrom(combobAspect);
-                    //removeFromArray(players[l].aspect.a1, aspects);
                     p.aspect.a2 = this.rand.pickFrom(combobAspect);
-                    //removeFromArray(players[l].aspect.a2, aspects);
-                    //p.aspect.a1 = Aspects.everything;
-                    //p.aspect.a2 = Aspects.everything;
-                    //logger.info(Aspects.ids);
                 }
             }
             p.aspect = Aspects.combobThing(Aspects.COMBO.a1, Aspects.COMBO.a2, id);
