@@ -39968,11 +39968,11 @@ return C.c.F("They boggle vacantly at the ",this.d.gu().fy)+". "},
 zf:function(){var t,s,r,q
 t=R.ku(this.b.gM())
 s=J.c(this.d.gt(),$.aQ)&&this.d.gX()!=null&&!this.d.gX().ghS()
-r=this.b
-q=$.p
-if(s){s=t.a2(q)
-return r.eM(new Z.BF(10,r,this.d,s,1,null,0,null))}else{s=t.a2(q)
-return r.eM(new Z.yK(5,r,this.d,s,1,null,0,null))}},
+r=$.p
+q=this.b
+if(s){s=t.a2(r)
+return q.eM(new Z.BF(10,q,this.d,s,1,null,0,null))}else{s=t.a2(r)
+return q.eM(new Z.yK(5,q,this.d,s,1,null,0,null))}},
 gbZ:function(){return this.d},
 sbZ:function(a){return this.d=a}}
 A.aI.prototype={
@@ -44144,14 +44144,14 @@ e8:function(a,b,c,d){return this.bQ(a,b,c,d,null)}}
 Y.dA.prototype={
 bQ:function(a,b,c,d,e){var t,s,r,q,p
 t=e!=null?e:""
-if(c!=null){s=$.Hb
-r=$.cO
-if(c instanceof Q.t){t+="The "+r+" gains the fraymotif "+s+", while the "+$.hJ+" gets the fraymotif "+$.Lx+"! "
+if(c!=null){s=$.cO
+r=$.Hb
+if(c instanceof Q.t){t+="The "+s+" gains the fraymotif "+r+", while the "+$.hJ+" gets the fraymotif "+$.Lx+"! "
 q=b.es(c)
 p=c.es(b)
 s=this.c
 if(s!=null)J.ha(p,s)
-t=H.ah(H.ah(t,$.hJ,c.be()),$.Lx,H.f(J.az(p)))}else{t+=" The "+r+" gains the fraymotif "+s+"! "
+t=H.ah(H.ah(t,$.hJ,c.be()),$.Lx,H.f(J.az(p)))}else{t+=" The "+s+" gains the fraymotif "+r+"! "
 q=null}}else{t+=" The "+$.cO+" gains the fraymotif "+$.Hb+"! "
 q=null}if(q==null)q=b.es(null)
 s=this.c

@@ -3373,7 +3373,7 @@ $.zC=q
 q=new F.cc("images/Credits/abj_icon"+s,A.cn(C.c.ac("#ffa500",1)),"authorBotJunior",H.a([],r))
 $.$get$ck().push(q)
 $.zD=q
-q=new F.cc("images/Credits/mlh_icon"+s,A.cn(C.c.ac("#fcf000",1)),"forgetfulIdealist",H.a([],r))
+q=new F.cc("images/Credits/mlh_icon"+s,A.cn(C.c.ac("#7D00DC",1)),"forgetfulIdealist",H.a([],r))
 $.$get$ck().push(q)
 $.zF=q
 q=new F.cc("images/Credits/hb_icon"+s,A.cn(C.c.ac("#ffc000",1)),"humanBot",H.a([],r))

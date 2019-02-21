@@ -51,7 +51,7 @@ class ChangeLogMemo {
         authorBot = new Wrangler("authorBot", "images/Credits/ab_icon$end", new Colour.fromStyleString("#ff0000"));
         authorBotJunior = new Wrangler("authorBotJunior", "images/Credits/abj_icon$end", new Colour.fromStyleString("#ffa500"));
 
-        forgetfulIdealist = new Wrangler("forgetfulIdealist", "images/Credits/mlh_icon$end", new Colour.fromStyleString("#fcf000"));
+        forgetfulIdealist = new Wrangler("forgetfulIdealist", "images/Credits/mlh_icon$end", new Colour.fromStyleString("#7D00DC"));
         humanBot = new Wrangler("humanBot", "images/Credits/hb_icon$end", new Colour.fromStyleString("#ffc000"));
 
         recursiveSlacker = new Wrangler("recursiveSlacker", "images/Credits/rs_icon$end", new Colour.fromStyleString("#000066"));
