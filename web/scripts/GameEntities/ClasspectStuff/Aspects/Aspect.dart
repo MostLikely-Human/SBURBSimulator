@@ -141,7 +141,7 @@ abstract class Aspects {
         SAND = new Sand(34);
         SKY = new Sky(35);
         RHYME = new Rhyme(36);
-        LAW = new Law(37);
+        LAW = new Law(37); //Upstream version
         FATE = new Fate(38);
         SNOW = new Snow(39);
         FLOW = new Flow(40);
