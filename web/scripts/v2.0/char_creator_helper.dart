@@ -370,7 +370,11 @@ class CharacterCreatorHelper {
 
     String generateHelpText(String topic, String specific) {
         if (topic == "Class") return this.generateClassHelp(topic, specific) + "";
-        if (topic == "Aspect") return this.generateAspectHelp(topic, specific) + " <a target = '_blank' href =' tools/stat_summary/index.html'>Aspect Explanations</a>";
+        if (topic == "Aspect")
+            if (specific == "Might" || specific == "Mist" || specific == "Rain" || specific == "Sand" || specific == "Sky" || specific == "Rhyme" || specific == "Law" || specific == "Fate" || specific == "Snow" || specific == "Flow" || specific == "Stars")
+                return "Aspect originally coded by Cactus (heroguy15#9469) Visit their mod at https://acactusorsomething.github.io/ZBURBZimulator/index.html";
+            else
+                return this.generateAspectHelp(topic, specific) + " <a target = '_blank' href =' tools/stat_summary/index.html'>Aspect Explanations</a>";
 
         if (topic == "BloodColor")
             return this.generateBloodColorHelp(topic, specific);
