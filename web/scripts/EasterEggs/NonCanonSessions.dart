@@ -96,7 +96,7 @@ abstract class NonCanonSessions {
         }else if (index == 2) {
             player.copyFromOCDataString("b=%C2%80%00%00%40%C3%BEi%00%1B%0E%20%0F&s=,,Knights,Video Games,inconsequentialContinuity&x=HoAA");
 
-            player.tazeClass_name = SBURBClassManager.ROGUE;
+            player.tazeClass_name = SBURBClassManager.WRIGHT;
             player.tazeAspect = Aspects.MIGHT;
 
             player.moon.name = session.rand.pickFrom(["Prospit", "Derse"]);
