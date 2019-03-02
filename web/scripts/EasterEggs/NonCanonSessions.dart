@@ -64,6 +64,7 @@ abstract class NonCanonSessions {
             player.aspect = Aspects.FLOW;
 
             player.dreamPlayerProspit = RemiOpinat(s);
+            player.dreamPlayerProspit.class_name = SBURBClassManager.CURSE;
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -119,6 +120,7 @@ abstract class NonCanonSessions {
             player.land.denizenFeature = new DenizenFeature("Tyche");
         }else if (index == 3) {
             player.copyFromOCDataString("b=%00%00%00Q%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,extraterrestrialTerror&x=JogA");
+            player.class_name = SBURBClassManager.CURSE;
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -255,7 +257,7 @@ abstract class NonCanonSessions {
     }
 
     static Player RemiOpinat(Session s) {
-        Player player = new Player(s, SBURBClassManager.KNIGHT, Aspects.DREAM, null, null, null);
+        Player player = new Player(s, SBURBClassManager.CURSE, Aspects.DREAM, null, null, null);
         player.quirk = randomHumanQuirk(s.rand);
 
         player.copyFromOCDataString("b=%2CF%04%3C%C3%BE)%08I%13%13%3C&s=,,Art,Action Movies,&x=AQ==");

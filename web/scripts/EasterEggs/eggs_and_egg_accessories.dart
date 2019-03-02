@@ -288,6 +288,7 @@ void reskinAspects(Session session) {
 void reskinSessions(Session session) {
 	if(session.session_id == 350) {
 		window.alert("UwU its Thanos");
+		session.players[0].class_name = SBURBClassManager.CURSE;
 		session.players[0].aspect = Aspects.CHILL;
 	}
 	else if(session.session_id == 247) {
