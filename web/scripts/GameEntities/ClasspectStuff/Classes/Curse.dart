@@ -14,9 +14,9 @@ class Curse extends SBURBClass {
   double companionWeight = 0.51;
 
   @override
-  List<String> levels = ["CURSED"];
+  List<String> levels = ["CURSED", "POWERFUL", "NOT A PAGE"];
   @override
-  List<String> handles = ["culling","curly","commonly","confuding"];
+  List<String> handles = ["culling","curly","commonly","confusing"];
 
   @override
   bool isProtective = false;

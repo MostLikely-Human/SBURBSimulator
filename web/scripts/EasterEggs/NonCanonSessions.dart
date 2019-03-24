@@ -119,8 +119,8 @@ abstract class NonCanonSessions {
             player.land.name = "Land of Heat and Mutiny";
             player.land.denizenFeature = new DenizenFeature("Tyche");
         }else if (index == 3) {
-            player.copyFromOCDataString("b=%00%00%00Q%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,extraterrestrialTerror&x=JogA");
-            player.class_name = SBURBClassManager.CURSE;
+            player.copyFromOCDataString("b=%00%00%00%C2%A1%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,extraterrestrialTerror&x=zogA");
+            //player.class_name = SBURBClassManager.ROGUE;
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -277,7 +277,7 @@ abstract class NonCanonSessions {
         Player player = new Player(s, SBURBClassManager.ROGUE, Aspects.HEART, null, null, null);
         player.quirk = randomHumanQuirk(s.rand);
 
-        player.copyFromOCDataString("b=%C2%80%00%00E%C3%BEi%08%5B%0E%20%0F&s=,,JUSTICE,Video Games,identityCrusader&x=AQ==");
+        player.copyFromOCDataString("b=%2CF%04%C2%9C%C3%BE)%08I%13%13%3C&s=,,Art,Action Movies,&x=zmAA");
 
         player.quirk.punctuation = Quirk.PERFPUNC;
         player.quirk.capitalization = Quirk.NOCAPS;
