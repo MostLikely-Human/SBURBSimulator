@@ -482,6 +482,7 @@ class IntroNew extends IntroScene {
             CanvasElement canvas = new CanvasElement(width: canvasWidth, height: canvasHeight);
             div.append(canvas);
             List<Player> times = findAllAspectPlayers(this.session.players, Aspects.TIME); //they don't have to be in the medium, though
+            times.addAll(findAllAspectPlayers(this.session.players, Aspects.RE_PIG));
             Player timePlayer = rand.pickFrom(times); //ironically will probably allow more timeless sessions without crashes.
             Drawing.drawTimeGears(canvas);
             Drawing.drawSinglePlayer(canvas, timePlayer);

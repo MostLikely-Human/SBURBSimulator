@@ -27,6 +27,14 @@ abstract class NonCanonSessions {
         ret[1111111] = session1111111; //Ayyyy, Memostuck
         ret[21520] = session21520; //Bot session 1
         ret[1222112] = session1222112; //Bot(?) session 2
+        ret[1987] = session1987; //Lizardfolk Twisted Session
+        ret[1983] = session1983; //Revenant (and Lizardfolk) Twisted Session
+        ret[1986] = session1986; //Human/Objecthead/Robot(?) Twisted Session
+        ret[1991] = session1991; //Human/Robot(?) Twisted Session
+        ret[1975] = session1975; //Human/Phantom Twisted Session
+        ret[1972] = session1972; //Phantom Twisted Session
+        ret[2024] = session2024; //Human/Phantom Twisted Session
+        ret[1988] = session1988; //Ultimate Custom Purgatory Twisted Session
         return ret;
     }
 
@@ -62,6 +70,7 @@ abstract class NonCanonSessions {
         if (index == 0) {
             player.copyFromOCDataString("b=%C3%96%C3%88%09%3C%C3%BE%C2%AB%00W%1A%1A%01&s=,,ProxiMate,Pestering People,forgetfulIdealist&x=AQ==");
             player.aspect = Aspects.FLOW;
+            player.class_name = SBURBClassManager.SOUL;
 
             player.dreamPlayerProspit = RemiOpinat(s);
             player.dreamPlayerProspit.class_name = SBURBClassManager.CURSE;
@@ -121,6 +130,8 @@ abstract class NonCanonSessions {
         }else if (index == 3) {
             player.copyFromOCDataString("b=%00%00%00%C2%A1%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,extraterrestrialTerror&x=zogA");
             //player.class_name = SBURBClassManager.ROGUE;
+            player.isLizardfolk = true;
+            player.guardian.isLizardfolk;
 
             player.quirk.capitalization = Quirk.NORMALCAPS;
             player.quirk.punctuation = Quirk.PERFPUNC;
@@ -361,6 +372,458 @@ abstract class NonCanonSessions {
         }
     }
 
+    static void session1987(Session session) {
+        int numPlayers = 4;
+        makeASessionFromSource(session, TwistedSessions1and2IndexToPlayer, numPlayers);
+        session.players.length = numPlayers; //no more, no less. Unless stuff happens.
+    }
+
+    static void session1983(Session session) {
+        int numPlayers = 9;
+        makeASessionFromSource(session, TwistedSessions1and2IndexToPlayer, numPlayers);
+        session.players.length = numPlayers;
+    }
+
+    static void TwistedSessions1and2IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+        player.deriveChatHandle = false;
+        player.deriveLand = false;
+        player.deriveSpecibus = false;
+        if(s.session_id == 1987) {
+            index += 5;
+        }
+
+        if (index == 0) {
+            //Imp
+            player.copyFromOCDataString("b=%C2%91h%3C7%C3%B2%22%04%40%2C%03%16&s=,,Knowledge,Luck,James&x=AQ==");
+            player.aspect = Aspects.RE_TRASH;
+            player.guardian.aspect = Aspects.RE_TRASH;
+            player.isRevenant = true;
+            player.guardian.isRevenant = true;
+        }else if(index == 1) {
+            player.copyFromOCDataString("b=%C3%B3%C3%B3%C2%8D7%C3%B2%22%04%01%2C%03%0C&s=,,Knowledge,Luck,Dan&x=AQ==");
+            player.aspect = Aspects.RE_TRASH;
+            player.guardian.aspect = Aspects.RE_TRASH;
+            player.isRevenant = true;
+            player.guardian.isRevenant = true;
+            player.class_name = SBURBClassManager.GUARD;
+        }else if(index == 2) {
+            player.copyFromOCDataString("b=%C3%BD%C3%8C%C3%BC7%C3%B2%22%04B%2C%03%0D&s=,,Knowledge,Luck,Gwen&x=AQ==");
+            player.aspect = Aspects.RE_TRASH;
+            player.guardian.aspect = Aspects.RE_TRASH;
+            player.isRevenant = true;
+            player.guardian.isRevenant = true;
+        }else if(index == 3) {
+            player.copyFromOCDataString("b=%00%00%007%C3%B2%22%04%03%2C%03%1E&s=,,Knowledge,Luck,Stan&x=AQ==");
+            player.aspect = Aspects.RE_TRASH;
+            player.guardian.aspect = Aspects.RE_TRASH;
+            player.class_name = SBURBClassManager.SOUL;
+            player.isRevenant = true;
+            player.guardian.isRevenant = true;
+        }else if(index == 4) {
+            player.copyFromOCDataString("b=%C3%BF%3F%067%C3%B2%22%04D%2C%03)&s=,,Knowledge,Luck,Bob&x=AQ==");
+            player.aspect = Aspects.RE_TRASH;
+            player.guardian.aspect = Aspects.RE_TRASH;
+            player.isRevenant = true;
+            player.guardian.isRevenant = true;
+        }
+
+        if(index == 5) {
+            player.copyFromOCDataString("b=%C3%BF%C3%BF%C3%BEm%C3%B8%C2%AA%10%17%07%070&s=,,Programming,Animatronics,extraterrestrialTerror&x=JmgB");
+            player.isLizardfolk = true;
+            player.isTroll = false;
+            player.guardian.isLizardfolk = true;
+            player.guardian.isTroll = false;
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.specibus = new Specibus("Meterkind", ItemTraitFactory.STICK, <ItemTrait>[ ItemTraitFactory.MAGICAL]);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Vents and Anger";
+            player.land.denizenFeature = new DenizenFeature("Osiris");
+        }else if(index == 6) {
+            player.copyFromOCDataString("b=%00%00%001%C3%B6)%10%13%1C%1C4&s=,,Sharks,Water,Jakobyy&x=AQ==");
+            player.aspect = Aspects.RE_PIG;
+            player.LizardfolkType = 1;
+            player.isLizardfolk = true;
+            player.isTroll = false;
+            player.guardian.isLizardfolk = true;
+            player.guardian.isTroll = false;
+            player.guardian.LizardfolkType = 1;
+            player.guardian.aspect = Aspects.RE_PIG;
+
+            player.quirk.capitalization = Quirk.NOCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.specibus = new Specibus("Psikind", ItemTraitFactory.TRIDENT, <ItemTrait>[ ItemTraitFactory.POINTY]);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Steam and Forges";
+            player.land.denizenFeature = new DenizenFeature("Music Man");
+        }else if(index == 7) {
+            player.copyFromOCDataString("b=%00%00%00%3C%C3%BE!%10%10%18%18%25&s=,,Coffee,Banjos,Jadenn&x=DmAB");
+            player.LizardfolkType = 2;
+            player.isLizardfolk = true;
+            player.isTroll = false;
+            player.guardian.isLizardfolk = true;
+            player.guardian.isTroll = false;
+            player.guardian.LizardfolkType = 2;
+
+            player.quirk.capitalization = Quirk.ALLCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.specibus = new Specibus("Pistolkind", ItemTraitFactory.PISTOL, <ItemTrait>[ ItemTraitFactory.METALGUN]);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Noir and Doubt";
+            player.land.denizenFeature = new DenizenFeature("Phobos");
+        }else if(index == 8) {
+            player.copyFromOCDataString("b=%C3%BF%C3%BF%C3%BE%C2%80%C3%B4%C2%82%10%10%1C%1C%19&s=,,Taking Pictures,Being In The Spotlight,acceleratedOxodization&x=AQ==");
+            player.aspect = Aspects.RE_FROG;
+            player.isLizardfolk = true;
+            player.isTroll = false;
+            player.guardian.isLizardfolk = true;
+            player.guardian.isTroll = false;
+            player.guardian.aspect = Aspects.RE_FROG;
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.specibus = new Specibus("Shieldkind", ItemTraitFactory.SHIELD, <ItemTrait>[ ItemTraitFactory.METAL]);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Automation and Spotlights";
+            player.land.denizenFeature = new DenizenFeature("Ennard");
+        }
+    }
+
+    static void session1986(Session session) {
+      int numPlayers = 7;
+      makeASessionFromSource(session, session1986IndexToPlayer, numPlayers);
+      session.players.length = numPlayers;
+    }
+
+    static void session1986IndexToPlayer(Session session, Player player, int index) {
+      Session s = session;
+      player.deriveChatHandle = false;
+      player.deriveLand = true;
+      player.deriveSpecibus = true;
+
+      if(index == 0) {
+        player.copyFromOCDataString("b=iA%0A9%C3%BE%C2%99%00%10''%24&s=,,Null,Null,Gabriel&x=AQ==");
+        player.aspect = Aspects.RE_BEAR;
+        player.guardian.aspect = Aspects.RE_BEAR;
+      }else if(index == 1) {
+        player.copyFromOCDataString("b=%C2%A7g%10%C2%A4%C3%BE%C2%99%00%10''B&s=,,Null,Null,Jeremy&x=1iAA");
+      }else if(index == 2) {
+        player.copyFromOCDataString("b=%00%00%00%C2%B2%C3%BE%C2%99%00%10''%3C&s=,,Null,Null,Andrew&x=AQ==");
+        player.aspect = Aspects.RE_FOX;
+        player.guardian.aspect = Aspects.RE_FOX;
+      }else if(index == 3) {
+        player.copyFromOCDataString("b=%C3%BF%C3%B3%C2%BDe%C3%BE%C2%99%00P''%3A&s=,,Null,Null,Susan&x=AQ==");
+      }else if(index == 4) {
+        player.copyFromOCDataString("b=%C3%BF%C3%B3%C2%BD%25%C3%BE%22%00%10''%3D&s=,,Tea,Top Hats,aurulentPurgatory&x=AQ==");
+        player.aspect = Aspects.RE_GOLD;
+        player.guardian.aspect = Aspects.RE_GOLD;
+        player.hair = 77;
+        player.guardian.hair = 77;
+
+        player.quirk.capitalization = Quirk.NORMALCAPS;
+        player.quirk.punctuation = Quirk.PERFPUNC;
+        player.quirk.lettersToReplace = [];
+        player.quirk.lettersToReplaceIgnoreCase = [];
+        player.quirk.prefix = "";
+        player.quirk.suffix = "";
+        player.specibus = new Specibus("Snarekind", ItemTraitFactory.NET, <ItemTrait>[ ItemTraitFactory.NANOFIBER]);
+        player.land = player.spawnLand();
+        player.land.name = "Land of The Damned and Broken";
+      }else if(index == 5) {
+        player.copyFromOCDataString("b=%C2%82%C2%82%C2%820%C3%B8%C2%99%00%C2%90''%1E&s=,,Null,Null,endoOne&x=AQ==");
+        player.class_name = SBURBClassManager.SOUL;
+      }else if(index == 6) {
+        //Spring
+        player.copyFromOCDataString("b=%3A%24%051%C3%BE%C2%99%00%10''%3E&s=,,Null,Null,Mike&x=AQ==");
+        player.class_name = SBURBClassManager.SOUL;
+      }
+    }
+
+    //1991
+    //Matthew, Curse of Time(Ting?)
+    //Beck, Imp of Funtime/Breath
+    //Simon, Snoop of Chip/Void
+    //Endo-02, (Cyborg) Heel of Space
+    static void session1991(Session session) {
+        int numPlayers = 4;
+        makeASessionFromSource(session, session1991IndexToPlayer, numPlayers);
+        session.players.length = numPlayers;
+    }
+
+    static void session1991IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+
+        if(index == 0) {
+          //Ting
+          player.copyFromOCDataString("b=%C3%BF%C3%94m%C2%91%C3%BE%19%00A%19%198&s=,,Music,Null,Matthew&x=zggA");
+        }else if(index == 1) {
+          //Imp of Funtime
+          player.copyFromOCDataString("b=%C3%8Fc82%C3%BE%C2%92%00B%20%1A%0A&s=,,Funtimes,Freedom,Beck&x=AQ==");
+        }else if(index == 2) {
+          //Snoop of Chip
+          player.copyFromOCDataString("b=%00%00%008%C3%BE)%00%13%07%07%20&s=,,Obfuscation,Chips,Simon&x=AQ==");
+        }else if(index == 3) {
+          //Heel
+          player.copyFromOCDataString("b=%C2%85%C2%85%C2%850%C3%B8%C2%A2%00%C2%80%1F%2B1&s=,,Robots,Space,endoTwo&x=AQ==");
+        }
+    }
+
+    static void session1975(Session session) {
+        int numPlayers = 3;
+        makeASessionFromSource(session, session1975IndexToPlayer, numPlayers);
+        session.players.length = numPlayers;
+    }
+
+    static void session1975IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+
+        if(index == 0) {
+          player.copyFromOCDataString("b=R6%03%2B%C3%BE%C3%87%00%15%01%01%10&s=,,Love,Undead,perishingExorcist&x=llgA");
+          player.aspect = Aspects.RE_PUPPET;
+          player.guardian.aspect = Aspects.RE_PUPPET;
+
+          player.quirk.capitalization = Quirk.NORMALCAPS;
+          player.quirk.punctuation = Quirk.PERFPUNC;
+          player.quirk.lettersToReplace = [];
+          player.quirk.lettersToReplaceIgnoreCase = [];
+          player.quirk.prefix = "";
+          player.quirk.suffix = "";
+          player.specibus = new Specibus("Roulettekind", ItemTraitFactory.LUCKY, <ItemTrait>[ ItemTraitFactory.ASPECTAL]);
+        }else if(index == 1) {
+          player.robot = true;
+          player.hairColor = "#d3d3d3";
+          player.isTroll = false;
+          player.isLizardfolk = false;
+          player.isRevenant = false;
+          player.aspect = Aspects.SPACE;
+        }else if(index == 2) {
+          player.robot = true;
+          player.hairColor = "#d3d3d3";
+          player.isTroll = false;
+          player.isLizardfolk = false;
+          player.isRevenant = false;
+          player.aspect = Aspects.TIME;
+        }
+    }
+
+
+    static void session1972(Session session) {
+        int numPlayers = 2;
+        makeASessionFromSource(session, session1972IndexToPlayer, numPlayers);
+        session.players.length = numPlayers;
+    }
+
+    static void session1972IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+
+        if(index == 0) {
+          //Stoker
+          player.copyFromOCDataString("b=uuu9%C3%B8Z%00%C2%98%1C%1C%12&s=,,Eldritch,Robots,tendrilsBreakdown&x=AQ==");
+
+          player.aspect = Aspects.RE_GHOST;
+          player.guardian.aspect = Aspects.RE_GHOST;
+          player.guardian.robot = true;
+        }else if(index == 1) {
+          player.copyFromOCDataString("b=%C3%85%C3%85%C3%85%C2%B9%C3%B8%C2%A5%00%C2%90%18%18%10&s=,,A.I.,Violence,bereavementsMaxilla&x=AQ==");
+
+          player.aspect = Aspects.RE_GHOST;
+          player.guardian.aspect = Aspects.RE_GHOST;
+          player.guardian.robot = true;
+        }
+    }
+
+    //2024
+    //William, Maid of Lock
+    //Dead(?) Witch and Stoker of Ghost
+    //Phantom players Phantom aspect
+    static void session2024(Session session) {
+        int numPlayers = 7;
+        makeASessionFromSource(session, session2024IndexToPlayer, numPlayers);
+        session.players.length = numPlayers;
+    }
+
+    static void session2024IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+
+        if(index == 0) {
+          player.copyFromOCDataString("b=HMj.%C3%BE%C2%A5%00P%1C%1C1&s=,,Programming,Loneliness,William&x=BnAB");
+        }else if(index == 1) {
+          player.copyFromOCDataString("b=uuu9%C3%B8Z%00%C2%98%1C%1C%12&s=,,Eldritch,Robots,tendrilsBreakdown&x=AQ==");
+
+          player.aspect = Aspects.RE_GHOST;
+          player.guardian.aspect = Aspects.RE_GHOST;
+          player.guardian.robot = true;
+        }else if(index == 2) {
+          player.copyFromOCDataString("b=%C3%85%C3%85%C3%85%C2%B9%C3%B8%C2%A5%00%C2%90%18%18%10&s=,,A.I.,Violence,bereavementsMaxilla&x=AQ==");
+
+          player.aspect = Aspects.RE_GHOST;
+          player.guardian.aspect = Aspects.RE_GHOST;
+          player.guardian.robot = true;
+        }else if(index == 3) {
+          //Phantom for 4 below phantoms
+          player.robot = true;
+          player.hairColor = "#d3d3d3";
+          player.isTroll = false;
+          player.isLizardfolk = false;
+          player.isRevenant = false;
+          player.aspect = Aspects.VOID;
+          player.class_name = SBURBClassManager.KNIGHT;
+        }else if(index == 4) {
+          player.robot = true;
+          player.hairColor = "#d3d3d3";
+          player.isTroll = false;
+          player.isLizardfolk = false;
+          player.isRevenant = false;
+          player.aspect = Aspects.VOID;
+          player.class_name = SBURBClassManager.HEIR;
+        }else if(index == 5) {
+          player.robot = true;
+          player.hairColor = "#d3d3d3";
+          player.isTroll = false;
+          player.isLizardfolk = false;
+          player.isRevenant = false;
+          player.aspect = Aspects.VOID;
+          player.class_name = SBURBClassManager.SOUL;
+        }else if(index == 6) {
+          player.robot = true;
+          player.hairColor = "#d3d3d3";
+          player.isTroll = false;
+          player.isLizardfolk = false;
+          player.isRevenant = false;
+          player.aspect = Aspects.VOID;
+          player.class_name = SBURBClassManager.SYLPH;
+        }
+    }
+
+    static void session1988(Session session) {
+        int numPlayers = 16;
+        makeASessionFromSource(session, session1988IndexToPlayer, numPlayers);
+        session.players.length = numPlayers;
+    }
+
+    static void session1988IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+
+        if(index == 0) {
+          player.copyFromOCDataString("b=%C3%BF%C3%BF%C3%BEm%C3%B8%C2%AA%10%17%07%070&s=,,Programming,Animatronics,extraterrestrialTerror&x=JmgB");
+          player.isLizardfolk = true;
+          player.isTroll = false;
+          player.guardian.isLizardfolk = true;
+          player.guardian.isTroll = false;
+
+          player.quirk.capitalization = Quirk.NORMALCAPS;
+          player.quirk.punctuation = Quirk.PERFPUNC;
+          player.quirk.lettersToReplace = [];
+          player.quirk.lettersToReplaceIgnoreCase = [];
+          player.quirk.prefix = "";
+          player.quirk.suffix = "";
+          player.specibus = new Specibus("Meterkind", ItemTraitFactory.STICK, <ItemTrait>[ ItemTraitFactory.MAGICAL]);
+          player.land = player.spawnLand();
+          player.land.name = "Land of Vents and Anger";
+          player.land.denizenFeature = new DenizenFeature("Osiris");
+        }else if(index == 1) {
+          player.copyFromOCDataString("b=%C3%A5%C3%A5%C3%A5C%C3%B8%C2%AA%00%C2%97%07%070&s=,,Programming,Animatronics,ProxxiBot&x=AQ==");
+          player.aspect = Aspects.RE_HIPPO;
+          player.guardian.aspect = Aspects.RE_HIPPO;
+        }else if(index == 2) {
+          //Emcee
+          player.copyFromOCDataString("b=%C3%BD%C3%8C%C3%BC7%C3%B2%22%04B%2C%03%0D&s=,,Knowledge,Luck,Gwen&x=AQ==");
+          player.aspect = Aspects.RE_TRASH;
+          player.guardian.aspect = Aspects.RE_TRASH;
+          player.isRevenant = true;
+          player.guardian.isRevenant = true;
+        }else if(index == 3) {
+          //Priest
+          player.copyFromOCDataString("b=%C3%BF%3F%067%C3%B2%22%04D%2C%03)&s=,,Knowledge,Luck,Bob&x=AQ==");
+          player.aspect = Aspects.RE_TRASH;
+          player.guardian.aspect = Aspects.RE_TRASH;
+          player.isRevenant = true;
+          player.guardian.isRevenant = true;
+        }else if(index == 4) {
+          player.copyFromOCDataString("b=%C3%BF%C3%B3%C2%BD%25%C3%BE%22%00%10''%3D&s=,,Tea,Top Hats,aurulentPurgatory&x=AQ==");
+          player.aspect = Aspects.RE_GOLD;
+          player.guardian.aspect = Aspects.RE_GOLD;
+          player.hair = 77;
+          player.guardian.hair = 77;
+
+          player.quirk.capitalization = Quirk.NORMALCAPS;
+          player.quirk.punctuation = Quirk.PERFPUNC;
+          player.quirk.lettersToReplace = [];
+          player.quirk.lettersToReplaceIgnoreCase = [];
+          player.quirk.prefix = "";
+          player.quirk.suffix = "";
+          player.specibus = new Specibus("Snarekind", ItemTraitFactory.NET, <ItemTrait>[ ItemTraitFactory.NANOFIBER]);
+          player.land = player.spawnLand();
+          player.land.name = "Land of The Damned and Broken";
+        }else if(index == 5) {
+          player.copyFromOCDataString("b=iA%0A9%C3%BE%C2%99%00%10''%24&s=,,Null,Null,Gabriel&x=AQ==");
+          player.aspect = Aspects.RE_BEAR;
+          player.guardian.aspect = Aspects.RE_BEAR;
+        }else if(index == 6) {
+          //Bunny
+          player.copyFromOCDataString("b=%C2%A7g%10%C2%A4%C3%BE%C2%99%00%10''B&s=,,Null,Null,Jeremy&x=1iAA");
+        }else if(index == 7) {
+          player.copyFromOCDataString("b=%00%00%00%C2%B2%C3%BE%C2%99%00%10''%3C&s=,,Null,Null,Andrew&x=AQ==");
+          player.aspect = Aspects.RE_FOX;
+          player.guardian.aspect = Aspects.RE_FOX;
+        }else if(index == 8) {
+          //Stoker of Chicken
+          player.copyFromOCDataString("b=%C3%BF%C3%B3%C2%BDe%C3%BE%C2%99%00P''%3A&s=,,Null,Null,Susan&x=AQ==");
+        }else if(index == 9) {
+          //Services
+          player.copyFromOCDataString("b=%C2%82%C2%82%C2%820%C3%B8%C2%99%00%C2%90''%1E&s=,,Null,Null,endoOne&x=AQ==");
+          player.class_name = SBURBClassManager.SOUL;
+        }else if(index == 10) {
+          player.copyFromOCDataString("b=%C3%8Fc82%C3%BE%C2%92%00B%20%1A%0A&s=,,Funtimes,Freedom,Beck&x=AQ==");
+        }else if(index == 11) {
+          player.copyFromOCDataString("b=%C2%85%C2%85%C2%850%C3%B8%C2%A2%00%C2%80%1F%2B1&s=,,Robots,Space,endoTwo&x=AQ==");
+        }else if(index == 12) {
+          //Stoker
+          player.copyFromOCDataString("b=R6%03%2B%C3%BE%C3%87%00%15%01%01%10&s=,,Love,Undead,perishingExorcist&x=llgA");
+          player.aspect = Aspects.RE_PUPPET;
+          player.guardian.aspect = Aspects.RE_PUPPET;
+
+          player.quirk.capitalization = Quirk.NORMALCAPS;
+          player.quirk.punctuation = Quirk.PERFPUNC;
+          player.quirk.lettersToReplace = [];
+          player.quirk.lettersToReplaceIgnoreCase = [];
+          player.quirk.prefix = "";
+          player.quirk.suffix = "";
+          player.specibus = new Specibus("Roulettekind", ItemTraitFactory.LUCKY, <ItemTrait>[ ItemTraitFactory.ASPECTAL]);
+        }else if(index == 13) {
+          player.copyFromOCDataString("b=uuu9%C3%B8Z%00%C2%98%1C%1C%12&s=,,Eldritch,Robots,tendrilsBreakdown&x=AQ==");
+
+          player.aspect = Aspects.RE_GHOST;
+          player.guardian.aspect = Aspects.RE_GHOST;
+          player.guardian.robot = true;
+        }else if(index == 14) {
+          player.copyFromOCDataString("b=%C3%85%C3%85%C3%85%C2%B9%C3%B8%C2%A5%00%C2%90%18%18%10&s=,,A.I.,Violence,bereavementsMaxilla&x=AQ==");
+
+          player.aspect = Aspects.RE_GHOST;
+          player.guardian.aspect = Aspects.RE_GHOST;
+          player.guardian.robot = true;
+        }else if(index == 15) {
+          player.copyFromOCDataString("b=HMj.%C3%BE%C2%A5%00P%1C%1C1&s=,,Programming,Loneliness,William&x=BnAB");
+        }
+    }
 
     static void session1222112(Session session) {
         int numPlayers = 2;

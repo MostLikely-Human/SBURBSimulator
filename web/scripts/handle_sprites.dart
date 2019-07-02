@@ -30,6 +30,8 @@ abstract class ReferenceColours {
 
     static Colour GRIM = new Colour.fromHex(0x424242);
     static Colour GREYSKIN = new Colour.fromHex(0xC4C4C4);
+    static Colour LIZARDSKIN = new Colour.fromHex(0x282828);
+    static Colour LIZARDSKINSEA = new Colour.fromHex(0x6CA0D8);
     static Colour GRUB = new Colour.fromHex(0x585858);
     static Colour ROBOT = new Colour.fromHex(0xB6B6B6);
     static Colour ECHELADDER = new Colour.fromHex(0x4A92F7);
@@ -339,6 +341,18 @@ abstract class Drawing {
         swapColors(canvas, ReferenceColours.WHITE, ReferenceColours.GREYSKIN);
     }
 
+    static void lizardSkin(CanvasElement canvas, Player player) {
+        if(player.LizardfolkType == 0) {
+            swapColors(canvas, ReferenceColours.WHITE, ReferenceColours.LIZARDSKIN);
+        } else if(player.LizardfolkType == 1) {
+            swapColors(canvas, ReferenceColours.WHITE, ReferenceColours.LIZARDSKINSEA);
+        }
+    }
+
+    static void revenantSkin(CanvasElement canvas, Player player) {
+        swapColors(canvas, ReferenceColours.WHITE, player.aspect.reskinOf.palette.accent);
+    }
+
     static void roboSkin(CanvasElement canvas) {
         swapColors(canvas, ReferenceColours.WHITE, ReferenceColours.ROBOT);
     }
@@ -378,7 +392,7 @@ abstract class Drawing {
 
     //TODO, eventually render fin1, then hair, then fin2
     static void fin1(CanvasElement canvas, Player player) {
-        if (player.bloodColor == "#610061" || player.bloodColor == "#99004d") {
+        if ((player.isTroll && (player.bloodColor == "#610061" || player.bloodColor == "#99004d")) || (player.isLizardfolk && player.LizardfolkType == 1)) {
             CanvasRenderingContext2D ctx = canvas.getContext('2d');
             String imageString = "fin1.png";
             addImageTag(imageString);
@@ -388,7 +402,7 @@ abstract class Drawing {
     }
 
     static void fin2(CanvasElement canvas, Player player) {
-        if (player.bloodColor == "#610061" || player.bloodColor == "#99004d") {
+        if ((player.isTroll && (player.bloodColor == "#610061" || player.bloodColor == "#99004d")) || (player.isLizardfolk && player.LizardfolkType == 1)) {
             CanvasRenderingContext2D ctx = canvas.getContext('2d');
             String imageString = "fin2.png";
             addImageTag(imageString);
@@ -1533,7 +1547,7 @@ abstract class Drawing {
             bloodPuddle(canvas, player);
         }
         hairBack(canvas, player);
-        if (player.isTroll) { //wings before sprite
+        if (player.isTroll || player.isLizardfolk) { //wings before sprite
             fin2(canvas, player);
         }
 
@@ -1586,7 +1600,7 @@ abstract class Drawing {
             }
         }
         hair(canvas, player);
-        if (player.isTroll) { //wings before sprite
+        if (player.isTroll || player.isLizardfolk) { //wings before sprite
             fin1(canvas, player);
         }
         if (!baby && player.godTier) {
@@ -1604,6 +1618,10 @@ abstract class Drawing {
             grimDarkSkin(canvas); //, player);
         } else if (player.isTroll) {
             greySkin(canvas); //,player);
+        } else if (player.isLizardfolk) {
+            lizardSkin(canvas, player);
+        } else if (player.isRevenant) {
+            revenantSkin(canvas, player);
         }
         if (player.isTroll) {
             horns(canvas, player);

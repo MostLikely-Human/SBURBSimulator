@@ -124,3 +124,194 @@ class Re_Piss extends Aspect {
   List<String> handles = new List<String>.unmodifiable(<String>["Piss", "Parmesan", "Potato", "Pointless"]);
 
 }
+
+class Re_Pig extends Aspect {
+  Re_Pig(int id) :super(id, "Re_Pig", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.TIME);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#f591f5"
+    ..aspect_light = '#f591f5'
+    ..aspect_dark = '#c273c2'
+    ..shoe_light = '#f591f5'
+    ..shoe_dark = '#c273c2'
+    ..cloak_light = '#c273c2'
+    ..cloak_mid = '#8f558f'
+    ..cloak_dark = '#5c365c'
+    ..shirt_light = '#c14cc1'
+    ..shirt_dark = '#8f388f'
+    ..pants_light = '#a854a8'
+    ..pants_dark = '#753b75';
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.time(s, p);
+  }
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Pig", "Pointless", "Pretend"]);
+
+}
+
+class Re_Frog extends Aspect {
+  Re_Frog(int id) :super(id, "Re_Frog", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.SPACE);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#00cc00"
+    ..aspect_light = '#00cc00'
+    ..aspect_dark = '#009900'
+    ..shoe_light = '#00cc00'
+    ..shoe_dark = '#009900'
+    ..cloak_light = '#00b300'
+    ..cloak_mid = '#008000'
+    ..cloak_dark = '#004d00'
+    ..shirt_light = '#1c8c1c'
+    ..shirt_dark = '#125912'
+    ..pants_light = '#2e732e'
+    ..pants_dark = '#1a401a';
+
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.space(s, p);
+  }
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Frog", "Forge", "Fudge", "Finch"]);
+}
+
+class Re_Gold extends Aspect {
+  Re_Gold(int id) :super(id, "Re_Gold", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.HEART);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#8e8d20"
+    ..aspect_light = '#8e8d20'
+    ..aspect_dark = '#3b3a0c'
+    ..shoe_light = '#8e8d20'
+    ..shoe_dark = '#3b3a0c'
+    ..cloak_light = '#dbda3d'
+    ..cloak_mid = '#a8a72f'
+    ..cloak_dark = '#757521'
+    ..shirt_light = '#b5b43c'
+    ..shirt_dark = '#82812b'
+    ..pants_light = '#a8a748'
+    ..pants_dark = '#757532';
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.heart(s, p);
+  }
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Gold", "Guide", "Guile", "Guild"]);
+}
+
+class Re_Puppet extends Aspect {
+  Re_Puppet(int id) :super(id, "Re_Puppet", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.LIFE);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#e6e6e6"
+    ..aspect_light = '#e6e6e6'
+    ..aspect_dark = '#595959'
+    ..shoe_light = '#e6e6e6'
+    ..shoe_dark = '#595959'
+    ..cloak_light = '#f2f2f2'
+    ..cloak_mid = '#bfbfbf'
+    ..cloak_dark = '#8c8c8c'
+    ..shirt_light = '#c6cbcc'
+    ..shirt_dark = '#949999'
+    ..pants_light = '#aab2b3'
+    ..pants_dark = '#797f80';
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.life(s, p);
+  }
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Puppet", "Pointless", "Pretend", "Priceless"]);
+}
+
+class Re_Trash extends Aspect {
+  Re_Trash(int id) :super(id, "Re_Trash", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.LIGHT);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#2e2e2e"
+    ..aspect_light = '#2e2e2e'
+    ..aspect_dark = '#000000'
+    ..shoe_light = '#2e2e2e'
+    ..shoe_dark = '#000000'
+    ..cloak_light = '#d4d4d4'
+    ..cloak_mid = '#a1a1a1'
+    ..cloak_dark = '#6e6e6e'
+    ..shirt_light = '#999999'
+    ..shirt_dark = '#666666'
+    ..pants_light = '#808080'
+    ..pants_dark = '#4d4d4d';
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.light(s, p);
+  }
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Trash", "Tactless", "Tiger"]);
+}
+
+class Re_Fox extends Aspect {
+  Re_Fox(int id) :super(id, "Re_Fox", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.BREATH);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#ff9100"
+    ..aspect_light = '#ff9100'
+    ..aspect_dark = '#cc7400'
+    ..shoe_light = '#ff9100'
+    ..shoe_dark = '#cc7400'
+    ..cloak_light = '#e68300'
+    ..cloak_mid = '#b36600'
+    ..cloak_dark = '#804900'
+    ..shirt_light = '#b36d12'
+    ..shirt_dark = '#804e0d'
+    ..pants_light = '#99641f'
+    ..pants_dark = '#664314';
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.breath(s, p);
+  }
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Fox", "Florist", "Flower"]);
+}
+
+class Re_Ghost extends Aspect {
+  Re_Ghost(int id) :super(id, "Re_Ghost", isCanon: false, isMLHFanon: true, isInternal: true, reskinOf: Aspects.RAGE);
+
+  @override
+  AspectPalette palette = new AspectPalette()
+    ..accent = "#bfbfbf"
+    ..aspect_light = '#bfbfbf'
+    ..aspect_dark = '#aaa6a6'
+    ..shoe_light = '#bfbfbf'
+    ..shoe_dark = '#aaa6a6'
+    ..cloak_light = '#e6c3c3'
+    ..cloak_mid = '#b39898'
+    ..cloak_dark = '#806c6c'
+    ..shirt_light = '#e6cfcf'
+    ..shirt_dark = '#b3a1a1'
+    ..pants_light = '#ccc2c2'
+    ..pants_dark = '#999191';
+
+  @override
+  String activateCataclysm(Session s, Player p) {
+    return s.mutator.rage(s, p);
+  }
+
+  @override
+  List<String> handles = new List<String>.unmodifiable(<String>["Ghost", "Great", "Ghaster"]);
+}

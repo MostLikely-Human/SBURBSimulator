@@ -1,7 +1,7 @@
 <div class = "banner">
       <center><a href = "index.html"><img src = "images/StatusBanners/sburb_sim_page_header.png"/></a></center>
       <center><font color="red" size=15px>This is a mod of the original SBURBSim at <a href="http://www.farragofiction.com/SBURBSim/landing.html" style="color:#dd0088;">farragofiction.com</a>, go check it out!</font><center>
-      <center><font color="red" size=5px>Contact me on Discord (MostLikely-Human#3544) for any question or comments.</font></center>
+      <center><font color="red" size=5px>Contact me on Discord (MostLikely-Human#0247) for any question or comments.</font></center>
 </div>
 <ul class = "menuPureCSS">
   <span class = 'centeredMenu'>

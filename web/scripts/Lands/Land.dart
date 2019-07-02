@@ -181,6 +181,7 @@ class Land extends Object with FeatureHolder {
            // ;
             if(p.item.condition(players)) valid.addPair(p);
         }
+        session.logger.info(source);
         return session.rand.pickFrom(valid);
     }
 

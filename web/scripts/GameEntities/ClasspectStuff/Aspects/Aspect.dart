@@ -42,6 +42,7 @@ import "Reskin.dart";
 import "MoonProspit.dart";
 import "MoonDerse.dart";
 import "Combo.dart";
+import "Tempest.dart";
 
 
 abstract class Aspects {
@@ -92,11 +93,19 @@ abstract class Aspects {
     static Aspect MOONPROSPIT;
     static Aspect MOONDERSE;
 
-
     static Aspect RE_BEAR;
     static Aspect RE_HIPPO;
     static Aspect RE_LOCK;
     static Aspect RE_PISS;
+    static Aspect RE_PIG;
+    static Aspect RE_FROG;
+    static Aspect RE_GOLD;
+    static Aspect RE_PUPPET;
+    static Aspect RE_TRASH;
+    static Aspect RE_FOX;
+    static Aspect RE_GHOST;
+
+    static Aspect TEMPEST;
 
     static Aspect COMBO;
 
@@ -116,6 +125,7 @@ abstract class Aspects {
         HOPE = new Hope(10);
         LIFE = new Life(11);
         DREAM = new Dream(12);
+
         JUICE = new Juice(14);
         SAUCE = new Sauce(15);
         TAZE = new Taze(16);
@@ -154,7 +164,15 @@ abstract class Aspects {
         RE_HIPPO = new Re_Hippo(45);
         RE_LOCK = new Re_Lock(46);
         RE_PISS = new Re_Piss(47);
+        RE_PIG = new Re_Pig(48);
+        RE_FROG = new Re_Frog(49);
+        RE_GOLD = new Re_Gold(50);
+        RE_PUPPET = new Re_Puppet(51);
+        RE_TRASH = new Re_Trash(52);
+        RE_FOX = new Re_Fox(53);
+        RE_GHOST = new Re_Ghost(54);
 
+        TEMPEST = new Tempest(55);
 
         COMBO = new Combo(254);
         NULL = new Aspect(255, "Null", isInternal:true);
@@ -180,7 +198,7 @@ abstract class Aspects {
     }
 
     static List Stone = [MINDSTONE, SPACESTONE, POWERSTONE, SOULSTONE, TIMESTONE, REALITYSTONE, GAUNTLET];
-    static List Reskins = [RE_BEAR, RE_HIPPO, RE_LOCK, RE_PISS];
+    static List Reskins = [RE_BEAR, RE_HIPPO, RE_LOCK, RE_PISS, RE_PIG, RE_FROG, RE_GOLD, RE_PUPPET, RE_TRASH, RE_FOX, RE_GHOST];
 
     static Aspect getByName(String name) {
         if (_aspects.isEmpty) init();
@@ -193,10 +211,17 @@ abstract class Aspects {
     }
 
     static findReskin(Aspect a, String name) {
-        if(a == Aspects.RAGE) a.reskinIs = Aspects.RE_BEAR;
+        if(a == Aspects.RAGE && name == "Derse") a.reskinIs = Aspects.RE_BEAR;
+        else if(a == Aspects.RAGE && name == "Prospit") a.reskinIs = Aspects.RE_GHOST;
         else if(a == Aspects.DOOM && name == "Derse") a.reskinIs = Aspects.RE_HIPPO;
         else if(a == Aspects.DOOM && name == "Prospit") a.reskinIs = Aspects.RE_LOCK;
         else if(a == Aspects.JUICE) a.reskinIs = Aspects.RE_PISS;
+        else if(a == Aspects.TIME) a.reskinIs = Aspects.RE_PIG;
+        else if(a == Aspects.SPACE) a.reskinIs = Aspects.RE_FROG;
+        else if(a == Aspects.HEART && name == "Derse") a.reskinIs = Aspects.RE_GOLD;
+        else if(a == Aspects.LIFE) a.reskinIs = Aspects.RE_PUPPET;
+        else if(a == Aspects.LIGHT) a.reskinIs = Aspects.RE_TRASH;
+        else if(a == Aspects.BREATH) a.reskinIs = Aspects.RE_FOX;
         else a.reskinIs = a;
         return a.reskinIs;
     }
@@ -211,18 +236,18 @@ abstract class Aspects {
         NewA.name = a1.name + a2.name;
 
         AspectPalette palette = new AspectPalette()
-          ..accent = a1.palette.accent
-          ..aspect_light = a1.palette.aspect_light
-          ..aspect_dark = a1.palette.aspect_dark
-          ..shoe_light = a1.palette.shoe_light
-          ..shoe_dark = a1.palette.shoe_dark
-          ..cloak_light = a2.palette.cloak_light
-          ..cloak_mid = a2.palette.cloak_mid
-          ..cloak_dark = a2.palette.cloak_dark
-          ..shirt_light = a1.palette.shirt_light
-          ..shirt_dark = a1.palette.shirt_dark
-          ..pants_light = a2.palette.pants_light
-          ..pants_dark = a2.palette.pants_dark;
+            ..accent = a1.palette.accent
+            ..aspect_light = a1.palette.aspect_light
+            ..aspect_dark = a1.palette.aspect_dark
+            ..shoe_light = a1.palette.shoe_light
+            ..shoe_dark = a1.palette.shoe_dark
+            ..cloak_light = a2.palette.cloak_light
+            ..cloak_mid = a2.palette.cloak_mid
+            ..cloak_dark = a2.palette.cloak_dark
+            ..shirt_light = a1.palette.shirt_light
+            ..shirt_dark = a1.palette.shirt_dark
+            ..pants_light = a2.palette.pants_light
+            ..pants_dark = a2.palette.pants_dark;
 
         NewA.palette = palette;
 
@@ -454,7 +479,7 @@ class Aspect {
 
     void initializeItems() {
         items = new WeightedList<Item>()
-        ..add(new Item("Perfectly Generic Object",<ItemTrait>[],shogunDesc: "I Think Is The Starbound Item For Debugging Unused Item IDs"));
+            ..add(new Item("Perfectly Generic Object",<ItemTrait>[],shogunDesc: "I Think Is The Starbound Item For Debugging Unused Item IDs"));
     }
 
     // ##################################################################################################

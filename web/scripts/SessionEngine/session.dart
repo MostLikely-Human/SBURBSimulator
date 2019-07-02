@@ -862,6 +862,8 @@ class Session {
 
     Player findBestSpace() {
         List<Player> spaces = findAllAspectPlayers(this.players, Aspects.SPACE);
+        List<Player> spaces2 = findAllAspectPlayers(this.players, Aspects.RE_FROG);
+        spaces.addAll(spaces2);
         if (spaces.isEmpty) return null;
         Player ret = spaces[0];
         for (num i = 0; i < spaces.length; i++) {
@@ -1126,6 +1128,8 @@ class Session {
         } else if (session_id == 1025) {
             document.title = "Fruity Rumpus Asshole Simulator by jadedResearcher";
             SimController.instance.storyElement.appendHtml(" <a href = 'index2.html?seed=${getRandomSeed()}&rumpus=fruity'>I will have order in this RumpusBlock!!!</a>", treeSanitizer: NodeTreeSanitizer.trusted);
+        } else if (session_id == 1987) {
+            SimController.instance.storyElement.appendHtml(" <img src=\"images/A1987_Logo.png\">");
         }
     }
 
@@ -1160,6 +1164,13 @@ class Session {
             Aspects.RE_HIPPO.name = "Hippo";
             Aspects.RE_LOCK.name = "Lock";
             Aspects.RE_PISS.name = "Piss";
+            Aspects.RE_PIG.name = "Pig";
+            Aspects.RE_FROG.name = "Frog";
+            Aspects.RE_GOLD.name = "Gold";
+            Aspects.RE_PUPPET.name = "Puppet";
+            Aspects.RE_TRASH.name = "Trash";
+            Aspects.RE_FOX.name = "Fox";
+            Aspects.RE_GHOST.name = "Ghost";
 
             Aspects.MOONPROSPIT.name = "Prospit";
             Aspects.MOONDERSE.name = "Derse";

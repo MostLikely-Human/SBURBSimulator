@@ -168,6 +168,7 @@ abstract class SimController {
 
     void renderScratchButton(Session session) {
         Player timePlayer = findAspectPlayer(session.players, Aspects.TIME);
+        if (timePlayer == null) timePlayer = findAspectPlayer(session.players, Aspects.RE_PIG);
         if (timePlayer == null) throw "CAN'T SCRATCH WITHOUT A TIME PLAYER, JACKASS";
         //
         //alert("scratch [possible]");

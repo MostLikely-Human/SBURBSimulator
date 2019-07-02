@@ -130,6 +130,8 @@ class CharacterCreatorHelper {
         (player.hairColor);
         String troll = "Human";
         if (player.isTroll) troll = "Troll";
+        if (player.isLizardfolk) troll = "Lizardfolk";
+        if (player.isRevenant) troll = "Revenant";
         (querySelector("#speciesID${player.id}") as SelectElement).value = (troll);
         (querySelector("#leftHornID${player.id}") as SelectElement).value =
         (player.leftHorn.toString());
@@ -739,8 +741,21 @@ class CharacterCreatorHelper {
             String str = aspectDropDown.value;
             if (str == "Troll") {
                 player.isTroll = true;
-            } else {
+                player.isLizardfolk = false;
+                player.isRevenant = false;
+            } else if (str == "Lizardfolk"){
+                player.isLizardfolk = true;
                 player.isTroll = false;
+                player.isRevenant = false;
+            } else if (str == "Revenant") {
+                player.isRevenant = true;
+                player.isTroll = false;
+                player.isLizardfolk = false;
+            }
+            else {
+                player.isLizardfolk = false;
+                player.isTroll = false;
+                player.isRevenant = false;
             }
             that.redrawSinglePlayer(player);
             helpText.setInnerHtml(that.generateHelpText("Species", player.isTroll ? "Troll" : "Human"));
@@ -1086,7 +1101,7 @@ class CharacterCreatorHelper {
     }
 
     dynamic drawOneSpeciesDropDown(Player player) {
-        var species = ["Human", "Troll"];
+        var species = ["Human", "Troll", "Lizardfolk", "Revenant"];
         String html =
             "<select id = 'speciesID${player.id}' name='species${player.id}'>";
         for (int i = 0; i < species.length; i++) {

@@ -36,7 +36,7 @@ class Player extends GameEntity{
     //mostly for dead sessions.
     bool unconditionallyImmortal = false;
    static num maxHornNumber = 74; //don't fuck with this
-    static num maxHairNumber = 76; //same
+    static num maxHairNumber = 77; //same
     Sprite sprite = null; //gets set to a blank sprite when character is created.
     bool deriveChatHandle = true;
     bool deriveSprite = true;
@@ -80,6 +80,10 @@ class Player extends GameEntity{
     String hairColor = null;
     bool dreamSelf = true;
     bool isTroll = false; //later
+    bool isLizardfolk = false; //Also later
+    num LizardfolkType = 0; //refactor to be blood type?
+    //Add Revenants for Session 1983
+    bool isRevenant = false;
     String bloodColor = "#ff0000"; //human red.
     num leftHorn = null;
     num rightHorn = null;
@@ -1144,6 +1148,9 @@ class Player extends GameEntity{
         clone.dreamPlayerProspit = dreamPlayerProspit;
         clone.dreamPlayerDerse = dreamPlayerDerse;
         clone.isTroll = isTroll; //later
+        clone.isLizardfolk = isLizardfolk; //Also later
+        clone.LizardfolkType = LizardfolkType;
+        clone.isRevenant = isRevenant;
         clone.bloodColor = bloodColor;
         clone.leftHorn = leftHorn;
         clone.rightHorn = rightHorn;
@@ -1178,6 +1185,9 @@ class Player extends GameEntity{
         Player guardian = randomPlayerWithClaspect(this.session, this.session.rand.pickFrom(possibilities), this.aspect);
         removeFromArray(guardian.class_name, session.available_classes_guardians);
         guardian.isTroll = player.isTroll;
+        guardian.isLizardfolk = player.isLizardfolk;
+        guardian.LizardfolkType = player.LizardfolkType;
+        guardian.isRevenant = player.isRevenant;
         guardian.quirk.favoriteNumber = player.quirk.favoriteNumber;
         if (guardian.isTroll) {
             guardian.quirk = randomTrollSim(this.session.rand, guardian); //not same quirk as guardian;
@@ -1677,6 +1687,17 @@ class Player extends GameEntity{
             return;
         }
 
+        if (this.session.getSessionType() == "Lizardfolk") {
+            this.isLizardfolk = true;
+            this.hairColor = "#ffffff";
+            return;
+        }
+
+        if (this.session.getSessionType() == "Revenant") {
+          this.hairColor = session.rand.pickFrom(human_hair_colors);
+          return;
+        }
+
         if (this.session.getSessionType() == "Troll" || (this.session.getSessionType() == "Mixed" && rand.nextDouble() > 0.5)) {
             this.isTroll = true;
             this.hairColor = "#000000";
@@ -1899,8 +1920,8 @@ class Player extends GameEntity{
         uint8View[3] = (json["class_name"] << 4) + json["aspect"]; //when I do fanon classes + aspect, use this same scheme, but have binary for "is fanon", so I know 1 isn't page, but waste (or whatever);
         uint8View[4] = (json["victimBlood"] << 4) + json["bloodColor"];
         uint8View[5] = (json["interest1Category"] << 4) + json["interest2Category"];
-        uint8View[6] = (json["grimDark"] << 5) + (json["isTroll"] << 4) + (json["isDreamSelf"] << 3) + (json["godTier"] << 2) + (json["murderMode"] << 1) + (json["leftMurderMode"]); //shit load of single bit variables.;
-        uint8View[7] = (json["robot"] << 7) + (json["moon"] << 6) + (json["dead"] << 5) + (json["godDestiny"] << 4) + (json["favoriteNumber"]);
+        uint8View[6] = (json["grimDark"] << 6) + (json["isTroll"] << 5) + (json["isLizardfolk"] << 4) + (json["isDreamSelf"] << 3) + (json["godTier"] << 2) + (json["murderMode"] << 1) + (json["leftMurderMode"]); //shit load of single bit variables.;
+        uint8View[7] = (json["robot"] << 7) + (json["moon"] << 6) + (json["dead"] << 5) + (json["godDestiny"] << 4) + (json["LizardfolkType"] << 3) + (json["favoriteNumber"]);
         uint8View[8] = json["leftHorn"];
         uint8View[9] = json["rightHorn"];
         uint8View[10] = json["hair"];
@@ -1916,7 +1937,7 @@ class Player extends GameEntity{
         String cod = this.causeOfDrain;
         if (cod == null) cod = "";
         if (this.moon == session.prospit) moonNum = 1;
-        Map<String, dynamic> json = <String, dynamic>{"aspect": this.aspect.id, "class_name": classNameToInt(this.class_name), "favoriteNumber": this.quirk.favoriteNumber, "hair": this.hair, "hairColor": hexColorToInt(this.hairColor), "isTroll": this.isTroll ? 1 : 0, "bloodColor": bloodColorToInt(this.bloodColor), "leftHorn": this.leftHorn, "rightHorn": this.rightHorn, "interest1Category": this.interest1.category.id, "interest2Category": this.interest2.category.id, "interest1": this.interest1.name, "interest2": this.interest2.name, "robot": this.robot ? 1 : 0, "moon": moonNum, "causeOfDrain": cod, "victimBlood": bloodColorToInt(this.victimBlood), "godTier": this.godTier ? 1 : 0, "isDreamSelf": this.isDreamSelf ? 1 : 0, "murderMode": this.murderMode ? 1 : 0, "leftMurderMode": this.leftMurderMode ? 1 : 0, "grimDark": this.grimDark, "causeOfDeath": this.causeOfDeath, "dead": this.dead ? 1 : 0, "godDestiny": this.godDestiny ? 1 : 0};
+        Map<String, dynamic> json = <String, dynamic>{"aspect": this.aspect.id, "class_name": classNameToInt(this.class_name), "favoriteNumber": this.quirk.favoriteNumber, "hair": this.hair, "hairColor": hexColorToInt(this.hairColor), "isTroll": this.isTroll ? 1 : 0, "isLizardfolk": this.isLizardfolk ? 1 : 0 , "LizardfolkType": this.LizardfolkType, "bloodColor": bloodColorToInt(this.bloodColor), "leftHorn": this.leftHorn, "rightHorn": this.rightHorn, "interest1Category": this.interest1.category.id, "interest2Category": this.interest2.category.id, "interest1": this.interest1.name, "interest2": this.interest2.name, "robot": this.robot ? 1 : 0, "moon": moonNum, "causeOfDrain": cod, "victimBlood": bloodColorToInt(this.victimBlood), "godTier": this.godTier ? 1 : 0, "isDreamSelf": this.isDreamSelf ? 1 : 0, "murderMode": this.murderMode ? 1 : 0, "leftMurderMode": this.leftMurderMode ? 1 : 0, "grimDark": this.grimDark, "causeOfDeath": this.causeOfDeath, "dead": this.dead ? 1 : 0, "godDestiny": this.godDestiny ? 1 : 0};
         return json;
     }
 
@@ -1935,6 +1956,9 @@ class Player extends GameEntity{
         this.hair = replayPlayer.hair;
         this.hairColor = replayPlayer.hairColor;
         this.isTroll = replayPlayer.isTroll;
+        this.isLizardfolk = replayPlayer.isLizardfolk;
+        this.LizardfolkType = replayPlayer.LizardfolkType;
+        this.isRevenant = replayPlayer.isRevenant;
         this.bloodColor = replayPlayer.bloodColor;
         this.leftHorn = replayPlayer.leftHorn;
         this.specibus = replayPlayer.specibus.copy();
@@ -2318,6 +2342,9 @@ class Player extends GameEntity{
         ret.noChill = player.noChill;
         ret.dead = player.dead;
         ret.isTroll = player.isTroll;
+        ret.isLizardfolk = player.isLizardfolk;
+        ret.LizardfolkType = player.LizardfolkType;
+        ret.isRevenant = player.isRevenant;
         ret.godTier = player.godTier;
         ret.isDreamSelf = player.isDreamSelf;
         ret.dreamPlayerProspit = player.dreamPlayerProspit;
