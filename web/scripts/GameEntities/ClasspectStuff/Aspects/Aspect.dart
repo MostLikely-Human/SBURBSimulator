@@ -104,6 +104,7 @@ abstract class Aspects {
     static Aspect RE_TRASH;
     static Aspect RE_FOX;
     static Aspect RE_GHOST;
+    static Aspect RE_SBURB;
 
     static Aspect TEMPEST;
 
@@ -174,6 +175,8 @@ abstract class Aspects {
 
         TEMPEST = new Tempest(55);
 
+        RE_SBURB = new Re_Sburb(56);
+
         COMBO = new Combo(254);
         NULL = new Aspect(255, "Null", isInternal:true);
     }
@@ -198,7 +201,7 @@ abstract class Aspects {
     }
 
     static List Stone = [MINDSTONE, SPACESTONE, POWERSTONE, SOULSTONE, TIMESTONE, REALITYSTONE, GAUNTLET];
-    static List Reskins = [RE_BEAR, RE_HIPPO, RE_LOCK, RE_PISS, RE_PIG, RE_FROG, RE_GOLD, RE_PUPPET, RE_TRASH, RE_FOX, RE_GHOST];
+    static List Reskins = [RE_BEAR, RE_HIPPO, RE_LOCK, RE_PISS, RE_PIG, RE_FROG, RE_GOLD, RE_PUPPET, RE_TRASH, RE_FOX, RE_GHOST, RE_SBURB];
 
     static Aspect getByName(String name) {
         if (_aspects.isEmpty) init();
@@ -222,6 +225,7 @@ abstract class Aspects {
         else if(a == Aspects.LIFE) a.reskinIs = Aspects.RE_PUPPET;
         else if(a == Aspects.LIGHT) a.reskinIs = Aspects.RE_TRASH;
         else if(a == Aspects.BREATH) a.reskinIs = Aspects.RE_FOX;
+        else if(a == Aspects.TEMPEST) a.reskinIs = Aspects.RE_SBURB;
         else a.reskinIs = a;
         return a.reskinIs;
     }
