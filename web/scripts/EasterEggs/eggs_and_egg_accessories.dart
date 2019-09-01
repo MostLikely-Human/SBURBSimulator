@@ -693,7 +693,7 @@ void session413IndexToHuman(Session session,Player player, int index){
 		player.aspect = Aspects.BREATH;
 		player.hair  =3;
 		player.hairColor = "#000000";
-		player.chatHandle = "ectoBiologist";
+		player.chatHandle = "endocrineBiohacker";
 		player.interest1 = new Interest("Pranks", InterestManager.COMEDY);
 		player.interest2 = new Interest("Action Movies", InterestManager.POPCULTURE);
 		player.quirk.capitalization = 0;
