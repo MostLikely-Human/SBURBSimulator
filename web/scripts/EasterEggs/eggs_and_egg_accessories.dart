@@ -691,7 +691,7 @@ void session413IndexToHuman(Session session,Player player, int index){
 		player.class_name = SBURBClassManager.HEIR;
 		player.godDestiny = true;
 		player.aspect = Aspects.BREATH;
-		player.hair  =3;
+		player.hair  = 25;
 		player.hairColor = "#000000";
 		player.chatHandle = "endocrineBiohacker";
 		player.interest1 = new Interest("Pranks", InterestManager.COMEDY);
