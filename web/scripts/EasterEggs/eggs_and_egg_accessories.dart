@@ -84,6 +84,8 @@ void sbahjMode(Session session){
 	//authorMessage();
 	//i cannot resist
 	//easter egg ^_^
+	allThePlayers(session); 
+	 
 	if (getParameterByName("royalRumble", null) == "true") {
 		debugRoyalRumble(session);
 	}
@@ -350,7 +352,46 @@ void passive(Session session) {
 	}
 }
 
+void allThePlayers(Session session){
+	if(window.location.search.isEmpty && simulatedParamsGlobalVar.isEmpty) {
+	  //;
+		return;
+	}
+	String params1 = null;
+	if(window.location.search.isNotEmpty) params1 = window.location.search.substring(1);
+	String params2 = simulatedParamsGlobalVar;
+	//;
+	List<String> tmp = SBURBClassManager.allClassNames;
+	List<String> all_aspects =  Aspects.names.toList();
+	String params = "";
+	if(params1 != null){
+		params = params1;
+		if(params2!= null){
+			params += "&" + params2;
+		}
+	}else if(params2 != null) params = params2;
+	List<String> paramsArray = params.split("&");
+	for(num i = 0; i<paramsArray.length; i++){
+		List<String> stuck = paramsArray[i].split("Stuck");
+		//print("stuck is: " + stuck.toString());
+		if(stuck.length == 2){
+			if(tmp.indexOf(stuck[0]) != -1){
+				setAllClassesTo(session,stuck[0].trim());
+			}else if(all_aspects.indexOf(stuck[0]) != -1){
+				setAllAspectsTo(session,stuck[0].trim());
+			}else if(stuck[0] == "Stone") {
+				setStoneAspects(session);
+			}
+			for(num k = 0; k<stuck.length; k++) {
+				List<String> c = stuck[k].split("AND");
+				if(c.length == 2 && all_aspects.indexOf(c[0]) != 1 && all_aspects.indexOf(c[1]) != 1) {
+					setComboAspects(session,c[0].trim(),c[1].trim());
+				}
+			}
+		}
+	}
 
+}
 
 
 //omg, so easy, KnightStuck = true, SylphStuck = true, PageStuck = true.;
