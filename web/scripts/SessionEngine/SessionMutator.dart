@@ -189,7 +189,7 @@ class SessionMutator {
             activatingPlayer.setStat(Stats.SANITY, -100);
             activatingPlayer.makeMurderMode();
         } else if(activatingPlayer.tgno == 2) {
-            ret += "The ${activatingPlayer.htmlTitle()} decides to turn all his session mates into robots, in an attempt to escape from the session.";
+            ret += "The ${activatingPlayer.htmlTitle()} decides to turn all their session mates into robots, in an attempt to escape from the session.";
             for (Player p in s.players) {
                 p.hairColor = getRandomGreyColor();
                 p.bloodColor = getRandomGreyColor();
