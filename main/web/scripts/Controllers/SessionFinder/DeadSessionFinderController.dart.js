@@ -50519,14 +50519,14 @@ ef:function(a,b,c,d){return this.bS(a,b,c,d,null)}}
 Y.dF.prototype={
 bS:function(a,b,c,d,e){var t,s,r,q,p
 t=e!=null?e:""
-if(c!=null){s=$.cS
-r=$.JK
-if(c instanceof Q.u){t+="The "+s+" gains the fraymotif "+r+", while the "+$.ib+" gets the fraymotif "+$.Oi+"! "
+if(c!=null){s=$.JK
+r=$.cS
+if(c instanceof Q.u){t+="The "+r+" gains the fraymotif "+s+", while the "+$.ib+" gets the fraymotif "+$.Oi+"! "
 q=b.eR(c)
 p=c.eR(b)
 s=this.c
 if(s!=null)J.hC(p,s)
-t=H.aq(H.aq(t,$.ib,c.bj()),$.Oi,H.e(J.aC(p)))}else{t+=" The "+s+" gains the fraymotif "+r+"! "
+t=H.aq(H.aq(t,$.ib,c.bj()),$.Oi,H.e(J.aC(p)))}else{t+=" The "+r+" gains the fraymotif "+s+"! "
 q=null}}else{t+=" The "+$.cS+" gains the fraymotif "+$.JK+"! "
 q=null}if(q==null)q=b.eR(null)
 s=this.c
