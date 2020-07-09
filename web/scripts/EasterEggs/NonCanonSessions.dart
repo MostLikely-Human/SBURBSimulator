@@ -446,7 +446,7 @@ abstract class NonCanonSessions {
             player.land.name = "Land of Vents and Anger";
             player.land.denizenFeature = new DenizenFeature("Osiris");
         }else if(index == 6) {
-            player.copyFromOCDataString("b=%00%00%001%C3%B6)%10%13%1C%1C4&s=,,Sharks,Water,Jakobyy&x=AQ==");
+            player.copyFromOCDataString("b=%00%00%001%C3%B6)%10%13%1C%1C4&s=,,Sharks,Water,orthodoxAquarian&x=AQ==");
             player.aspect = Aspects.RE_PIG;
             player.LizardfolkType = 1;
             player.isLizardfolk = true;
@@ -467,7 +467,7 @@ abstract class NonCanonSessions {
             player.land.name = "Land of Steam and Forges";
             player.land.denizenFeature = new DenizenFeature("Music Man");
         }else if(index == 7) {
-            player.copyFromOCDataString("b=%00%00%00%3C%C3%BE!%10%10%18%18%25&s=,,Coffee,Banjos,Jadenn&x=DmAB");
+            player.copyFromOCDataString("b=%00%00%00%3C%C3%BE!%10%10%18%18%25&s=,,Coffee,Banjos,tumultousExpounder&x=DmAB");
             player.LizardfolkType = 2;
             player.isLizardfolk = true;
             player.isTroll = false;
@@ -486,7 +486,7 @@ abstract class NonCanonSessions {
             player.land.name = "Land of Noir and Doubt";
             player.land.denizenFeature = new DenizenFeature("Phobos");
         }else if(index == 8) {
-            player.copyFromOCDataString("b=%C3%BF%C3%BF%C3%BE%C2%80%C3%B4%C2%82%10%10%1C%1C%19&s=,,Taking Pictures,Being In The Spotlight,acceleratedOxodization&x=AQ==");
+            player.copyFromOCDataString("b=%C3%BF%C3%BF%C3%BE%C2%80%C3%B4%C2%82%10%10%1C%1C%19&s=,,Taking Pictures,Being In The Spotlight,acceleratedOxidization&x=AQ==");
             player.aspect = Aspects.RE_FROG;
             player.isLizardfolk = true;
             player.isTroll = false;
