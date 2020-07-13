@@ -638,14 +638,16 @@ abstract class NonCanonSessions {
           //Stoker
           player.copyFromOCDataString("b=uuu9%C3%B8Z%00%C2%98%1C%1C%12&s=,,Eldritch,Robots,tendrilsBreakdown&x=AQ==");
 
-          player.aspect = Aspects.RE_GHOST;
-          player.guardian.aspect = Aspects.RE_GHOST;
+          player.aspect = Aspects.SPACE;
+          player.class_name = SBURBClassManager.MUSE;
+          player.guardian.aspect = Aspects.SPACE;
           player.guardian.robot = true;
         }else if(index == 1) {
           player.copyFromOCDataString("b=%C3%85%C3%85%C3%85%C2%B9%C3%B8%C2%A5%00%C2%90%18%18%10&s=,,A.I.,Violence,bereavementsMaxilla&x=AQ==");
 
-          player.aspect = Aspects.RE_GHOST;
-          player.guardian.aspect = Aspects.RE_GHOST;
+          player.aspect = Aspects.TIME;
+          player.class_name = SBURBClassManager.LORD;
+          player.guardian.aspect = Aspects.TIME;
           player.guardian.robot = true;
         }
     }
@@ -668,14 +670,16 @@ abstract class NonCanonSessions {
         }else if(index == 1) {
           player.copyFromOCDataString("b=uuu9%C3%B8Z%00%C2%98%1C%1C%12&s=,,Eldritch,Robots,tendrilsBreakdown&x=AQ==");
 
-          player.aspect = Aspects.RE_GHOST;
-          player.guardian.aspect = Aspects.RE_GHOST;
+          player.aspect = Aspects.SPACE;
+          player.class_name = SBURBClassManager.MUSE;
+          player.guardian.aspect = Aspects.SPACE;
           player.guardian.robot = true;
         }else if(index == 2) {
           player.copyFromOCDataString("b=%C3%85%C3%85%C3%85%C2%B9%C3%B8%C2%A5%00%C2%90%18%18%10&s=,,A.I.,Violence,bereavementsMaxilla&x=AQ==");
 
-          player.aspect = Aspects.RE_GHOST;
-          player.guardian.aspect = Aspects.RE_GHOST;
+          player.aspect = Aspects.TIME;
+          player.class_name = SBURBClassManager.LORD;
+          player.guardian.aspect = Aspects.TIME;
           player.guardian.robot = true;
         }else if(index == 3) {
           //Phantom for 4 below phantoms
@@ -811,14 +815,16 @@ abstract class NonCanonSessions {
         }else if(index == 13) {
           player.copyFromOCDataString("b=uuu9%C3%B8Z%00%C2%98%1C%1C%12&s=,,Eldritch,Robots,tendrilsBreakdown&x=AQ==");
 
-          player.aspect = Aspects.RE_GHOST;
-          player.guardian.aspect = Aspects.RE_GHOST;
+          player.aspect = Aspects.SPACE;
+          player.class_name = SBURBClassManager.MUSE;
+          player.guardian.aspect = Aspects.SPACE;
           player.guardian.robot = true;
         }else if(index == 14) {
           player.copyFromOCDataString("b=%C3%85%C3%85%C3%85%C2%B9%C3%B8%C2%A5%00%C2%90%18%18%10&s=,,A.I.,Violence,bereavementsMaxilla&x=AQ==");
 
-          player.aspect = Aspects.RE_GHOST;
-          player.guardian.aspect = Aspects.RE_GHOST;
+          player.aspect = Aspects.TIME;
+          player.class_name = SBURBClassManager.LORD;
+          player.guardian.aspect = Aspects.TIME;
           player.guardian.robot = true;
         }else if(index == 15) {
           player.copyFromOCDataString("b=HMj.%C3%BE%C2%A5%00P%1C%1C1&s=,,Programming,Loneliness,William&x=BnAB");
