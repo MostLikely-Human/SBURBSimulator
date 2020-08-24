@@ -182,6 +182,9 @@ abstract class SimController {
                 //alert(living.length  + " living players and the " + timePlayer.land + " makes a scratch available!");
                 if (session.stats.scratchAvailable) {
                     String html = '<img src="images/Scratch.png" id="scratchButton"><br>Click To Scratch Session?';
+                    if(session.session_id == 1016) {
+                        html = '<img src="images/Scratch_Google.png" id="scratchButton"><br>Click to Scratch Session?';
+                    }
                     appendHtml(SimController.instance.storyElement, html);
                     querySelector("#scratchButton").onClick.listen((Event e) => scratchConfirm(session));
                     renderAfterlifeURL(session);
