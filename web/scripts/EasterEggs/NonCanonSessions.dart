@@ -35,6 +35,7 @@ abstract class NonCanonSessions {
         ret[1972] = session1972; //Phantom Twisted Session
         ret[2024] = session2024; //Human/Phantom Twisted Session
         ret[1988] = session1988; //Ultimate Custom Purgatory Twisted Session
+        ret[1016] = session1016; //Google'sstuck
         return ret;
     }
 
@@ -43,6 +44,91 @@ abstract class NonCanonSessions {
         Map<int, dynamic> sm = sessionMap;
         if (sm.containsKey(id)) {
             sm[id](session);
+        }
+    }
+
+    static void session1016(Session session) {
+        int numPlayers = 8;
+        makeASessionFromSource(session, session1016IndexToPlayer, numPlayers);
+        session.players.length = numPlayers; //no more, no less. Unless stuff happens.
+    }
+
+    static void session1016IndexToPlayer(Session session, Player player, int index) {
+        Session s = session;
+        player.deriveChatHandle = false;
+        player.deriveLand = false;
+        player.deriveSpecibus = true;
+        if(index == 0) {
+            player.copyFromOCDataString("b=%00%00%00C%C3%B9%3A%00%17%07%070&s=,,Authoring,Coding,Proxxima&x=AQ==");
+            //player.isLizardfolk = true;
+            //player.guardian.isLizardfolk;
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            //player.object_to_prototype = new PotentialSprite("OneShot", s);
+            //player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Ruins and Ruin";
+            //player.land.denizenFeature = new DenizenFeature("Ronan");
+        }
+        else if(index == 1) {
+            player.copyFromOCDataString("b=%C2%84%5C%10A%C3%BE%C2%9D%00%0B))%3C&s=,,Video Games,Astronomy,agnosticAsshole&x=AQ==");
+
+            player.quirk.capitalization = Quirk.NORMALCAPS;
+            player.quirk.punctuation = Quirk.PERFPUNC;
+            player.quirk.lettersToReplace = [];
+            player.quirk.lettersToReplaceIgnoreCase = [];
+            player.quirk.prefix = "";
+            player.quirk.suffix = "";
+            player.deriveSprite = false;
+            //player.object_to_prototype = new PotentialSprite("WaluiIvagunner", s);
+            player.sprite.addPrototyping(player.object_to_prototype);
+            player.land = player.spawnLand();
+            player.land.name = "Land of Flames and Temples";
+            //player.land.denizenFeature = new DenizenFeature("Kairos");
+        }
+        else if(index == 2) {
+            player.copyFromOCDataString("b=u'%0D%17%C3%BE'%00S..%3F&s=,,Noodles,Danger,dangerNoodle&x=AQ==");
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Libraries and Filth";
+        }
+        else if(index == 3) {
+            player.copyFromOCDataString("b=%25%003%40%C3%BE%22%00H%08%08%3C&s=,,Chef,Blabk,blabBushido&x=AQ==");
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Frogs and Paintings";
+        }
+        else if(index == 4) {
+            player.copyFromOCDataString("b=%00%00%00I%C3%BB%22%20%04%3D%3D(&s=,,Paradoxes,Shenanigans,paradoxedShenanigans&x=AQ==");
+            player.isTroll = true;
+            player.guardian.isTroll = true;
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Crypts and Fractals";
+        }
+        else if(index == 5) {
+            player.copyFromOCDataString("b=(%0C%00%C3%87%C3%BE%22%00B%03%03%04&s=,,Clouds,Aurora,cloudedAurora&x=AQ==");
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Airhorns and Scrap";
+        }
+        else if(index == 6) {
+            player.class_name = SBURBClassManager.WITCH;
+            player.aspect = Aspects.MIND;
+
+            player.isTroll = false;
+        }
+        else if(index == 7) {
+            player.copyFromOCDataString("b=%00%00%00X%C3%BE%25%00%16%23%25%3B&s=,,Fire,Being A Scumbag,fireRatchet&x=AQ==");
+
+            player.land = player.spawnLand();
+            player.land.name = "Land of Nothing and Corruption";
         }
     }
 
