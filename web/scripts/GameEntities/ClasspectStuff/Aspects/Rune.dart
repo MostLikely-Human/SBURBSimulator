@@ -22,15 +22,15 @@ class Rune extends Aspect {
     ..accent = "#007fbf"
     ..aspect_light = '#007fbf'
     ..aspect_dark = '#4d6e80'
-    ..shoe_light = '#999999'
-    ..shoe_dark = '#666666'
-    ..cloak_light = '#8a9499'
-    ..cloak_mid = '#5c6366'
-    ..cloak_dark = '#2e3133'
-    ..shirt_light = '#86acbf'
-    ..shirt_dark = '#627e8c'
-    ..pants_light = '#8fa7b3'
-    ..pants_dark = '#667780';
+    ..shoe_light = '#858585'
+    ..shoe_dark = '#707070'
+    ..cloak_light = '#52d6fc'
+    ..cloak_mid = '#52d6fc'
+    ..cloak_dark = '#00a1d8'
+    ..shirt_light = '#00a1d8'
+    ..shirt_dark = '#008cb4'
+    ..pants_light = '#707070'
+    ..pants_dark = '#5c5c5c';
 
   Rune(int id) :super(id, "Rune", isCanon: false, isMLHFanon: true);
 

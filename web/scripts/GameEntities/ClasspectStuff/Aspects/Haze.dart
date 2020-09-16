@@ -11,15 +11,15 @@ class Haze extends Aspect {
     ..accent = "#ff7a00"
     ..aspect_light = '#ff7a00'
     ..aspect_dark = '#cc6200'
-    ..shoe_light = '#cc6200'
-    ..shoe_dark = '#994900'
-    ..cloak_light = '#cc9766'
-    ..cloak_mid = '#99714d'
-    ..cloak_dark = '#664b33' 
-    ..shirt_light = '#e69245'
-    ..shirt_dark = '#b37136'
-    ..pants_light = '#cc823d'
-    ..pants_dark = '#99622e';
+    ..shoe_light = '#02c7fc'
+    ..shoe_dark = '#008cb4'
+    ..cloak_light = '#ff7f00'
+    ..cloak_mid = '#ff7f00'
+    ..cloak_dark = '#da5100'
+    ..shirt_light = '#474747'
+    ..shirt_dark = '#333333'
+    ..pants_light = '#707070'
+    ..pants_dark = '#5c5c5c';
 
   Haze(int id) :super(id, "Haze", isCanon: false, isMLHFanon: true);
 

@@ -19,15 +19,15 @@ class Chill extends Aspect {
     ..accent = "#010067"
     ..aspect_light = '#010067'
     ..aspect_dark = '#000033'
-    ..shoe_light = '#000033'
-    ..shoe_dark = '#00000d'
-    ..cloak_light = '#0052F3'
-    ..cloak_mid = '#0046D1'
-    ..cloak_dark = '#003396'
-    ..shirt_light = '#0b0a33'
-    ..shirt_dark = '#0a0a1a'
-    ..pants_light = '#0b0b1b'
-    ..pants_dark = '#030308';
+    ..shoe_light = '#0000ff'
+    ..shoe_dark = '#002b7c'
+    ..cloak_light = '#c3c3c3'
+    ..cloak_mid = '#c3c3c3'
+    ..cloak_dark = '#9a9a9a'
+    ..shirt_light = '#303030'
+    ..shirt_dark = '#000000'
+    ..pants_light = '#0000ff'
+    ..pants_dark = '#002b7c';
 
 
   @override

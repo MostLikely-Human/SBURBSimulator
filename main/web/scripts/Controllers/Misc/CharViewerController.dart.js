@@ -7104,15 +7104,15 @@ o=new L.al(P.k(null,null,null,t,s),P.k(null,null,null,r,s),P.k(null,null,null,t,
 o.i(0,$.aq,L.b("#010067"),!0)
 o.i(0,$.ac,L.b("#010067"),!0)
 o.i(0,$.ab,L.b("#000033"),!0)
-o.i(0,$.aa,L.b("#000033"),!0)
-o.i(0,$.a9,L.b("#00000d"),!0)
-o.i(0,$.ae,L.b("#0052F3"),!0)
-o.i(0,$.af,L.b("#0046D1"),!0)
-o.i(0,$.ad,L.b("#003396"),!0)
-o.i(0,$.ah,L.b("#0b0a33"),!0)
-o.i(0,$.ag,L.b("#0a0a1a"),!0)
-o.i(0,$.a8,L.b("#0b0b1b"),!0)
-o.i(0,$.a7,L.b("#030308"),!0)
+o.i(0,$.aa,L.b("#0000ff"),!0)
+o.i(0,$.a9,L.b("#002b7c"),!0)
+o.i(0,$.ae,L.b("#c3c3c3"),!0)
+o.i(0,$.af,L.b("#c3c3c3"),!0)
+o.i(0,$.ad,L.b("#9a9a9a"),!0)
+o.i(0,$.ah,L.b("#303030"),!0)
+o.i(0,$.ag,L.b("#000000"),!0)
+o.i(0,$.a8,L.b("#0000ff"),!0)
+o.i(0,$.a7,L.b("#002b7c"),!0)
 k=P.i(H.a(["Chill","Fear","Subordinance","Cold","Solids"],p),t)
 l=P.i(H.a(["SOLIDIFIER","FEAR MAKER","ABSOLUTE DESTROYER"],p),t)
 m=P.i(H.a(["Child","Chimpanzee","Choler","Cauliflower","Changer","Cake","Cone"],p),t)
@@ -7139,15 +7139,15 @@ h=new L.al(P.k(null,null,null,t,s),P.k(null,null,null,r,s),P.k(null,null,null,t,
 h.i(0,$.aq,L.b("#007fbf"),!0)
 h.i(0,$.ac,L.b("#007fbf"),!0)
 h.i(0,$.ab,L.b("#4d6e80"),!0)
-h.i(0,$.aa,L.b("#999999"),!0)
-h.i(0,$.a9,L.b("#666666"),!0)
-h.i(0,$.ae,L.b("#8a9499"),!0)
-h.i(0,$.af,L.b("#5c6366"),!0)
-h.i(0,$.ad,L.b("#2e3133"),!0)
-h.i(0,$.ah,L.b("#86acbf"),!0)
-h.i(0,$.ag,L.b("#627e8c"),!0)
-h.i(0,$.a8,L.b("#8fa7b3"),!0)
-h.i(0,$.a7,L.b("#667780"),!0)
+h.i(0,$.aa,L.b("#858585"),!0)
+h.i(0,$.a9,L.b("#707070"),!0)
+h.i(0,$.ae,L.b("#52d6fc"),!0)
+h.i(0,$.af,L.b("#52d6fc"),!0)
+h.i(0,$.ad,L.b("#00a1d8"),!0)
+h.i(0,$.ah,L.b("#00a1d8"),!0)
+h.i(0,$.ag,L.b("#008cb4"),!0)
+h.i(0,$.a8,L.b("#707070"),!0)
+h.i(0,$.a7,L.b("#5c5c5c"),!0)
 f=P.i(H.a(["Rune","Infinity","Magic","Fairies","Prediction","Circles","Majykks","Systems"],p),t)
 q=P.i(H.a(["FAIRY PERSON","INFIINITELY CONFUSED","PREDICTIVE LAD"],p),t)
 n=P.i(H.a(["Rune","Ruiner","Red","Ready","Retconner","Respondent"],p),t)
@@ -7174,15 +7174,15 @@ o=new L.al(P.k(null,null,null,t,s),P.k(null,null,null,r,s),P.k(null,null,null,t,
 o.i(0,$.aq,L.b("#ff7a00"),!0)
 o.i(0,$.ac,L.b("#ff7a00"),!0)
 o.i(0,$.ab,L.b("#cc6200"),!0)
-o.i(0,$.aa,L.b("#cc6200"),!0)
-o.i(0,$.a9,L.b("#994900"),!0)
-o.i(0,$.ae,L.b("#cc9766"),!0)
-o.i(0,$.af,L.b("#99714d"),!0)
-o.i(0,$.ad,L.b("#664b33"),!0)
-o.i(0,$.ah,L.b("#e69245"),!0)
-o.i(0,$.ag,L.b("#b37136"),!0)
-o.i(0,$.a8,L.b("#cc823d"),!0)
-o.i(0,$.a7,L.b("#99622e"),!0)
+o.i(0,$.aa,L.b("#02c7fc"),!0)
+o.i(0,$.a9,L.b("#008cb4"),!0)
+o.i(0,$.ae,L.b("#ff7f00"),!0)
+o.i(0,$.af,L.b("#ff7f00"),!0)
+o.i(0,$.ad,L.b("#da5100"),!0)
+o.i(0,$.ah,L.b("#474747"),!0)
+o.i(0,$.ag,L.b("#333333"),!0)
+o.i(0,$.a8,L.b("#707070"),!0)
+o.i(0,$.a7,L.b("#5c5c5c"),!0)
 q=new L.al(P.k(null,null,null,t,s),P.k(null,null,null,r,s),P.k(null,null,null,t,r),P.k(null,null,null,r,t))
 q.i(0,$.aq,L.b("#FF9B00"),!0)
 q.i(0,$.ac,L.b("#FF9B00"),!0)
@@ -43302,11 +43302,11 @@ return C.c.B("They boggle vacantly at the ",this.d.gw().fy)+". "},
 AA:function(){var t,s,r,q
 t=R.kI(this.b.gN())
 s=J.d(this.d.gt(),$.aJ)&&this.d.gZ()!=null&&!this.d.gZ().gih()
-r=$.p
-q=this.b
-if(s){s=t.a3(r)
-return q.f0(new Z.CQ(10,q,this.d,s,1,null,0,null))}else{s=t.a3(r)
-return q.f0(new Z.zz(5,q,this.d,s,1,null,0,null))}},
+r=this.b
+q=$.p
+if(s){s=t.a3(q)
+return r.f0(new Z.CQ(10,r,this.d,s,1,null,0,null))}else{s=t.a3(q)
+return r.f0(new Z.zz(5,r,this.d,s,1,null,0,null))}},
 gc7:function(){return this.d},
 sc7:function(a){return this.d=a}}
 A.aH.prototype={
@@ -47803,14 +47803,14 @@ eg:function(a,b,c,d){return this.bY(a,b,c,d,null)}}
 Y.dx.prototype={
 bY:function(a,b,c,d,e){var t,s,r,q,p
 t=e!=null?e:""
-if(c!=null){s=$.cW
-r=$.Iw
-if(c instanceof Q.x){t+="The "+s+" gains the fraymotif "+r+", while the "+$.hW+" gets the fraymotif "+$.Nc+"! "
+if(c!=null){s=$.Iw
+r=$.cW
+if(c instanceof Q.x){t+="The "+r+" gains the fraymotif "+s+", while the "+$.hW+" gets the fraymotif "+$.Nc+"! "
 q=b.eH(c)
 p=c.eH(b)
 s=this.c
 if(s!=null)J.hm(p,s)
-t=H.aw(H.aw(t,$.hW,c.bu()),$.Nc,H.e(J.ax(p)))}else{t+=" The "+s+" gains the fraymotif "+r+"! "
+t=H.aw(H.aw(t,$.hW,c.bu()),$.Nc,H.e(J.ax(p)))}else{t+=" The "+r+" gains the fraymotif "+s+"! "
 q=null}}else{t+=" The "+$.cW+" gains the fraymotif "+$.Iw+"! "
 q=null}if(q==null)q=b.eH(null)
 s=this.c
